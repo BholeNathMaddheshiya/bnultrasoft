@@ -1,0 +1,16 @@
+a{
+
+    text-decoration: none;
+}
+
+a:hover {
+    
+    text-decoration: none;
+}
+.cardwidth{
+    height:70px;
+    font-weight: normal;
+    text-shadow:1px 1px 0 #1f1b1b;
+
+   
+}

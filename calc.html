@@ -1,0 +1,1150 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calc.css">
+  
+ 
+
+ 
+
+
+
+</head>
+
+<body>
+   
+
+
+
+    
+    <script>
+  
+
+/**
+   * Back to top button
+   */
+   let backtotop = select('.back-to-top')
+  if (backtotop) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtotop.classList.add('active')
+      } else {
+        backtotop.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+  }
+
+    </script>
+    <!-- JavaScript for sidebar End-->
+
+
+    <!-- Sidebar Coding End -->
+
+   
+     <!-- Content of body start -->
+
+     <section class="home-section">
+     
+     <div id="wordprocessing" class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <center> <h2><b> <u> Spread Sheet (Libre Calc)</u></b></h2> </center>
+         <h6>Before moving on Libre Calc, first of all we have to know about Word SpreadSheet.</h6>       
+        
+        <p> <b>Word SpreadSheet</b>: Spreadsheet (Worksheet) is application which is made of rows and column that help calculate numerical data, arrange data,sort data etc. Spreadsheets consist of a number of individual
+            sheets, each sheet containing cells arranged in rows and columns. Here, One or more Spreadsheet (Worksheet) is known as workbook.</p> <br>
+
+<p><b>Calc : </b>Calc is the spreadsheet component of LibreOffice. You can enter data (usually numerical) in a
+    spreadsheet and then manipulate this data to produce certain results.</p> <br> <br>
+
+    
+ <h3> Elements of Spread Sheet:</h3>
+   <p><b>Cell </b>: A particular cell is identified by its row number and column letter.  <br>
+     <b>Eg. :  First Cell Name is : A1  and Last Cell Name is XFD1048576. </b> <br>
+    
+    Cells hold the individual elements  text, numbers, formulas, and so on  that make up the data to display and manipulate.
+   
+    <br> Each spreadsheet can have up to <b>10,000 sheets</b>  and each sheet can have a maximum of<b> 1,048,576 rows and 16,384 columns (XFD).</b> </p> <br>
+    
+<p><b>Note:</b> When you save a calc file the by default file name is:<b>  Untitled 1 and
+    extension name is : (.ods ) OpenDocument SpreadSheet. </b></p> <br>
+<center> <h3><b> <u>The first screen of Libre Calc.</u></b></h3> </center>
+<img src="assets/img/calc/maincalc.png" class="w3-round" alt="Writer image" style="width:100%"> <br> 
+
+</div>  
+
+
+      </div>
+
+
+
+    </section>
+
+
+    <section class="home-section">
+     
+        <div id="wordprocessing" class="w3-container">  
+           <div class="w3-panel  w3-card-4 ">
+
+            <center> <h3><b> <u>Explanation of each bar which is on window calc screen.</u></b></h3> </center> <br>
+            <p> <b>Title bar </b>:The Title bar is located at the top of the Calc window. It shows the file name of the current document. When the document is not yet named, the document name will appear as Untitled X, where X is a number. Untitled documents are numbered in the order in which they are created. 
+                Eg: Untitled 1</p> <br>
+                <p> <b>Menu bar </b> : The Menu bar is located just below the Title bar. Menu bar contains File Menu, Edit Menu, View Menu, Insert Menu etc.</p> <br>
+                <p><b>Standard Toolbar</b>: This toolbars to give users quick access to different features and tools with contains a wide variety of icons.  We can access quickly such as Create new,open, save a file etc.</p> <br>
+                <p><b>Formatting Toolbar</b>: This toolbars contains commands for formatting such as font size, style, color, etc and it gives the quick access with a variety of icons.</p> <br>
+                <p><b>Sidebar</b>:  The Sidebar is normally open by default on the right side of the Writer window. It is the section of properties.</p>  <br>
+                <p><b>Status bar</b>:The Writer Status bar is located at the bottom of the workspace. It provides information about the document and convenient ways to quickly change some document features.</p>  <br>
+                
+                <p><b>Active Cell</b> : The rectangular box that hightlight in color the cell in sheet is known as active cell, it help in identify on which cell we are working, where data will be entered.</p> <br>
+                <p><b>Name Box</b> : It gives the current active cell reference using a combination of a letter and
+                    number, for example A1</p> <br><br>
+                
+           </div>
+        </div>
+     </section> 
+
+     
+     
+     <section class="home-section">
+        <div id="wordprocessing" class="w3-container">  
+            <div class="w3-panel  w3-card-4 ">
+
+            </div></div>
+
+     </section>
+
+     
+
+      
+      <section class="home-section">
+        <div id="wordprocessing" class="w3-container">  
+            <div class="w3-panel  w3-card-4 ">
+        
+                <center> <h3><b> <u>     Some numerical operation in Calc </u></b></h3> </center>
+                <p><b>Note :</b>You can enter formulas in two ways. A formula must begin with an <b>=</b> symbol in both method.</p> <br>
+
+                <div class="w3-container"> 
+
+                    <table class="w3-table-all">
+                      <tr>
+                        <th>Without Formula</th>
+                        <th>With Formula</th>
+                       
+                      </tr>
+                      <tr>
+                        <td>It is used to type directly into the cell.</td>
+                        <td>By using Function Wizard.</td>
+                       
+                      </tr>
+                      <tr>
+                        <td>Eg:      = 10+20 Press Enter <br>
+                                           result is: 30</td>
+                        <td>Eg:    = sum(10+20)  Press Enter <br>
+                                  result is:                    30  </td>
+                    
+                      </tr>                  
+                   
+                    </table> <br>
+
+                    <p><b> Common ways to use formulas </b></p> 
+
+                   <p><b>= A1 + 20   :</b>     It  displays the result of cell A1 and plus 20.</p> 
+                    <p><b> = A1 + (2+3)   : </b>   First it add 2+3 which is in bracket and then Plus A1.</p> 
+                    <p><b>= (2+2)+ A1     :</b>   First it add 2+2 which is in bracket and then plus  A1.</p> 
+
+                  </div>  <br>
+
+                  <center> <h3><b> <u>Operator types in Calc: arithmetic, comparative, text, and reference.</u> </b></h3></center>
+                  <div class="w3-container">
+                    <h3><b>Arithmetic operators :</b></h3>
+                  
+                    <table class="w3-table-all">
+                      <tr>
+                        <th>Operator </th>
+                        <th>Name</th>
+                        <th>Example</th>
+                        <th>Result</th>
+                      </tr>
+                      <tr>
+                        <td>+ (Plus)</td>
+                        <td>Addition</td>
+                        <td>= 1+1</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>– (Minus)</td>
+                        <td>Subtraction </td>
+                        <td>= 2–1</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>– (Minus)</td>
+                        <td>Negation</td>
+                        <td>= –5</td>
+                        <td>-5</td>
+                      </tr>
+                      <tr>
+                        <td>* (Asterisk)</td>
+                        <td>Multiplication</td>
+                        <td>= 2*2 </td>
+                        <td>4</td>
+                      </tr>
+                        <tr>
+                        <td>/ (Slash)</td>
+                        <td>Division</td>
+                        <td>= 10/5</td>
+                        <td>2</td>
+                      </tr>
+                       <tr>
+                        <td>% (Percent)</td>
+                        <td>Percent</td>
+                        <td>= 100*25%</td>
+                        <td>25</td>
+                      </tr>
+                     
+                       <tr>
+                        <td>^ (Caret)</td>
+                        <td>Exponentiation</td>
+                        <td>= 2^3</td>
+                        <td>8</td>
+                      </tr>
+                    </table> <br><br>
+
+
+                  <p><b>LabWork:</b></p>   
+                    <ol>
+                        <li>2+5*7- 45+20 </li>
+                        <li>(4*5)+(9-4)+6</li>
+                        <li>5+6*(3+5)+(25-6)</li>
+                        <li> 500*25%</li>
+                        <li>3^3 </li>
+                        <li>4^2</li>
+                    </ol>  
+                 </div>
+                 <br>
+                 
+<div class="w3-container">
+    <h3><b>Comparative Operators:</b></h3>
+  
+    <table class="w3-table-all">
+      <tr>
+        <th>Operator </th>
+        <th>Name</th>
+        <th>Example</th>
+        <th>Result (A1=4,B1=5)</th>
+      </tr>
+      <tr>
+        <td>=</td>
+        <td>Equal</td>
+        <td> A1=B1</td>
+        <td>FALSE</td>
+      </tr>
+      <tr>
+        <td>></td>
+        <td>Greater than </td>
+        <td>A1&gt;B1</td>
+        <td>FALSE</td>
+      </tr>
+      <tr>
+        <td>&lt;</td>
+        <td>Less than</td>
+        <td>A1&lt;B1</td>
+        <td>TRUE</td>
+      </tr>
+      <tr>
+        <td>&gt;=</td>
+        <td>Greater than or equal to</td>
+        <td>A1&gt;=B1 </td>
+        <td>FALSE</td>
+      </tr>
+        <tr>
+        <td>&lt;=</td>
+        <td>Less than or equal to</td>
+        <td>A1&lt;=B1</td>
+        <td>TRUE</td>
+      </tr>
+       <tr>
+        <td>&lt;&gt;</td>
+        <td>Inequality</td>
+        <td>A1&lt;&gt;B1</td>
+        <td>TRUE</td>
+      </tr>
+     
+      
+    </table>
+    <br>
+    <p><b>Labwork:   If A1=7, B1=9  </b></p>   
+    <ol>
+        <li>  =A1>B1   </li>
+        <li>= A1&lt;B1 </li>
+        <li>=A1=B1</li>
+        <li> =A1>=B1</li>
+        <li>=A1&lt;=B1 </li>
+        <li>= A1&lt;>B1</li>
+    </ol> 
+
+  </div><br>
+  
+<div class="w3-container">
+    <h3><b>Text operators :</b></h3>
+    <p>The operator combines separate texts into one text.</p>
+  
+    <table class="w3-table-all">
+      <tr>
+        <th>Operator </th>
+        <th>Name</th>
+        <th>Example</th>
+        <th>Result </th>
+      </tr>
+      <tr>
+        <td>& (And)</td>
+        <td>text concatenation AND
+  </td>
+        <td> = "Sun" & "day"  </td>
+        <td>Sunday</td>
+      </tr>  
+     
+      
+    </table> <br>
+
+  </div>
+                  
+  <div class="w3-container">
+    <h4><b>Text in Date Example :</b></h4>
+    
+  
+    <table class="w3-table-all">
+      <tr>
+        <th style="border: 3px solid">Example</th>
+        <th style="border: 3px solid">Result (OUTPUT)</th>
+       
+      </tr>
+      <tr>
+     <td style="border: 3px solid"><img src="assets/img/calc/textref1.png" class="w3-round" alt="image" style="width:100%"></td>
+     <td style="border: 3px solid"><img src="assets/img/calc/textref2.png" class="w3-round" alt="image" style="width:100%"></td>
+     
+      </tr>  
+     
+      
+    </table> <br>
+    <p><b>Labwork:</b></p>
+    <ol>
+        <li>Monday,5,6,2023</li>
+        <li>5/6/2023</li>
+        <li>2023-6-5</li>
+        <li>5,6,2023, Monday</li>
+        <li>11:45:40</li>
+       
+    </ol>
+
+
+  </div>               
+             
+  <div class="w3-container">
+    <h4><b>Reference operators:</b></h4>
+    <p>These operators return a cell range of cells.</p> 
+    <p><b>Syntax:</b>reference upper left : reference lower right </p> <br>
+    <b>Ex:</b><br>
+    <img src="assets/img/calc/reference.png" class="w3-round" alt="image" style="width:70%"></td> 
+    <br>
+    <br>
+    <p><b>Note :</b>When you selected area of the cells or give the range of the cell then only the given range or selected area is filled.</p> 
+     
+  
+   <br>
+   <center> <h3><b>Creating of Spread Sheet: <u>Labwork for Practice 1:</u></b></h3> </center> <br>
+   <img src="assets/img/calc/LabworkPractice1.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+  
+
+  
+         
+    
+
+
+  </div>               
+  
+
+
+  
+
+
+
+    </div></div>
+
+      </section> 
+      <section class="home-section">
+        <div id="wordprocessing" class="w3-container">  
+            <div class="w3-panel  w3-card-4 ">
+              <br>
+  
+              <center> <h3><b>Selecting a Cell and Entering Data [text, number, date] in Cells :</u></b></h3> </center> <br>
+              <br>
+              <div class="w3-container">
+    
+  
+                <table class="w3-table  w3-card">
+  
+                    <tr>
+                        <th> Press this key</th>
+                        <th>To do this</th>
+                        
+                    </tr>
+                    <tr>
+                       <td> <b>Ctrl + A</b>  or  <b>Ctrl + Shift + Space</b> </td>
+                       <td> Select All</td>
+                    </tr>
+                    <tr>
+                       <td> <b> Shift + Space</b></td>
+                       <td>  Select Row </td>
+                    </tr>
+                    <tr>
+                      <td> <b> Ctrl + Space</b></td>
+                      <td>  Select Column </td>
+                   </tr>
+                   <tr>
+                    <td> <b> Ctrl + * </b></td>
+                    <td>  Select Data area (When data in range) or Select Self cell (When data is not in range) </td>
+                 </tr>
+                 <tr>
+                  <td> <b> Ctrl + F2</b></td>
+                  <td>  To Open Function Wizard </td>
+               </tr>
+               <tr>
+                <td> <b> Ctrl + `</b></td>
+                <td>  To Show Formula </td>
+             </tr>
+             <tr>
+              <td> <b> Ctrl + ;</b></td>
+              <td>  Insert Date </td>
+           </tr>
+           <tr>
+            <td> <b> Ctrl + Shift + ;</b></td>
+            <td>  Insert Time </td>
+         </tr>
+  
+                </table>
+                </div>
+                <br>     
+  
+              <p><b>Note :</b>When you enter any  <b>text or string</b> in Cell by default alignment is <b>Left</b>.</p>
+             
+              <p><b>Note :</b>When you enter <b>Number, Date , Time </b>  in Cell by default alignment is <b>Right</b>.</p>
+              
+               <br>
+  
+      </div></div>
+      
+      </section> 
+
+
+      <section class="home-section">
+        <div id="wordprocessing" class="w3-container">  
+            <div class="w3-panel  w3-card-4 ">
+              <center> <h3><b>Concept of Cell Address [Row
+                and Column] : <u> Addresses and References</u></b></h3> </center> <br>
+               <p><b>Que: </b> What is Cell address and Cell Reference ?</p>
+               <p> <b>Ans: </b> A reference is a cell's address. It identifies a cell or range of cells by referring to the column letter and row number of the cell(s). For example, A1 refers to the cell at the intersection of column A and row 1.</p>
+
+               <br><h3>There are three types of Cell Reference:- </h3>
+              <h4><b>1) </b> Relative Addressing:</h4> 
+              <h4><b>2) </b> Absolute Addressing:</h4> 
+              <h4><b>3) </b> Mixed Addressing:</h4>  <br>
+              <h4><b> 1) Relative Addressing: :</b></h4>
+
+              <p>The cell in column A, row 1 is addressed as A1. When you address a range of cell by entering the address of upper left cell, then then a colon (:) and then entering the address of lower right cell.</p> 
+              <p><b>Note : </b>By addressing an area in this way, you are making a relative reference to <b>A1:C1</b> </p> <br>
+              <h4><b> 2) Absolute Addressing :</b></h4> 
+      <p>Absolute referencing is the opposite of relative addressing. A dollar sign is placed before each letter and number in an absolute reference, for example, <b>$A$1:$B$2</b> . <br>
+
+        <h4><b> 3)  Mixed Addressing:</b></h4> 
+        <p> <b> Note:-</b> When we make the combination of relative cell reference and absolute cell reference. <b>Example : $A1 , A$1</b></p> <br><br>
+
+
+      </p>        
+    </div></div>
+
+      </section> 
+    </section> 
+
+   
+    
+
+      <section class="home-section">
+        <div id="wordprocessing" class="w3-container">  
+            <div class="w3-panel  w3-card-4 ">
+              <center> <h3><b> <u> Function in Libre Calc:</u></b></h3> </center> <br>
+              <p><b>Function:</b></p>
+              <p> A function is a predefined calculation entered in a cell to help you analyze or manipulate data in a spreadsheet. </p> <br>
+
+              <p><b>Function syntax:</b></p>             
+                   <img src="assets/img/calc/functionsyntax.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+                  <p><b>Arguments in functions:</b></p>
+                  <p>Arguments must be enclosed in parentheses. Multiple arguments within parentheses are separated with a semicolon (;).</p>  <br>
+
+                  <p><b>The function Wizard :</b></p>
+                  <p> The Functions Wizard is a tool that helps us first to find the function we want through the library and secondly to introduce the arguments step-by-step and with the correct syntax. The  f(x) button on the Formula bar to open the Function Wizard. </p><br>
+
+
+                  <p><b>Basic Functions:</b></p> <br>
+
+                   <p><b>1. SUM : </b> Adds all the numbers in a range of cells.</p>
+                   <br>
+                   <p><b>Syntax:</b></p> 
+                   <p>SUM(number1; number2;...number30)</p>
+                   <p><b>Note:</b> SUM ignores any text or empty cell within a range or array.</p>
+                   <br>
+                   <p><b>Examples:</b></p>
+                   <p>  <b>SUM(2; 3; 4)</b></p>
+                   <p>returns 9, because 2+3+4 = 9.</p>
+                   <p><b>SUM(B1:B3)</b></p>
+                   <p>(where cells B1, B2, B3 contain 5, 4, 3) returns 12.</p>  <br><br>
+
+
+                   <p><b> 2. AVERAGE:</b>Returns the average of the arguments, it ignoring text.</p> <br>
+
+                   <p><b>Syntax:</b></p>  
+                   <p> AVERAGE(number1; number2; ... number30)</p>   <br>              
+                   <p><b>Examples:</b></p>
+                   <p><b>AVERAGE(2; 6; 4)</b></p>
+                   <p>returns 4, the average of the three numbers in the list.</p>
+                   <p><b>AVERAGE(B1:B3)</b></p>
+                   <p>where cells B1, B2, B3 contain 1, 3, and apple returns 2, the average of 1 and 3. Text is ignored.</p><br><br>
+
+                   <p><b> 3. COUNT :</b>Counts the numbers in the list of arguments, ignoring text entries.</p><br>
+
+                   <p> <b>Syntax:</b></p>
+                   <p>COUNT(value1; value2; ... value30)</p><br>
+                   <p><b>Examples:</b></p> 
+                   <p> <b>COUNT(2; 4; 6; "eight")</b> </p>
+                    <p>returns 3, because 2, 4 and 6 are numbers ("eight" is text).</p>  
+                    <p> <b>COUNT(B1:B3)</b></p>
+                   <p> where cells B1, B2, B3 contain 1, 3, and apple returns 2.</p>    <br> <br>
+                   
+                   
+  <p><b>4. MAX:</b> Returns the maximum of a list of arguments, ignoring text entries.</p>  <br>
+  <p><b>Syntax:</b></p>
+  <p>MAX(number1; number2; ... number30)</p> <br>
+  <p><b>Examples:</b></p>
+  <p>MAX(2; 6; 4)</p>
+  <p>returns 6, the largest value in the list.</p>
+  <p><b>MAX(B1:B3)</b></p>
+  <p>where cells B1, B2, B3 contain 7, 4, and apple returns 7</p> <br> <br>
+
+
+ <p><b>5. MIN : </b> Returns the minimum of a list of arguments, ignoring text entries.</p>  <br>
+<p><b>Syntax:</b></p>
+<p>MIN(number1; number2; ... number30)</p> <br>
+<p> <b>Example:</b></p>
+<p>MIN(2; 6; 4)</p>
+<p>returns 2, the smallest value in the list.</p> <br> <br>
+
+
+<p><b>6. CONCATENATE:</b>Combines several text strings into one string.</p> <br>
+<p><b>Syntax:</b></p>
+<p>CONCATENATE(text1; text2; ... text30)</p> <br>
+<p><b>Examples:</b></p>
+<p>CONCATENATE("al"; "tog"; "ether")</p>
+<p>returns altogether.</p>
+<p><b>Note:</b>The ampersand (&) operator & may also be used to concatenate text in a formula, without the function.</p>
+<p>"al" & "tog" & "ether"</p>
+<p>also returns altogether.</p> <br> <br>
+
+
+<p><b> 7. IF Function:</b>   IF performs a logical test and return one value for a TRUE result, and another for a FALSE result.</p> <br>
+
+<img src="assets/img/calc/calc-if-function.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+<p>IF(Something is True, then return value1, otherwise return value2)</p> <br>
+<p><b>Syntax :</b></p> 
+<p>IF(test; value1; value2)</p>
+<p><b>Examples:</b></p>
+<p>IF(age>=18;"You are able to vote";"You are not able to vote")</p>
+ <br>
+ <p>Next Example:</p>
+ 
+<img src="assets/img/calc/if.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+<p><b>Nested IF</b></p>
+<p>"Nesting" is defined as the method of combining multiple functions in one formula. When two or more IF statements combine and form one single formula, this is known as nested IF statements.</p>
+ <p> <b>Syntax of Nested IF:</b></p>  
+ <p>IF(logical_test1, output1,IF(logical_test2, output2, IF(logical_test2, output3, output4)))</p>
+ <p><b>Example of Nested If:</b></p>
+ 
+<img src="assets/img/calc/nestedif.png" class="w3-round" alt="image" style="width:100%"> <br> <br> <br>
+
+<p><b>8. ABS Function:</b>Returns the absolute value of a number.</p>
+ 
+<p><b>Syntax :</b></p>
+<p>ABS(Number)</p>
+<p>Number is the number whose absolute value is to be calculated. The absolute value of a number is its value without the +/- sign.
+</p>
+<p><b>Example:</b></p>
+<p>=ABS(-56) returns 56.</p>
+<p>=ABS(12) returns 12.</p>
+<p>=ABS(0) returns 0.</p> <br> <br>
+
+<p><b>9. MOD Function: </b>Returns the remainder when one integer is divided by another.</p>
+<p><b>Syntax:</b></p>
+<p>MOD(Dividend; Divisor)</p>
+<p>For integer arguments this function returns Dividend modulo Divisor, that is the remainder when Dividend is divided by Divisor.
+</p>
+<p><b>Example</b></p>
+<p>=MOD(22;3) returns 1, the remainder when 22 is divided by 3.</p> <br><br>
+
+
+<p><b>10. POWER Function: </b>Returns a number raised to another number.</p>
+<p><b>Syntax:</b></p>
+<p>POWER(Base; Exponent)</p>
+<p>Returns Base raised to the power of Exponent.</p>
+<p>The same result may be achieved by using the exponentiation operator ^: <b>Base^Exponent</b></p>
+<p>Note:  =POWER(0,0) returns 1.</p>
+<p><b>Example:</b></p>
+<p>=POWER(4;3) returns 64, which is 4 to the power of 3.</p>
+<p>=4^3 also returns 4 to the power of 3.</p> <br> <br>
+
+
+
+
+               
+    </div></div>
+
+      </section> 
+
+      <section class="home-section">
+        <div id="wordprocessing" class="w3-container">  
+            <div class="w3-panel  w3-card-4 "> <br> <br>
+        
+<p><b>11. PRODUCT Function:</b>
+  Multiplies all the numbers given as arguments and returns the product.</p>
+  <p> <b>Syntax :</b></p>
+  <p>PRODUCT(Number 1 [; Number 2 [; … [; Number 255]]])</p>
+  <p><b>Example:</b></p>
+  <p>=PRODUCT(2;3;4) returns 24.</p> <br><br>
+  
+  <p><b>12. Round Function: </b>Rounds a number to a certain number of decimal places.</p>
+  <p><b>Syntax:</b></p>
+  <p>ROUND(Number ; Decimal Place )</p>
+  <p> <b>Example:</b></p>
+  <p>=ROUND(2.348;2) returns 2.35</p>
+  <p>=ROUND(-32.4834;3) returns -32.483. Change the cell format to see all decimals.</p>
+  <p>=ROUND(2.348;0) returns 2.</p>
+  <p>=ROUND(2.5) returns 3.</p>
+  <p>=ROUND(987.65;-2) returns 1000.</p> <br> <br>
+  
+  <p><b>13. ROUNDUP : </b>Rounds a number up, away from zero, to a certain precision.</p>
+  
+  <p><b>Syntax:</b></p>
+  <p>ROUNDUP(Number ; Decimal Place)</p>
+  <p><b>Example:</b></p>
+  <p>=ROUNDUP(1.1111;2) returns 1.12.</p>
+  <p>=ROUNDUP(1.2345;1) returns 1.3.</p>
+  <p>=ROUNDUP(45.67;0) returns 46.</p>
+  <p>=ROUNDUP(-45.67) returns -46.</p>
+  <p>=ROUNDUP(987.65;-2) returns 1000.</p> <br> <br>
+  
+  <p><b>14. ROUNDDOWN Function : </b>Rounds down a number while keeping a specified number of decimal digits.</p>
+  <p><b>Syntax:</b></p>
+  <p>ROUNDDOWN(Number ; Count)</p>
+  <p><b>Example : </b></p>
+  <p>=ROUNDDOWN(21.89) returns 21. Note that this example uses the default value for Count which is 0.</p>
+  <p>=ROUNDDOWN(103.37,1) returns 103.3.</p>
+  <p>=ROUNDDOWN(0.664,2) returns 0.66.</p>
+  <p>=ROUNDDOWN(214.2,-1) returns 210. Note the negative value for Count, which causes the first integer value before the decimal separator to be rounded towards zero.
+  </p> <br> <br>
+  
+  <p><b>15. TRUNC function :  </b>
+    Truncates a number while keeping a specified number of decimal digits.</p>
+  
+    <p><b> Note : </b> ROUNDDOWN and TRUNC are same but name is different.</p>
+  
+    <p><b>Syntax:</b></p>
+    <p>TRUNC(Number ; Count)</p>
+    <p><b>Example : </b></p>
+    <p> =TRUNC(21.89) returns 21. Note that this example uses the default value for Count which is 0.</p>
+  <p>=TRUNC(103.37,1) returns 103.3.</p>
+  <p>=TRUNC(0.664,2) returns 0.66.</p>
+  <p>=TRUNC(214.2,-1) returns 210. Note the negative value for Count, which causes the first integer value before the decimal separator to be rounded towards zero.
+  </p> <br> <br>
+  
+  <p><b>16. SQRT Function :  </b>
+    Returns the positive square root of a number.</p>
+  <p><b>Syntax : </b></p>
+  <p>SQRT(Number) : </p>
+  <p>Returns the positive square root of Number. Number must be positive.</p>
+  <p><b>Example : </b></p>
+  <p>=SQRT(16) returns 4.</p>
+  <p>=SQRT(-16) returns an invalid argument error.
+  </p> <br> <br>
+  
+  <p><b>17. SIGN Function:</b>Returns the sign of a number. Returns 1 if the number is positive, -1 if negative and 0 if zero.
+  </p>
+  <p><b>Syntax :</b></p>
+   <p>SIGN(Number)</p>
+   <p>Number is the number whose sign is to be determined.</p>
+  <p><b>Example : </b></p>
+  <p>=SIGN(3.4) returns 1.</p>
+  <p>=SIGN(-4.5) returns -1.</p> <br><br>
+  
+  <p><b> 18. CEILING Function : </b>
+    Rounds a number to the nearest multiple of a significance value.</p>
+    <p><b>Syntax :</b></p>
+    <p>CEILING(Number ; Mode)</p>
+    <p><b>Example : </b></p>
+    <p>=CEILING(3.45) returns 4.</p>
+    <p>=CEILING(3.45; 3) returns 6.</p>
+    <p>=CEILING(-1.234) returns -1.</p> <br> <br>
+  
+    <p><b> 18. FLOOR Function : </b>
+      Rounds a number to the nearest multiple of a significance value.</p>
+      <p><b>Syntax :</b></p>    
+    <p>FLOOR(Number ; Mode)</p>
+    <p><b>Example : </b></p>
+     <p>=FLOOR(3.45) returns 3.</p>
+    <p>=FLOOR(3.45, 3) returns 3.</p>
+   <p>=FLOOR(-1.234) returns -2.</p> <br><br>
+  
+   <p><b> 19. LOWER Function : </b>
+    Converts all uppercase letters in a text string to lowercase.</p>
+  <p><b>Syntax : </b></p>
+  <p>LOWER("Text")</p>
+  <p>Text refers to the text to be converted.</p>
+  <p><b>Example : </b></p>
+  <p>=LOWER("Sun") returns sun.</p>  <br> <br>
+  
+  <p><b>20. UPPER Function : </b>Converts the string specified in the text field to uppercase.
+  </p>
+  <p><b>Syntax : </b></p>
+  <p>UPPER("Text")</p>
+  <p>Text refers to the lower case letters you want to convert to upper case.
+  </p>
+  <p>Example : </p>
+  <p>=UPPER("Good Morning") returns GOOD MORNING.</p> <br> <br>
+    </div></div>
+
+      </section> 
+
+      
+    </section> 
+
+    <section class="home-section">
+      <div id="wordprocessing" class="w3-container">  
+          <div class="w3-panel  w3-card-4 ">
+       <br> <br>
+       
+<p><b>21. PROPER Function : </b>Capitalizes the first letter in all words of a text string.
+</p>
+<p>Syntax : </p> 
+<p>PROPER("Text")</p>
+<p>Text refers to the text to be converted.</p>
+<p><b>Example : </b></p>
+<p>=PROPER("the document foundation") returns The Document Foundation</p> <br> <br>
+
+ <p><b>22. LEFT Function :</b>Returns the first character or characters of a text.</p>
+<p><b>Syntax : </b></p>
+<p>LEFT("Text" ; Number)</p>
+<p>Example :</p>
+<p>=LEFT("output";3) returns “out”.</p> <br> <br>
+
+<p><b>23. RIGHT Function : </b>Returns the last character or characters of a text.</p>
+ <p><b>Syntax : </b></p>
+ <p>RIGHT("Text" ; Number)</p>
+<p><b>Example : </b></p>
+<p>=RIGHT("Sun";2) returns un.</p> <br><br>
+
+<p><b>24. MID Function : </b>Returns a text string of a text. The parameters specify the starting position and the number of characters.
+</p>
+
+<p><b>Syntax :</b></p>
+<p>MID("Text"; Start; Number)</p>
+<p>Text is the text containing the characters to extract.
+</p>
+<p>Start is the position of the first character in the text to extract.
+</p>
+<p>Number specifies the number of characters in the part of the text.
+</p>
+<p><b>Example :</b></p>
+<p>=MID("office";2;2) returns ff.
+</p> <br> <br>
+
+<p><b>25. LEN Function : </b>Returns the length of a string including spaces.
+</p>
+<p> <b>Syntax :</b></p>
+<p>LEN("Text")</p>
+<p>Text is the text whose length is to be determined.
+</p>
+<p><b>Example :</b></p>
+<p>=LEN("Good Afternoon") returns 14.</p>
+<p>=LEN(12345.67) returns 8.</p> <br> <br>
+
+<p><b>26. REPT Function : </b> Repeats a character string by the given number of copies.
+</p>
+<p><b>Syntax : </b></p>
+<p>REPT("Text"; Number)</p>
+<p>Text is the text to be repeated.
+</p>
+<p>Number is the number of repetitions.
+</p>
+<p><b>Example :</b></p>
+<p> =REPT("Good morning";2) returns Good morningGood morning.</p> <br><br>
+
+
+<p><b>27. COUNTA Function : </b>Counts how many values are in the list of arguments. Text entries are also counted, even when they contain an empty string of length 0. If an argument is an array or reference, empty cells within the array or reference are ignored</p>
+<p>Syntax : </p>
+<p>COUNTA(Number 1 ; Number 2 ; … ; Number 255)</p>
+<p>Number 1, Number 2, … , Number 255 are numbers, references to cells or to cell ranges of numbers.
+</p>
+<p><b>Example : </b></p>
+<p>=COUNTA(2;4;6;"eight")</p>
+<p>Result is 4.</p>
+<br> <br>
+<p><b>28. COUNTBLANK : </b>Returns the number of empty cells.</p>
+<p><b>Syntax : </b></p>
+<p>COUNTBLANK(Range)</p>
+<p>Returns the number of empty cells in the cell range Range.
+</p>
+<p><b> Example :  </b></p>
+<p>=COUNTBLANK(A1:B2) returns 4 if cells A1, A2, B1, and B2 are all empty.</p> <br> <br>
+
+
+<p><b>29. COUNTIF  Function: </b>Returns the total number of cells that meet with certain criteria within a cell range.</p>
+<p><b>Syntax : </b></p>
+<p>COUNTIF(Range; Criteria)</p>
+
+
+<p>Range: Range is the range to which the criterion is to be applied.
+</p>
+<p>Criteria: A Criteria is a single cell Reference, Number or Text. It is used in comparisons with cell contents.
+</p> 
+<p><b>Example : </b></p>
+<p>A1:A10 is a cell range containing the numbers 2000 to 2009. Cell B1 contains the number 2006. In cell B2, you enter a formula:
+</p>
+<p>=COUNTIF(A1:A10;2006) - this returns 1.</p>
+<p>=COUNTIF(A1:A10;B1) - this returns 1.</p>
+<p>=COUNTIF(A1:A10;">=2006") - this returns 4 </p>
+
+ <br><br>
+<p><b>30. COUNTIFS Function:</b>Returns the count of cells that meet criteria in multiple ranges.</p>
+<p><b>Syntax : </b></p>
+<p>COUNTIFS(Range1; Criteria1; Range2; Criteria2; ... )</p>
+ <p><b>Range:</b> It is a range of cells, a name of a named range, or a label of a column or a row, to which the corresponding criterion is to be applied.
+ </p>
+<p><b>Criteria:</b> A criteria is a single cell Reference, Number or Text. It is used in comparisons with cell contents.
+</p>
+<p><b> Example : </b></p>
+<img src="assets/img/calc/countifs.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+<br> <br>
+
+
+<p><b>31. SUMIF Function:</b> This function is used to sum a range when you search for a certain value.
+</p>
+<p><b>Syntax : </b></p>
+<p>SUMIF(Range; Criteria; SumRange)</p>
+<p>Range: Range is the range to which the criterion is to be applied.
+</p>
+<p>Criteria: A Criteria is a single cell Reference, Number or Text. It is used in comparisons with cell contents.
+</p>
+<p>
+  SumRange: It is the given range which you want sum.</p>
+
+  <p><b>Example:</b></p> <br>
+  
+<img src="assets/img/calc/sumifexample.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+
+<p><b>32. SUMIFS Function : </b>
+  Returns the sum of the values of cells in a range that meets multiple criteria in multiple ranges.</p>
+
+  <p><b>Syntax:</b></p>
+ <p>SUMIF(SumRange,Criteria1_Range1,Criteria1,Criteria2_Range2,Criteria2,...)</p>
+ <p><b>Example : </b></p>
+ <img src="assets/img/calc/sumifsex.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+
+
+  </div></div>
+
+    </section> 
+
+
+    
+  </section> 
+
+  <section class="home-section">
+    <div id="wordprocessing" class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+     <br>
+     <br>
+     <p><b>33. DSUM Function:</b>DSUM calculates the sum of all numeric values in the cells (fields) of the specified column, for all rows (database records) that match the specified search criteria.</p>
+      <p><b>Syntax : </b></p>
+      <p>DSUM(Database; DatabaseField; SearchCriteria)</p>
+      <p><b>Example : </b></p>
+      <img src="assets/img/calc/dsum.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+      
+      <p><b>34. DAVERAGE Function : </b>
+        DAVERAGE calculates the average of the numeric values in the cells (fields) of the specified column, for all rows (database records) that match the specified search criteria.</p>
+      <p><b>Syntax : </b></p>
+      <p>DAVERAGE(Database; DatabaseField; SearchCriteria)</p>
+       <p>Example : </p> 
+       <img src="assets/img/calc/daverage.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+      
+
+       <p><b>35. DMIN Function : </b>
+        DMIN calculates the minimum value across the cells (fields) of the specified column that contain numeric values, for all rows (database records) that match the specified search criteria.</p>
+        <p><b>Syntax : </b></p>
+        <p>DMIN(Database; DatabaseField; SearchCriteria)</p>
+        <p>Example : </p>
+        <img src="assets/img/calc/dmin.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+      
+
+        <p><b>36. DMAX Function : </b>
+          DMAX calculates the maximum value across the cells (fields) of the specified column that contain numeric values, for all rows (database records) that match the specified search criteria. </p>
+          <p><b>Syntax : </b></p>
+          <p>DMAX(Database; DatabaseField; SearchCriteria)</p>
+          <p>Example : </p>
+          <img src="assets/img/calc/dmax.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+
+
+          <p><b>37. DCOUNT Function :  </b>
+            DCOUNT counts the number of cells (fields) of the specified column that contain numeric values, for all rows (database records) that match the specified search criteria</p>
+            <p><b>Syntax : </b></p>
+            <p>DMAX(Database; DatabaseField; SearchCriteria)</p>
+            <p>Example : </p>
+            
+            <img src="assets/img/calc/dcount.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+
+            <p><b> 38. DCOUNTA Function :  </b>
+              DCOUNTA counts the number of cells (fields) of the specified column that are not blank, for all rows (database records) that match the specified search criteria</p>
+            <p><b>Syntax : </b></p>
+            <p>DMAX(Database; DatabaseField; SearchCriteria)</p>
+            <p>Example : </p>
+            
+            <img src="assets/img/calc/dcounta.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+           
+           <p><b>39. FACT Function :</b>Returns the factorial of a number.</p>
+           <p><b>Syntax :</b></p>
+           <p>FACT(Number)</p>
+           <p>Returns Number!, the factorial of Number, calculated as 1*2*3*4* ... * Number.</p>
+           <p>=FACT(0) returns 1 by definition.</p>
+           <p>The factorial of a negative number returns the "invalid argument" error.</p>
+           <p>Example:</p>
+           <p>=FACT(3) returns 6.</p>
+           <p>=FACT(0) returns 1. </p> <br><br>
+
+           <p><b>40. QUOTIENT Function :</b></p>
+           <p>Returns the integer part when Numerator divided by Denominator.</p>
+           <p>Syntax :</p>
+           <p>QUOTIENT(Numerator; Denominator)</p>
+           <p>Example :</p>
+           <p>=QUOTIENT(11;3) returns 3. The remainder of 2 is lost.</p>
+           <br>
+           <br>
+
+
+
+        
+
+</div></div>
+
+  </section> 
+
+
+  
+</section> 
+
+<section class="home-section">
+  <div id="wordprocessing" class="w3-container">  
+      <div class="w3-panel  w3-card-4 ">
+   <br>
+   
+   <center> <h3><b> <u> Sorting and Filtering </u></b></h3> </center> <br>
+
+   <p><b>Sorting :</b>
+    Sorting within Calc arranges the cells in a sheet using the sort criteria that you specify.</p>
+    <br>
+    
+    <img src="assets/img/calc/sort.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+    <p> <b>I. Quick sort ascending :</b> 
+      To quickly sort a column in ascending order. </p>
+      
+     <p>  1. Select any cell inside the column</p>
+     <p> 2. Click the  Sort Ascending button.</p>  <br>
+
+
+       <p><b> II. Quick sort descending : </b>To quickly sort a column in descending order.</p>
+       
+     <p>  1. Select any cell inside the column</p>
+     <p> 2. Click the  Sort descending button.</p> <br> 
+
+     <p> <b>III. The Sort window :</b> 
+      <p> For advanced sorting you must use the  Sort command that brings the Sort Window. Using this command you can specify multiple levels of sorting and advanced options.</p>
+
+       <br>
+      <p> Below the data is not sorted. </p> <br>
+
+      <img src="assets/img/calc/unsortdata.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+      <p> For example we can set sorting by Last Name, First Name and Country.</p> <br>
+       
+    <img src="assets/img/calc/sortwindow1.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+    <p> After data sort you can see the result.</p><br>
+    
+    <img src="assets/img/calc/datasorted.png" class="w3-round" alt="image" style="width:100%"> <br> <br>
+
+    <br>
+
+
+
+      
+
+</div></div>
+
+</section> 
+
+
+
+  
+</section> 
+
+<section class="home-section">
+  <div id="wordprocessing" class="w3-container">  
+      <div class="w3-panel  w3-card-4 "> <br>
+   
+        <center> <h3><b> <u> Filtering :</u></b></h3> </center> <br>
+        <p>When a sheet contains a large amount of data, it can be difficult to find information quickly. In that case Filters can be used to narrow down the data in your worksheet, allowing you to view only the information you need.</p> <br>
+
+        <p> <b>Calc provides three types of filter:</b> <br>
+    
+          <p><b>1. AutoFilter  (CTRL + SHIFT + L): </b>  Automatically filters the selected cell range and creates one-row list boxes where you can choose the items that you want to display.</p>
+          <p><b>Create an AutoFilter :</b>
+            To create an AutoFilter simply click on the  AutoFilter Button. A drop-down arrow will appear in the header cell for each column.</p> <br> <br>
+         <p><b>2. Standard : </b>specifies the logical conditions to filter your data.</p>  <br>
+         <p><b>Steps of Standard Filter:</b></p>
+         <p>Step 1: Select all your data.</p>
+         <p>Step 2: Data Menu -> More Filter -> Standard Filter.</p>
+         <p>Step 3: Give your condition -> OK</p> <br> 
+          <p><b>3. Advanced :</b> uses filter criteria from specified cells.</p> <br>
+          <p>Step 1: Copy and paste your data heading anywhere in sheet.</p>
+          <p> Step 2: Enter data wh you want to filter and Select  all  your main data.</p>
+          <p> Step 3: Data Menu -> More Filter -> Advanced Filter.</p>
+          <p>Step 4: Select the entered data with your Heading and press Enter button.</p>
+          <br><br>
+          <center> <h3><b> <u> Subtotals:</u></b></h3> </center> <br>
+          
+            The Subtotal command allows you to automatically create groups and use common functions like SUM, COUNT, and AVERAGE to help summarize your data.</p> <br>
+            <p><b>Steps for Subtotal:</b></p>
+            <p>Step 1: Select all your data.</p>
+            <p>Step 2: Data Menu-> Subtotal</p>
+            <p>Step 3: Choose your group in (Group by)</p>
+            <p>Step 4: Tick the field which you want to calculate the Subtotal.</p>
+            <p>Step 5: Select the (Sum) from use function. Press OK Button. </p> <br> <br>
+
+            
+          <center> <h3><b> <u> Charts:</u></b></h3> </center> <br>
+          <p>A  or a graph is simply a visualization of spreadsheet data. A chart can create a clear picture of a set of data and allow users to better understand the results and see patterns inside the data.</p> <br>
+
+          <p><b>Some basic types of charts:</b></p>
+
+          <p><b>1.  Column Chart : </b> 
+            The column chart is suitable for viewing changes in data over a period of time and comparing them. In the diagrams, data series are usually organized along the horizontal X axis and the values along the vertical Y axis.</p> <br>
+            
+          <center><img src="assets/img/calc/calc-column-chart.png" class="w3-round" alt="image"></center>    <br> <br>
+          <p><b>2. Bar Chart :</b>
+            Displays values for one or more series using horizontal columns. In a bar chart, the categories are typically organized along the vertical axis, and the values along the horizontal axis.</p> <br>
+
+        
+            <center><img src="assets/img/calc/calc-bar-chart.png" class="w3-round" alt="image"></center>    <br> <br>
+
+            <p><b>3. Pie Chart :</b>
+              Pie charts make it easy to compare proportions. Each value is shown as a slice of the pie, so it's easy to see which values make up the percentage of a whole.</p>
+
+              
+            <center><img src="assets/img/calc/calc-pie-chart.png" class="w3-round" alt="image"></center>    <br> <br>
+
+            <p><b>4. Line Chart :</b>
+              Displays values as equally spaced points connected with a line. This chart is most useful displaying trends over time or other ordered category for single or multiple data series.</p>
+              
+              
+            <center><img src="assets/img/calc/calc-line-chart.png" class="w3-round" alt="image"></center> <br> <br>
+
+
+
+
+
+    <br> <br>
+
+
+
+</div></div>
+
+</section> 
+
+
+
+  
+</section> 
+
+<section class="home-section">
+  <div id="wordprocessing" class="w3-container">  
+      <div class="w3-panel  w3-card-4 ">
+        <br>
+        
+        <center> <h3><b> <u> Goal Seek :</u></b></h3> </center> <br>
+        
+        <p>Opens a dialog where you can solve an equation with a variable. After a successful search, a dialog with the results opens, allowing you to apply the result and the target value directly to the cell.
+        </p>
+         <br>
+        <p><b>Example : </b></p>
+        <br>
+        
+        <center><img src="assets/img/calc/goalseek1.png" class="w3-round" alt="image"></center> <br> <br>
+        
+        <center><img src="assets/img/calc/goalseek2.png" class="w3-round" alt="image"></center> <br> <br>
+        
+        <center><img src="assets/img/calc/goalseek3.png" class="w3-round" alt="image"></center> <br> <br>
+
+</div></div>
+
+</section> 
+
+
+
+  
+</section> 
+
+<section class="home-section">
+  <div id="wordprocessing" class="w3-container">  
+      <div class="w3-panel  w3-card-4 ">
+   =====
+</div></div>
+
+</section> 
+
+
+
+
+  
+
+     <!-- Content of body End -->
+
+
+
+     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i></a>
+
+</body>
+
+</html>
