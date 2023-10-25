@@ -1383,7 +1383,9 @@
         <br>
     </div>
    </div>
-  </section>  <section class="home-section">
+  </section> 
+  
+  <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
       <br>
@@ -2208,16 +2210,79 @@
               1). type="text” : It defines a single-line text input field. <br> 
               2). type=“submit” :It defines a submit button. <br>
             <b>Note :</b>The default value of the type attribute is <b>"text" </b> . </p>
-            <p>  <b>&#10028; &lt;label&gt; </b>   </p>
-            <p>  <b>&#10028; &lt;select&gt; </b>   </p>
-            <p>  <b>&#10028;  &lt;textarea&gt;</b>  </p>
-            <p>  <b>&#10028;  &lt;button&gt;</b>  </p>
-            <p>  <b>&#10028; &lt;fieldset&gt; </b>   </p>
-            <p>  <b>&#10028; &lt;legend&gt;</b>  </p>
-            <p>  <b>&#10028; &lt;option&gt;</b> </p>
+            <br>
 
-            <pre><code class="language-html">
+  <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+             
+  &lt;body&gt;
+  &lt;form&gt;
+  Enter First Name: &lt;input type="text"&gt; &lt;br&gt; &lt;br&gt;
+  Enter Last Name: &lt;input type="text"&gt; &lt;br&gt; &lt;br&gt;
+  &lt;input type="submit"&gt;
+               
+  &lt;/form&gt;
+  &lt;/body&gt;
+              
+  &lt;/html&gt;
           
+                      
+           </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          
+            <form>
+            Enter First Name: <input type="text"> <br> <br>
+            Enter Last Name: <input type="text"> <br> <br>
+            <input type="submit">
+                         
+            </form>
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section> 
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <p>  <b>&#10028; &lt;label&gt; </b>  : When the user clicks on the text within the &lt;label&gt; element, it focus on related input field.   </p>
+          <br>
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;form&gt;
+  Enter Name: &lt;input type="text"&gt; &lt;br&gt;&lt;br&gt;
+  &lt;label&gt; Enter Address: &lt;input type="text"&gt; &lt;/label&gt;
+  &lt;/form&gt; 
+
+  &lt;/body&gt;
+            
+  &lt;/html&gt;
           
                       
           </code></pre>
@@ -2234,7 +2299,324 @@
                    <br>
           <iframe srcdoc='
           &lt;br&gt;
+          <form>
+            Enter Name: <input type="text"> <br><br>
+            <label> Enter Address: <input type="text"> </label>
+         </form> 
          
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+           <br>
+        
+
+           <p><b>Note :</b>In this example when you click on Enter Name it will not focus on input field.
+           <br> But when you click on Enter Address it will focus on input field because of Enter Address and &lt;input&gt; tag are place
+            between &lt;label&gt; tag.</p>
+          <br>
+          <br>
+    </div>
+   </div>
+  </section> 
+  
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4> HTML Input Types are :</h4>
+  <p><b>&lt;input type="text"&gt; :</b> It defines a single-line text input field. The default value of the type attribute is “text”.</p>       
+  <p><b>&lt;input type="tel"&gt; :</b>It is used for input fields that should contain a telephone number.</p>
+ <p><b>&lt;input type="number"&gt; :</b> It displays a spinner control for entering a number.
+ </p>
+ <p><b>&lt;input type="date"&gt; :</b> It is used for input fields that should contain a date.
+ </p>
+ <p><b>&lt;input type="email"&gt; :</b> It is used for input fields that should contain an e-mail address.
+ </p>
+ <p><b>&lt;input type="password"&gt; :</b> It defines a password field.
+ </p>
+ <p><b>&lt;input type="file"&gt; :</b> It defines a file-select field and a "Browse" button for file uploads.
+ </p>
+ <p><b>&lt;input type="url"&gt; :</b> It is used for input fields that should contain a URL address.
+ </p>
+ <p><b>&lt;input type="submit"&gt; :</b> It defines a submit button.
+ </p>
+ <p><b>&lt;input type="reset"&gt; :</b> It defines a reset button that will reset all form values to their default values.
+ </p>
+ <p><b>&lt;input type="button"&gt; :</b> It defines a button display with value attribute, empty by default .
+ </p>
+ <p><b>Eg: &lt;input type="button" value="Cancel"&gt;</b></p> <br>
+
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+            
+  &lt;body&gt;
+  &lt;h1&gt;Registration Form&lt;/h1&gt;
+  &lt;form&gt;
+  &lt;label&gt; Enter First Name : &lt;input type="text"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Last Name : &lt;input type="text"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Address Name : &lt;input type="text"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Mobile : &lt;input type="tel"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Age : &lt;input type="number"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Pincode : &lt;input type="number"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Date of Birth : &lt;input type="date"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Upload Image : &lt;input type="file"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Website : &lt;input type="url"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Email : &lt;input type="email"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt; Enter Password : &lt;input type="password"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;input type="submit"&gt;
+  &lt;input type="reset"&gt;
+  &lt;input type="button" value="Cancel"&gt;
+  &lt;/form&gt;
+  &lt;/body&gt;
+            
+  &lt;/html&gt;
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+     
+          <h1>Registration Form</h1>
+          <form>
+          <label> Enter First Name : <input type="text"> </label> <br>
+          <label> Enter Last Name : <input type="text"> </label> <br>
+          <label> Enter Address Name : <input type="text"> </label> <br>
+          <label> Enter Mobile : <input type="tel"> </label> <br>
+          <label> Enter Age : <input type="number"> </label> <br>
+          <label> Enter Pincode : <input type="number"> </label> <br>
+          <label> Enter Date of Birth : <input type="date"> </label> <br>
+          <label> Enter Upload Image : <input type="file"> </label> <br>
+          <label> Enter Website : <input type="url"> </label> <br>
+          <label> Enter Email : <input type="email"> </label> <br>
+          <label> Enter Password : <input type="password"> </label> <br>
+          <input type="submit">
+          <input type="reset">
+          <input type="button" value="Cancel">
+          </form>
+         
+                   
+          'src=""  width="100%" height="350px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section> 
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4>HTML Radio buttons
+          </h4>
+          <p>
+            Radio buttons defines a collection of radio buttons describing a set of related options. Only one radio button in
+            a group can be selected at the same time.</p> 
+            &lt;input type="radio"&gt; defines a radio button in HTML form. <br> <br>
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+            
+  &lt;body&gt;
+          
+  &lt;form&gt;
+  Enter Gender:  &lt;br&gt;
+  &lt;label&gt;  &lt;input type="radio" name="gender"&gt; Male &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt;  &lt;input type="radio" name="gender"&gt; Female &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt;  &lt;input type="radio" name="gender"&gt; Other &lt;/label&gt; &lt;br&gt;
+           
+  &lt;input type="submit"&gt;
+  &lt;input type="reset"&gt;
+            
+  &lt;/form&gt;
+  &lt;/body&gt;
+            
+  &lt;/html&gt;                   
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+      
+          <form>
+            Enter Gender:  <br>
+            <label>  <input type="radio" name="gender"> Male </label> <br>
+            <label>  <input type="radio" name="gender"> Female </label> <br>
+            <label>  <input type="radio" name="gender"> Other </label> <br>
+                     
+            <input type="submit">
+            <input type="reset">
+                      
+            </form>
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          <br>
+          <p><b>Note:</b> The radio group must have share the same name (the value of the name attribute) to be treated as a group. <br>
+           <b> Note: </b> The value is not shown to the user, but is the value that is sent to the database server on <b>"submit"</b>  to identify which radio
+            button that was selected.</p>
+          <br>
+          <br>
+    </div>
+   </div>
+  </section> 
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4>Check boxes in HTML Form</h4>
+          <p>Let the user select one or more options of a limited number of choices:<br>
+            The <b>&lt;input type="checkbox"&gt;</b>  defines a checkbox.<br>
+            The checkbox is shown as a square box that is ticked (checked) when activated.</p>
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+          
+  &lt;body&gt;
+            
+  &lt;form&gt;
+  Enter your Qualification:  &lt;br&gt;
+  &lt;label&gt;  &lt;input type="checkbox" name="tenth"&gt; 10 &lt;sup&gt;th&lt;/sup&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt;  &lt;input type="checkbox" name="twelve"&gt; 12 &lt;sup&gt;th&lt;/sup&gt;&lt;/label&gt; &lt;br&gt;
+  &lt;label&gt;  &lt;input type="checkbox" name="graduate"&gt; Graduation &lt;/label&gt; &lt;br&gt; &lt;br&gt;
+  &lt;input type="submit"&gt;
+  &lt;input type="reset"&gt;
+  &lt;/form&gt;
+  
+  &lt;/body&gt;
+            
+  &lt;/html&gt;
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+           <form>
+            Enter your Qualification:  <br>
+            <label>  <input type="checkbox" name="tenth"> 10 <sup>th</sup> </label> <br>
+            <label>  <input type="checkbox" name="twelve"> 12 <sup>th</sup></label> <br>
+            <label>  <input type="checkbox" name="graduate"> Graduation </label> <br> <br>
+            <input type="submit">
+            <input type="reset">
+            </form>
+         
+                   
+          'src=""  width="100%" height="170px" >
+          &lt;br&gt;
+          </iframe>
+          <br>
+          <p> <b>Note:</b> In checkbox, the different value goes to the database server,the value in name attribute it treated as a different  user's data holder (Like this, <b>name="tenth"</b>  the word  <b>tenth</b> goes in the database server). <br> So, we must have give different value  in the name attribue.
+           <b>Note:</b>  The value is not shown to the user, but is the value that is sent to the server on "submit" to identify which check box that was selected.</p>
+          <br>
+          <br>
+    </div>
+   </div>
+  </section> 
+  
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4>Drop-Down List in HTML Form:</h4>
+          
+          The <b> &lt;select&gt;</b> element is used to create a drop-down list.<br>
+          The name attribute is needed to reference the form data after the form is submitted. <br>
+          The <b> &lt;option&gt;</b> tags inside the <b>&lt;select&gt;</b>  element define the available options in the drop-down list. <br> <br>
+       
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+            
+  &lt;form&gt;
+    &lt;label&gt;
+      Choose your State:  &lt;br&gt;
+       &lt;select name="userState"&gt; 
+        
+         &lt;option&gt; Uttar Pradesh&lt;/option&gt;
+         &lt;option&gt; Goa&lt;/option&gt;
+         &lt;option&gt; Bihar&lt;/option&gt;
+            
+       &lt;/select&gt;
+    &lt;/label&gt;
+  &lt;/form&gt;
+ 
+  &lt;/body&gt;
+  &lt;/html&gt;
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <form>
+            <label>
+              Choose your State:  <br>
+               <select name="userState"> 
+                
+                 <option> Uttar Pradesh</option>
+                 <option> Goa</option>
+                 <option> Bihar</option>
+                    
+               </select>
+            </label>
+          </form>
          
                    
           'src=""  width="100%" height="150px" >
@@ -2245,9 +2627,17 @@
           <br>
     </div>
    </div>
-  </section>  <section class="home-section">
+  </section> 
+  
+  <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
+          <br>
+          <h4>HTML Text Area</h4>
+          
+The <b>&lt;textarea&gt;</b>  tag defines a multi-line text input control. <br>
+The <b> &lt;textarea&gt;</b> element is often used in a form, to collect user inputs like comments or reviews. <br>
+The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows&gt;</b>  attributes.
           <br>
           <br>
           <pre><code class="language-html">
@@ -2279,7 +2669,8 @@
           <br>
     </div>
    </div>
-  </section>  <section class="home-section">
+  </section> 
+  <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
           <br>
