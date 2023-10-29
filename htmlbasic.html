@@ -2621,10 +2621,124 @@
                    
           'src=""  width="100%" height="150px" >
           &lt;br&gt;
+          </iframe><br><br>
+          <h4>Visible Values:</h4>
+          <p>Use the size attribute to specify the number of visible values:
+          </p>
+         <p>Here is Example: </p>
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+            
+    &lt;form &gt;
+      &lt;label&gt;Choose a your State:
+        &lt;select name="userState" size="3"&gt;
+          &lt;option value="Uttar Pradesh"&gt;Uttar Pradesh&lt;/option&gt;
+          &lt;option value="Goa"&gt;Goa&lt;/option&gt;
+          &lt;option value="Bihar"&gt;Bihar&lt;/option&gt;
+          &lt;option value="Madhya Pradesh"&gt;Madhya Pradesh&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/label&gt;
+      &lt;br&gt;&lt;br&gt;
+     &lt;input type="submit"&gt;
+    &lt;/form&gt;
+            
+  &lt;/body&gt;
+  &lt;/html&gt;        
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <form >
+            <label>Choose a your State:
+              <select name="userState" size="3">
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Goa">Goa</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+              </select>
+            </label>
+            <br><br>
+           <input type="submit">
+          </form>
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
           </iframe>
           
           <br>
           <br>
+          <h4>Allow Multiple Selections:</h4>
+          <p>  Use the <b>multiple</b> attribute to allow the user to select more than one value:
+         </p>
+             <pre><code class="language-html">
+     &lt;!DOCTYPE html&gt;
+     &lt;html&gt;
+     &lt;body&gt;
+              
+       &lt;form &gt;
+         &lt;label&gt;Choose a your State:
+           &lt;select name="userState" size="3" multiple&gt;
+              &lt;option value="Uttar Pradesh"&gt;Uttar Pradesh&lt;/option&gt;
+              &lt;option value="Goa"&gt;Goa&lt;/option&gt;
+              &lt;option value="Bihar"&gt;Bihar&lt;/option&gt;
+              &lt;option value="Madhya Pradesh"&gt;Madhya Pradesh&lt;/option&gt;
+           &lt;/select&gt;
+         &lt;/label&gt;
+       &lt;br&gt;&lt;br&gt;
+         &lt;input type="submit"&gt;
+       &lt;/form&gt;
+               
+     &lt;/body&gt;
+     &lt;/html&gt;        
+             
+                         
+             </code></pre>
+               <br>
+             
+             <center><div class="w3-container">
+                 <a href="HTMLTryitEditor.html" target="_blank">
+                 <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+                 </div>
+              </center>
+              <br>
+             
+             <h2>Output (Result) of above: </h2>
+                      <br>
+             <iframe srcdoc='
+             &lt;br&gt;
+             <form >
+              <label>Choose a your State:
+                <select name="userState" size="3" multiple>
+                   <option value="Uttar Pradesh">Uttar Pradesh</option>
+                   <option value="Goa">Goa</option>
+                   <option value="Bihar">Bihar</option>
+                   <option value="Madhya Pradesh">Madhya Pradesh</option>
+                </select>
+              </label>
+            <br><br>
+              <input type="submit">
+            </form>
+            
+                      
+             'src=""  width="100%" height="150px" >
+             &lt;br&gt;
+             </iframe>
+          
     </div>
    </div>
   </section> 
@@ -2638,8 +2752,427 @@
 The <b>&lt;textarea&gt;</b>  tag defines a multi-line text input control. <br>
 The <b> &lt;textarea&gt;</b> element is often used in a form, to collect user inputs like comments or reviews. <br>
 The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows&gt;</b>  attributes.
+<br>
+<p><b>Note :</b>The default value rows= <b>2</b> cols= <b>20</b> and font name is <b>courier (monospaced).</b> </p>
+          <br>
+          <pre><code class="language-html">
+   &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+           
+    &lt;form&gt;
+      &lt;label&gt;
+         Enter your Comments:
+         &lt;textarea  name="userComment" rows="5" cols="50"&gt;&lt;/textarea&gt;
+      &lt;/label&gt;
+      &lt;br&gt;
+      &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+            
+   &lt;/body&gt;
+   &lt;/html&gt;        
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+  <form>
+      <label>
+        Enter your Comments:
+        <textarea  name="userComment" rows="5" cols="50"></textarea>
+      </label>
+      <br>
+      <input type="submit" value="Submit">
+  </form>   
+         
+                   
+          'src=""  width="100%" height="160px" >
+          &lt;br&gt;
+          </iframe>
           <br>
           <br>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section> 
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4>The &lt;fieldset&gt; and &lt;legend&gt; Elements</h4>
+ <p>The &lt;fieldset&gt; element is used to group related data in a form.
+</p>          
+<p>The &lt;legend&gt; element defines a caption for the &lt;fieldset&gt; element.
+</p>
+          <br>
+          <pre><code class="language-html">
+ &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+     &lt;title&gt;&lt;/title&gt;
+  &lt;/head&gt;
+    &lt;body&gt;
+            
+    &lt;form&gt;
+      &lt;fieldset&gt;
+     
+        &lt;legend&gt;&lt;h2&gt;Personal Details:&lt;/h2&gt; &lt;/legend&gt;
+        &lt;label&gt; Enter Name : &lt;input type="text" autofocus&gt;&lt;/label&gt; &lt;br&gt;
+        &lt;label&gt; Enter Age : &lt;input type="number"&gt;&lt;/label&gt; &lt;br&gt;
+        &lt;label&gt; Enter DOB : &lt;input type="date"&gt;&lt;/label&gt; &lt;br&gt;
+                  
+      &lt;/fieldset&gt;
+     
+      &lt;fieldset&gt;
+     
+        &lt;legend&gt; &lt;h2&gt;Contact Details:&lt;/h2&gt; &lt;/legend&gt;
+        &lt;label&gt; Enter Mobile : &lt;input type="tel"&gt;&lt;/label&gt; &lt;br&gt;
+        &lt;label&gt; Enter Email : &lt;input type="email"&gt;&lt;/label&gt; &lt;br&gt;
+                
+                  
+      &lt;/fieldset&gt;
+      &lt;fieldset&gt;
+        
+         &lt;legend&gt;  &lt;h2&gt;Address Details: &lt;/h2&gt; &lt;/legend&gt;
+         &lt;label&gt; Enter City/Village: &lt;input type="tel"&gt;&lt;/label&gt; &lt;br&gt;
+         &lt;label&gt; Enter District : &lt;input type="email"&gt;&lt;/label&gt; &lt;br&gt;
+         &lt;label&gt; Enter State : &lt;input type="email"&gt;&lt;/label&gt; &lt;br&gt;
+                  
+     &lt;/fieldset&gt; &lt;br&gt; &lt;br&gt;
+       &lt;input type="submit" name=""&gt;
+     &lt;/form&gt;
+            
+            
+     &lt;/body&gt;
+     &lt;/html&gt;            
+          
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <form>
+            <fieldset>
+           
+              <legend><h2>Personal Details:</h2> </legend>
+              <label> Enter Name : <input type="text" autofocus></label> <br>
+              <label> Enter Age : <input type="number"></label> <br>
+              <label> Enter DOB : <input type="date"></label> <br>
+                        
+            </fieldset>
+           
+            <fieldset>
+           
+              <legend> <h2>Contact Details:</h2> </legend>
+              <label> Enter Mobile : <input type="tel"></label> <br>
+              <label> Enter Email : <input type="email"></label> <br>
+                      
+                        
+            </fieldset>
+            <fieldset>
+              
+               <legend>  <h2>Address Details: </h2> </legend>
+               <label> Enter City/Village: <input type="tel"></label> <br>
+               <label> Enter District : <input type="email"></label> <br>
+               <label> Enter State : <input type="email"></label> <br>
+                        
+           </fieldset> <br> <br>
+             <input type="submit" name="">
+           </form>
+         
+                   
+          'src=""  width="100%" height="520px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section> 
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4>HTML5 Form Validations: 
+            Input Restrictions </h4> <br>
+            <p>The <b>required :</b>  The required attribute is a boolean attribute.
+
+           <br> When present, it specifies that the element must be filled out before submitting the form.</p>
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+            
+      &lt;form &gt;
+        &lt;label&gt;
+          Enter your Email: &lt;input type="email" required&gt;
+        &lt;/label&gt; &lt;br&gt; &lt;br&gt;
+        &lt;label&gt;
+          Enter Password: &lt;input type="password" required&gt;
+        &lt;/label&gt;
+        &lt;br&gt;&lt;br&gt;
+           &lt;input type="submit"&gt;
+        &lt;/form&gt;
+            
+    &lt;/body&gt;
+  &lt;/html&gt;       
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <form >
+            <label>
+              Enter your Email: <input type="email" required>
+            </label> <br> <br>
+            <label>
+              Enter Password: <input type="password" required>
+            </label>
+            <br><br>
+               <input type="submit">
+            </form>       
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4>HTML autofocus Attribute</h4>
+          <p>The <b>autofocus </b>  attribute is a boolean attribute.
+
+            <br>When present, it specifies that the element should automatically get focus when the page loads.</p>
+       <p><b>Note : </b>The <b>autofocus</b>  attribute can be used on the following elements: <br> <b>&lt;button&gt;	
+        &lt;input&gt;
+        &lt;select&gt;	
+        &lt;textarea&gt; .</b></p>
+          <br>
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+            
+     &lt;form&gt;
+        &lt;label&gt;First name:
+        &lt;input type="text"  name="fname" autofocus&gt; &lt;/label&gt;   &lt;br&gt;&lt;br&gt;
+        &lt;label&gt;Last name:
+        &lt;input type="text"  name="lname"&gt; &lt;/label&gt;&lt;br&gt;&lt;br&gt;
+        &lt;input type="submit"&gt;
+     &lt;/form&gt;
+            
+  &lt;/body&gt;
+  &lt;/html&gt;   
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <img src="assets/img/html/autofocus.png" class="w3-round-large w3-card-4" alt="anchorwithoutfolder" style="width:100%">
+ 
+         
+                   
+          'src=""  width="100%" height="230px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+  
+ 
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4>HTML &lt;input&gt; size Attribute.</h4>
+          <br>
+          <p> The <b>size</b>  attribute specifies the visible width, in characters, of an &lt;input&gt; element. Default value is <b> 20</b>.  <br>
+
+           <b> Note:</b>  The size attribute works with the following input types: <b>text, search, tel, url, email, and password</b> . <br>
+            
+           <b>Tip:</b>  To specify the maximum number of characters allowed in the &lt;input&gt; element, use the maxlength attribute.</p> <br>
+          <pre><code class="language-html">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+            
+        &lt;form&gt;
+        &lt;label&gt; Enter your First Name:
+        &lt;input type="text"  name="fname" size="50"&gt; &lt;/label&gt;&lt;br&gt;&lt;br&gt;
+        &lt;label&gt;PIN:
+        &lt;input type="number"  name="pin" maxlength="4" size="4"&gt;&lt;/label&gt; &lt;br&gt;&lt;br&gt;
+        &lt;input type="submit" value="Submit"&gt;
+      &lt;/form&gt;
+            
+    &lt;/body&gt;
+    &lt;/html&gt;      
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <form>
+            <label> Enter your First Name:
+            <input type="text"  name="fname" size="50"> </label><br><br>
+            <label>PIN:
+            <input type="number"  name="pin" maxlength="4" size="4"></label> <br><br>
+            <input type="submit" value="Submit">
+          </form> 
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+ 
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4>HTML &lt;input&gt; maxlength and minlength Attribute :</h4>
+          <p>The <b>maxlength</b>  attribute specifies the <b>maximum number</b>  of characters allowed in the &lt;input&gt; element. <br>
+            <br>
+            The <b>minlength</b> attribute specifies the minimum number of characters required in an input field.
+           <br>
+          <b>  Note:</b>  The minlength attribute can be used with input type: text, search, url, tel, email, and password.
+          </p>
+          <br>
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+   &lt;body&gt;
+
+    &lt;form&gt;
+        &lt;label&gt;Username:
+        &lt;input type="email" name="username" maxlength="10"&gt; &lt;/label&gt;     &lt;br&gt; &lt;br&gt;
+        &lt;label&gt;Password:
+        &lt;input type="password" name="username" minlength="8"&gt; &lt;/label&gt;&lt;br&gt; &lt;br&gt;
+        &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+            
+  &lt;/body&gt;
+  &lt;/html&gt;        
+  
+    </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <form>
+            <label>Username:
+            <input type="email" name="username" maxlength="10"> </label>     <br> <br>
+            <label>Password:
+            <input type="password" name="username" minlength="8">          </label><br> <br>
+            <input type="submit" value="Submit">
+        </form> 
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <h4>HTML &lt;input&gt; min and max Attribute:</h4>
+       
+          <p>The <b>min</b>  attribute specifies the minimum value for an &lt;input&gt; element.</p>
+          <p>The <b>max</b>  attribute specifies the maximum value for an &lt;input&gt; element.</p>
+        <p><b> Note:</b>  The max and min attributes works with the following input types: number, range, date, datetime-local, month, time and week.</p>
           <pre><code class="language-html">
           
           
@@ -2669,7 +3202,8 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
           <br>
     </div>
    </div>
-  </section> 
+  </section>
+
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
@@ -2704,8 +3238,80 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
           <br>
     </div>
    </div>
-  </section> 
-  
+  </section>
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <pre><code class="language-html">
+          
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+         
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <pre><code class="language-html">
+          
+          
+                      
+          </code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+         
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+ 
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
