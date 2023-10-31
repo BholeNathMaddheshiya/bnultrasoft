@@ -2831,7 +2831,7 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
       &lt;fieldset&gt;
      
         &lt;legend&gt;&lt;h2&gt;Personal Details:&lt;/h2&gt; &lt;/legend&gt;
-        &lt;label&gt; Enter Name : &lt;input type="text" autofocus&gt;&lt;/label&gt; &lt;br&gt;
+        &lt;label&gt; Enter Name : &lt;input type="text" &gt;&lt;/label&gt; &lt;br&gt;
         &lt;label&gt; Enter Age : &lt;input type="number"&gt;&lt;/label&gt; &lt;br&gt;
         &lt;label&gt; Enter DOB : &lt;input type="date"&gt;&lt;/label&gt; &lt;br&gt;
                   
@@ -2880,7 +2880,7 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
             <fieldset>
            
               <legend><h2>Personal Details:</h2> </legend>
-              <label> Enter Name : <input type="text" autofocus></label> <br>
+              <label> Enter Name : <input type="text" ></label> <br>
               <label> Enter Age : <input type="number"></label> <br>
               <label> Enter DOB : <input type="date"></label> <br>
                         
@@ -3172,9 +3172,28 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
        
           <p>The <b>min</b>  attribute specifies the minimum value for an &lt;input&gt; element.</p>
           <p>The <b>max</b>  attribute specifies the maximum value for an &lt;input&gt; element.</p>
+          <p>The <b>step</b>  attribute specifies the interval between legal numbers in an &lt;input&gt; element.</p>
         <p><b> Note:</b>  The max and min attributes works with the following input types: number, range, date, datetime-local, month, time and week.</p>
           <pre><code class="language-html">
-          
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+  &lt;form&gt;
+            
+  &lt;label&gt;Quantity (between 1 and 5):
+  &lt;input type="number"  name="quantity" min="1" max="5"&gt;
+  &lt;/label&gt;
+  &lt;br&gt; &lt;br&gt;
+            
+  &lt;label&gt;Points (between 0 and 100) with step 5: 
+  &lt;input type="number"  name="points"  min="0" max="100" step="5"&gt;
+  &lt;/label&gt;
+            
+  &lt;input type="submit"&gt;
+            
+  &lt;/form&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;      
           
                       
           </code></pre>
@@ -3191,7 +3210,25 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
                    <br>
           <iframe srcdoc='
           &lt;br&gt;
-         
+          <!DOCTYPE html>
+          <html>
+          <body>
+          <form>
+                    
+          <label>Quantity (between 1 and 5):
+          <input type="number"  name="quantity" min="1" max="5">
+          </label>
+          <br> <br>
+                    
+          <label>Points (between 0 and 100) with step 5: 
+          <input type="number"  name="points"  min="0" max="100" step="5">
+          </label>
+                    
+          <input type="submit">
+                    
+          </form>
+          </body>
+          </html>
          
                    
           'src=""  width="100%" height="150px" >
@@ -3209,8 +3246,44 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
         <div class="w3-panel  w3-card-4 ">
           <br>
           <br>
+          <h4>HTML Pattern Attribute:</h4>
+          <p> <b>&#9733; &nbsp; a: </b> matches one character (not b, not aa, etc). </p>
+          <p> <b>&#9733; &nbsp;abc : </b>matches a, followed by b, followed by c.</p>
+          <p> <b>&#9733; &nbsp; a* : </b>matches a, * matches a character one or more times. </p>
+          <p> <b>&#9733; &nbsp; [^a] : </b>matches one character that is not a.</p>
+          <p> <b>&#9733; &nbsp; [abc]: </b>matches one character that is a, b or c.</p>
+          <p> <b>&#9733; &nbsp; [^abc]:  </b>matches one character that is not a,b,c.</p>
+          <p> <b>&#9733; &nbsp; [a-z] : </b> matches a to z in lower case letter.</p>
+          <p> <b>&#9733; &nbsp; [A-Z]: </b>matches A to Z in Upper case letter. </p>
+          <p> <b>&#9733; &nbsp; [0-9]{3}: </b> matches 0-9 (3 digit number only) </b></p>
+          <p> <b>&#9733; &nbsp; [a-zA-Z]{3,5}: </b>It matches the characters greater than 3 character and less than 5 character. </p>
+          <p> <b> &#9733; &nbsp; .{8,}:</b> It must contain 8 or more characters.</p>
+           <br>
+  
+          <p> Pattern for <b>Email : &nbsp; [a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$ </b></p>
+           <br>
+          <p> Pattern for <b>Password : &nbsp; (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}</b></p> 
+ 
+  
           <pre><code class="language-html">
-          
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+            
+  &lt;form&gt;
+            
+  &lt;label&gt;Enter Email:
+  &lt;input type="email"  name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"&gt;
+  &lt;/label&gt; &lt;br&gt;
+  &lt;label&gt;Enter Password:
+  &lt;input type="password"  name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"&gt; &lt;/label&gt; &lt;br&gt;
+  &lt;input type="submit"&gt;
+            
+  &lt;/form&gt;
+            
+  &lt;/body&gt;
+  &lt;/html&gt;       
           
                       
           </code></pre>
@@ -3227,7 +3300,17 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
                    <br>
           <iframe srcdoc='
           &lt;br&gt;
-         
+          <form>
+            
+            <label>Enter Email:
+            <input type="email"  name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+            </label> <br>
+            <label>Enter Password:
+            <input type="password"  name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"> </label> <br>
+            <input type="submit">
+                      
+            </form>     
          
                    
           'src=""  width="100%" height="150px" >
@@ -3245,8 +3328,29 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
         <div class="w3-panel  w3-card-4 ">
           <br>
           <br>
+          <h4>HTML &lt;input type="range"&gt;</h4> <br>
+          <p>Default range is <b>0 to 100 .</b></p>
+          <p>The &lt;input type="range"&gt; defines a control for entering a number whose exact value is not important (like a slider control).</p> <br>
+          <p> <b>  max - </b>It specifies the maximum value allowed.</p>
+          <p> <b>min - </b> It specifies the minimum value allowed.</p>
+          <p><b>step - </b> It specifies the legal number intervals.</p>
+       <p> <b> value - </b>It  specifies the default value.</p> <br> <br>
+   
+
           <pre><code class="language-html">
-          
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+            
+  &lt;form&gt;
+  &lt;label&gt;Volume (between 0 and 50):
+  &lt;input type="range"  name="vol" min="0" max="50"&gt;
+  &lt;/label&gt;
+  &lt;input type="submit"&gt;
+  &lt;/form&gt;
+            
+  &lt;/body&gt;
+  &lt;/html&gt;        
           
                       
           </code></pre>
@@ -3263,7 +3367,12 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
                    <br>
           <iframe srcdoc='
           &lt;br&gt;
-         
+          <form>
+          <label>Volume (between 0 and 50):
+          <input type="range"  name="vol" min="0" max="50">
+          </label>
+          <input type="submit">
+          </form>
          
                    
           'src=""  width="100%" height="150px" >
