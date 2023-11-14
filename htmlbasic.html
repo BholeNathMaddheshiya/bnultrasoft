@@ -3532,11 +3532,28 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
           <br><br>
           <h1>HTML Video</h1>
           <p>The HTML &lt;video&gt; element is used to show a video on a web page.</p>
+          <p><b>Some important points to remember.</b></p>
+          <p> &#9733; The <b>controls</b>  attribute adds video controls, like play, pause, and volume.</p>
+          <p> &#9733; The <b>&lt;source&gt;</b>  element allows you to specify alternative video files which the browser may choose from. <br> The browser will use the first recognized format.</p>
+          <p> &#9733; To start a video automatically, use the <b>autoplay</b>  attribute.</p>
+          <p> &#9733; To muted the video, use the <b>muted</b> attribue.</p>
+          <p> &#9733; The <b>loop </b> attribute is a boolean attribute. When present, it specifies that the video will start over again, every time it is finished.</p>
           <pre><code class="language-html">
 
-          
-                      
-          </code></pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+            
+     &lt;video width="320" height="240" controls&gt;
+     &lt;source  src="assets/multimedia/panda.mp4"&gt;
+     &lt;source  src="assets/multimedia/panda.mp4"&gt;
+       Your browser does not support the video tag.
+     &lt;/video&gt;
+            
+  &lt;/body&gt;
+  &lt;/html&gt;          
+
+  </code></pre>
             <br>
           
           <center><div class="w3-container">
@@ -3549,8 +3566,12 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
           <h2>Output (Result) of above: </h2>
                    <br>
           <iframe srcdoc='
-          &lt;br&gt;
-   
+         
+          <video width="320" height="240" controls>
+            <source  src="assets/multimedia/panda.mp4">
+            <source  src="assets/multimedia/panda.mp4">
+              Your browser does not support the video tag.
+            </video>
          
                    
           'src=""  width="100%" height="250px" >
@@ -3566,9 +3587,26 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
           <br><br>
-         
-          <pre><code class="language-html">
+          <h1> HTML Audio</h1>
+          <p>The HTML &lt;audio&gt; element is used to play an audio file on a web page.</p>
+          <p><b>Some important points to remember.</b></p>
+        <p> &#9733; The <b>controls</b>  attribute adds audio controls, like play, pause, and volume.</p> 
+        <p> &#9733; The <b>&lt;source&gt;</b>  element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+        </p>
+        <p>&#9733; Add  <b>muted </b> after  <b> autoplay</b> to let your audio file start playing automatically (but muted):
+        </p>
 
+          <pre><code class="language-html">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+        &lt;audio  controls  loop muted&gt;
+            &lt;source src="assets/multimedia/relax1sound.m4a"&gt;
+            &lt;source src="assets/multimedia/relaxsound.mp3"&gt;	
+               Your browser does not support the audio element.
+        &lt;/audio&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
           
                       
           </code></pre>
@@ -3585,10 +3623,14 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
                    <br>
           <iframe srcdoc='
           &lt;br&gt;
-   
+          <audio  controls  loop muted>
+            <source src="assets/multimedia/relax1sound.m4a">
+            <source src="assets/multimedia/relaxsound.mp3">	
+               Your browser does not support the audio element.
+        </audio>
          
                    
-          'src=""  width="100%" height="250px" >
+          'src=""  width="100%" height="150px" >
           &lt;br&gt;
           </iframe>
           
@@ -3601,12 +3643,28 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
           <br><br>
-         
-          <pre><code class="language-html">
-
+         <h1>HTML bgcolor attribute:</h1>
+         <p>The HTML <b>bgcolor</b>  attribute is used to set the background color of an HTML element. Bgcolor is one of those attributes that has become deprecated with the implementation of <b>Cascading Style Sheets.</b> </p>
+         <b> Syntax: </b> 
+         &lt;"tag" bgcolor="Value"&gt;  <br> <br>
+        <b>Attribute Values:</b> 
+        <p><b>color_name: </b> It sets the background color by using the color name. For example “red”.</p>
+        <p><b>hex_number:</b> It sets the background color by using the color hex code. For example “#0000ff”.</p>
+        <p><b>rgb_number:</b> It sets the background color by using the RGB code. For example: “RGB(0, 153, 0)” .
+        </p>
+         <br>
+         <p><b>Supported tags:</b> &lt;body&gt; &lt;marquee&gt; &lt;table&gt; &lt;tr&gt;  &lt;th&gt;  &lt;td&gt; </p>
+         <p><b>Note:</b> The bgcolor attribute is not supported by HTML5.</p>
+        
+         <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body bgcolor="blue"&gt;
+       &lt;h1&gt;I am a Heading&lt;/h1&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
           
-                      
-          </code></pre>
+         </code></pre>
             <br>
           
           <center><div class="w3-container">
@@ -3620,10 +3678,12 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
                    <br>
           <iframe srcdoc='
           &lt;br&gt;
-   
+          <body bgcolor="cyan">
+            <h1>I am a Heading</h1>
+          </body>
          
                    
-          'src=""  width="100%" height="250px" >
+          'src=""  width="100%" height="150px" >
           &lt;br&gt;
           </iframe>
           
@@ -3636,9 +3696,24 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
           <br><br>
+          <h1>HTML &lt;font&gt; Tag</h1>
+          <p> The base font tag is used to set all the text to the same size, color and face.</p>
+          <p> <b>Syntax:</b></p>
+          &lt;font attribute = "value"&gt; Content &lt;/font&gt; <br> <br>
+          <p><b>Default value: </b></p>
+          <p>color : <b>Black</b></p>
+          <p>face : <b>Times New Roman</b></p>
+          <p>size : <b>3</b>  [supported 1 to 7 {-n,+n }]
+          </p>
+            
          
           <pre><code class="language-html">
-
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+  &lt;font size="7" color="red" face="chiller"&gt;BNUltrasoft!&lt;/font&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
           
                       
           </code></pre>
@@ -3655,10 +3730,9 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
                    <br>
           <iframe srcdoc='
           &lt;br&gt;
-   
+          <font size="7" color="red" face="chiller">BNUltrasoft!</font>
          
-                   
-          'src=""  width="100%" height="250px" >
+            'src=""  width="100%" height="100px" >
           &lt;br&gt;
           </iframe>
           
@@ -3671,12 +3745,33 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
           <br><br>
+          <h1>HTML &lt;marquee&gt; Tag</h1>
+          <p>The &lt;marquee&gt; tag in HTML is used to create scrolling text or image in a webpages. It scrolls either from horizontally left to right or right to left, or vertically top to bottom or bottom to top.</p>
          
           <pre><code class="language-html">
-
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+            
+    &lt;body&gt;
+     &lt;marquee direction="down"  loop="2"&gt;
+         &lt;h2&gt; BNUltrasoft &lt;/h2&gt;
+     &lt;/marquee&gt;
+     &lt;marquee direction="right"  &gt;
+         &lt;h2&gt; BNUltrasoft &lt;/h2&gt;
+     &lt;/marquee&gt;
+         &lt;marquee direction="left"   &gt;
+     &lt;h2&gt; BNUltrasoft &lt;/h2&gt;
+         &lt;/marquee&gt;
+     &lt;marquee direction="up" loop="-1"&gt;
+         &lt;h2&gt; BNUltrasoft &lt;/h2&gt;
+     &lt;/marquee&gt;
+            
+    &lt;/body&gt;
+   &lt;/html&gt;
           
-                      
-          </code></pre>
+</code></pre>
             <br>
           
           <center><div class="w3-container">
@@ -3690,10 +3785,21 @@ The size of a text area is specified by the <b>&lt;cols&gt;</b>  and <b>&lt;rows
                    <br>
           <iframe srcdoc='
           &lt;br&gt;
-   
+          <marquee direction="down"  loop="2">
+            <h2> BNUltrasoft </h2>
+        </marquee>
+        <marquee direction="right"  >
+            <h2> BNUltrasoft </h2>
+        </marquee>
+            <marquee direction="left"   >
+        <h2> BNUltrasoft </h2>
+            </marquee>
+        <marquee direction="up" loop="-1">
+            <h2> BNUltrasoft </h2>
+        </marquee>
          
                    
-          'src=""  width="100%" height="250px" >
+          'src=""  width="100%" height="350px" >
           &lt;br&gt;
           </iframe>
           
