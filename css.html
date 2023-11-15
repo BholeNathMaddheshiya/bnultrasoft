@@ -11,6 +11,24 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="assets/css/practicleassignmentquestions.css">
 
+    <!-- Hightlight Start -->
+    <link rel="stylesheet" href="assets/highlight/styles/base16/harmonic16-dark.min.css">
+    <!-- <link rel="stylesheet" href="assets/highlight/styles/monokai-sublime.css"> -->
+
+    <script src="assets/highlight/es/core.js"></script>
+    <script src="assets/highlight/es/core.min.js"></script>
+    <script src="assets/highlight/es/highlight.js"></script>
+    <script src="assets/highlight/es/highlight.min.js"></script>
+    <script src="assets/highlight/languages/xml.min.js"></script>
+    <!-- <script src="assets/highlight/languages/css.min.js"></script> -->
+    <!-- normal -->
+    <script src="assets/highlight/highlight.js"></script>
+    <script src="assets/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 </head>
 
 <body>
@@ -48,9 +66,15 @@
             <p> <b>&#10028; </b> Each declaration includes a CSS property name and a value, separated by a colon.</p>   
             <p> <b>&#10028; </b> Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p> </p> 
              
+            <br>
+            <p><b>Why Use CSS?</b></p>
+            <p> CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p> 
+           
+            <br>
+            <p><b>CSS Saves a Lot of Work!</b></p>
+              <p>The style definitions are normally saved in external <b>.css</b> files.
               
-             
-         
+              With an external stylesheet file, you can change the look of an <b>entire website</b> by changing just one file!</p>
            
           <br>
           <br>
@@ -63,15 +87,319 @@
         <div class="w3-panel  w3-card-4 ">
       <br>
       <br>
-      <!-- <center> <h2><b> Types of CSS</b></h2> </center>
+      <center> <h2><b> Types of CSS</b></h2> </center>
       <br>
-      <p>There are three types of CSS or we can say there are three ways to insert </p> -->
-        
-     
+      <h3>  There are three types of CSS or we can say there are three ways to insert:</h3>
+       <h3><b>&#10028;</b> :  Inline CSS</h3> 
+       <h3><b>&#10028;</b> :  Internal/ Embedded CSS</h3> 
+       <h3><b>&#10028;</b> :  External CSS</h3> 
+         <br>
+   
+
+      
     </div>
    </div>
   </section>
   
+
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br><br>
+          <h3> <b>&#10028; </b> Inline CSS :</h3>
+          <p> &#10028; An inline style may be used to apply a unique style for a single element.</p>
+          <p> &#10028; To use inline styles, add the <b>style</b>  attribute to the relevant element. The style attribute can contain any CSS property.</p>
+         <br>
+         
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;body&gt;
+  &lt;h1 style="color:blue; text-align:center;"&gt;This is a heading.&lt;/h1&gt;
+  &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+          
+</code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <h1 style="color:blue; text-align:center;">This is a heading.</h1>
+          <p style="color:red;">This is a paragraph.</p>
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br><br>
+          <h3> <b>&#10028; </b> Internal/ Embedded CSS:</h3>
+          <p> &#10028; An internal style sheet may be used if one single HTML page has a unique style.</p>
+          <p> &#10028; The internal style is defined inside the <b>&lt;style&gt;</b> element, inside the <b>head section</b>.</p>
+         <br>
+         
+<pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  body {
+    background-color: linen;
+  }
+  
+  h1 {
+    color: maroon;
+  
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h1&gt;This is a heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt; 
+          
+</code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <style>
+            body {
+              background-color: linen;
+            }
+            
+            h1 {
+              color: maroon;
+            
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>This is a heading</h1>
+            <p>This is a paragraph.</p>
+            </body>
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br><br>
+  <h3> <b>&#10028; </b>  External CSS</h3>
+  <p> &#10028; With an external style sheet, you can change the look of an entire website by changing just one file!
+  </p>
+         
+<p>  &#10028; Each HTML page must include a reference to the external style sheet file inside the <b>&lt;link&gt;</b> element, inside the head section.
+</p>
+<p> &#10028; An external style sheet can be written in any text editor, and must be saved with a <b>.css</b> extension. <br>
+
+  The external <b>.css</b> file should not contain any HTML tags.</p> <br>
+     <p>Here is how the <b>mystyle.css</b> file looks:</p>    
+          <pre><code class="language-html">
+  body {
+      background-color: lightblue;
+    }
+            
+  h1 {
+     color: navy;
+   }
+          
+</code></pre>
+            <br>
+            <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;link rel="stylesheet" href="mystyle.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+              
+  &lt;h1&gt;This is a heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+      
+  &lt;/body&gt;
+  &lt;/html&gt;
+                      
+            </code></pre> <br>
+          
+          <center><div class="w3-container">
+              <a href="HTMLTryitEditor.html" target="_blank">
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+          <body style="background-color: lightblue;">
+
+            <h1 style="color:navy">This is a heading</h1>
+             <p>This is a paragraph.</p>    
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br><br>
+         <center> <h2><b>CSS Color Properties </b></h2> </center>
+          <p>&#10028; The <b>color</b> property specifies the color of text.</p> <br>
+           <h4>  CSS Syntax :</h4>
+           <p> <b>color :</b> color | initial | inherit;</p>
+           <br>
+          
+
+       
+           <center><div class="w3-container">
+              
+            <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor 👇 </button></a>
+            </div>
+         </center>
+         <p><b>Example :</b> CSS Color Name</p>
+           <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="VwgMGWG" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/BholeNath/pen/VwgMGWG">
+            Css ColorName</a> by Bhole Nath Maddheshiya (<a href="https://codepen.io/BholeNath">@BholeNath</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        <br>
+
+
+
+    </div>
+   </div>
+  </section>
+
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br><br>
+        
+    </div>
+   </div>
+  </section>
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br><br>
+         
+         
+    </div>
+   </div>
+  </section>
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br><br>
+         
+         
+    </div>
+   </div>
+  </section>
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br><br>
+         
+         
+    </div>
+   </div>
+  </section>
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br><br>
+         
+          <pre><code class="language-html">
+ 
+          
+</code></pre>
+            <br>
+          
+          <center><div class="w3-container">
+              
+              <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor</button></a>
+              </div>
+           </center>
+           <br>
+          
+          <h2>Output (Result) of above: </h2>
+                   <br>
+          <iframe srcdoc='
+          &lt;br&gt;
+        
+         
+                   
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+
+
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
