@@ -10,7 +10,24 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="assets/css/practicleassignmentquestions.css">
+<!-- Hightlight Start -->
+<link rel="stylesheet" href="assets/highlight/styles/base16/harmonic16-dark.min.css">
+<!-- <link rel="stylesheet" href="assets/highlight/styles/monokai-sublime.css"> -->
 
+<script src="assets/highlight/es/core.js"></script>
+<script src="assets/highlight/es/core.min.js"></script>
+<script src="assets/highlight/es/highlight.js"></script>
+<script src="assets/highlight/es/highlight.min.js"></script>
+<script src="assets/highlight/languages/xml.min.js"></script>
+<!-- <script src="assets/highlight/languages/css.min.js"></script> -->
+<!-- normal -->
+<script src="assets/highlight/highlight.js"></script>
+<script src="assets/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 </head>
 
 <body>
@@ -20,7 +37,50 @@
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
-      ====
+      <br>
+      <br>
+      <center> <h2><b> Web Site Development using W3.CSS Framework, W3.CSS Introduction</b></h2> </center>
+      <p><b>&#10028;</b> : W3.CSS is a <b>modern, responsive, mobile first</b> CSS framework.
+      </p>
+      <p><b>&#10028;</b> : W3.CSS provides equality for all browsers: <b> Chrome. Firefox. Edge. IE. Safari. Opera.</b>
+      </p>
+      <p><b>&#10028;</b> : W3.CSS provides equality for all devices: <b> Desktop. Laptop. Tablet. Mobile.</b>
+      </p>
+      <p><b>&#10028;</b> : W3.CSS is standard CSS only <b>(No jQuery or JavaScript library)</b>.
+      </p>
+      <p><b>&#10028;</b> : W3.CSS is <b> free</b>  to use. <b>No license</b> is necessary.
+      
+      </p> <br>
+
+      <h2>How To Use : Method 1 (Online Method)</h2>
+      <p>To use <b>W3.CSS</b> in your web site, just add a link  in <b>&lt;head&gt;</b> in  your web pages but it required internet connection while running the website.  </p> <br>
+    <h4>The Link is :</h4>    
+    <pre><code class="language-html">
+<b>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+      </b>
+<b>&lt;link  rel="stylesheet"  href="https://www.w3schools.com/w3css/4/w3.css"&gt;</b>
+        
+        </code>
+          </pre>
+      
+  <h2>How To Use : Method 2 (Offline Method)</h2>
+  <p> <b>&#10028;</b> To use offline method we have to download the <b>css</b> file and add file in your website.</p>
+   
+  <br><center>
+      <div class="w3-container">
+       <a href="w3.css" download>   <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Download the W3.css File</button></a>
+      </a>       
+     </div>
+     </center> <br>
+     <pre><code class="language-html">
+<b>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+</b>
+<b>&lt;link  rel="stylesheet"  href="w3.css"&gt;</b>
+              
+      </code>
+      </pre>
+
+
     </div>
    </div>
   </section>
@@ -28,7 +88,196 @@
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
-      ====
+     <br>
+     <br>
+     <center> <h2><b> W3.CSS Colors</b></h2> </center>
+     <br>
+     <br>
+     <h2>Background Colors:</h2>
+     <p> <b>&#10028;</b> The <b>w3-color</b> classes set the background color for any HTML element:
+    </p> 
+
+    <br>
+
+
+    <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+ 
+  &lt;div class="w3-aqua"&gt;
+   &lt;h2&gt;BNUltrasoft&lt;/h2&gt;
+   &lt;p&gt;This bnultrasoft website is well design website.&lt;/p&gt;
+  &lt;/div&gt;
+ 
+  &lt;/body&gt;
+  &lt;/html&gt; 
+                     
+    </code>
+    </pre>
+  
+    <h3>Output (Result) of above: </h3>
+    <br>
+<iframe srcdoc='
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+ 
+  <div class="w3-aqua">
+   <h2>BNUltrasoft</h2>
+   <p>This bnultrasoft website is well design website.</p>
+  </div>
+ 
+  </body>
+
+    
+'src=""  width="100%" height="150px" >
+&lt;br&gt;
+</iframe>
+<br>
+<br>
+<h2>Text Colors:</h2>
+<p> <b>&#10028;</b> The <b>w3-text-color</b> classes set the text color of any HTML element:
+</p> 
+<br>
+<pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div class="w3-text-blue"&gt;
+    &lt;h2&gt;BNUltrasoft&lt;/h2&gt;
+    &lt;p&gt;This bnultrasoft website is well design website.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt; 
+   
+                     
+    </code>
+    </pre>
+    <br>
+    <h3>Output (Result) of above: </h3>
+    <br>
+<iframe srcdoc='
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+  <div class="w3-text-blue">
+    <h2>BNUltrasoft</h2>
+    <p>This bnultrasoft website is well design website.</p>
+  </div>
+  </body>
+
+    
+'src=""  width="100%" height="150px" >
+&lt;br&gt;
+</iframe>
+<br>
+<br>
+<h2>Hover Colors:</h2>
+<p> <b>&#10028;</b> The <b>w3-hover-color</b> classes define the background hover color for any HTML element:
+</p> 
+<br>
+<pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div class="w3-text-blue w3-aqua w3-hover-red"&gt;
+    &lt;h2&gt;BNUltrasoft&lt;/h2&gt;
+    &lt;p&gt;This bnultrasoft website is well design website.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt; 
+   
+                     
+    </code>
+    </pre>
+    <br>
+    <h3>Output (Result) of above: </h3>
+    <br>
+<iframe srcdoc='
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+  <div class="w3-text-blue w3-aqua w3-hover-red">
+    <h2>BNUltrasoft</h2>
+    <p>This bnultrasoft website is well design website.</p>
+  </div>
+  </body>
+
+    
+'src=""  width="100%" height="150px" >
+&lt;br&gt;
+</iframe>
+<br>
+<br>
+<h2>Hover Text Colors:</h2>
+<p> <b>&#10028;</b> The <b>w3-hover-text-color </b> classes define the text hover color for any HTML element:
+</p> 
+<br>
+<pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div class="w3-text-blue w3-aqua w3-hover-text-red"&gt;
+    &lt;h2&gt;BNUltrasoft&lt;/h2&gt;
+    &lt;p&gt;This bnultrasoft website is well design website.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt; 
+   
+                     
+    </code>
+    </pre>
+    <br>
+    <h3>Output (Result) of above: </h3>
+    <br>
+<iframe srcdoc='
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+  <div class="w3-text-blue w3-aqua w3-hover-text-red">
+    <h2>BNUltrasoft</h2>
+    <p>This bnultrasoft website is well design website.</p>
+  </div>
+  </body>
+
+    
+'src=""  width="100%" height="150px" >
+&lt;br&gt;
+</iframe>
+
+
+<br>
+<br>
+
     </div>
    </div>
   </section>
@@ -36,6 +285,548 @@
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <center> <h2><b>W3.CSS Containers</b></h2> </center>
+          <p>The <b>w3-container</b> class has a default <b>16px left and right</b> padding, and <b>no top or bottom</b> padding.</p>
+      <br>
+
+      <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div class="w3-container w3-blue"&gt;
+   &lt;h2&gt;BNUltrasoft&lt;/h2&gt;
+    &lt;p&gt;This bnultrasoft website is well design website.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt; 
+         
+                           
+          </code>
+          </pre>
+          <br>
+          <h3>Output (Result) of above: </h3>
+          <br>
+      <iframe srcdoc='
+     
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        </head>
+        <body>
+        <div class="w3-container w3-blue">
+          <h2>BNUltrasoft</h2>
+          <p>This bnultrasoft website is well design website.</p>
+        </div>
+        </body>
+      
+          
+      'src=""  width="100%" height="150px" >
+      &lt;br&gt;
+      </iframe>
+      <br>
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <center> <h2><b>W3.CSS Panel</b></h2> </center>
+          <p>The <b>w3-panel</b> class adds a 16px top and bottom margin and a 16px left and right padding to any HTML element. </p>
+          <br>
+
+          <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div class="w3-panel w3-red"&gt;
+  &lt;h2&gt;BNUltrasoft&lt;/h2&gt;
+  &lt;p&gt;This bnultrasoft website is well design website.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt; 
+             
+                               
+              </code>
+              </pre>
+              <br>
+              <h3>Output (Result) of above: </h3>
+              <br>
+          <iframe srcdoc='
+         
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            </head>
+            <body>
+            <div class="w3-panel w3-red">
+              <h2>BNUltrasoft</h2>
+              <p>This bnultrasoft website is well design website.</p>
+            </div>
+            </body>
+          
+              
+          'src=""  width="100%" height="150px" >
+          &lt;br&gt;
+          </iframe>
+  
+  
+        </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <center> <h2><b>W3.CSS Borders</b></h2> </center>
+          <br>
+          <div class="w3-card-4 ">
+            <img src="assets/img/css/w3-border-notes.png" class="w3-round" alt="image" style="width:100%">
+          </div>
+          <h3>Adding Borders</h3>
+          <p>The <b>w3-border</b> classes are used to add borders to any HTML element:
+          </p>
+          <br>
+  <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div class="w3-container"&gt;
+  &lt;h2&gt;Borders&lt;/h2&gt;
+
+  &lt;div class="w3-panel w3-border"&gt;
+    &lt;p&gt;I have borders.&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="w3-panel w3-border-left"&gt;
+    &lt;p&gt;I have only a left border.&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="w3-panel w3-border-right"&gt;
+    &lt;p&gt;I have only a right border.&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="w3-panel w3-border-top w3-border-bottom"&gt;
+    &lt;p&gt;I have top and bottom borders.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt; 
+                      
+  </code>
+</pre>
+            <br>
+     <h3>Output (Result) of above: </h3>
+     <br>
+   <iframe srcdoc='
+   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body style="background-color:white;">
+    <div class="w3-container">
+    <h2>Borders</h2>
+  
+    <div class="w3-panel w3-border">
+      <p>I have borders.</p>
+    </div>
+    
+    <div class="w3-panel w3-border-left">
+      <p>I have only a left border.</p>
+    </div>
+    
+    <div class="w3-panel w3-border-right">
+      <p>I have only a right border.</p>
+    </div>
+    
+    <div class="w3-panel w3-border-top w3-border-bottom">
+      <p>I have top and bottom borders.</p>
+    </div>
+  
+    </div>                 
+ 
+                    
+                        
+    'src=""  width="100%" height="360px" >
+    &lt;br&gt;
+    </iframe>
+    <h2>Border Colors</h2>
+    <p>The <b>w3-border-color</b> classes are used to add colors to borders:</p>
+    <br>
+    <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div class="w3-container"&gt;
+  &lt;h2&gt;Border Colors&lt;/h2&gt;
+    
+  &lt;div class="w3-panel w3-border w3-border-red"&gt;
+    &lt;p&gt;I have red borders.&lt;/p&gt;
+  &lt;/div&gt;
+    
+  &lt;div class="w3-panel w3-border-left w3-border-blue"&gt;
+     &lt;p&gt;I have a blue left border.&lt;/p&gt;
+  &lt;/div&gt;
+    
+  &lt;div class="w3-panel w3-border-top w3-border-bottom w3-border-green"&gt;
+     &lt;p&gt;I have a green top and bottom border.&lt;/p&gt;
+  &lt;/div&gt;
+    
+  &lt;div class="w3-panel w3-border-left w3-pale-red w3-border-red"&gt;
+     &lt;p&gt;I have a red left border and a pale-red background color.&lt;/p&gt;
+  &lt;/div&gt;
+    
+  &lt;/div&gt;
+    
+  &lt;/body&gt;
+  &lt;/html&gt; 
+                          
+      </code>
+    </pre>
+                <br>
+         <h3>Output (Result) of above: </h3>
+         <br>
+       <iframe srcdoc='
+       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        </head>
+        <body style="background-color:white;">
+          <div class="w3-panel w3-border w3-border-red">
+            <p>I have red borders.</p>
+          </div>
+            
+          <div class="w3-panel w3-border-left w3-border-blue">
+             <p>I have a blue left border.</p>
+          </div>
+            
+          <div class="w3-panel w3-border-top w3-border-bottom w3-border-green">
+             <p>I have a green top and bottom border.</p>
+          </div>
+            
+          <div class="w3-panel w3-border-left w3-pale-red w3-border-red">
+             <p>I have a red left border and a pale-red background color.</p>
+          </div>
+            
+          </div>                
+     
+                        
+                            
+        'src=""  width="100%" height="360px" >
+        &lt;br&gt;
+        </iframe>
+        <br>
+        <h2>Thick Borders</h2>
+       <p>The <b>w3-topbar, w3-bottombar, w3-leftbar, and w3-rightbar</b> classes are used to add thick borders to an element:
+      </p> 
+      <br>
+      <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;title&gt;W3.CSS&lt;/title&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+        
+  &lt;div class="w3-container"&gt;
+  &lt;h2&gt;Thick Border Bars&lt;/h2&gt;
+       
+  &lt;div class="w3-panel w3-light-grey w3-leftbar w3-border-grey"&gt;
+      &lt;p&gt;I have a thick left border.&lt;/p&gt;
+  &lt;/div&gt;
+          
+  &lt;div class="w3-panel w3-rightbar w3-leftbar w3-border-blue w3-text-blue"&gt;
+      &lt;p&gt;I have a thick blue left and right border.&lt;/p&gt;
+  &lt;/div&gt;
+        
+  &lt;div class="w3-panel w3-topbar w3-bottombar w3-border-red w3-pale-red"&gt;
+      &lt;p&gt;I have a thick red top and bottom border and a pale-red background color.&lt;/p&gt;
+  &lt;/div&gt;
+        
+  &lt;/div&gt;
+        
+  &lt;/body&gt;
+  &lt;/html&gt; 
+                            
+        </code>
+      </pre>
+                  <br>
+           <h3>Output (Result) of above: </h3>
+           <br>
+         <iframe srcdoc='
+            
+         <head>
+          <title>W3.CSS</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+          </head>
+          <body style="background-color:white">
+                
+          <div class="w3-container">
+            <h2>Thick Border Bars</h2>
+               
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-grey">
+              <p>I have a thick left border.</p>
+            </div>
+                  
+            <div class="w3-panel w3-rightbar w3-leftbar w3-border-blue w3-text-blue">
+              <p>I have a thick blue left and right border.</p>
+            </div>
+                
+            <div class="w3-panel w3-topbar w3-bottombar w3-border-red w3-pale-red">
+              <p>I have a thick red top and bottom border and a pale-red background color.</p>
+            </div>
+                
+            </div>
+                          
+                              
+          'src=""  width="100%" height="360px" >
+          &lt;br&gt;
+          </iframe>
+          <br>
+          <h2>Hoverable Borders</h2>
+        <p>The <b> w3-hover-border-color</b> classes change the color of the border on mouse-over.</p>  
+<br>
+
+<pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;title&gt;W3.CSS&lt;/title&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+        
+  &lt;div class="w3-container"&gt;
+  &lt;h2&gt;Hoverable Borders&lt;/h2&gt;
+
+  &lt;div class="w3-panel w3-border w3-hover-border-red"&gt;
+    &lt;p&gt;Border that turns red on hover.&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="w3-panel w3-bottombar w3-border-white w3-hover-border-green"&gt;
+    &lt;p&gt;Thick (invisible) bottom border that turns green on hover.&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;/div&gt;
+        
+  &lt;/body&gt;
+  &lt;/html&gt; 
+                            
+        </code>
+      </pre>
+                  <br>
+           <h3>Output (Result) of above: </h3>
+           <br>
+         <iframe srcdoc='
+            
+         <head>
+          <title>W3.CSS</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+          </head>
+          <body style="background-color:white">
+                
+            <div class="w3-container">
+              <h2>Hoverable Borders</h2>
+            
+              <div class="w3-panel w3-border w3-hover-border-red">
+                <p>Border that turns red on hover.</p>
+              </div>
+              
+              <div class="w3-panel w3-bottombar w3-border-white w3-hover-border-green">
+                <p>Thick (invisible) bottom border that turns green on hover.</p>
+              </div>
+            </body>              
+                              
+          'src=""  width="100%" height="260px" >
+          &lt;br&gt;
+          </iframe>
+          <br>
+          <h2>Rounded Borders</h2>
+        <p>To add rounded borders, add one of the <b>w3-round-size</b> classes:</p>  
+        <br>
+        <div class="w3-card-4 ">
+          <img src="assets/img/css/w3-round.png" class="w3-round" alt="image" style="width:100%">
+        </div>
+
+        <br>
+        <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;title&gt;W3.CSS&lt;/title&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+                
+  &lt;div class="w3-container"&gt;
+
+  &lt;h2&gt;Rounded Borders&lt;/h2&gt;
+  &lt;div class="w3-panel w3-border"&gt;
+    &lt;p&gt;My borders are normal.&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="w3-panel w3-border w3-round-small"&gt;
+   &lt;p&gt;My borders are rounded (small).&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="w3-panel w3-border w3-round"&gt;
+    &lt;p&gt;My borders are rounded.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="w3-panel w3-border w3-round-large"&gt;
+    &lt;p&gt;I have large rounded borders.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="w3-panel w3-border w3-round-xlarge"&gt;
+    &lt;p&gt;I have xlarge rounded borders.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="w3-panel w3-border w3-round-xxlarge"&gt;
+    &lt;p&gt;I have xxlarge rounded borders.&lt;/p&gt;
+  &lt;/div&gt;  
+                
+  &lt;/body&gt;
+  &lt;/html&gt; 
+                                    
+                </code>
+              </pre>
+                          <br>
+                   <h3>Output (Result) of above: </h3>
+                   <br>
+                 <iframe srcdoc='
+                    
+                 <head>
+                  <title>W3.CSS</title>
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                  </head>
+                  <body>
+                        
+                    <h2>Rounded Borders</h2>
+  <div class="w3-panel w3-border">
+    <p>My borders are normal.</p>
+  </div>
+  
+  <div class="w3-panel w3-border w3-round-small">
+   <p>My borders are rounded (small).</p>
+  </div>
+  
+  <div class="w3-panel w3-border w3-round">
+    <p>My borders are rounded.</p>
+  </div>
+
+  <div class="w3-panel w3-border w3-round-large">
+    <p>I have large rounded borders.</p>
+  </div>
+
+  <div class="w3-panel w3-border w3-round-xlarge">
+    <p>I have xlarge rounded borders.</p>
+  </div>
+
+  <div class="w3-panel w3-border w3-round-xxlarge">
+    <p>I have xxlarge rounded borders.</p>
+  </div>  
+                    </body>              
+                                      
+                  'src=""  width="100%" height="490px" >
+                  &lt;br&gt;
+                  </iframe>
+
+
+      
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+          <center> <h2><b>W3.CSS Fonts</b></h2> </center>
+          
+          
+          <br>
+          <br>
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+      ====
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+      ====
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+      ====
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+      ====
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
+      ====
+    </div>
+   </div>
+  </section>
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+          <br>
+          <br>
       ====
     </div>
    </div>
