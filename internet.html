@@ -215,7 +215,7 @@
             <p><b>3. </b> When a node wants to send a message over the network, it puts a message over the network. All the stations available in the network will receive the message whether it has been addressed or not.
              </p>
 
-            <p><b>4.</b> The bus topology is mainly used in <span style="color:darkred;"> 802.3 (ethernet) and 802.4 standard networks.</span></p> 
+            <p><b>4.</b> The bus topology is mainly used in <span style="color:darkred;"> IEEE 802.3 (ethernet) and IEEE 802.4 (IEEE stands for Institute of Electrical and Electronics Engineers) </span> standard networks.</p> 
             <p><b>5.</b> The configuration of a bus topology is quite simpler as compared to other topologies.</p>
             <p><b>6.</b> The backbone cable is considered as a <b>"single lane"</b> through which the message is broadcast to all the stations.</p>
             <p><b>7.</b> The most common access method of the bus topologies is <b>CSMA (Carrier Sense Multiple Access)</b>.</p> <br>
@@ -240,6 +240,7 @@
 <p><b>3.</b>If two nodes send the messages simultaneously, then the signals of both the nodes <b>collide</b> with each other.</p>
 <p><b>4.</b> Adding new devices to the network would <b>slow down</b> the network.
 <p><b>5.</b> <b>Need terminators</b> are required at both ends of the main cable.</p> 
+<p><b>6.</b> The main disadvantage of bus topology is, if the <span style="color:darkred;">  main cable (backbone cable) is break then whole network is break down.</span> </p> 
 <br> <br>
 
        
@@ -263,7 +264,7 @@
 
 <p><b>1.</b> Ring topology is like a bus topology, but with connected <span style="color:darkred;">ends</span> (i.e., each node is connected to other node and having <span style="color: darkred;">no termination point</span>).</p>
 <p><b>2.</b> The node that receives the message from the <span style="color:darkred;">previous computer will retransmit to the next node.</span></p>
-<p><b>3.</b> If the data flows in one direction, i.e., it is unidirectional in the other hand,if the data flows in two direction, i.e., it is bidirectional</p>
+<p><b>3.</b> If the data flows in one direction, i.e., it is unidirectional in the other hand, if the data flows in two direction, i.e., it is bidirectional</p>
 
 <p><b>4.</b> The data in a ring topology flow in a clockwise direction (if it is unidirectional).</p>
 <p><b>5. Token passing:</b>  It is a network access method in which token is passed from one node to another node (a token is used as a carrier).</p>
@@ -275,23 +276,25 @@
 
 <br>
 <p><b>
-  Advantages of Ring Topology</b></p>
+  &#9733;  Advantages of Ring Topology</b></p>
 
-  <p>1. The data transmission is high-speed.
+  <p><b>1.</b> FDDI (Fiber Distributed Data Interface) is a standard for data transmission on fiber optic cables. It uses a ring topology to transmit data at high speeds. 
   </p>
 
-  <p>2. The possibility of collision is minimum in this type of topology.
+  <p><b>2.</b> The possibility of collision is minimum in this type of topology.
   </p>
- <p>3. Cheap to install.
+ <p><b>3.</b> Cheap to install.
 </p>
-<p><b>Disadvantages of Ring Topology
+<p>  &#9733; <b>Disadvantages of Ring Topology
 </b></p>  
-<p> 1. The failure of a single node in the network can cause the entire network to fail.
+<p> <b>1.</b> The failure of a single node in the network can cause the entire network to fail.
 </p>
-<p>2. Troubleshooting is difficult in this topology.
+<p><b>2.</b> Troubleshooting is difficult in this topology.
 </p>
-<p>3. The addition of stations in between or the removal of stations can disturb the whole topology.
+<p><b>3.</b> The addition of stations in between or the removal of stations can disturb the whole topology.
 </p>
+<p><b>4.</b> In order for all the computer to communicate with each other, all computer must be turned on.</p>
+<p><b>5.</b> If one workstation shuts down, it affects whole network or if a node goes down entire network goes down.</p>
 <br><br>
 
   </div></div>
@@ -306,36 +309,37 @@
           <h4 class="w3-center"> <b> Star Topology</b></h4> 
          
           <img src="assets/img/internet/computer-network-topologies-star-topology.png" class="w3-round" alt="Writer image"  style="width: 100%;"> <br>   <br>
-<p>1. Star topology is an arrangement of the network in which every node is connected to the central hub, switch or a central computer.
+<p><b>1.</b> Star topology is an arrangement of the network in which every node is connected to the <span style="color:darkred;"> central hub or switch.</span> 
 </p>
-<p>2. The central computer is known as a server, and the peripheral devices attached to the server are known as clients.
+<p><b>2.</b> The central computer is known as a <span style="color:darkred;">  server,</span> and the peripheral devices attached to the server are known as <span style="color:darkred;">clients</span> .
 </p>
-<p>3. Coaxial cable or RJ-45 cables are used to connect the computers.
+<p><b>3.</b><span style="color:darkred;"> Coaxial cable or RJ-45 cables</span>  are used to connect the computers.
 </p>
-<p>4. Hubs or Switches are mainly used as connection devices in a physical star topology.
+<p><b>4.</b><span style="color:darkred;"> Hubs or Switches</span>  are mainly used as connection devices in a physical star topology.
 </p>
-<p>5. Star topology is the most popular topology in network implementation.
+<p><b>5.</b> Star topology is the most popular topology in network implementation.
 </p>
+<p><b>6.</b> Star networks require a <span style="color:darkred;"> point-to-point connection</span>  between the central node.</p>
 <br>
 <p><b>Advantages of Star Topology</b></p>
 
-<p>1. If N devices are connected to each other in a star topology, then the number of cables required to connect them is N. So, it is easy to set up.
+<p><b>1.</b> If <b>N</b> devices are connected to each other in a star topology, then the number of cables required to connect them is <b>N</b>. So, it is easy to set up.
 </p>
-<p>2.   It is high-performing as no data collisions can occur.
+<p><b>2. </b>  It is high-performing due to here<span style="color:darkred;">no data collisions can occur</span> .
   </p>
-<p>3. Robust in nature.</p>
- <p>4. Easy fault detection because the link are often easily identified.
+<p><b>3.</b> <span style="color:darkred;">Robust  </span>  in nature.</p>
+ <p><b>4.</b> Easy <span style="color:darkred;">fault detection</span>  because the link are often easily identified.
 </p> 
-<p>5. No disruptions to the network when connecting or removing devices.
+<p><b>5.</b> <span style="color:darkred;"> No disruptions</span>  to the network when connecting or removing devices.
 </p>
 <br>
 <p><b>Disadvantages of Star Topology</b></p>
-<p>1. If the concentrator (hub) on which the whole topology relies fails, the whole system will crash down.
-</p>
+<p><b>1.</b> If the concentrator (hub) on which the whole topology relies on <span style="color:darkred;"> if it is fails, then the whole system will crash down.
+</p></span> 
 
-<p>2. More expensive than linear bus topology due to the value of the connecting devices (network switches).</p>
-<p>3. Hub requires more resources and regular maintenance because it’s the central system of star .</p>
-<p>4. Extra hardware is required (hubs or switches) which adds to cost.</p>
+<p><b>2.</b> More expensive than linear bus topology due to the value of the connecting devices (network switches).</p>
+<p><b>3.</b> <span style="color:darkred;"> Hub requires more resources and regular maintenance</span>  because it’s the central system of star .</p>
+<p><b>4.</b> Extra hardware is required (hubs or switches) which adds to cost.</p>
 
 <br> <br>
 
@@ -351,7 +355,7 @@
         <div class="w3-panel  w3-card-4 ">
     <br>
 
-    <p><b>4. Tree topology</b></p>
+   <h4 class="w3-center"> <b> Tree topology</b></h4> 
 
     <img src="assets/img/internet/computer-network-topologies-tree-topology.png" class="w3-round" alt="Writer image"  style="width: 100%;"> <br>   <br>
 
