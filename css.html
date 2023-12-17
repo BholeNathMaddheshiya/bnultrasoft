@@ -329,11 +329,11 @@
         <p><b>property:</b> initial;</p>
          
          
-          <center><div class="w3-container">
+          <div class="w3-container w3-center">
               
             <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor 👇 </button></a>
             </div>
-         </center>
+         
         <p><b>Example : </b> CSS color initial</p>
         <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="VwgMGBq" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
           <span>See the Pen <a href="https://codepen.io/BholeNath/pen/VwgMGBq">
@@ -374,23 +374,89 @@
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
-          <br><br>
-          <h3> <b>&#10028; </b>  CSS RGB Colors</h3>
-          <p>In CSS, a color can be specified as an RGB value, using this formula:</p>
-          <p><b> rgb(red, green, blue) </b></p>
-          <p> &#10028;  Each parameter (red, green, and blue) defines the intensity of the color between <b>0 and 255</b>.</p>
-          <p> &#10028;  For example, <b>rgb(255, 0, 0)</b> is displayed as red, because red is set to its highest value <b> (255)</b> and the others are set to <b>0</b>.
+          <br>
+          <h3 class="w3-center"> CSS Legal Color Values</h3>
+          <p> Colors in CSS can be specified by the following methods:
           </p>
-          <p> &#10028;  To display <b>black</b>, set all color parameters to 0, like this: <b>rgb(0, 0, 0)</b>.</p>
-          <p> &#10028; To display <b>white</b>, set all color parameters to 255, like this: <b>rgb(255, 255, 255)</b>.</p>
+
+          <ul class="w3-ul">
+            <li> <a href="#hexadecimalcolor" style="text-decoration: none;">1) Hexadecimal colors </a></li>
+            <li><a href="#hexadecimalcolorwithtransparency" style="text-decoration: none;">2)  Hexadecimal colors with transparency </a></li>
+            <li><a href="#rgbcolor" style="text-decoration: none;">3) RGB colors </a> </li>
+            <li> <a href="#rgbacolor" style="text-decoration: none;">4) RGBA colors </a> </li>
+            <li> <a href="#hslcolor" style="text-decoration: none;">5) HSL colors  </a></li>
+            <li><a href="#hslacolor" style="text-decoration: none;">6) HSLA colors</a>  </li>
+            <li> <a href="#predefinedcolor" style="text-decoration: none;">7) Predefined/Cross-browser color names </a> </li>
+            <li> <a href="#currentcolor" style="text-decoration: none;"> 8) With the <span style="color:blue">currentcolor </span> keyword</a>  </li>
+
+          </ul>
           <br>
-          <p><b>Note:</b> rgb() value support percent also. Eg: background-color: rgb(0%,0%,100%); </p>
+          <hr style="background-color: black; height: 1px;">
           <br>
-          <center><div class="w3-container">
+
+         <h4 id="hexadecimalcolor"> 1) Hexadecimal Colors </h4>
+    <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color. 
+        </p>
+      <p> All values must be between 00 and FF.
+      </p> <br>
+     
+     
+
+   <p> <b>For example, </b>  the #0000ff value is rendered as blue, because the blue component is set to its highest value (ff) and the others are set to 00.
+   </p>   
+   <div class="w3-container w3-center">
+              
+    <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor 👇 </button></a>
+  </div>
+  <br>
+   <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="RwvdvRy" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/BholeNath/pen/RwvdvRy">
+    Hexadecimal Colors</a> by Bhole Nath Maddheshiya (<a href="https://codepen.io/BholeNath">@BholeNath</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          
+  <br>
+  <hr style="background-color: black; height: 1px;">
+  <br> 
+  <h4 id="hexadecimalcolorwithtransparency"> 2) Hexadecimal Colors With Transparency </h4>    
+ <p> A hexadecimal color is specified with: <span style="color: brown;">#RRGGBB</span> .  <br> To add transparency, add two additional digits between <span style="color: brown;">00 and FF</span> .   
+</p>
+ <br>
+ <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="RwvdvoJ" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/BholeNath/pen/RwvdvoJ">
+  Hexadecimal Colors With Transparency</a> by Bhole Nath Maddheshiya (<a href="https://codepen.io/BholeNath">@BholeNath</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+   
+<br>
+<hr style="background-color: black; height: 1px;">
+<br> 
+<h4 id="rgbcolor">3)  RGB Colors</h4>
+<ul class="w3-ul">
+  <li> &#10028; An RGB color value is specified with the <span style="color: brown;"> rgb() function</span> , which has the following:
+    <br> syntax: <span style="color: brown;">rgb(red, green, blue)</span> 
+  </li>
+  <li> &#10028; Each parameter <span style="color: brown;">(red, green, and blue)</span>  defines the intensity of the color and can be an integer between <span style="color: brown;">0 and 255 </span>  or a percentage value <span style="color: brown;">(from 0% to 100%)</span> .
+  </li>
+
+  <li> &#10028; For example, the rgb(0,0,255) value is rendered as blue, because the blue parameter is set to its highest value (255) and the others are set to 0.
+  </li>
+
+  <li> &#10028; Also, the following values define equal color: <span style="color: brown;">  rgb(0,0,255) and rgb(0%,0%,100%) </span>.     
+  </li>
+
+</ul>
+
+  
+</p>
+
+<div class="w3-container w3-center">
               
             <button  class="w3-button w3-blue w3-text-white w3-hover-blue  w3-round-large w3-card-2">Tryit with LIVE Editor 👇 </button></a>
             </div>
-         </center>
+          
          <p><b>Example : </b> CSS RGB Colors</p>
 
           <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="gOqGQpx" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -399,8 +465,117 @@
             on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
           <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-         <br>
-         <br>
+  <br>
+   <hr style="background-color: black; height: 1px;">
+   <br> 
+
+   <h4 id="rgbacolor">4)  RGBA Colors</h4>
+
+    <ul class="w3-ul">
+      <li> &#10028; RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the object.
+      </li>
+      <li> &#10028; An RGBA color is specified with the <span style="color: brown;">rgba() function</span> , which has the following syntax:
+      </li>
+      <li> &#10028; <span style="color: brown;"> rgba(red, green, blue, alpha) </span> </li>
+    <li>&#10028; The alpha parameter is a number between <span style="color: brown;">0.0 (fully transparent) and 1.0 (fully opaque)</span> .
+    </li>
+    </ul>
+  <br>
+  <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="BaMbMJE" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/BholeNath/pen/BaMbMJE">
+    RGBA Colors</a> by Bhole Nath Maddheshiya (<a href="https://codepen.io/BholeNath">@BholeNath</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  <br>
+  <hr style="background-color: black; height: 1px;">
+  <br> 
+  <h4 id="hslcolor">5)  HSL Colors</h4>
+   <ul class="w3-ul">
+    <li>&#10028; HSL stands for <span style="color: brown;"> hue, saturation, and lightness </span> - and represents a cylindrical-coordinate representation of colors.
+    </li>
+    <li> &#10028;  An HSL color value is specified with the  <span style="color: brown;">hsl() function</span> , which has the following syntax:
+    </li>
+   <li> &#10028; <span style="color: brown;">hsl(hue, saturation, lightness)</span> 
+    </li>
+    <li> &#10028; Hue is a degree on the color wheel <span style="color: brown;"> (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue</span>. 
+    </li>
+    <li> &#10028;  Saturation is a percentage value; 0% means a shade of gray and 100% is the full color. </li>
+    <li>  &#10028;   Lightness is also a percentage; 0% is black, 100% is white.
+    </li>
+   </ul>
+   <br>
+   <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="MWLxLXj" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/BholeNath/pen/MWLxLXj">
+    HSL Colors</a> by Bhole Nath Maddheshiya (<a href="https://codepen.io/BholeNath">@BholeNath</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+  <br>
+<hr style="background-color: black; height: 1px;">
+<br> 
+<h4 id="hslacolor">6) HSLA Colors</h4>
+<ul class="w3-ul">
+<li> &#10028; HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity of the object.
+</li>
+<li> &#10028;An HSLA color value is specified with the <span style="color: brown;">hsla() function</span> , which has the following syntax:
+</li>
+<li> &#10028; <span style="color: brown;">hsla(hue, saturation, lightness, alpha)</span> 
+</li> 
+<li> &#10028; The alpha parameter is a number between <span style="color: brown;">  0.0 (fully transparent) and 1.0 (fully opaque).</span>
+</li>
+</ul>
+<br>
+
+<p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="VwgRgGB" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/BholeNath/pen/VwgRgGB">
+  HSLA Colors</a> by Bhole Nath Maddheshiya (<a href="https://codepen.io/BholeNath">@BholeNath</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<br>
+<hr style="background-color: black; height: 1px;">
+<br> 
+<h4 id="predefinedcolor"> 7) Predefined/Cross-browser Color Names</h4>
+<ul class="w3-ul">
+  <li> &#10028; <span style="color: brown;"> 140 color  </span>names are predefined in the HTML and CSS color specification.
+  </li>
+  <li>  &#10028; For example:  <span style="color: brown;">blue, red, coral, brown, etc:</span> 
+  </li>
+
+</ul>
+  <br>
+  <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="qBgvggY" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/BholeNath/pen/qBgvggY">
+    Predefined/Cross-browser Color Names</a> by Bhole Nath Maddheshiya (<a href="https://codepen.io/BholeNath">@BholeNath</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+  <br>
+  <hr style="background-color: black; height: 1px;">
+  <br> 
+  <h4 id="currentcolor"> 8) The currentcolor Keyword</h4>
+ 
+ <ul class="w3-ul">
+ <li> &#10028; The  <span style="color: brown;"> currentcolor </span> keyword refers to the value of the color property of an element.
+</li>  
+</ul>
+<br>
+<p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="WNPmmvw" data-editable="true" data-user="BholeNath" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/BholeNath/pen/WNPmmvw">
+  The currentcolor Keyword</a> by Bhole Nath Maddheshiya (<a href="https://codepen.io/BholeNath">@BholeNath</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<br>
+  <br>
+ <br>
+
+
+
 
         
     </div>

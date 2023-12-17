@@ -54,9 +54,9 @@
              <h5 class="w3-center"> <b>Note:</b> Assignment work must be neat and clean  handwriting.</h5>
              <div style="display:flex;">
  
-                <img src="assets/img/olevelassigments/A4File.png" class="w3-border w3-border-black" alt="File" style="margin:5px;padding:6px;width:50%; ">
+                <!-- <img src="assets/img/olevelassigments/A4File.png" class="w3-border w3-border-black" alt="File" style="margin:5px;padding:6px;width:50%; ">
                <img src="assets/img/olevelassigments/A4page.png" class="w3-border w3-border-black" alt="Page" style="margin:5px;padding:6px;width:50%; ">
-            
+             -->
             </div>
             <br>
             <div class="w3-center">
@@ -134,25 +134,54 @@
 <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS1')">Hide Answer</button>
 <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS1')">Show Answer</button>   
 
-<hr style="background-color: black; height: 1px;">
+<hr style="background-color: black; height: 1px;" >
 
-<section id="HS1" class="home-section">
+<section id="HS1" class="home-section" style="display: none;">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
 <br>
             
 <pre><code class="language-html">
     
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt; computer&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Computer &lt;/h1&gt;
+   
+    &lt;p&gt; A computer is a machine or device that performs processes, calculations and operations based on instructions provided by a software or hardware program. 
+    It has the ability to accept data (input), process it, and then produce outputs.&lt;/p&gt;
+    
+    &lt;p&gt; Computers can also store data for later uses in appropriate storage devices, and retrieve whenever it is necessary.
+    They are designed to execute applications and provide a variety of solutions by combining integrated hardware and software components.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
                 
 </code></pre>
                 
 
-<h4>Output (Result) of above: </h4>
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+<h3><b>Save it:</b> first_page.html</h3>
 <iframe srcdoc='
 
+<h1>Computer </h1>
+   
+<p> A computer is a machine or device that performs processes, calculations and operations based on instructions provided by a software or hardware program. 
+It has the ability to accept data (input), process it, and then produce outputs.</p>
+
+<p> Computers can also store data for later uses in appropriate storage devices, and retrieve whenever it is necessary.
+They are designed to execute applications and provide a variety of solutions by combining integrated hardware and software components.
+</p>
 
     
-'src=""  width="100%" height="150px" >
+'src=""  width="100%" height="300px" >
 &lt;br&gt;
 </iframe>
 
@@ -168,51 +197,128 @@
 
 
 
-            <li><b>Q 2.</b> Write a HTML program to design a form which should allow to enter your personal data (
-                <b>Hint:</b> make use of text field, password field, e-mail, lists, radio buttons, checkboxes,
-                submit button)</li>
+<li><b>Q 2.</b> Write a HTML program to design a form which should allow to enter your personal data (
+<b>Hint:</b> make use of text field, password field, e-mail, lists, radio buttons, checkboxes,
+submit button)</li>
 
 
-                <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS2')">Hide Answer</button>
-                <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS2')">Show Answer</button>   
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS2')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS2')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;">
+
+<section id="HS2" class="home-section" style="display: none;">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+<br>
+            
+<pre><code class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; Registration Form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt; Registration Form&lt;/h2&gt;
+&lt;form&gt;
+&lt;label&gt; First Name: &lt;input type="text"&gt; &lt;/label&gt;  &lt;br&gt;
+&lt;label&gt; Last Name: &lt;input type="text"&gt; &lt;/label&gt;  &lt;br&gt;
+&lt;label&gt; Enter Email: &lt;input type="email"&gt; &lt;/label&gt;  &lt;br&gt;
+&lt;label&gt; Enter Password: &lt;input type="password"&gt; &lt;/label&gt;  &lt;br&gt; &lt;br&gt;
+
+Enter Gender:  &lt;br&gt;
+&lt;label&gt; &lt;input type="radio" name="gender" value="Male"&gt; Male &lt;/label&gt;
+&lt;label&gt; &lt;input type="radio" name="gender" value="Female"&gt; Female &lt;/label&gt;&lt;br&gt; &lt;br&gt;
+
+Select your state: 
+&lt;select name="userState" &gt;
+    &lt;option value="Uttar Pradesh"&gt;Uttar Pradesh&lt;/option&gt;
+    &lt;option value="Bihar"&gt;Bihar&lt;/option&gt;
+    &lt;option value="Madhya Pradesh"&gt;Madhya Pradesh&lt;/option&gt;
+&lt;/select&gt; &lt;br&gt; &lt;br&gt;
+
+Choose your language: &lt;br&gt;
+&lt;label&gt; &lt;input type="checkbox" name="lang1" value="Hindi"&gt; Hindi &lt;/label&gt;
+&lt;label&gt; &lt;input type="checkbox" name="lang2" value="English"&gt; English &lt;/label&gt; &lt;br&gt; &lt;br&gt;
+    
+    Password must be : &lt;br&gt;
+    &lt;ol&gt;
+    &lt;li&gt;At least 1 Capital Letter.&lt;/li&gt;
+    &lt;li&gt;At least 1 Small Letter.&lt;/li&gt;
+    &lt;li&gt;At least 1 any digit.&lt;/li&gt;
+    &lt;li&gt;At least 1 any special letter.&lt;/li&gt;
+    &lt;/ol&gt;  
+    
+    &lt;br&gt;
+    &lt;input type="submit"&gt;
+    
+&lt;/form&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
                 
-                <hr style="background-color: black; height: 1px;">
+</code></pre>
                 
-                <section id="HS2" class="home-section">
-                    <div  class="w3-container">  
-                        <div class="w3-panel  w3-card-4 ">
-                <br>
-                            
-                <pre><code class="language-html">
-                    
-                                
-                </code></pre>
-                                
-                
-                <h4>Output (Result) of above: </h4>
-                <iframe srcdoc='
-                
-                
-                    
-                'src=""  width="100%" height="150px" >
-                &lt;br&gt;
-                </iframe>
-                
-                <br>
-                <br>
-                </div>
-                </div>
-                </section>
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+<iframe srcdoc='
+<h2> Registration Form</h2>
+<form>
+    <label> First Name: <input type="text"> </label>  <br>
+    <label> Last Name: <input type="text"> </label>  <br>
+    <label> Enter Email: <input type="email"> </label>  <br>
+    <label> Enter Password: <input type="password"> </label>  <br> <br>
+    
+    Enter Gender:  <br>
+    <label> <input type="radio" name="gender" value="Male"> Male </label>
+    <label> <input type="radio" name="gender" value="Female"> Female </label><br> <br>
+    
+    Select your state: 
+    <select name="userState" >
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+    </select> <br> <br>
+    
+    Choose your language: <br>
+    <label> <input type="checkbox" name="lang1" value="Hindi"> Hindi </label>
+    <label> <input type="checkbox" name="lang2" value="English"> English </label> <br> <br>
+        
+        Password must be : <br>
+        <ol>
+        <li>At least 1 Capital Letter.</li>
+        <li>At least 1 Small Letter.</li>
+        <li>At least 1 any digit.</li>
+        <li>At least 1 any special letter.</li>
+        </ol>  
+        
+        <br>
+        <input type="submit">
+        
+    </form>
+
+    
+'src=""  width="100%" height="480px" >
+&lt;br&gt;
+</iframe>
+
+<br>
+<br>
+</div>
+</div>
+</section>
                            
 
 
             <li><b>Q 3.</b>  Write html code to generate following output. 
                 <ul class="w3-ul">
                     <li> 1.Coffee</li>
-                    <li>  2.Tea </li>
-                    <li>  3.Black Tea </li>
-                    <li>4.Green Tea</li>
-                    <li>  5.Milk</li>
+                    <li> 2.Tea </li>
+                    <li> 3.Black Tea </li>
+                    <li> 4.Green Tea</li>
+                    <li> 5.Milk</li>
                 </ul>
                </li>
                <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS3')">Hide Answer</button>
@@ -220,20 +326,46 @@
 
 <hr style="background-color: black; height: 1px;">
 
-<section id="HS3" class="home-section">
+<section id="HS3" class="home-section" style="display: none;">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
 <br>
             
 <pre><code class="language-html">
-    
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ol&gt;
+        
+        &lt;li&gt;Coffee&lt;/li&gt;
+        &lt;li&gt;Tea&lt;/li&gt;
+        &lt;li&gt;Black Tea&lt;/li&gt;
+        &lt;li&gt;Green Tea&lt;/li&gt;
+        &lt;li&gt;Milk&lt;/li&gt;
+
+    &lt;/ol&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; 
                 
 </code></pre>
                 
 
-<h4>Output (Result) of above: </h4>
+<h4 class="w3-center">Output (Result) of above: </h4>
 <iframe srcdoc='
+<ol>
+        
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Black Tea</li>
+    <li>Green Tea</li>
+    <li>Milk</li>
 
+</ol>
 
     
 'src=""  width="100%" height="150px" >
@@ -257,23 +389,38 @@
 
 <hr style="background-color: black; height: 1px;">
 
-<section id="HS4" class="home-section">
+<section id="HS4" class="home-section" style="display: none;">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
 <br>
             
 <pre><code class="language-html">
-    
+  
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Link&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;Open link in a new window or tab: 
+
+&lt;a href="https://www.bnultrasoft.com" target="_blank"&gt;Visit BNUltrasoft!&lt;/a&gt; &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
                 
 </code></pre>
                 
 
-<h4>Output (Result) of above: </h4>
+<h4 class="w3-center">Output (Result) of above: </h4>
 <iframe srcdoc='
 
+<p>Open link in a new window or tab: 
 
+<a href="https://www.bnultrasoft.com" target="_blank">Visit BNUltrasoft!</a> </p>
     
-'src=""  width="100%" height="150px" >
+'src=""  width="100%" height="100px" >
 &lt;br&gt;
 </iframe>
 
@@ -289,167 +436,323 @@
 
 
 
-                    <li> 2. Creating a web link that opens in the same window.
-                    </li>
+<li> 2. Creating a web link that opens in the same window.
+</li>
 
-                    <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS5')">Hide Answer</button>
-                    <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS5')">Show Answer</button>   
-                    
-                    <hr style="background-color: black; height: 1px;">
-                    
-                    <section id="HS5" class="home-section">
-                        <div  class="w3-container">  
-                            <div class="w3-panel  w3-card-4 ">
-                    <br>
-                                
-                    <pre><code class="language-html">
-                        
-                                    
-                    </code></pre>
-                                    
-                    
-                    <h4>Output (Result) of above: </h4>
-                    <iframe srcdoc='
-                    
-                    
-                        
-                    'src=""  width="100%" height="150px" >
-                    &lt;br&gt;
-                    </iframe>
-                    
-                    <br>
-                    <br>
-                    </div>
-                    </div>
-                    </section>
-                               
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS5')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS5')">Show Answer</button>   
 
-                    <li>  3. Create a reference within the same html document.
-                    </li>
+<hr style="background-color: black; height: 1px;">
 
+<section id="HS5" class="home-section" style="display: none;">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+<br>
+            
+<pre><code class="language-html">
+   
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Link&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-                    <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS6')">Hide Answer</button>
-                    <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS6')">Show Answer</button>   
-                    
-                    <hr style="background-color: black; height: 1px;">
-                    
-                    <section id="HS6" class="home-section">
-                        <div  class="w3-container">  
-                            <div class="w3-panel  w3-card-4 ">
-                    <br>
-                                
-                    <pre><code class="language-html">
-                        
-                                    
-                    </code></pre>
-                                    
-                    
-                    <h4>Output (Result) of above: </h4>
-                    <iframe srcdoc='
-                    
-                    
-                        
-                    'src=""  width="100%" height="150px" >
-                    &lt;br&gt;
-                    </iframe>
-                    
-                    <br>
-                    <br>
-                    </div>
-                    </div>
-                    </section>
-                               
+&lt;p&gt;Open link in  the same window 
+
+&lt;a href="https://www.bnultrasoft.com" target="_self"&gt;Visit BNUltrasoft!&lt;/a&gt; &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                
+</code></pre>
+                
+
+<h4>Output (Result) of above: </h4>
+<iframe srcdoc='
+
+<p>Open link in  the same window
+
+<a href="https://www.bnultrasoft.com" target="_self">Visit BNUltrasoft!</a> </p>
+    
+'src=""  width="100%" height="100px" >
+&lt;br&gt;
+</iframe>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+            
+
+<li>  3. Create a reference within the same html document.
+</li>
 
 
-                    <li>  4. Reference to some image.
-                    </li>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS6')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS6')">Show Answer</button>   
 
+<hr style="background-color: black; height: 1px;">
 
-                    <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS7')">Hide Answer</button>
-                    <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS7')">Show Answer</button>   
-                    
-                    <hr style="background-color: black; height: 1px;">
-                    
-                    <section id="HS7" class="home-section">
-                        <div  class="w3-container">  
-                            <div class="w3-panel  w3-card-4 ">
-                    <br>
-                                
-                    <pre><code class="language-html">
-                        
-                                    
-                    </code></pre>
-                                    
-                    
-                    <h4>Output (Result) of above: </h4>
-                    <iframe srcdoc='
-                    
-                    
-                        
-                    'src=""  width="100%" height="150px" >
-                    &lt;br&gt;
-                    </iframe>
-                    
-                    <br>
-                    <br>
-                    </div>
-                    </div>
-                    </section>
-                               
-
-
-
-                    <li> 5. Making an image a hyperlink to display second image.</li>
-           
-                    <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS8')">Hide Answer</button>
-                    <button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS8')">Show Answer</button>   
-                    
-                    <hr style="background-color: black; height: 1px;">
-                    
-                    <section id="HS8" class="home-section">
-                        <div  class="w3-container">  
-                            <div class="w3-panel  w3-card-4 ">
-                    <br>
-                                
-                    <pre><code class="language-html">
-                        
-                                    
-                    </code></pre>
-                                    
-                    
-                    <h4>Output (Result) of above: </h4>
-                    <iframe srcdoc='
-                    
-                    
-                        
-                    'src=""  width="100%" height="150px" >
-                    &lt;br&gt;
-                    </iframe>
-                    
-                    <br>
-                    <br>
-                    </div>
-                    </div>
-                    </section>
-                               
-           
-           
-           
-           
-           </li>
-
-
-
-
-
-
-                </ul>
-               
-         </ul>
+<section id="HS6" class="home-section" style="display: none;">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+<br>
+            
+<pre><code class="language-html">
  
-        </div></div>
-  
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;How to create links to sections within the same page in HTML?&lt;/title&gt;
+   &lt;style&gt;
+      #section1, #section2{
+         margin: 5px;
+         padding: 3px;
+      }
+      #section1{
+         background-color: lightblue;
+      }
+      #section2{
+         background-color: lightcoral;
+      }
+   &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;h4&gt;Create Reference within the same html document.&lt;/h4&gt;
+   &lt;p&gt;&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;a href="#section2"&gt;Go to Section 2&lt;/a&gt;&lt;/p&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt; 
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;div id="section1"&gt;
+      &lt;h2&gt;Section 1&lt;/h2&gt;
+      &lt;p&gt;Some text in section 1.&lt;/p&gt;
+   &lt;/div&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;div id="section2"&gt;
+      &lt;h2 &gt;Section 2&lt;/h2&gt;
+      &lt;p&gt;Some text in section 2.&lt;/p&gt;
+   &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                
+</code></pre>
+                
+
+<h4>Output (Result) of above: </h4>
+<iframe srcdoc='
+<head>
+    <title>How to create links to sections within the same page in HTML?</title>
+    <style>
+       #section1, #section2{
+          margin: 5px;
+          padding: 3px;
+       }
+       #section1{
+          background-color: lightblue;
+       }
+       #section2{
+          background-color: lightcoral;
+       }
+    </style>
+ </head>
+ <body>
+    <h4>Create Reference within the same html document.</h4>
+    <p><a href="#section1">Go to Section 1</a></p>
+    <p><a href="#section2">Go to Section 2</a></p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br /> 
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="section1">
+       <h2>Section 1</h2>
+       <p>Some text in section 1.</p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="section2">
+       <h2 >Section 2</h2>
+       <p>Some text in section 2.</p>
+    </div>
+ </body>
+
+    
+'src=""  width="100%" height="750px" >
+&lt;br&gt;
+</iframe>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+            
+
+
+<li>  4. Reference to some image.
+</li>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS7')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS7')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;">
+
+<section id="HS7" class="home-section" style="display: none;">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+<br>
+            
+<pre><code class="language-html">
+ 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Reference to some image&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;a href="https://www.bnultrasoft.com/assets/img/transparentlogo.png"&gt;Show Logo&lt;/a&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;   
+                
+</code></pre>
+                
+
+<h4>Output (Result) of above: </h4>
+<iframe srcdoc='
+
+<a href="https://www.bnultrasoft.com/assets/img/transparentlogo.png">Show Logo</a> 
+    
+'src=""  width="100%" height="100px" >
+&lt;br&gt;
+</iframe>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+            
+
+
+
+<li> 5. Making an image a hyperlink to display second image.</li>
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS8')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS8')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;">
+
+<section id="HS8" class="home-section" style="display: none;">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+<br>
+<!-- <ul class="w3-ul">
+ <li> 1) Create a folder.</li>
+ <li> 2) Create a HTML file inside the folder.</li>
+ <li> 3) Paste logo.png and flower.png</li>
+</ul> -->
+
+<br>            
+<pre><code class="language-html">
+ 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Image a hyperlink to display second image&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;a href="flower.png"&gt;&lt;img src="logo.png"&gt; &lt;/a&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                
+</code></pre>
+                
+
+<h4>Output (Result) of above: </h4>
+<iframe srcdoc='
+
+<a href="flower.png"><img src="https://www.bnultrasoft.com/assets/img/transparentlogo.png" style="height:100px; width:100px;"> </a> 
+    
+'src=""  width="100%" height="150px" >
+&lt;br&gt;
+</iframe>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+            
+
+
+
+           
+    </li>
+
+
+
+
+
+
+        </ul>
+        
+    </ul>
+
+</div></div>
+
   </section>
+
+
+
+
+<!--   
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
@@ -463,7 +766,7 @@
          
          <hr style="background-color: black; height: 1px;">
          
-         <section id="HideSeek" class="home-section">
+         <section id="HideSeek" class="home-section" style="display: none;">
              <div  class="w3-container">  
                  <div class="w3-panel  w3-card-4 ">
          <br>
@@ -504,7 +807,7 @@
   </div></div>
   
   </section>
-
+ -->
 
 
 </body>
