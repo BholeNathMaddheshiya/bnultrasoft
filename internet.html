@@ -887,53 +887,154 @@
           
      <center> <h2><b> <u> Types of Internet Protocol</u></b></h2> </center> <br>
           <br>
-          <p><b>1) TCP/IP(Transmission Control Protocol/ Internet Protocol):</b></p>
-           <p> TCP/IP specifies how data is exchanged over the internet by providing end-to-end communications that identify how it should be broken into packets, addressed, transmitted, routed and received at the destination. TCP/IP requires little central management and is designed to make networks reliable with the ability to recover automatically from the failure of any device on the network.
-          </p>
-           <br>
-          <p> <b>2) SMTP :</b></p>
-           <p>  SMTP is used to set up communication rules between servers. The servers have a way of identifying themselves and announcing what kind of communication they are trying to perform. They also have a way of handling the errors such as incorrect email address. For example, if the recipient address is wrong, then receiving server reply with an error message of some kind. Simple Mail Transfer Protocol (SMTP).
-          </p>
-          <br>
-          <p><b>3) UDP :</b></p>
-          <p>   UDP is a part of the Internet Protocol suite, referred to as UDP/IP suite. It is an unreliable and connectionless protocol. So, there is no need to establish a connection prior to data transfer. The UDP helps to establish low-latency and loss-tolerating connections establish over the network.The UDP enables process to process communication. User Datagram Protocol (UDP).
-          </p> <br>
-          <p><b>4) FTP :</b></p>
-          <p> FTP stands for File transfer protocol. FTP is a standard internet protocol provided by TCP/IP used for transmitting the files from one host to another. It is mainly used for transferring the web page files from their creator to the computer that acts as a server for other computers on the internet. It is also used for downloading the files to computer from other servers.
-          </p>
-          <br>
-          <p><b> 5) Hyper Text Transfer Protocol (HTTP):
-          </b></p>
-          <p> HTTP is a communication protocol. It defines mechanism for communication between browser and the web server. It is also called request and response protocol because the communication between browser and server takes place in request and response pairs.
-          </p> <br>
-          <p><b>6)  PPP : </b></p>
-          <p>The PPP stands for Point-to-Point protocol. It is the most commonly used protocol for point-to-point access. It is a data link layer protocol that resides in the layer 2 of the OSI model. 
-          </p>
-          <p> *  Defining the frame format of the data to be transmitted.
-           </p>
-          <p>* It defines the link establishment process. If user establishes a link with a server, then "how this link establishes" is done by the PPP protocol.
-          </p>
-          <p> *  The authentication between the two devices, handshaking and how the password will be exchanged between two devices are decided by the PPP protocol.
-          </p>
-          <br>
-          <br>
+          <ul class="w3-ul">
+            <li><b> 1) TCP</b> : port number is <b> 22.</b></li>
+                  <ul class="w3-ul">
+                     <li> &#10028; It is a connection-oriented protocol (To ensure that, each message reaches its final destination accurately).</li>
+                   <br>
+                  </ul>
+                
+            <li> <b>2) UDP </b></li>
+                   <ul class="w3-ul">
+                    <li> &#10028; User Datagram Protocol (UDP) is a communications protocol for time-sensitive applications like gaming, playing videos, or Domain Name System (DNS) lookups. This allows data to be transferred very quickly, but it can also cause packets to become lost in transit.</li>
+                    <br>
+                  </ul>
+             
+            <li><b>3) HTTP</b>: port number is <b>80</b></li>
+                   <ul class="w3-ul"> 
+                     <li> &#10028; HTTP stands for HyperText Transfer Protocol. It is used to access web pages from a web server.</li>
+                     <br>
+                  </ul>
+            <li> <b>4) HTTPS</b>: port number is <b>443</b></li>  
+                  <ul class="w3-ul">
+                    <li>&#10028; HTTPS stands for HyperText Transfer Protocol Secure. It uses the <span style="color: brown;">Secure Socket Layer (SSL) </span>  and <span style="color: brown;"> Transport Layer Security (TLS) protocol.</span>  The new version of SSL is TLS(Transport Layer Security)  </li>
+                    <br>
+                  </ul>   
+            <li> <b>5) FTP</b>: port number is <b>21</b></li> 
+                  <ul class="w3-ul">
+                    <li>  &#10028; The File Transfer Protocol is a standard communication protocol, it is a way to <span style="color: brown;"> download, upload, and transfer</span>  files from one location to another on the Internet and between computer systems. </li>
+                     <br>
+                  </ul>  
+                  
+             <li> <b>6) SMTP</b> </li> 
+                 <ul class="w3-ul">
+                  <li> &#10028; SMTP stands for Simple Mail Transfer Protocol. It  is an Internet standard communication protocol for electronic mail transmission.</li>
+                   <br>
+                 </ul>
+
+            <li> <b>7) IMAP</b></li>     
+              <ul class="w3-ul">
+                <li> &#10028; IMAP stands for Internet Message Access Protocol. It is used as the most commonly used protocol for incoming mail.</li>
+                <br>
+              </ul>
+
+            <li> <b>8) DNS :</b> port number is <b>53</b> </li>
+                <ul class="w3-ul"> 
+                  <li> &#10028; DNS translates domain names to IP addresses.</li>
+                  <br>
+                </ul>
+            <li> <b>9) ARP</b></li> 
+                  <ul class="w3-ul">
+                    <li>  &#10028; ARP stands for Address Resolution Protocol, It finds and translate IP addresses to Physical Addresses (MAC Address). </li>
+                    <br>
+                  </ul>  
+            <li> <b> 10) POP3</b></li>  
+                <ul class="w3-ul">
+                  <li>POP stands for Post Office Protocol, It only allows downloading messages from your Inbox to your local computer. </li>
+                  <li> <b>Note: </b> POP3 (Post Office Protocol 3) and IMAP (Internet Message Access Protocol) both are <span style="color: brown;">MAA (Message accessing agent)</span> , both of these protocols are used to retrieve messages from the mail server to the receivers system.</li>
+                  <br></ul>   
+                  
+              
+            <li> <b>11) ICMP</b></li>
+                <ul class="w3-ul">
+                  <li>Internet Control Message Protocol(ICMP) to provide an error control. It is used for reporting errors and management queries. </li>
+                  <br>
+                </ul>
+         
+           <li> <b>12) DHCP</b></li> 
+           
+              <ul class="w3-ul">
+                <li>    Dynamic Host Configuration Protocol (DHCP) is a client/server protocol that automatically provides an Internet Protocol (IP) host
+                </li>
+                <br>
+              </ul>  
+
+          <li> <b>13) NAT</b></li>  
           
-     <center> <h2><b> <u>Modes of Connecting Internet:</u></b></h2> </center> <br>
-     <p><b>1) Hotspot: </b></p>
-     <p>A hotspot is a physical location where people can access the Internet, typically using Wi-Fi, via a wireless local area network (WLAN) with a router connected to an Internet service provider. 
-    </p>
-    <br>
-    <p><b>2)Wi-Fi:</b></p>
-      <p>Wifi is also known as Wireless Fidelity. Wi-Fi is a wireless networking technology that permits to connect wirelessly to a network or to other computer or mobile device. A circular radio frequency range is used to transmit data in Wi-Fi. WLAN stands for Wireless Local Area Network. IEEE 802.11 is the rule for communication. WiFi uses the Physical Data Link Layer (PDLL) to operate. IEEE (Institute of Electrical and Electronics Engineers).
-      </p>   
-      <br>
-      <p><b>3) LAN Cable : </b></p> 
-   <p>A LAN cable is a conductor that connects devices in a Local Area Network (LAN) with a network connector. The network cable provides communication between several devices (computers, routers, switches,…). The term “LAN” is an overtake for Ethernet cable. 
-  </p>
-  <br>
-  <p><b>Note:</b>   The main RJ45 (Registered Jack-45) is typically used in Ethernets or connecting cable modems with Wi-Fi routers.
-  </p>
-  <br>
+              <ul class="w3-ul">
+                  <li> Network Address Translation (NAT) is the process of translating one or more local IP addresses into one or more global IP addresses, or vice versa, in order to provide Internet access to local hosts. </li>
+                  <br>
+               </ul>  
+          <li> <b>14) SNMP</b></li>
+          <ul class="w3-ul">
+            <li>Simple Network Management Protocol (SNMP) is an Internet Standard protocol for collecting and organizing information about managed devices on IP networks and for modifying that information to change device behavior. Devices that typically support SNMP include cable modems, routers, switches, servers, workstations, printers, and more. </li>
+            <br>
+          </ul>  
+
+           </ul>
+         
+         
+           <br>
+           <hr style="background-color: black; height: 1px;">
+           <br> 
+       
+          
+       
+          
+   <h2 class="w3-center"><b> <u>Modes of Connecting Internet:</u></b></h2> <br>
+  
+      <ul class="w3-ul">
+          <li> <b>1) Hotspot: </b> </li>
+              <ul class="w3-ul">
+                <li>A hotspot is a physical location where people can access the Internet, typically using Wi-Fi, via a wireless local area network (WLAN) with a router connected to an Internet service provider. 
+                </li>
+                <br>
+
+              </ul>  
+
+         <li> <b>2) Wi-Fi: </b></li>     
+            <ul class="w3-ul">
+              <li>Wifi is also known as Wireless Fidelity. Wi-Fi is a wireless networking technology that permits to connect wirelessly to a network or to other computer or mobile device. A circular radio frequency range is used to transmit data in Wi-Fi. It is known as WLAN. The communication standard is IEEE 802.11.
+              </li>
+                <br>
+
+              </ul>  
+          <li><b> 3) LAN Cable :</b> </li>    
+                <ul class="w3-ul">
+                  <li>A LAN cable is a conductor that connects devices in a Local Area Network (LAN) with a network connector. The network cable provides communication between several devices (computers, routers, switches,…). The term “LAN” is an overtake for Ethernet cable. 
+                  </li>
+                  <li><b>Note:</b>   The main RJ45 (Registered Jack-45) is typically used in Ethernets or connecting cable modems with Wi-Fi routers.
+                  </li>
+                  <br>
+
+                 </ul> 
+                 
+           <li> <b>4) Broadband</b></li>
+           
+           <ul class="w3-ul">
+             <li> Broadband is the transmission of wide bandwidth data over a high-speed internet connection. Broadband internet is a minimum of <span style="color: brown;"> 25 Mbps download and 3 Mbps upload</span>  speeds. Broadband provides high speed internet access via multiple types of technologies including <span style="color: brown;"> fiber optics, wireless, cable, Digital Subscriber Line(DSL) and satellite</span> .</li>
+            <br>
+
+            <li> <b>5) USB Tethering</b></li>
+
+            <ul class="w3-ul">
+              <li> Sharing mobile data for our computers or laptops this process is called Tethering.</li>
+              <li>When the mobile internet connection is shared with a connected computer or laptop using physical USB data cable then it is called USB Tethering.</li>
+              <li> Connection Mobile to Laptop:<b>Mobile setting-> Enable USB Tethering. </b></li>
+              <br>
+
+          </ul>  
+
+     </ul>  
+
+        
+     </ul>
+
+   
+
+     
+
+  
 
           
   </div></div>
