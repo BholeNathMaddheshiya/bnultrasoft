@@ -108,7 +108,16 @@
             </li>
             <li> <b>Q 8.</b>  What is Mail Merge in LibreOffice? What are the steps? 
             </li>
-        </ul>
+            <li> <b> Q 9.</b> What is Ip Address? What is the difference between Ipv4 and Ipv6?</li>
+            <li> <b>Q 10.</b>  What is search Engine? Explain any 2 search Engine.</li>
+            <li> <b>Q 11.</b> What is Topology? Explain in few lines with diagram.</li>
+            <li> <b> Q 12. </b> What is IOT? Explain it.</li>
+            <li> <b> Q 13. </b> What is Cloud Computing? Explain it.</li>
+            <li> <b> Q 14. </b> What is Blockchain Technology? Explain it.</li>
+            <li> <b> Q 15. </b> What is Cyber Security? Explain in few line of any <b>5 virus</b>.
+                How to protect yourself against cyberattacks?</li>
+
+ </ul>
 
      <br>
 
@@ -125,6 +134,7 @@
          <h5 class="w3-center "> <b>Web Designing and Publishing</b></h5>
          <h5><b>Note: </b> After every answer of coding question: Draw output (Result) of the question. </h5>
          <ul class="w3-ul">
+          
             <li> <b>Q 1.</b> Create an HTML file <b>(e.g. first_page.html)</b> that specifies a page that contains a heading
                 and two paragraphs of text. As the texts in the heading and paragraphs you can use any
                 texts you like. </li>
@@ -729,30 +739,807 @@ Choose your language: &lt;br&gt;
 </div>
 </div>
 </section>
-            
+ </li>
+ </ul>
 
 
 
-           
+ <li> <b>Q 5.</b> Write a program in javascript to generate series of prime numbers.
+ </li>
+    
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS9')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS9')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS9" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Prime List&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Enter Num: &lt;input type="text" id="n"&gt;  &lt;br&gt; &lt;br&gt;
+        &lt;button onclick="Check()"&gt; Print Series of Prime&lt;/button&gt; 
+      
+    &lt;script&gt;
+     function Check(){
+        let num=document.getElementById('n').value;
+        for(let y=1; y&lt;=num; y++)
+        {
+             
+            let f=0;
+               for(let x=2 ; x&lt;y ; x++)
+                  {
+                    if(y%x==0)
+                      {
+                      f=1;
+                      break;
+                      }
+                  }
+           if(f==0){
+           document.write("&lt;br&gt;"+y);
+           }
+       }
+    }
+    &lt;/script&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+
+<img src="assets/img/listPrime.png" width="70%" height="250px">
+
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+
+<li> <b>Q 6.</b> Create a sample form program that collects the first name, last name, email, user id, password 
+    and confirms password from the user. All the inputs are mandatory and email address entered 
+    should be in correct format. Also, the values entered in the password and confirm password 
+    textboxes should be the same. After validating using JavaScript, in output display proper 
+    error messages in red color just next to the textbox where there is an error. </li>
+    
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS11')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS11')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS11" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;form&gt;
+    
+            Enter First Name:&lt;input type="text" id="fnameId"&gt;
+            &lt;span style="color: red;" id="errfname"&gt;&lt;/span&gt;  &lt;br&gt;
+    
+    
+           Enter Last Name:&lt;input type="text" id="lnameId"&gt;
+            &lt;span style="color: red;" id="errlname"&gt;&lt;/span&gt; &lt;br&gt;
+    
+      
+           Enter Email address:&lt;input type="email" id="emailId"&gt;
+            &lt;span style="color: red;" id="errEmail"&gt;&lt;/span&gt;   &lt;br&gt;
+    
+            Enter User ID: &lt;input type="text" id="userId"&gt;
+            &lt;span style="color: red;" id="errUserId"&gt;&lt;/span&gt;   &lt;br&gt;
+    
+            Enter Password: &lt;input type="password" id="passwordId"&gt;
+            &lt;span style="color: red;" id="errpasswordId"&gt;&lt;/span&gt;   &lt;br&gt;
+    
+            Enter ConfirmPassword: &lt;input type="password" id="confirmPasswordId"&gt;
+            &lt;span style="color: red;" id="errcpasswordId"&gt;&lt;/span&gt;   &lt;br&gt;
+    
+        &lt;/form&gt;
+        &lt;button onclick="checkvalidation()"&gt;Submit&lt;/button&gt;
+    
+    &lt;script&gt;
+        
+        function checkvalidation(){
+    
+        
+        let regEmail=/[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/;
+        var lower=/[a-z]/g;
+        var upper=/[A-Z]/g;
+        var number=/[0-9]/g;
+    
+    
+        let fname =document.getElementById('fnameId').value;
+        let lname =document.getElementById('lnameId').value;
+        let email =document.getElementById('emailId').value;
+        let user =document.getElementById('userId').value;
+        let password =document.getElementById('passwordId').value;
+        let confirmPassword =document.getElementById('confirmPasswordId').value;
+        
+    
+    
+        if(fname==""){
+      
+       document.getElementById('errfname').innerHTML="Please Enter First Name, It cannot be empty!";
+    
+       }
+       
+       if(lname==""){
+      
+       document.getElementById('errlname').innerHTML="Please Enter Last Name, It cannot be empty!";
+    
+    
+       }
+        
+       if(!regEmail.test(email)){
+      
+       document.getElementById('errEmail').innerHTML="Please Enter proper Email!";
+    
+       }
+    
+        if(user==""){
+      
+            document.getElementById('errUserId').innerHTML="Please Enter userId, It cannot be empty!";
+    
+        }
+    
+       if(!lower.test(password)){
+      
+            document.getElementById('errpasswordId').innerHTML="Enter at least 1 Lower Letter.";
+    
+         }
+    
+      if(!upper.test(password)){
+      
+            document.getElementById('errpasswordId').innerHTML="Enter at least 1 Capital Letter.";
+    
+        }
+        
+        if(!number.test(password)){
+      
+            document.getElementById('errpasswordId').innerHTML="Enter at least 1 Digit.";
+      }
+        
+        if(password.length&lt;6){
+      
+            document.getElementById('errpasswordId').innerHTML="Enter password at least 6 characters.";
+    
+        }
+      
+      if(confirmPassword!=password){
+      
+            document.getElementById('errcpasswordId').innerHTML="Your Confirm password it does not Match with Password !";
+    
+        }
+    
+     }
+                        
+    &lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+<img src="assets/img/formvalidationQAss6.png" width="70%" height="250px">
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+<li> <b>Q 7.</b>  Create a HTML Document with JavaScript code that has three Textboxes and a button.The 
+    details should be accepted using textboxes are principal, rate of interest, and duration in 
+    years. When user clicks the OK Button a message box appears showing the simple interest 
+    of principal amount. </li>
+    
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS12')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS12')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS12" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+    &lt;h1&gt;Simple Interest Calculator&lt;/h1&gt;
+    Enter Principal Amount: &lt;input type="text" id="p"&gt; &lt;br&gt;Enter Rate of Interest: &lt;input type="text"  id="r"&gt; &lt;br&gt; 
+    Enter Time (in Years): &lt;input type="text" id="t"&gt; &lt;br&gt; 
+    &lt;button onclick="cal()"&gt; Ok&lt;/button&gt;
+
+    &lt;script&gt;
+
+        function cal()
+        {
+            let p= document.getElementById('p').value;
+            let r= document.getElementById('r').value;
+            let t= document.getElementById('t').value;
+            alert("Simple Interest is : "+ (p*t*r)/100);
+
+        }
+
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+    
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+<img src="assets/img/QAss7.png" width="80%" height="250px">    <br>
+
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+
+
+
+
+<li> <b>Q 8.</b>Write a program in JavaScript to print factorial. </li>
+    
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS13')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS13')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS13" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Enter any number: &lt;input type="text" id="num"&gt;
+&lt;button onclick="Factorial()"&gt;Print Factorial&lt;/button&gt;
+&lt;p&gt;Your Fatorial is: &lt;span id="a"&gt; &lt;/span&gt;
+&lt;script&gt;
+        function Factorial(){
+        let n=document.getElementById('num').value;
+        let fact=1;
+        for(let x=1;x&lt;=n;x++){
+        
+        fact=fact*x;
+        
+        }
+    
+    document.getElementById('a').innerHTML=fact;
+        }
+
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+<img src="assets/img/QAss8.png" width="80%" height="250px">    <br>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+
+
+
+<li> <b>Q 9.</b>  Create table with ROWSPAN and COLSPAN attribute of TABLE in HTML(Prepare timetable of your class). Include CELLSPACING & CELL PADDING.
+     </li>
+    
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS14')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS14')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS14" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+     &lt;table border="1"  cellspacing="10" cellpadding="10"&gt;
+     &lt;tr&gt; &lt;th colspan="5"&gt;Time Table&lt;/th&gt;&lt;/tr&gt;
+     &lt;tr&gt; &lt;th&gt;Monday&lt;/th&gt; &lt;th&gt;Tuesday&lt;/th&gt; &lt;th&gt;Wednesday&lt;/th&gt; &lt;th&gt;Thursday&lt;/th&gt; &lt;th&gt;Friday&lt;/th&gt; &lt;/tr&gt;
+    
+     &lt;tr&gt; &lt;td&gt;Science&lt;/td&gt; &lt;td&gt;Maths&lt;/td&gt; &lt;td&gt;English&lt;/td&gt; &lt;td&gt;Hindi&lt;/td&gt; &lt;td&gt;Computer&lt;/td&gt; &lt;/tr&gt;
+    
+     &lt;tr&gt; &lt;td&gt;Science&lt;/td&gt; &lt;td&gt;Maths&lt;/td&gt; &lt;td&gt;English&lt;/td&gt; &lt;td&gt;Hindi&lt;/td&gt; &lt;td&gt;Computer&lt;/td&gt; &lt;/tr&gt;
+    
+    
+    
+     &lt;tr&gt; &lt;th colspan="5" align="center" &gt;Lunch&lt;/th&gt; &lt;/tr&gt;
+    
+     &lt;tr&gt; &lt;td&gt;Science&lt;/td&gt; &lt;td&gt;Maths&lt;/td&gt; &lt;td&gt;English&lt;/td&gt; &lt;td&gt;Hindi&lt;/td&gt; &lt;th rowspan="2"&gt;Project&lt;/th&gt; &lt;/tr&gt;
+    
+     &lt;tr&gt; &lt;td&gt;Science&lt;/td&gt; &lt;td&gt;Maths&lt;/td&gt; &lt;td&gt;English&lt;/td&gt; &lt;td&gt;Hindi&lt;/td&gt;  &lt;/tr&gt;
+         
+     &lt;/table&gt;
+    
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+<iframe srcdoc='
+
+<table border="1"  cellspacing="10" cellpadding="10" >
+    <tr> <th colspan="5">Time Table</th></tr>
+    <tr> <th>Monday</th> <th>Tuesday</th> <th>Wednesday</th> <th>Thursday</th> <th>Friday</th> </tr>
+   
+    <tr> <td>Science</td> <td>Maths</td> <td>English</td> <td>Hindi</td> <td>Computer</td> </tr>
+   
+    <tr> <td>Science</td> <td>Maths</td> <td>English</td> <td>Hindi</td> <td>Computer</td> </tr>
+   
+   
+   
+    <tr> <th colspan="5" align="center" >Lunch</th> </tr>
+   
+    <tr> <td>Science</td> <td>Maths</td> <td>English</td> <td>Hindi</td> <th rowspan="2">Project</th> </tr>
+   
+    <tr> <td>Science</td> <td>Maths</td> <td>English</td> <td>Hindi</td>  </tr>
+        
+    </table>
+
+
+'src=""  width="100%" height="380px" >
+&lt;br&gt;
+</iframe>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+
+
+
+<li> <b>Q 10.</b> With CSS use the shorthand background property to set background image to eg.<b>"xyz.png"</b>,
+    show it once, in the top right corner.  </li>
+    
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS15')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS15')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS15" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;style&gt;
+body{
+    background: url(xyz.png) no-repeat top right ;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+<img src="assets/img/QAss10.png" width="100%" height="250px">    <br>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+
+<li> <b>Q 11.</b> Write a HTML code to generate following output. </li>
+   <ul class="w3-ul"> 
+    <li> A) 2x<sup>5</sup> - 4x<sup>4</sup> + 16x<sup>3</sup> - 2x
+    </li>
+    <li> B)	KAl(SO<sub>4</sub>)<sub>2</sub>.12H<sub>2</sub>O 
     </li>
 
+   </ul>
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS16')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS16')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS16" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;p&gt;2x&lt;sup&gt;5&lt;/sup&gt; - 4x&lt;sup&gt;4&lt;/sup&gt; + 16x&lt;sup&gt;3&lt;/sup&gt; - 2x&lt;/p&gt;
+    &lt;p&gt;KAl(SO&lt;sub&gt;4&lt;/sub&gt;)&lt;sub&gt;2&lt;/sub&gt;.12H&lt;sub&gt;2&lt;/sub&gt;O &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+<iframe srcdoc='
+
+
+<p>2x<sup>5</sup> - 4x<sup>4</sup> + 16x<sup>3</sup> - 2x</p>
+<p>KAl(SO<sub>4</sub>)<sub>2</sub>.12H<sub>2</sub>O </p>
+
+'src=""  width="100%" height="300px" >
+&lt;br&gt;
+</iframe>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+<li> <b>Q 12.</b>  Create a HTML file which displays three images at LEFT, RIGHT and CENTER respectively in the browser. </li>
+    
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS17')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS17')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS17" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;style&gt;
+            div{
+                width: 100%;
+                height: 100px;
+              }
+            #a{
+                text-align: left;
+            }
+            #b{
+                text-align: right;
+            }
+            #c{
+                text-align: center;
+            }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;div id="a"&gt; &lt;img src="apple.jpg" height="100px" width="100px"&gt; &lt;/div&gt; &lt;br&gt;
+    &lt;div id="b"&gt; &lt;img src="apple.jpg" height="100px" width="100px"&gt; &lt;/div&gt;  &lt;br&gt;
+    &lt;div id="c"&gt; &lt;img src="apple.jpg" height="100px" width="100px"&gt; &lt;/div&gt; &lt;br&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    
+    
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+<img src="assets/img/QAss12.png" width="80%" height="250px">    <br>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+<li> <b>Q 13.</b>  Design a HTML page to display a picture. The picture should be removed from the screen
+    after a mouse click on the picture </li>
+    
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS18')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS18')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS18" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;img src="apple.jpg" onclick="Hide(this)"&gt;
+	&lt;script&gt;
+		 function Hide(x){
+		 	x.style="display:none";
+		 }
+
+	&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+    
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+<img src="assets/img/QAss13.png" width="50%" height="250px">    <br>
+
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+<li> <b>Q 14.</b> Create your first <b>"Hello world"</b> application in AngularJS.  </li>
+    
+    
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS19')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS19')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS19" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;script src="angular.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div ng-app&gt;
+        Enter any text: &lt;input type="text" ng-model="name"&gt; &lt;br&gt;
+        &lt;p&gt;Your text is: &lt;span ng-bind="name"&gt; &lt;/span&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    
+</code></pre>
+    
+
+<h4 class="w3-center">Output (Result) of above: </h4>
+
+<br>
+
+<img src="assets/img/QAss14.png" width="80%" height="250px">    <br>
+
+<br>
+<br>
+</div>
+</div>
+</section>
+
+<li> <b>Q 15.</b>  Write a HTML code to generate following output. </li>
+    
+<img src="assets/img/QAss15.png" width="100%" height="250px">    <br>
+
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.hide('#HS20')">Hide Answer</button>
+<button  class="w3-btn w3-ripple w3-round-large" onclick="w3.show('#HS20')">Show Answer</button>   
+
+<hr style="background-color: black; height: 1px;" >
+
+<section id="HS20" class="home-section" style="display: none;">
+<div  class="w3-container">  
+<div class="w3-panel  w3-card-4 ">
+<br>
+
+<pre><code class="language-html">
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+        &lt;link rel="stylesheet" href="w3.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    
+    
+    &lt;div class="w3-row"&gt;
+    
+      &lt;div class="w3-col s6 m6 l6 w3-sand w3-center w3-padding w3-border"&gt;s6 m6 l6 &lt;/div&gt;
+      &lt;div class="w3-col s6 m6 l6 w3-aqua w3-center w3-padding w3-border"&gt;s6 m6 l6 &lt;/div&gt;
+    
+    &lt;/div&gt;
+    
+    &lt;div class="w3-row"&gt;
+    
+      &lt;div class="w3-col s4 m4 l4 w3-dark-gray w3-center w3-padding w3-border"&gt; s4 m4 l4 &lt;/div&gt;
+      &lt;div class="w3-col s4 m4 l4 w3-yellow w3-center w3-padding w3-border"&gt;s4 m4 l4 &lt;/div&gt;
+      &lt;div class="w3-col s4 m4 l4 w3-blue w3-center w3-padding w3-border"&gt;s4 m4 l4 &lt;/div&gt;
+     
+    &lt;/div&gt;
+    &lt;div class="w3-row"&gt;
+    
+      &lt;div class="w3-col s4 m4 l4 w3-pale-red w3-center w3-padding w3-border"&gt;s4 m4 l4&lt;/div&gt;
+      &lt;div class="w3-col s8 m8 l8 w3-green w3-center w3-padding w3-border"&gt;s8 m8 l8 &lt;/div&gt;
+    
+    &lt;/div&gt;
+    &lt;div class="w3-row"&gt;
+    
+      &lt;div class="w3-col s8 m8 l8  w3-pale-green w3-center w3-padding w3-border"&gt;s8 m8 l8&lt;/div&gt;
+      &lt;div class="w3-col s4 m4 l4 w3-yellow w3-center w3-padding w3-border"&gt;s4 m4 l4&lt;/div&gt;
+    
+    &lt;/div&gt;
+    
+    &lt;div class="w3-row"&gt;
+    
+      &lt;div class="w3-col s3 m3 l3 w3-red w3-center w3-padding w3-border"&gt; s3 m3 l3 &lt;/div&gt;
+      &lt;div class="w3-col s3 m3 l3 w3-yellow w3-center w3-padding w3-border"&gt;s3 m3 l3&lt;/div&gt;
+      &lt;div class="w3-col s3 m3 l3 w3-green w3-center w3-padding w3-border"&gt;s3 m3 l3 &lt;/div&gt;
+      &lt;div class="w3-col s3 m3 l3 w3-blue w3-center w3-padding w3-border"&gt;s3 m3 l3 &lt;/div&gt;
+    
+    &lt;/div&gt;
+    
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    
+</code></pre>
+    
+
+<h3 class="w3-center">Output (Result) of above: </h3>
+
+<br>
+
+<img src="assets/img/QAss15.png" width="100%" height="250px">    <br>
+
+<br>
+<br>
+</div>
+</div>
+</section>
 
 
 
 
 
-        </ul>
-        
-    </ul>
+
+
+
+</ul>
 
 </div></div>
 
   </section>
 
 
-
-
-<!--   
+<!-- 
+  
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
@@ -796,7 +1583,7 @@ Choose your language: &lt;br&gt;
 
   </div></div>
   
-  </section>
+  </section> 
   <section class="home-section">
     <div  class="w3-container">  
         <div class="w3-panel  w3-card-4 ">
@@ -807,7 +1594,7 @@ Choose your language: &lt;br&gt;
   </div></div>
   
   </section>
- -->
+  -->
 
 
 </body>
