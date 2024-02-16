@@ -52,6 +52,7 @@
         
         <div class="w3-bar-block  ">
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ProgrammingLanguages">Programming Languages</a> 
+           
             <a onclick="myFunction('Demo1')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom" href="#classificationofcomputerlanguage">It's classification <i class="fa fa-caret-down"></i>  </a>
             <div id="Demo1" class="w3-hide w3-animate-zoom">
             <a href="#lowlevellanguage" class="w3-button  w3-hover-white w3-block w3-left-align">Low Level Language</a>
@@ -59,6 +60,19 @@
             <a href="#midlevelLanguage" class="w3-button  w3-hover-white w3-block w3-left-align">Middle Level Language</a>
          
             </div> 
+
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#diffbetweenlowhighlanguage">Low vs High Level Language</a> 
+          
+            <a onclick="myFunction('Demo2')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom" href="javascript:void(0)">Language Processors <i class="fa fa-caret-down"></i>  </a>
+            <div id="Demo2" class="w3-hide w3-animate-zoom">
+            <a href="#assembler" class="w3-button  w3-hover-white w3-block w3-left-align">Assembler</a>
+            <a href="#compiler" class="w3-button  w3-hover-white w3-block w3-left-align">Compiler</a>
+            <a href="#interpreter" class="w3-button  w3-hover-white w3-block w3-left-align">Interpreter</a>
+         
+            </div> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#sourcecodeandobjectcode">Source Code and Object Code</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CompilationandExecutionProcess">Compilation and Execution Process</a> 
+        
             
             <!-- <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="#sec2">About</a>
             <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="#sec3">Contact</a>
@@ -129,8 +143,12 @@
                             <a class="w3-bar-item w3-button" href="#highlevellanguage">High Level Language</a>
                             <a class="w3-bar-item w3-button" href="#midlevelLanguage">Middle Level Language</a>
                             
-                            <!-- <a class="w3-bar-item w3-button" href="#sec1">Blog</a> -->
-                            <!-- <a class="w3-bar-item w3-button" href="#sec2">Contact</a> -->
+                            <a class="w3-bar-item w3-button" href="#diffbetweenlowhighlanguage">Different Between Low and High Level Language</a>
+                            <a class="w3-bar-item w3-button" href="#assembler">Assembler</a>
+                            <a class="w3-bar-item w3-button" href="#compiler">Compiler</a>
+                            <a class="w3-bar-item w3-button" href="#interpreter">Interpreter</a>
+                            <a class="w3-bar-item w3-button" href="#sourcecodeandobjectcode">Source Code and Object Code</a>
+                            <a class="w3-bar-item w3-button" href="#CompilationandExecutionProcess">Compilation and Execution Process</a>
                             <!-- <a class="w3-bar-item w3-button" href="#sec3">Custom</a> -->
                             <!-- <a class="w3-bar-item w3-button" href="#support">Support</a> -->
                             <!-- <a class="w3-bar-item w3-button" href="#tools">Tools</a> -->
@@ -341,7 +359,7 @@
                     <h2 class="w3-panel w3-center"><u>Middle Level Language</u></h2>
                
                 <h4><b>&#10028;</b> <u>Middle Level Programming Language:</u> </h4>                         
-                <p> &#10028; Those programming language which supports features of both low level programming and high level programming language is called media level language. <br>
+                <p> &#10028; Those programming language which supports features of both low level programming and high level programming language is called middle level language. <br>
                     &#10028; This middle level programming language act as a bridge between hardware and software. </p> 
 
                    <p> <b>Example: C language. </b></p> 
@@ -358,6 +376,265 @@
 
 
 </section> 
+
+<section id="diffbetweenlowhighlanguage" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-left"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Different between Low Level Language and High Level Language</u></h2>
+               
+                    <table class="w3-table-all w3-panel ">
+                        <tr>
+                          <th>Low Level Language</th>
+                          <th>High Level Language</th>
+                        
+                        </tr>
+                        <tr>
+                          <td> &#10028; Low level programming language are machine dependent that means program written in a low level language are not portable.</td>
+                          <td>&#10028; High level programming languages are machine independent that means program written in high level language are portable.</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>  &#10028; Low level language are very close to the hardware. They help in writing various program at the hardware level, so it require the knowledge of computer hardware.</td>
+                          <td>  &#10028; High level language do not provide various facilities at the hardware level so it does not require the knowledge of computer hardware.</td>
+                       
+                        </tr>
+                        <tr>
+                          <td>  &#10028; These are machine-friendly language that are very difficult to understand by human being but easy to understand and translate by machine.</td>
+                          <td> &#10028; These are programmer-friendly language that are manageable easy to understand and debug.</td>
+                      
+                        </tr>
+                        <tr>
+                          <td> &#10028; Low level language are required an assembler for direct translating the instruction to the machine language.</td>
+                          <td> &#10028; High level language required the use of compiler and/or interpreter for their translation into the machine code.</td>
+                        
+                        </tr>
+                        <tr>
+                          <td> &#10028; Low level language are not very common nowadays for programming.</td>
+                          <td> &#10028; High level language are very common and widely used for programming in today's time.</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>&#10028; Some example of low level language include the machine language and assembly language.</td>
+                          <td>&#10028; Some example of high level language include Perl, BASIC, COBOL (Common Business-Oriented Language), JAVA, PHP (Hypertext Preprocessor), Python etc</td>
+                        
+                        </tr>
+                      </table>
+                   
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section>
+
+<section id="assembler" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u><b>Language Processors: Assembler, Compiler, Interpreter</b></u></h2>
+                    <h2 class="w3-panel w3-center"><u>Assembler</u></h2>
+               
+              
+
+                   <p>   &#10028; The assembler is used to translate the program written in assembly language into machine code the source program is an input of assembler that contains assembly language instruction the output of generating by assembler is <b>object code or machine code</b> which is  understandable by the computer.  </p>
+                   <p>   &#10028; The assembler is basically able to convert these Mnemonics in binary code. Here, these Mnemonics also depend upon the architecture of machine.  </p>
+                   <p>   &#10028; For example the architecture of <b>Intel 8085 and Intel 8086</b> are different.  </p>
+                        
+                   <img src="content/img/python/assem.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+       
+                   
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+<section id="compiler" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-left"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Compiler</u></h2>
+               
+              
+
+                   <p>   &#10028; The language processor that reads the complete source program written in high level language as a whole in one, and it goes for translation which is in machine language.  </p>
+                  
+                   <p>   &#10028;  Example:  <b>C, C++, C# and  Java.</b>  </p>
+                   <p>   &#10028;  In compiler the source code is translated to object code successfully if it is free of error the compiler specify the error at the end of compilation with line numbers when they are found any error in source code.  </p>
+                        
+                   <img src="content/img/python/compiler.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+       
+                   
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="interpreter" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Interpreter</u></h2>
+               
+              
+
+                   <p>   &#10028; The translation of a single statement of the source program into machine code and execute immediately before moving onto the next line is called an interpreter.  </p>
+                   <p>   &#10028;  Example:  <b>Perl, Python and MATLAB (matrix laboratory)</b>  </p>
+                   <p>   &#10028; If there is an error in the statement, the interpreter terminates its translating process at that statement and display an error message the interpreter move on the next line for execution only, after the removal of the error. </p>      
+                   <img src="content/img/python/interpreter.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+       
+                   
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+
+
+
+<section id="sourcecodeandobjectcode" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-left"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Source Code and Object Code</u></h2>
+               
+              
+
+                  
+                    
+                    <img src="content/img/python/sourcecodeVSobjectcode.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+       
+                   <p>&#10028; <b>Source code: </b>  Source code refers to high level code which is generated by human/programmer by using any text editor. It is written any high level language like C, Java, Python etc.</p>
+                   <p>&#10028; <b>Object Code: </b>Object code refers to low level code which is understandable by machine. It is written in machine language through compiler or assembler or any other translator. Object code contains a sequence of machine understandable instructions to which is CPU understand and executes. </p>
+                   <p>&#10028; <b>Byte Code:</b> Bytecode is an intermediate code between the source code and machine code it is a low-level code that is the result of compilation of the source code it is a process by virtual machine the virtual machine convert the bytecode into specific machine instruction that computer processor will understand. The virtual machine converts that code into machine code using the interpreter, the virtual machine uses the interpreter at the runtime.</p>
+                   <p>&#10028; <b> Machine Code:</b> Machine code is a set of instruction that is directly machine understandable and it is processed by CPU. The machine code is in binary (0's and 1's) format which is completely different from bytecode and source code. Machine code is obtained after the compilation or interpretation. It is also called a machine language.</p>
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="CompilationandExecutionProcess" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                   <h2 class="w3-panel w3-center"><u>Compilation and Execution Process</u></h2>
+                   <p>&#10028; <b>Compilation : </b>  Compilation is the phase or steps for execution where a program source code is converted into object code and then transferred for execution.</p>
+               
+                   <img src="content/img/python/CompilationAndExecutionProcess.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+                  <hr>
+                  <br>
+              <p> <b> Step 1:</b> In the first step of source code is check for any Syntax errors.</p>
+              <p> <b> Step 2: </b> After the syntax error are traced out, the source file is passed through a complier which first translate high level language into a object code ( A object code is not ready to executed).</p>
+              <p> <b> Step 3: </b> The Linker links the object code with pre-compiled library functions, thus creatiing an executable program.</p>  
+              <p> <b> Step 4:</b> Then, the executable program is loaded into the memory for execution. </p> <br> <br>
+              <p> <b> Linker: </b> A linker is special program that combines the object files, generated by compiler/assembler and other pieces of code to originate an executable file has <b>.exe </b>extension.</p>
+              <p> <b> Loader:</b> It is special program that takes input of executable files from linker, loads it to main memory, and prepares this code for execution by computer. </p>
+            
+            </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section>
+
+<!-- <section id="structured" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-left"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u> Structured Programming</u></h2>
+               
+              
+
+                  
+                    
+                    <img src="content/img/python/structure.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+       
+                
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="ProceduralOrientedProgramming" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-left"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u> High Level Language : Procedural Objected Programming and Object-Oriented Programming</u></h2>
+               
+              
+
+                  
+                    
+                    <img src="content/img/python/ProceduralOrientedProgramming.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+       
+                   <p>&#10028; <b>Procedural Programming </b> Procedural Programming can be defined as a programming model which is derived from structured programming. <br>
+                    
+                   </p>
+                  
+                
+                
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section>  -->
 
 
 <!-- <section id="ProgrammingLanguages" class="topPadding">
