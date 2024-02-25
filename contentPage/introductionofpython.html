@@ -426,22 +426,25 @@
                   
                  <br>
                  <h4><b>&#10028;</b> <u>Which of the following are valid Python identifiers? </u> </h4>
-                
-                 <table class="w3-table w3-pale-yellow ">
+                 <div class="w3-responsive"> 
+                    <table class="w3-table w3-pale-yellow ">
                     
 
-                    <tr> <td>a.p</td> <td> a?4</td> <td>email</td> <td>marks10</td></tr>
-                    <tr> <td>20marks</td> <td> _my</td> <td>_python$val</td> <td>per%10</td></tr>
-                    <tr> <td>abc@xyz</td> <td> _abc2</td> <td>python2learn</td> <td>ca$h</td></tr>
-                    
-                    
-                    
+                        <tr> <td>a.p</td> <td> a?4</td> <td>email</td> <td>marks10</td></tr>
+                        <tr> <td>20marks</td> <td> _my</td> <td>_python$val</td> <td>per%10</td></tr>
+                        <tr> <td>abc@xyz</td> <td> _abc2</td> <td>python2learn</td> <td>ca$h</td></tr>
+                        
+                        
+                        
+    
+                     </table>
 
-                 </table>
+                 </div>
+              
             
                   <br>
                  <h4><b>&#10028;</b> <u> The multi-word variable name can be created by the following method.</u> </h4> 
-                 <p><b> Camel Case -  </b> In the camel case, each word or abbreviation in the middle of begins with a capital letter. There is no intervention of whitespace. <br>  <span style="color: rgb(115, 2, 7);"> For example - nameOfStudent, valueOfVaraible, etc. </span> </p>
+                 <p><b> Camel Case -  </b> In the camel case, each word or abbreviation in the middle of begins with a capital letter. There is no intervention of whitespace. <br>  <span style="color: rgb(115, 2, 7);"> For example - nameOfStudent, valueOfVariable, etc. </span> </p>
                  <p><b> Pascal Case - </b> It is the same as the Camel Case, but here the first word is also capital. <br> <span style="color: rgb(115, 2, 7);"> For example - NameOfStudent, etc. </span> </p>
                  <p><b> Snake Case - </b>  In the snake case, Words are separated by the underscore. <br>  <span style="color: rgb(115, 2, 7);"> For example - name_of_student, etc.</span> </p>
              
@@ -479,15 +482,20 @@
 
                  </div>
                  <p> <b>  &#10028; There are 35 keywords in Python 3.12.2</b></p>
-                 <table class="w3-table-all">
+
+                 <div class="w3-responsive">
+                    <table class="w3-table-all">
 
 
-                    <tr> <td>and  </td> <td> break</td> <td>elif </td> <td>from </td> <td>is   </td> <td>pass </td> <td> with</td> </tr>
-                    <tr> <td>as  </td> <td>class  </td> <td>else  </td> <td>global </td> <td> lambda  </td> <td>raise </td> <td>yield </td> </tr>
-                    <tr> <td>assert  </td> <td>continue  </td> <td>except  </td> <td>if  </td> <td>nonlocal  </td> <td>return </td> <td>True </td> </tr>
-                    <tr> <td>async </td> <td>def </td> <td>finally </td> <td>import </td> <td> not </td> <td>try </td> <td>False </td> </tr>
-                    <tr> <td>await </td> <td>del  </td> <td>for  </td> <td>in  </td> <td> or </td> <td> while </td> <td> None</td> </tr>
-                   </table>
+                        <tr> <td>and  </td> <td> break</td> <td>elif </td> <td>from </td> <td>is   </td> <td>pass </td> <td> with</td> </tr>
+                        <tr> <td>as  </td> <td>class  </td> <td>else  </td> <td>global </td> <td> lambda  </td> <td>raise </td> <td>yield </td> </tr>
+                        <tr> <td>assert  </td> <td>continue  </td> <td>except  </td> <td>if  </td> <td>nonlocal  </td> <td>return </td> <td>True </td> </tr>
+                        <tr> <td>async </td> <td>def </td> <td>finally </td> <td>import </td> <td> not </td> <td>try </td> <td>False </td> </tr>
+                        <tr> <td>await </td> <td>del  </td> <td>for  </td> <td>in  </td> <td> or </td> <td> while </td> <td> None</td> </tr>
+                       </table>
+
+                 </div>
+               
                  
                  <br> 
                 </div>
@@ -499,6 +507,315 @@
 
 
 </section>
+
+
+<section id="PythonPrintStatement" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python print() Function</u></h2>
+
+                    <h4><b>&#10028;</b> <u>Python print() Function</u> </h4>  
+                    
+                    <p> &#10028; The print() function prints the specified message to the screen, or other standard output device. </p>
+                    <p> &#10028; The message can be a string, or any other object, the object will be converted into a string before written to the screen.
+                    </p>
+                    
+                    <div class="w3-container w3-pale-yellow w3-round-xlarge">
+
+                        <p> <b> The full syntax of <span style="color: rgb(115, 2, 7);"> print() </span> is:</b></p>
+                       
+<pre class="line-numbers" data-line="15-25">
+    <code class="language-java">
+print(object(s), sep=' ', end='\n', file=sys.stdout, flush=False)
+    </code>
+</pre>
+
+             </div>
+
+             <div class="w3-responsive">
+                <table class="w3-table-all">
+                    <tr> <th>Parameter </th> <th> Description </th></tr>
+                    <tr> <td>object(s) </td> <td> Any object, and as many as you like. Will be converted to string before printed. </td></tr>
+                    <tr> <td>sep='separator'</td> <td> <b>Optional.</b> Specify how to separate the objects, if there is more than one. <span style="color: rgb(115, 2, 7);">Default is ' '</span>  </td></tr>
+                    <tr> <td>end='end' </td> <td> <b>Optional.</b> Specify what to print at the end. <span style="color: rgb(115, 2, 7);">Default is '\n' (line feed)</span> </td></tr>
+                    <tr> <td>file </td> <td><b> Optional.</b> An object with a write method. <span style="color: rgb(115, 2, 7);">Default is sys.stdout</span>  </td></tr>
+                    <tr> <td>flush </td> <td> <b>Optional.</b> A Boolean, specifying if the output is flushed (True) or buffered (False). <span style="color: rgb(115, 2, 7);">Default is False.</span>  </td></tr>
+
+                </table>
+
+             </div>   
+             <br>
+             <h4><b>&#10028;</b> <u>Some Examples of Python print() </u> </h4> 
+             <div class="w3-container w3-pale-yellow w3-round-xlarge">
+
+                <p> <b>1)  print() without any argument.</b></p>
+               
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+print("Hello")
+print()
+print("World")
+</code>
+</pre>
+<p>Output:</p>
+<pre class="line-numbers" data-line="15-25">
+    <code class="language-java">
+Hello
+
+World 
+    </code>
+</pre>
+
+</div>
+
+<br>
+
+<div class="w3-container w3-sand w3-round-xlarge">
+
+    <p> <b>2)  Ignore blank line (In file <b>p1.py</b> ).</b></p>
+   
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+print("Hello")
+
+print("World")
+</code>
+</pre>
+<p>Output:</p>
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+Hello
+World 
+</code>
+</pre>
+
+</div>  
+
+<br>
+
+<div class="w3-container w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>3)  print() with multiple arguments by using comma(,).</b></p>
+   
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+print("Hello","World")
+a=10
+print("The value of a is",a)
+</code>
+</pre>
+<p>Output:</p>
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+Hello World
+The value of a is 10
+</code>
+</pre>
+
+</div>
+
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>4)   print() with separator.</b></p>
+   
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+print("Python","Programming","World", sep="-")
+</code>
+</pre>
+<p>Output:</p>
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+Python-Programming-World
+</code>
+</pre>
+
+</div>
+
+<br>
+
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>5)   print(), when we does not pass anything in separator then output will merge.</b></p>
+   
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+print("Python","Programming","World", sep="")
+</code>
+</pre>
+<p>Output:</p>
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+PythonProgrammingWorld
+</code>
+</pre>
+
+</div>
+
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>6)   print() with end.</b></p>
+   
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+print("Hi" ,"Programmers")
+print("Welcome to", "Programming World")
+
+print("Hi" ,"Programmers", end="\n")
+print("Welcome to", "Programming World")
+</code>
+</pre>
+<p>Output:</p>
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+Hi Programmers
+Welcome to Programming World
+
+Hi Programmers
+Welcome to Programming World
+</code>
+</pre>
+
+</div>
+ <br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>7)   print() when we does not pass anything in end (e.g. end=" ") then output will merge.</b></p>
+   
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+print("Hi" ,"Programmers",end=" ")
+print("Welcome to", "Programming World")
+</code>
+</pre>
+<p>Output:</p>
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+Hi Programmers Welcome to Programming World
+</code>
+</pre>
+
+</div>
+      
+               
+                        
+                 <br>
+                 
+               
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+<section id="PythonInputFunction" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-left"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u> Python input() Function</u></h2>
+               
+                      
+                    <h4><b>&#10028;</b> <u>Python input() Function</u> </h4> 
+                <p> &#10028; In Python we use input() function to take input from user it means input make the interpreter to wait to read the data directly from the keyboard.</p>
+              
+                <div class="w3-container w3-pale-yellow w3-round-xlarge">
+
+                    <p> <b> The Syntax of <span style="color: rgb(115, 2, 7);"> input() </span> is:</b></p>
+                   
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+input(prompt)
+</code>
+</pre>
+<p> <b> Note: </b> <br> </p>
+<p> &#10028; prompt is a string, representing a default message before the takes input.</p>
+<p> &#10028;  By default, it returns the user input in form of a string.</p>
+
+         </div>
+
+         <br>
+
+
+         <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+            <p> <b>1) Taking input() from the user.</b></p>
+           
+        <pre class="line-numbers" data-line="15-25">
+        <code class="language-java">
+name=input()
+print(name)
+            
+        </code>
+        </pre>
+        <p>Output:</p>
+        <pre class="line-numbers" data-line="15-25">
+        <code class="language-java">
+BNUltrasoft
+BNUltrasoft
+        </code>
+        </pre>
+        
+        </div>
+        <br>
+         <div class="w3-container  w3-sand w3-round-xlarge">
+
+            <p> <b>2) Taking input() from the user with a message.</b></p>
+           
+        <pre class="line-numbers" data-line="15-25">
+        <code class="language-java">
+name=input("Enter your name:")
+print(name)
+        </code>
+        </pre>
+        <p>Output:</p>
+        <pre class="line-numbers" data-line="15-25">
+        <code class="language-java">
+Enter your name:Rahul Kumar
+Rahul Kumar
+        </code>
+        </pre>
+        
+        </div>
+        <br>
+        <h4><b>&#10028;</b> <u>Labwork 4:</u> </h4> 
+        <div class="w3-container w3-sand w3-round-xlarge">
+     <p> Q1) WAP input any 3 numbers and find their sum, average and print them.</p>
+     <p> Q2) WAP input a number and display its cube.</p>
+     <p> Q3) WAP to input length and breadth of a rectangle, Calculate its area and perimeter.</p>
+     <p> Q4) WAP to input side of a square and calculate its area.</p>
+     <p> Q5) WAP to input any 5 students name and print them.</p>
+     <p> Q6) WAP to input the marks of any 5 subjects of a student. Calculate and print the total mark and percentage.</p>
+     <p> Q7) WAP to input the name, age and address of a student and display them.</p>
+     <p> Q8) WAP to input principal amount, rate, time. Calculate the simple interest. </p>
+     <p> Q9) WAP to input of radius of circle. Calculate and print area and circumference.</p>
+     <p> Q10) WAP to input a number. Calculate and print the square of that number. </p>
+        </div>
+ <br>
+
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
 
 <!-- 
 Coding Part
