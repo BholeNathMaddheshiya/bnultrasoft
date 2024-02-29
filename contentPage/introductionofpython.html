@@ -801,8 +801,75 @@ Rahul Kumar
      <p> Q6) WAP to input the marks of any 5 subjects of a student. Calculate and print the total mark and percentage.</p>
      <p> Q7) WAP to input the name, age and address of a student and display them.</p>
      <p> Q8) WAP to input principal amount, rate, time. Calculate the simple interest. </p>
-     <p> Q9) WAP to input of radius of circle. Calculate and print area and circumference.</p>
+     <p> Q9) WAP to input of radius of circle. Calculate and print area and circumference. <b>[Hint: Area=22/7*r*r;  Circumference=2*22/7*r]</b></p>
      <p> Q10) WAP to input a number. Calculate and print the square of that number. </p>
+     <p> Q11)  WAP in python input  Fahrenheit from the user and calculate its Celsius. 
+        <b>[Hint: C = (F − 32) × 5 ⁄ 9]</b> </p>
+     <p> Q12) WAP in python input  Celsius from the user and calculate its Fahrenheit.
+        <b> [ Hint: F = C x (9 ⁄ 5) + 32 ] </b></p>
+     <p> Q13)  WAP in python input base and height of triangle and calculate its Area.
+        <b>  [ Hint : Area of a Triangle => A = ½ (b × h)] </b> </p> 
+     <p> Q14) WAP in python input radius and height of cylinder and calculate volume of Cylinder
+        <b> [ Hint :  PI*r*r*h ; PI= 3.14] </b>  </p>        
+     <p> Q15) WAP in python input length, breadth, height and calculate the volume of cuboid.
+        <b> [Hint:  l*b*h ]</b> </p>
+     <p>Q16)  WAP in python input selling price and loss price
+        from the user and calculate the Cost Price.
+        <b>[Hint: SP=Rs 500, Loss=20, CP=?] </b> </p>
+     <p>Q17) WAP in python input Cost Price and Profit price
+        from the user and calculate the Selling Price.
+        <b>[Hint: CP= Rs 300, Profit= Rs 40, SP=? ]</b> </p>   
+
+    <p>Q18) WAP in python input Selling Price
+        from the user and calculate Loss and Loss Percentage.  
+        If Cost Price is Rs 250. </p>
+     
+    <p> Q19) WAP in python input Selling Price from the user and    
+        calculate Profit and Profit Percentage. 
+        If Cost Price is Rs 800.  </p>
+    <p> Q20) WAP in python input Selling Price and Profit also
+        calculate Cost Price and Profit Percentage. </p>    
+
+   <p> Q21) WAP in python input 2  float number and print their sum. </p>
+   <p> Q22) WAP in python input 1 float number and 1 integer value, 
+    print their sum after converting the integer into float number. </p>
+
+<p>Q23)  WAP in python input 2 integer value, calculate their multiplication 
+    after converting into float value. </p>
+<p>Q24) WAP in python enter 4 digit number from the user, 
+    and reverse the number and print it.
+    <b>[Hint : 4567 output should be: 7654 ]</b>  </p>
+
+
+ <p>Q25) WAP in python input any three digit, 
+    and print the sum of cube of each digit of the given  number. </p> 
+
+<p>Q26) WAP in python input 5 digits integer number and find sum of first and last digit. </p>
+<p>Q27) WAP to input total selling price and profit of 15 items. 
+    Calculate C.P. of each item. </p>
+<p>Q28) WAP to input Basic Salary of an employee and calculate Gross Salary. <br> 
+    Where as: <br>
+     T.A. is 10% of B.S. <br>
+     D.A. is 15 % of B.S. <br>
+     HRA. is 20% of B.S.  <br>
+
+    <b> [ Hint: Gross Salary = TA + DA+ HRA + BS ] </b></p>    
+
+<p> Q29) WAP to input 5 digit integers number and find the sum of digits. </p>
+<p>Q30) WAP to input distance between two cities in Kilometre.
+    Convert into <b>m</b>  and <b>cm</b>. </p>
+<p>Q31) You have consider a currency system  in which there are,
+    7 notes of denomination. <br>
+   <b> Re 1, Rs 2, Rs 5, Rs 10, Rs 20, Rs 50, Rs 100.</b> <br>
+    WAP in python to input of N rupees, 
+    find out the number of notes (count the number of notes) 
+    that will be equal of same N rupees. </p>
+
+
+
+
+
+
         </div>
  <br>
 
@@ -815,6 +882,405 @@ Rahul Kumar
 
 
 </section> 
+
+<section id="pythondatatype" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python’s Built-in Data
+                        types</u></h2>
+               
+                        <img src="content/img/python/pythondatatype.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+                
+                 <br>
+
+                 <h3> &#10028; Getting the Data Type</h3>
+                 <p> &#10028; You can get the data type of any object by using the <span style="color: rgb(115, 2, 7);">type()</span>  function:</p> 
+              
+                 <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Print the data type of the variable x:</b></p>
+                   
+                <pre class="line-numbers" data-line="15-25">
+                <code class="language-java">
+x = 5
+print(type(x))
+                </code>
+                </pre>
+                <p>Output:</p>
+                <pre class="line-numbers" data-line="15-25">
+                <code class="language-java">
+< class 'int' >
+                </code>
+                </pre>
+                
+                </div>
+
+<br>
+<p> &#10028; If you want to specify the data type, you can use the following 
+    constructor functions:</p>
+
+    <div class="w3-responsive">
+    
+    <table  class="w3-table-all">
+    <tr>
+    <th style="min-width:350px">Example</th>
+    <th>Data Type</th>
+  
+    </tr>
+    <tr>
+    <td>x = &quot;Hello World&quot;</td>
+    <td>str</td>
+    </tr>
+    <tr>
+    <td>x = 20</td>
+    <td>int</td>
+    </tr>
+    <tr>
+    <td>x = 20.5</td>
+    <td>float</td>
+    </tr>
+    <tr>
+    <td>x = 1j</td>
+    <td>complex</td>
+    </tr>
+    <tr>
+    <td>x = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]</td>
+    <td>list</td>
+    </tr>
+      <tr>
+    <td>x = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)</td>
+    <td>tuple</td>
+      </tr>
+      <tr>
+    <td>x = range(6)</td>
+    <td>range</td>
+      </tr>
+      <tr>
+    <td>x = {"name:" : "John", "age" : 36}</td>
+    <td>dict</td>
+      </tr>
+      <tr>
+    <td>x = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}</td>
+    <td>set</td>
+      </tr>
+      <tr>
+    <td>x = frozenset({&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;})</td>
+    <td>frozenset</td>
+      </tr>
+      <tr>
+    <td>x = True</td>
+    <td>bool</td>
+      </tr>
+      <tr>
+    <td>x = b"Hello"</td>
+    <td>bytes</td>
+      </tr>
+      <tr>
+    <td>x = bytearray(5)</td>
+    <td>bytearray</td>
+      </tr>
+    <tr>
+    <td>x = memoryview(bytes(5))</td>
+    <td>memoryview</td>
+    </tr>
+    <tr>
+    <td>x = None</td>
+    <td>NoneType</td>
+    </tr>
+    </table>
+</div>
+
+
+                <br>
+              
+                </div>
+
+                
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="PythonConstant" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python Constants</u></h2>
+               
+                   
+                 <br>
+                 <p><b> &#10028; Python Constants: </b>A constant is a special type of variable whose value cannot be changed.</p> 
+                 <p> &#10028;  Let's see how we declare constants in separate file and use it in the main file,</p>
+                  <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Create a constant.py:</b></p>
+                   
+                <pre class="line-numbers" data-line="15-25">
+                <code class="language-java">
+# declare constants 
+PI = 3.14
+GRAVITY = 9.8
+                </code>
+                </pre> <br>
+                <p> <b>Create a main.py:</b></p>
+                   
+                <pre class="line-numbers" data-line="15-25">
+                <code class="language-java">
+
+import constant
+
+print(constant.PI) # prints 3.14
+print(constant.GRAVITY) # prints 9.8
+                </code>
+                </pre>
+
+                <p>Output:</p>
+                <pre class="line-numbers" data-line="15-25">
+                <code class="language-java">
+3.14
+9.8
+                </code>
+                </pre>
+                
+                </div>
+                <br>
+
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="PythonLiteral" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python Literal</u></h2>
+               
+                   
+                 <br>
+                 <p><b> &#10028; Python Literal: </b>Literals are the actual values that are directly written into your code to represent specific data. They are used to provide initial values for variables, as operands in expressions, or as direct values in statements.</p> 
+                  <h4> Types of Literals in Python:</h4>
+                  <ul class="w3-ul">
+                    <li>1) String literals</li>
+                    <li>2) Character literal</li>
+                    <li>3) Numeric literals</li>
+                    <li>4) Boolean literals</li>
+                    <li>5) Special literals</li>
+                    <li>6) Literal Collections</li>
+
+
+
+                  </ul>
+                 <br>
+                 
+                  <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>All example of Literals in Python</b></p>
+                   
+                <pre class="line-numbers" data-line="15-25">
+                <code class="language-java">
+
+#-------------------------------
+#Example Python String Literals
+#-------------------------------
+
+a='BNUltrasoft'   # in single quote
+b="BNUltrasoft"   # in double quotes
+c='''BN           
+      Ultra
+        Soft'''   # multi-line String
+
+
+#-------------------------------
+#Python Character literal
+#-------------------------------
+
+
+d='n'   # character literal in single quote
+e="a"   # character literal in double quotes
+
+#-------------------------------
+#Python Numeric literal
+#-------------------------------
+
+
+f=50     # Integer Literal
+g=12.5   # Float Literal
+h=7+5j   # Complex Literal
+
+#-------------------------------
+#Python Boolean literal
+#-------------------------------
+
+i=True   
+
+
+#-------------------------------
+#Python Special literal
+#-------------------------------
+
+water_remain = None
+
+
+#-------------------------------
+#Python literal collections
+#-------------------------------
+
+number = [1, 2, 3, 4, 5]    # List literals
+even_number = (2, 4, 6, 8)  # Tuple literals
+information = {'name': 'amit', 'age': 20, 'ID': 20} #Dictionary literal
+vowels = {'a', 'e', 'i', 'o', 'u'} #Set literal
+                    
+                </code>
+                </pre> 
+               
+                
+                </div>
+                <br>
+
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="PythonInterpreter" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python String</u></h2>
+               
+                   
+                 <br>
+                 <p><b> &#10028; Python String : </b> Python string is the collection of the characters surrounded by single quotes (' '), 
+                    double quotes (" "), or triple quotes(""" """)/(''' ''').</p> 
+
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+<pre class="line-numbers" data-line="15-25">
+                    <code class="language-java">
+
+Eg 1: 'Hello Python' 
+Eg 2: "Hello Python" 
+Eg 3: '''Hello
+             Python'''
+Eg 4: """Hello 
+             Python"""
+      </code>
+</pre> 
+    
+</div>
+
+    <br>
+
+    <p><b> &#10028;  String Length:</b> To get the length of a string, use the <b>len()</b> function.</p>
+    <div class="w3-container  w3-sand w3-round-xlarge">
+
+        <pre class="line-numbers" data-line="15-25">
+                            <code class="language-java">
+a = "BNUltrasoft"
+print(len(a))
+           </code>
+        </pre> 
+<h3>Output: 11</h3>
+            
+</div> 
+<p><b>Note:</b> Python does not have a character data type, a single character is simply a string with a length of 1.</p>
+
+        <br> 
+        <p><b> &#10028;  Python String Indexing:</b> In Python, individual characters of a String can be accessed by using the method of Indexing.</p>
+         <p>a) The indexing of the Python strings starts from 0.</p>
+         <p>  b) Indexing allows negative address references to access characters from the back of the String, <br>
+            e.g. -1 refers to the last character, -2 refers to the second last character, and so on. 
+         </p>
+         <img src="content/img/python/pythonindexing.jpg" class="w3-round w3-center"  alt="image" style="width:100%"> 
+         
+         <p> <b>Note: 1</b> While accessing an index out of the range will cause an IndexError. <br> <span style="color: rgb(252, 40, 47);"> IndexError: string index out of range.</span></p>
+         
+
+ <p> <b>Note: 2 </b>Only Integers are allowed to be passed as an index, float or other types that will cause a TypeError. <br>  <span style="color: rgb(252, 40, 47);">TypeError: string indices must be integers, not 'float'.</span>
+ </p>
+ <br>
+
+ <p><b> &#10028;String Slicing in Python:  </b>  Python slicing can be done in two ways:</p>
+  <p> 1) Using the array slicing  [:: ] method <br> 2) Using a slice() method</p>
+<br>
+
+<p><b> &#10028; </b> 1) Using the List/array slicing  [ :: ]  method :-</p>
+<img src="content/img/python/arrayslicing.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
+<p>a) In Python, the slice operator [n] is used to access the individual characters of the string.
+    where n is number of index.</p>
+    
+    <div class="w3-container  w3-sand w3-round-xlarge">
+       <h3>Example</h3>
+        <pre class="line-numbers" data-line="15-25">
+                            <code class="language-java">
+s="BNUltrasoft"
+print(s[2])
+           </code>
+        </pre> 
+<h3>Output: U</h3>
+            
+</div>    
+<p>b) Slicing in a String is done by using a Slicing operator, i.e., a colon (:). <br>
+    One thing to keep in mind while using this method is that the string returned 
+    after slicing includes the character at the start index but not the character at the last index. </p>        
+
+    <div class="w3-container  w3-sand w3-round-xlarge">
+        <h3>Example</h3>
+        <pre class="line-numbers" data-line="15-25">
+                            <code class="language-java">
+s="BNUltrasoft"
+print(s[2:7])
+           </code>
+        </pre> 
+<h3>Output: Ultra</h3>
+            
+</div> 
+ <br>
+
+ <div class="w3-container  w3-sand w3-round-xlarge">
+    <h4><b>&#10028;</b> <u>Labwork 5:</u> </h4> 
+    <p>Q32) WAP in python input your name and print first and last character of your name.</p>
+    <p>Q33) WAP in python input your name and print your surname.</p>    
+</div>
+ <br>
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+
+
 
 
 <!-- 
