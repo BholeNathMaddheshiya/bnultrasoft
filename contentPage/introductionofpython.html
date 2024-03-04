@@ -1384,6 +1384,71 @@ print(s[2:7])
  </div>
 
  <br>
+<br>
+<p><b> &#10028; </b> 2) Using the slice()  method :-</p>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+<h4> Syntax:-</h4>
+<li> slice(stop)</li>
+<li> slice(start, stop, step)</li>
+<p> Here, <br> &#10028; The <span style="color: rgb(115, 2, 7);"> <b> start </b></span>  parameter denotes the <b>starting</b>  index. <br> &#10028; The <span style="color: rgb(115, 2, 7);"><b>end</b></span>  parameter denotes the <b>ending</b>  index. <br> &#10028; The <span style="color: rgb(115, 2, 7);"> <b>step </b></span>  parameter denotes the number of elements to be <b>skipped</b>  during the slice operation.</p>
+<p><b>Note:</b> These are separated by <b>comma ( , )</b>.</p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+<h4> Example:-</h4>
+
+<pre class="line-numbers" data-line="15-25">
+    <code class="language-java">
+a="Hello Python"
+
+s1=slice(11)  #Passing only stop
+s2=slice(0,11) #Passing start and stop 
+s3=slice(0,12,2)#Passing start, stop, step
+s4=slice(-1,-12,-1)#Passing start, stop, step but in negative
+
+print(a[s1])
+print(a[s2])
+print(a[s3])
+print(a[s4])
+</code></pre>
+
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <h4> <u>Output:-</u></h4>
+    <p>Hello Pytho</p>
+    <p>Hello Pytho </p>
+<p>HloPto </p>
+<p> nohtyP olle</p>
+
+    </div>
+<br>
+    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <h4><b>&#10028;</b> <u>Labwork 6:</u> </h4> 
+      <p> Q39) What will be the output when we passed the following  parameters in <span style="color: rgb(115, 2, 7);">slice() method</span> when <b>a="Information Technology"</b>.</p>
+    
+      <ul class="w3-ul">
+        <li> 1) slice(2,15,2)</li>
+        <li> 2) slice(3,15) </li>
+        <li> 3) slice(-1,-23,-1)</li>
+        <li> 4) slice(-4)</li>
+        <li> 5) slice(7) </li>
+        
+      </ul>
+      <p> Q40) What will be the slice() method of the following output when <b>a="Information Technology"</b>.</p>
+    
+      <ul class="w3-ul">
+        <li> 1) lncTn</li>
+        <li> 2) IfrainTcnl </li>
+        <li> 3) Information Technolo</li>
+        <li> 4) lonhceT n</li>
+        <li> 5) on Technolog </li>
+        
+      </ul>
+        </div>
+
+<br>
+
             </div> 
         </div>
     </div>
@@ -1392,7 +1457,132 @@ print(s[2:7])
 
 </section> 
 
+<section id="P" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-left"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
 
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python - String Concatenation</u></h2>
+                   
+                 <br>
+                 <p><b> &#10028; String Concatenation : </b> To concatenate, or combine, two strings you can use the <b>+</b> operator.</p> 
+                 <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Example 1:</b></p>
+                   
+                <pre class="line-numbers" data-line="15-25">
+                <code class="language-java">
+a = "Hello"
+b = "Python"
+c = a + b
+print(c)
+</code>
+                </pre> 
+   <br>
+<p><b>Output:</b></p>
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+HelloPython
+</code>
+</pre>
+                
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 2:</b></p>
+   
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+a = "Hello"
+b = "Python"
+c = a +" "+ b
+print(c)    
+</code>
+</pre> 
+<br>
+<p><b>Output:</b></p>
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+Hello Python
+</code>
+</pre>
+
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Note: </b>we cannot combine strings and numbers like this:</p>
+   
+<pre class="line-numbers" data-line="15-25">
+<code class="language-java">
+age = 20
+name = "John"
+s = name+age
+print(s)
+</code>
+</pre> 
+<br>
+<p><b>Output:</b></p>
+<p><span style="color: rgb(115, 2, 7);">  <b>TypeError:</b> can only concatenate str (not "int") to str </span>
+   </p>
+
+</div>
+             
+<br>
+</div>
+
+    </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="P" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python - Format Strings</u></h2>
+               
+                 
+                 <br>
+                 <p><b> &#10028; String Format : </b> The <span style="color: rgb(115, 2, 7);">format()</span>  method takes the passed arguments, formats them, and places them in the string where the placeholders <span style="color: rgb(115, 2, 7);"> {}</span>.</p> 
+               
+                 <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Note: </b>But we can combine strings and numbers by using the <span style="color: rgb(115, 2, 7);">format()</span>  method!</p>
+                   
+                <pre class="line-numbers" data-line="15-25">
+                <code class="language-java">
+age = 21
+txt = "My name is John, and I am {} years old."
+print(txt.format(age))
+                </code>
+                </pre> 
+                <br>
+                <p><b>Output:</b></p>
+               <p>My name is John, and I am 21 years old. </p>
+                
+                </div>
+
+
+
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
 
 
 
