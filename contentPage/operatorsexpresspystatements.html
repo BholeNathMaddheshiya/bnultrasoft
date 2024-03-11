@@ -55,6 +55,8 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ArithmeticOperators">Arithmetic Operators</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#AssignmentOperators">Assignment Operators</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ComparisonOperators">Comparison Operators</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#LogicalOperators">Logical Operators</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IdentityOperators">Identity Operators</a> 
            
             
             
@@ -281,6 +283,38 @@
                 
                  <br>
                  <br>
+                 <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Some Examples on Comparison Operators:-</b></p>
+                   
+                <pre>
+                <code class="language-java">
+a=5
+b=10
+print("a == b", a == b)
+print("a != b", a != b)
+print("a > b", a  >b)
+print("a < b", a < b)
+print("a >= b", a >= b)
+print("a <= b", a <= b)
+</code>
+                </pre> 
+                <h3>Output:-</h3>
+                <p> a == b False </p>
+                <p>a != b True </p>
+                <p>a > b False </p>
+                <p> a < b True </p>
+                <p>a >= b False </p>
+                <p> a <= b True </p>
+               
+                
+                
+               
+                
+                
+            </div>
+
+                 <br>
                  
                </div>
 
@@ -291,6 +325,313 @@
 
 
 </section> 
+
+<section id="LogicalOperators" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python Logical Operators</u></h2>
+                    <p><b> &#10028; Python Logical Operators : </b>  Logical operators are used to combine conditional statements.</p> 
+                
+                   
+               
+                        <img src="content/img/python/logical.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+                
+                        <br>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+       
+                           <p> <b>Some Examples on Logical Operators:-</b></p>
+                          
+                       <pre>
+                       <code class="language-java">
+x = 5
+print(x < 5 and  x < 10)
+print(x < 5 or  x < 10)
+print(not(x > 3 and x < 10))
+print(not(x > 3 or x < 10))
+       </code>
+                       </pre> 
+                       <h3>Output:-</h3>
+                       <p>  False </p>
+                       <p> True </p>
+                       <p> False </p>
+                      
+                       <p> False </p>
+                 
+                      
+                       
+                       
+                      
+                       
+                       
+                   </div>
+                
+                
+                        <br>
+                 
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="IdentityOperators" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python Identity Operators</u></h2>
+                    <p><b> &#10028; Python Identity Operators : </b>  The identity operators compare the objects to determine whether they share the same memory and refer to the same object type <span style="color: rgb(115, 2, 7);">(data type)</span> .</p> 
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <br>
+                        <p><b>Note: </b>Python provided two identity operators.</p>
+                      <p><b>&#10028;</b> 'is' Operator </p>
+                      <p><b>&#10028;</b> 'is not' Operator </p>
+
+                     </div>
+                   
+               <br>
+               <div class="w3-container  w3-sand w3-round-xlarge">
+                <br>
+                <p><b> &#10028; Python 'is' Operator :  </b>Python provided two identity operators.</p>
+              <p> The <b>'is'</b> operator evaluates to <b>True</b>, if both the operand objects share the same memory location. The memory location of the object can be obtained by the <span style="color: rgb(115, 2, 7);"><b>"id()"</b> function</span> . <br> <b>Note:-</b> If the <span style="color: rgb(115, 2, 7);"><b>"id()"</b>  of both variables is same,  the <b>"is"</b> operator returns <b>True.</b> </span></p>
+
+             </div>
+                     
+                        <br>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+       
+                           <p> <b>Examples 1: on id() function:-</b></p>
+                          
+                       <pre>
+                       <code class="language-java">
+a=5
+b=10
+c=15
+
+#Printing Values
+print(a)
+print(b)
+print(c)
+
+# Printing IDs of a, b, and c
+print("a memory ID is =>",id(a))
+print("b memory ID is =>",id(b))
+print("c memory ID is =>",id(c))
+       </code>
+                       </pre> 
+                       <h3>Output:-</h3>
+                       <p>5</p>
+                       <p>10</p>
+                       <p>15</p>
+                       <p>a memory ID is => 140721431726648</p>
+                       <p>b memory ID is => 140721431726808</p>
+                       <p>c memory ID is => 140721431726968</p>
+                       
+                 
+                      
+                       
+                       
+                      
+                       
+                       
+                   </div>
+                   <br>
+                   <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+       
+                    <p> <b>Examples 2: on id() function:-</b> <span style="color: rgb(115, 2, 7);"><b>Note :-</b> When assign one value of a variable to another variable, it point the same memory location.</span>  </p>
+                   
+                <pre>
+                <code class="language-java">
+a=5
+b=10
+c=a
+
+#Printing Values
+print(a)
+print(b)
+print(c)
+
+# Printing IDs of a, b, and c
+print("a memory ID is =>",id(a))
+print("b memory ID is =>",id(b))
+print("c memory ID is =>",id(c))
+</code>
+                </pre> 
+                <h3>Output:-</h3>
+                <p>5</p>
+                <p>10</p>
+                <p>5</p>
+                <p>a memory ID is => 140721431726648</p>
+                <p>b memory ID is => 140721431726808</p>
+                <p>c memory ID is => 140721431726648</p>
+                
+          
+               
+                
+                
+               
+                
+                
+            </div>
+            <br>
+                   <div class="w3-container  w3-sand w3-round-xlarge">
+       
+                    <p> <b>Examples 3: on id() function:-</b> <span style="color: rgb(115, 2, 7);"><b>Note :-</b> When assign same value to all variables, it point the same memory location of all variables.</span>  </p>
+                   
+                <pre>
+                <code class="language-java">
+a=5
+b=5
+c=a
+
+#Printing Values
+print(a)
+print(b)
+print(c)
+
+# Printing IDs of a, b, and c
+print("a memory ID is =>",id(a))
+print("b memory ID is =>",id(b))
+print("c memory ID is =>",id(c))
+</code>
+                </pre> 
+                <h3>Output:-</h3>
+                <p>5</p>
+                <p>5</p>
+                <p>5</p>
+                <p>a memory ID is => 140721431726648</p>
+                <p>b memory ID is => 140721431726648</p>
+                <p>c memory ID is => 140721431726648</p>
+                
+          
+               
+                
+                
+               
+                
+                
+            </div>
+                
+                
+                
+                        <br>
+
+                        <br>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+            
+                         <p> <b>Examples : 'is' Operator :-</b>  </p>
+                        
+                     <pre>
+                     <code class="language-java">
+a=5
+b=10
+c=a
+
+#Printing Values
+print("a =>",a)
+print("b =>",b)
+print("c =>",c)
+
+# Printing IDs of a, b, and c
+print("a memory ID is =>",id(a))
+print("b memory ID is =>",id(b))
+print("c memory ID is =>",id(c))
+
+
+# Comparing and printing return values
+print("a is b =>",a is b)
+print("a is c =>",a is c)
+     </code>
+                     </pre> 
+                     <h3>Output:-</h3>
+<p>a => 5</p>
+<p>b => 10</p>
+<p>c => 5</p>
+<p>a memory ID is => 140721431726648</p>
+<p>b memory ID is => 140721431726808</p>
+<p>c memory ID is => 140721431726648</p>
+<p>a is b => False</p>
+<p>a is c => True</p>
+                     
+ </div>
+ <br>  
+ 
+ <br>
+ <div class="w3-container  w3-sand w3-round-xlarge">
+    <br>
+    <p><b> &#10028; Python 'is not' Operator :  </b>The <b>'is not'</b> operator evaluates to <b>True</b> if both the operand objects do not share the same memory location or both operands are not the same objects.</p>
+
+ </div>
+ <br>
+ <br>
+ <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+  <p> <b>Examples : 'is not' Operator :-</b>  </p>
+ 
+<pre>
+<code class="language-java">
+a=5
+b=10
+c=a
+
+#Printing Values
+print("a =>",a)
+print("b =>",b)
+print("c =>",c)
+
+# Printing IDs of a, b, and c
+print("a memory ID is =>",id(a))
+print("b memory ID is =>",id(b))
+print("c memory ID is =>",id(c))
+
+
+# Comparing and printing return values
+print("a is not b =>",a is not b)
+print("a is not c =>",a is not c)
+</code>
+</pre> 
+<h3>Output:-</h3>
+
+<p>a => 5</p>
+<p>b => 10</p>
+<p>c => 5</p>
+<p>a memory ID is => 140721434675768</p>
+<p>b memory ID is => 140721434675928</p>
+<p>c memory ID is => 140721434675768</p>
+<p>a is not b => True</p>
+<p>a is not c => False</p>
+
+</div>
+<br>  
+ 
+ 
+ 
+ <br>
+
+                                       
+                 
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
 
 
 
