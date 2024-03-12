@@ -57,6 +57,7 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ComparisonOperators">Comparison Operators</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#LogicalOperators">Logical Operators</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IdentityOperators">Identity Operators</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#MembershipOperators">Membership Operators</a> 
            
             
             
@@ -403,7 +404,7 @@ print(not(x > 3 or x < 10))
                <br>
                <div class="w3-container  w3-sand w3-round-xlarge">
                 <br>
-                <p><b> &#10028; Python 'is' Operator :  </b>Python provided two identity operators.</p>
+                <p><b> &#10028; Python 'is' Operator :  </b></p>
               <p> The <b>'is'</b> operator evaluates to <b>True</b>, if both the operand objects share the same memory location. The memory location of the object can be obtained by the <span style="color: rgb(115, 2, 7);"><b>"id()"</b> function</span> . <br> <b>Note:-</b> If the <span style="color: rgb(115, 2, 7);"><b>"id()"</b>  of both variables is same,  the <b>"is"</b> operator returns <b>True.</b> </span></p>
 
              </div>
@@ -622,6 +623,99 @@ print("a is not c =>",a is not c)
 
                                        
                  
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="MembershipOperators" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-left"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python Membership Operators</u></h2>
+
+                    <p><b> &#10028; Python Membership Operators: </b>  Python offers two membership operators to check or validate the membership of a value. It tests for membership in a sequence, such as strings, lists, or tuples.
+                    </p>
+                   
+                        <img src="content/img/python/membershipoperators.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+                
+                 <br>
+                 <br>
+
+                 <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                    <p> <b>Examples : 'in' Operator :-</b>  </p>
+                   
+                  <pre>
+                  <code class="language-java">
+a="bnultrasoft"
+print("u" in a)   #returns True because "u" is present in "bnultrasoft"
+print("B" in a)   #returns False because "B" is not present in "bnultrasoft" 
+print("z" in a)   #returns False because "z" is not present in "bnultrasoft" 
+
+x = ["apple", "banana"]
+print("banana" in x)  #returns True because a sequence with the value "banana" is in the list
+</code>
+                  </pre> 
+                  <h3>Output:-</h3>
+                  
+                <p> True </p>
+                <p>False</p>
+                <p>False</p>
+                <p> True </p>
+                  
+                  </div>
+                  <br>
+                  <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Examples : 'not in' Operator :-</b>  </p>
+                   
+                  <pre>
+                  <code class="language-java">
+a="bnultrasoft"
+print("z" not in a)  #returns True because "z" is not present in "bnultrasoft" 
+print("u" not in a)  #returns False because "u" is present in "bnultrasoft" 
+
+x = ["apple", "banana"]
+print("pineapple" not in x)   #returns True because a sequence with the value "pineapple" is not in the list
+</code>
+                  </pre> 
+                  <h3>Output:-</h3>
+                  
+                <p> True </p>
+                <p>False</p>
+                
+                <p> True </p>
+                  
+                  </div>
+                  <br>
+                  <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                     <p> <b>&#10028;</b> Labwork </p>
+             <p>Q42) WAP to input your name and check vowels (a,e,i,o,u) character <b>is present</b> one by one. <br> 
+                <b>[Hint: "e" in "computer" , Output: True |  "y" in "computer",   Output: False]</b> </p> 
+             <p>Q43) WAP to create a list of 8 colors names and input from user ( "pink","red", "blue") and check these <b>are present</b> in List.
+            </p> 
+            <p>Q44) WAP to create a list of 7 animals names and input from user ("Tiger") is <b>not present</b> in List.
+            </p>         
+<p>Q45) WAP to create a list of 6 fruits names and input from user ("Pomegranate") is <b>not present</b> in List.
+</p>
+
+
+
+
+
+                  </div>
+                 <br>
+                 <br>
+
                </div>
 
             </div> 
