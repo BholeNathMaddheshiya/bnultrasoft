@@ -62,16 +62,14 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Precedence">Operator Precedence</a> 
            
             
-            
-            <!-- <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="#sec2">About</a>
-            <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="#sec3">Contact</a>
-            <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="javascript:void(0)">Support</a>
-            <a onclick="myFunction('Demo1')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">Accordion <i class="fa fa-caret-down"></i></a>
+
+            <a onclick="myFunction('Demo1')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">Conditional Statements <i class="fa fa-caret-down"></i></a>
                 <div id="Demo1" class="w3-hide w3-animate-zoom">
-                <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Link 1</a>
-                <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Link 2</a>
-                <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Link 3</a>
+                <a href="#Pythonif" class="w3-button  w3-hover-white w3-block w3-left-align">Python if</a>
+                <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Python if-else</a>
+                <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Python if-elif-else</a>
                 </div> 
+<!--                 
             <a onclick="myFunction('Demo2')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">Accordion <i class="fa fa-caret-down"></i></a>
                 <div id="Demo2" class="w3-hide w3-animate-zoom">
                 <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Link 1</a>
@@ -80,8 +78,8 @@
                 </div>
 
            <a class="w3-bar-item w3-button w3-animate-zoom w3-bnultrasoft-color w3-hover-white" href="quiz.html">Python Quiz Set1</a>    
-       
         -->
+    
        
         </div>
        
@@ -834,6 +832,140 @@ print("pineapple" not in x)   #returns True because a sequence with the value "p
 
 
 </section> 
+
+
+<section id="Pythonif" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Conditional Statements</u></h2>
+                    <br>
+                    <p> <b>&#10028; </b>Conditional statements in Python languages decide the direction (Control Flow) of the flow of program execution.</p>
+                    <p> <b>&#10028; </b>If-Else statements in Python are part of conditional statements, which decide the control of code.</p>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Types of Control Flow in Python</b></p>
+                         <ul class="w3-ul">
+                            <li>1). The if statement</li>
+                            <li>2). The if-else statement</li>
+                            <li>3). The if-elif-else ladder</li>
+                            <li>4). The nested-if statement </li>
+                           
+                         </ul>
+
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                        <p> <b>Python Indentation:</b></p>
+                         <ul class="w3-ul">
+                           <p> <b>&#10028; </b> Since other programming languages uses curly-braces { } to define a block of code but in Python uses <span style="color: rgb(115, 2, 7);">Indentation (whitespace at the beginning of a line)</span>  to define scope in the code.</p>
+                            <p> <b>Note: </b>If we not use indentation when it required, then  <span style="color: rgb(115, 2, 7);">Python will raise an error. </span>  </p>
+                         </ul>
+
+                    </div>
+
+                    <br>
+                    <br> 
+                    <h2 class="w3-panel w3-center"><u>The if Statements</u></h2>
+                    <p> <b> &#10028; </b>The if statement is used to test a particular condition and if the condition is true, it executes a block of code known as <span style="color: rgb(115, 2, 7);">if-block.</span>  </p>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Syntax of if:</b></p>
+                        <pre>
+                            <code class="language-java">
+if condition:
+   statement 
+</code>
+</pre> 
+<br>
+<p> <b>Example 1 of <span style="color: rgb(115, 2, 7);">if statements: </span></b> Here, if condition is <span style="color: rgb(115, 2, 7);">True</span>, then if block statements will be executes. Out of if block also executes as normally.</p>
+<pre>
+    <code class="language-java">
+a = 45
+b = 20
+
+if a > b:
+    print("a is greater than b") #If block starts
+    print("a is greater than b")
+    print("a is greater than b")
+    print("a is greater than b") #If block ends
+        
+print("Out of If block") #Out of If block
+</code>
+    </pre> 
+    <br>
+    <p><b>Output: </b></p>
+    <p>a is greater than b</p>
+    <p>a is greater than b</p>
+    <p>a is greater than b</p>
+    <p>a is greater than b</p>
+   
+    
+<p>Out of If block</p>
+
+<br>
+<p> <b>Example 2 of <span style="color: rgb(115, 2, 7);">if statements: </span></b> Here, if condition is <span style="color: rgb(115, 2, 7);"> False</span>, then if block statements will not be executes. Out of if block executes as normally.</p>
+<pre>
+    <code class="language-java">
+a = 45
+b = 20
+
+if a < b:
+    print("a is greater than b") #If block starts
+    print("a is greater than b")
+    print("a is greater than b")
+    print("a is greater than b") #If block ends
+        
+print("Out of If block") #Out of If block
+</code>
+    </pre> 
+    <br>
+    <p><b>Output: </b></p>
+  
+   
+    
+<p>Out of If block</p>
+
+
+
+
+
+</div>
+                 <br>
+
+
+
+                 <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                    <p> <b>Labwork: </b></p>
+                  <p>Q48) WAP to input any two number <span style="color: rgb(115, 2, 7);">(a , b)</span>  and print its greater number.</p>
+                  <p>Q49) WAP to Enter a Name and check <span style="color: rgb(115, 2, 7);">name="Python"</span> , if the name matches to "Python" then print <span style="color: rgb(115, 2, 7);">"Hello Python"</span> .</p>
+                  <p>Q50) WAP to Enter a Name and print it if vowels matches. <span style="color: rgb(115, 2, 7);"> By using if statement</span> <br>
+                      [ Hint: <br> 
+                      Enter any name : <span style="color: rgb(115, 2, 7);">Computer </span><br>
+                      Vowel <span style="color: rgb(115, 2, 7);">'e'</span>  is matches in <span style="color: rgb(115, 2, 7);">Computer</span>  <br>
+                      Vowel <span style="color: rgb(115, 2, 7);">'o'</span>  is matches in <span style="color: rgb(115, 2, 7);">Computer</span>   <br>
+                      Vowel <span style="color: rgb(115, 2, 7);">'u'</span>  is matches in <span style="color: rgb(115, 2, 7);">Computer</span>   ] 
+                  </p>
+                </div>
+                <br>
+                <br>
+                 
+
+
+ </div>
+</div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
 
 <!-- 
 Coding Part
