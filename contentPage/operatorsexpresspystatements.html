@@ -66,8 +66,8 @@
             <a onclick="myFunction('Demo1')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">Conditional Statements <i class="fa fa-caret-down"></i></a>
                 <div id="Demo1" class="w3-hide w3-animate-zoom">
                 <a href="#Pythonif" class="w3-button  w3-hover-white w3-block w3-left-align">Python if</a>
-                <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Python if-else</a>
-                <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Python if-elif-else</a>
+                <a href="#Pythonifelse" class="w3-button  w3-hover-white w3-block w3-left-align">Python if-else</a>
+                <a href="#Pythonifelifelse" class="w3-button  w3-hover-white w3-block w3-left-align">Python if-elif-else</a>
                 </div> 
 <!--                 
             <a onclick="myFunction('Demo2')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">Accordion <i class="fa fa-caret-down"></i></a>
@@ -897,7 +897,7 @@ if a > b:
 print("Out of If block") #Out of If block
 </code>
     </pre> 
-    <br>
+    <hr style="height: 1px; background-color: brown;">
     <p><b>Output: </b></p>
     <p>a is greater than b</p>
     <p>a is greater than b</p>
@@ -923,7 +923,7 @@ if a < b:
 print("Out of If block") #Out of If block
 </code>
     </pre> 
-    <br>
+    <hr style="height: 1px; background-color: brown;">
     <p><b>Output: </b></p>
   
    
@@ -965,6 +965,190 @@ print("Out of If block") #Out of If block
 
 
 </section> 
+
+
+
+<section id="Pythonifelse" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>The  If-else Statement</u></h2>
+                <p> <b> &#10028; </b> Here, if the condition is false, we can use the else statement, when the <span style="color: rgb(115, 2, 7);"> if </span>  condition is <span style="color: rgb(115, 2, 7);">false</span> . </p>
+                 <br>
+                 <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Syntax of if-else:</b></p>
+                   
+                <pre>
+                <code class="language-java">
+if (condition):
+    # Executes this block if
+    # condition is true
+
+else:
+    # Executes this block if
+    # condition is false
+</code>
+                </pre>
+            
+            </div> 
+            <br>
+            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                <p> <b>Example of  if-else:</b></p>
+               
+            <pre>
+            <code class="language-java">
+a= -20
+if a>0:
+    print(a,"is greater than 0")
+else:
+    print(a,"is negative number")
+</code>
+            </pre>
+
+            
+            <hr style="height: 1px; background-color: brown;">
+            <p><b> Output: </b></p>
+            <p> -20 is negative number</p>  
+        </div> 
+        
+                
+                 <br>
+                   
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+<section id="Pythonifelifelse" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>The if-elif-else ladder</u></h2>
+                <p> <b> &#10028; </b> Here, a user can decide among multiple options. The <span style="color: rgb(115, 2, 7);">if statements </span> are executed from the top to down. If none of the conditions is true, then the final <span style="color: rgb(115, 2, 7);">“else”</span>  statement will be executed. </p>
+                 <br>
+                 <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Syntax of if-elif-else:</b></p>
+                   
+                <pre>
+                <code class="language-java">
+if (condition):
+    statement
+
+elif (condition):
+    statement
+
+elif (condition):
+    statement
+.
+.
+
+else:
+    statement
+</code>
+                </pre>
+            
+            </div> 
+            <br>
+            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                <p> <b>Example of  if-elif-else:</b></p>
+               
+            <pre>
+            <code class="language-java">
+a = 20
+
+if (a == 10): 
+    print("a is 10")
+    
+elif (a == 15): 
+    print("a is 15")
+    
+elif (a == 20): 
+    print("a is 20")
+    
+else: 
+    print("a is not find") 
+                
+</code>
+            </pre>
+
+            
+            <hr style="height: 1px; background-color: brown;">
+            <p><b> Output: </b></p>
+            <p> a is 20</p>  
+        </div> 
+        <br>
+
+        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+            <p> <b>Labwork:</b></p>
+            <ul class="w3-ul">
+             <li> Q51) WAP to  check whether a number entered by user is divisible by 7 or not.</li>
+             <li> Q52) WAP to program to check whether a number entered by user is even or odd. </li>
+             <li> Q53) WAP to check whether a person is eligible for voting or not (accept are from user).</li>
+             <li> Q54) WAP to program to check whether the sum of first and last digit of a number (entered by user) is divisible by 3 or not. </li>
+             <li> Q55) WAP to accept a number from 1 to 7 and display the name of the day like 1 for Sunday, 2 for Monday and so on.</li>
+             <li> Q56) WAP to accept 3 numbers from the user and print the greatest number among them.</li>
+             <li> Q57) WAP to accept a character from user and check the character is Vowels or not (user may enter 
+                small / capital Character  ).</li>
+             <li> Q58) WAP to accept two number and perform all mathematical operations <span style="color: rgb(115, 2, 7);"> (+, -, *, %, //, /, **) </span> <br>
+                 <p> Hint  :  </p>
+                 <p> Enter first number : 7</p>
+                 <p> Enter second number : 3</p>
+                 <p> Enter Operator : +</p>
+                 <p> Your answer is : 10</p>
+            </li>
+             <li> Q59) WAP to accept percentage from the user and display the grade according to the following criteria. <br>
+                <table class="w3-table-all">
+                <tr> <th> Percentage</th> <th>Grade</th></tr>
+                 <tr> <td>  > = 85</td> <td> <b> S Grade</b></td></tr>
+                 <tr> <td>  > = 75 to < 85</td> <td> <b> A Grade</b></td></tr>
+                 <tr> <td>  > = 65 to < 75</td> <td> <b> B Grade</b></td></tr>
+                 <tr> <td>  > = 55 to < 65</td> <td> <b> C Grade</b></td></tr>
+                 <tr> <td>  > = 50 to < 55</td> <td> <b> D Grade</b></td></tr>
+                <tr> <td>  < 50</td> <td> <b> F Grade</b></td></tr>
+                </table>
+            </li>
+             <li>Q60)  WAP to program to calculate the electricity bill (accept number of unit from user) according to the following criteria:  <br>
+                 <table class="w3-table-all">
+                   <tr> <th> Unit</th> <th> Price</th></tr>
+                   <tr> <td> First 100 units</td> <td> no charge</td></tr>
+                   <tr> <td> Next 100 units</td> <td> Rs 5 per unit</td></tr>
+                   <tr> <td > After 200 units</td> <td> Rs 10 per unit </td> </tr>
+                   <tr> <td colspan="2"><span style="color: rgb(115, 2, 7);">Eg: If input unit is 350 than total bill amount is Rs 2000.</span>  </td></tr>
+                </table>   
+                  
+             </li>
+            </ul>
+        
+        </div>
+        
+                
+                 <br>
+                   
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
 
 
 <!-- 
