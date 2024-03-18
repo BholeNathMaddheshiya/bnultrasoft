@@ -68,6 +68,7 @@
                 <a href="#Pythonif" class="w3-button  w3-hover-white w3-block w3-left-align">Python if</a>
                 <a href="#Pythonifelse" class="w3-button  w3-hover-white w3-block w3-left-align">Python if-else</a>
                 <a href="#Pythonifelifelse" class="w3-button  w3-hover-white w3-block w3-left-align">Python if-elif-else</a>
+                <a href="#nested-if" class="w3-button  w3-hover-white w3-block w3-left-align">Python nested-if</a>
                 </div> 
 <!--                 
             <a onclick="myFunction('Demo2')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">Accordion <i class="fa fa-caret-down"></i></a>
@@ -1099,7 +1100,7 @@ else:
              <li> Q51) WAP to  check whether a number entered by user is divisible by 7 or not.</li>
              <li> Q52) WAP to program to check whether a number entered by user is even or odd. </li>
              <li> Q53) WAP to check whether a person is eligible for voting or not (accept are from user).</li>
-             <li> Q54) WAP to program to check whether the sum of first and last digit of a number (entered by user) is divisible by 3 or not. </li>
+             <li> Q54) WAP to program to check whether the sum of first and last digit of a number (entered by user which is 3 digits number) is divisible by 3 or not. </li>
              <li> Q55) WAP to accept a number from 1 to 7 and display the name of the day like 1 for Sunday, 2 for Monday and so on.</li>
              <li> Q56) WAP to accept 3 numbers from the user and print the greatest number among them.</li>
              <li> Q57) WAP to accept a character from user and check the character is Vowels or not (user may enter 
@@ -1132,6 +1133,23 @@ else:
                 </table>   
                   
              </li>
+             <li> Q61) WAP to accept three sides of a triangle and check whether it is an equilateral, isosceles or scalane triangle. <br>
+                <b> Note: </b> <br>
+                <p> An equilateral triangle: In which all sides are equal.</p>            
+                <p> A scalane triangle : In which three unequal sides.</p>
+                 <p>An isosceles triangle : In which at least two sides are equal.</p>
+            </li>
+
+            <li> Q62) WAP  to compute the wages of a daily laborer as per the following rules: -
+           
+                <table class="w3-table-all">
+                    <tr> <td> Hours Worked Rate Applicable Upto first 8 hrs Rs100/- </td></tr>
+                    <tr> <td> a) For next 4 hrs Rs30/- per hr extra </td></tr>
+                    <tr> <td> b) For next 4 hrs Rs40/- per hr extra </td></tr>
+                    <tr> <td> c) For next 4 hrs Rs50/- per hr extra </td></tr>
+                    <tr> <td> d) For rest Rs60/- per hr extra  </td></tr>
+                </table>    </li>  
+            
             </ul>
         
         </div>
@@ -1142,6 +1160,129 @@ else:
                </div>
 
             </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+
+<section id="nested-if" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>The nested-if statement</u></h2>
+
+                    <p><b> &#10028;The nested-if statement : </b> If statement can also be checked inside other if statement. This conditional statement is called a nested if statement. This means that inner if condition will be checked only if outer if condition is true.</p> 
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Syntax:</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+# If condition 1 is true, we are heading towards condition 2, if not, we are heading towards condition 3
+if condition_1:
+
+    # If condition 2 is true, the statement A will be executed, if not, the statement B will be executed.
+    if condition_2:
+        statement_A...
+    else:
+        statement_B...
+
+# If condition 1 is not true but condition 3 is true, the statement C will be executed, if not, the statement D will be executed
+elif condition_3:
+    statement_C...
+
+else: 
+    statement_D...
+</code>
+                    </pre> 
+               
+                   
+                 <br>
+
+
+                 
+               </div>
+               <br>
+               <div class="w3-container  w3-sand w3-round-xlarge">
+
+                <p> <b>Example: </b></p>
+               
+            <pre>
+            <code class="language-java">
+# Python Program to display the greatest among three 
+# distinct numbers using nested if statement
+
+# Inputting the three numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+# If a is greater than b
+if a > b:               
+    # If b is greater than c
+    if a > c:
+        print(f"{a} is the greatest number among the three")
+
+# If b is greater than c
+if b > c:
+    # If b is greater than a
+    if b > a:
+        print(f"{b} is the greatest number among the three")
+        
+# If c is greater than a
+if c > a:
+    # If c is greater than b
+    if c > b:
+        print(f"{c} is the greatest number among the three")
+        
+        
+# nested if statement in python
+# explain the nested if statement in python with example
+</code>
+            </pre> 
+<p> <b>Output:</b></p>
+          <p> Enter first number: 3  </p>
+ <p>Enter second number: 2  </p>
+<p>Enter third number: 1  </p>
+<p> 3 is the greatest number among the three</p>
+
+
+             
+
+            </div> 
+             <br>
+            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                <p> <b>Labwork:-</b></p>
+                <ul class="w3-ul">
+                    <li> Q63) WAP using nested if else statement to check whether a number is zero, positive, or negative.</li> 
+                    <li> Q64) Write a program in Python using nested if statement, check the following: <br>
+
+                        If age < 18; <span style="color: rgb(115, 2, 7);"> Display output :</span> "You are minor and not eligible to cast vote." <br>
+                        If age >= 18 and age < 60;  <span style="color: rgb(115, 2, 7);">Display output : </span> "You are young and eligible to cast vote." <br>
+                         Otherwise, <span style="color: rgb(115, 2, 7);">Display output : </span> "You are a senior citizen person and will be given special care to cast vote."</li>
+
+                     <li>Q65) A student will not be allowed to sit in exam if his/her attendence is less than 75%. <br>
+                      <b>  &#10028; Take following input from user :</b> <br>
+                       1). Number of classes held<br>
+                       2).  Number of classes attended.<br>
+                      <b> &#10028;Print :</b> <br>
+                       &#10028; percentage of class attended <br>
+                       &#10028; Is student is allowed to sit in exam or not.</li>
+               
+                    </ul>
+            
+            </div>
+
+
+            <br>
+
         </div>
     </div>
 
