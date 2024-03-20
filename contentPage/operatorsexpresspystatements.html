@@ -70,6 +70,9 @@
                 <a href="#Pythonifelifelse" class="w3-button  w3-hover-white w3-block w3-left-align">Python if-elif-else</a>
                 <a href="#nested-if" class="w3-button  w3-hover-white w3-block w3-left-align">Python nested-if</a>
                 </div> 
+
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonForLoops">Python For Loops</a> 
+                
 <!--                 
             <a onclick="myFunction('Demo2')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">Accordion <i class="fa fa-caret-down"></i></a>
                 <div id="Demo2" class="w3-hide w3-animate-zoom">
@@ -1275,7 +1278,38 @@ if c > a:
                       <b> &#10028;Print :</b> <br>
                        &#10028; percentage of class attended <br>
                        &#10028; Is student is allowed to sit in exam or not.</li>
-               
+
+                       <li> Q66). Consider the following code.  <br>
+                    
+                        <pre>
+                            <code class="language-java">
+if i < j:
+    if j < k:
+        i = J
+    else:
+        j = k
+
+else:
+    if j > k:
+       j = i
+    else:
+       i = k
+
+print(i,j,k)
+                            </code>
+                            </pre> 
+                        <p> &#10028; What will the above code print if the variable i,j and k have the following values?</p>    
+                        <p>a) <b>i = 3, j = 5, k = 7 </b></p>
+                        <p>b) <b>i = -2, j = -5, k = 9  </b></p>
+                        <p>c) <b>i = 8, j = 15, k = 12  </b></p>
+                        <p>d) <b>i = 13, j = 15, k = 13 </b></p>
+                        <p>e) <b>i = 3, j = 5, k = 17 </b></p>
+                        <p>f) <b> i = 25, j = 15, k = 17 </b></p>
+                    
+                       </li>
+                          
+
+
                     </ul>
             
             </div>
@@ -1290,7 +1324,117 @@ if c > a:
 
 </section> 
 
+<section id="PythonForLoops" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
 
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python For Loops</u></h2>
+               
+                 <p> <b>&#10028;  Python For Loops :</b> A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). </p>
+                 <p><b>&#10028; Python range() : </b> The Python range() function returns a sequence of numbers, in a given range. <br>
+                     <b>Note: </b>It returns a sequence of numbers, starting from <span style="color: rgb(115, 2, 7);"> 0 by default</span>, and increments by <span style="color: rgb(115, 2, 7);">1 (by default)</span> , and ends at a specified number.
+                </p>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+                  <br>
+                    <ul class="w3-ul">
+                     <li>  &#10028; <b> Python range() function takes can be initialized in 3 ways.</b> </li>
+                     <li>1). range <span style="color: rgb(115, 2, 7);">(stop)</span>  takes one argument. </li>
+                     <li>2). range <span style="color: rgb(115, 2, 7);"> (start, stop)</span> takes two arguments. </li>
+                     <li>3). range <span style="color: rgb(115, 2, 7);">(start, stop, step)</span>  takes three arguments.</li>
+
+                    </ul>
+                   
+                  <br>
+                </div>
+                 <br>
+                 <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                    <p> <b>1). range (stop) takes one argument.</b> Note :  range(6) is not the values of 0 to 6, but the values 0 to 5.</p>
+                   
+                <pre>
+                <code class="language-java">
+# printing first 6
+# whole number
+
+for i in range(6):
+    print(i, end=" ")
+</code>
+                </pre> 
+                 <p><b> Output:</b> </p>
+                  <p> 0 1 2 3 4 5 </p>
+                </div>
+               <br>
+               <div class="w3-container  w3-sand w3-round-xlarge">
+
+                <p> <b>2). range (start, stop) takes two arguments.</b> Note :  The user gets to decide not only where the series of numbers stops but also where it starts, so the user doesn’t have to start at 0 all the time.</p>
+               
+            <pre>
+            <code class="language-java">
+# printing a natural
+# number from 5 to 20
+for i in range(5, 20):
+    print(i, end=" ")
+</code>
+            </pre> 
+             <p><b> Output:</b> </p>
+              <p> 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 </p>
+            </div>
+            <br>
+            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                <p> <b>3). range (start, stop, step) takes three arguments.</b> Note : The user can choose not only where the series of numbers will start and stop, but also how big the difference will be between one number and the next. <br>
+                    <span style="color: rgb(115, 2, 7);">If the user doesn’t provide a step, then range() will automatically behave as if the step is 1.
+                    </span>
+                   
+                 </p>
+               
+            <pre>
+            <code class="language-java">
+for i in range(0, 10, 2):
+     print(i, end=" ")
+</code>
+            </pre> 
+             <p><b> Output:</b> </p>
+              <p> 0 2 4 6 8  </p>
+            </div>
+           
+
+
+
+
+                
+                 <br>
+
+                 <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Labwork :</b></p>
+                     <ul class="w3-ul">
+                        <li>Q67). WAP to print the first 10 natural numbers using for loop.  </li>
+                        <li>Q68). WAP to print all the even numbers within the given range.</li>
+                        <li>Q69). WAP to print all the odd numbers within the given range without <span style="color: rgb(115, 2, 7);">using if keyword.</span>  </li>
+                        <li>Q70). WAP to calculate and print the sum of all numbers from 1 to a given number. </li>
+                        <li>Q71). WAP to calculate the sum of all the odd numbers within the given range. </li>
+                        <li>Q72). WAP to print a multiplication table of a given number.<span style="color: rgb(115, 2, 7);"> [Hint: 5 x 1 = 5]</span>  </li>
+                        <li>Q73). WAP to count the total number of digits in a number. <span style="color: rgb(115, 2, 7);"> [Hint : given number = 23646842, digits is=8 ]</span> </li>
+                 
+
+                     </ul>
+                     
+                </div>
+                <br>
+                     <br>
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
 
 <!-- 
 Coding Part
