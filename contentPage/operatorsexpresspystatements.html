@@ -72,6 +72,8 @@
                 </div> 
 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonForLoops">Python For Loops</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#nestedloop">Python Nested Loops</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WhileStatement">Python While Statement</a> 
                 
 <!--                 
             <a onclick="myFunction('Demo2')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">Accordion <i class="fa fa-caret-down"></i></a>
@@ -1524,28 +1526,103 @@ else:
               
                     <img src="content/img/python/Nestedloop.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
                  <br>
-                 
                  <div class="w3-container  w3-pale-yellow w3-round-xlarge">
 
                     <p> <b>Labwork:</b></p>
-                    <p>Q81). WAP to print the series of number of prime number upto N number.</p>
-                    <p>Q82). WAP to print multiplication table 1 t0 50 using nested loop</p>
-                    <p>Q83). WAP to print the following patterns: </p>
+                    <p>Q85). WAP to print the series of number of prime number upto N number.</p>
+                    <p>Q86). WAP to print multiplication table 1 t0 50 using nested loop</p>
+                    <p>Q87). WAP to print the following patterns: </p>
                     <pre>
                         <code class="language-java">
-a) ****   b)  0123    c) 0000
-   ****       0123       1111 
-   ****       0123       2222
+a) ****   b)  0123    c) 0000  
+   ****       0123       1111  
+   ****       0123       2222 
    ****       0123       3333
-   ****       0123       4444
+   ****       0123       4444  
+
+d) 1      e) 55555   f) *    
+   22        4444       **   
+   333       333        ***  
+   4444      22         ****
+   55555     1          *****
+
+g)  *     h)     *   i) *****
+   ***          **      ****
+  *****        ***      ***
+              ****      **
+             *****      *
+  
                         </code>
                         </pre> 
+                        
                 
                 </div>
+                 <br>
+                 <br>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+                 <br>
+                    <p><b> &#10028;</b> The <span style="color: rgb(115, 2, 7);"> chr () function </span>  in python, that converts any integer passed in the function into a character.</p>
+               
+                    <p> <b>Example :</b></p>
+                   
+                <pre>
+                <code class="language-java">
+>>> print(chr(65))   
+
+   # Output is: A 
+                </code>
+                </pre> 
+   <br>
+<p><b>Labwork:</b> <br>  Q88). WAP to print the following patterns:</p>
+
+<pre>
+    <code class="language-java">
+a) A         b) EEEEE
+   BB           DDDD
+   CCC          CCC
+   DDDD         BB
+   EEEEE        A
+   FFFFFF 
+</code>
+    </pre> 
+
+                
+</div>
+
+
                 <br>
 
+                <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                    <p> <b>Python pass Statement: </b> The <span style="color: rgb(115, 2, 7);">pass</span>  statement is used as a placeholder for future code.</p>
+                    <p> &#10028; In python, <span style="color: rgb(115, 2, 7);">empty code</span>  is not allowed in <span style="color: rgb(115, 2, 7);"> loops, function definitions, class definitions, or in if statements.</span>.
+                     <p> &#10028; When the <span style="color: rgb(115, 2, 7);">pass</span>  statement is executed, <span style="color: rgb(115, 2, 7);">nothing happens, but you avoid getting an error</span>  when empty code is not allowed.</p>
+                    </p>
+                   
+                <pre>
+                <code class="language-java">
+#Example1:
+a=45
+b=65
+if a>b:
+    pass
 
 
+#Example2:
+for i in range(5):
+    pass
+                </code>
+                </pre> 
+   <br>
+
+   <p> <b>Output:</b></p>
+   <p> No any output</p>
+          
+                
+</div>
+
+<br>
+<br>
 
                 </div>
              
@@ -1559,6 +1636,116 @@ a) ****   b)  0123    c) 0000
 
 
 </section> 
+
+
+<section id="WhileStatement" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+               
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python While Statement</u></h2>
+                   
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                    <p><b> &#10028; Python While Statement : </b> With the <span style="color: rgb(115, 2, 7);">while</span>  loop we can execute a set of statements as long as a  <span style="color: rgb(115, 2, 7);"> condition is true</span>.</p> 
+                
+              
+                    <p> <b>Example:</b></p>
+                   
+                    <pre>
+                    <code class="language-java">
+i = 1
+while i<=5:
+    print(i)
+    i=i+1
+</code>
+                    </pre> 
+                    <br>
+                    <p><b>Output:</b></p>
+                    <p> 1 <br>2 <br>3 <br>4 <br>5 </p>
+ 
+                </div>
+
+                <br>
+                <p><b>Note: </b> Remember to increment <span style="color: rgb(115, 2, 7);">i</span> , otherwise the <span style="color: rgb(115, 2, 7);">loop</span>  will continue forever which is known as  <span style="color: rgb(115, 2, 7);">infinite loop</span>.</p>
+              
+                <br>
+
+
+                <div class="w3-container  w3-sand w3-round-xlarge">
+ 
+                 <p> <b>The else Statement : <span style="color: rgb(115, 2, 7);">for loop and while loop</span> .</b></p>
+                
+             <pre>
+             <code class="language-java">
+#Example of else with for:
+for x in range(4):
+    print(x, end="")
+else:
+    print("\n Finally finished!")
+
+
+# Example of else with while:
+i = 1
+while i<=3:
+    print(i, end="")
+    i = i+1
+else:
+    print("\n i is not less than or equal to 3")                
+</code>
+             </pre> 
+             <p><b>Output: </b></p>
+             <p>0123 <br>
+                Finally finished! <br>
+               123 <br>
+                i is not less than or equal to 3</p>
+         
+         </div>
+         <br>
+
+         <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+            <p> <b>Labwork:</b></p>
+            <p>Q89). WAP to print first 10 integers and their 
+               squares using while loop. <br>
+              [Hint:] <br>
+               <pre>
+Number   Squares 
+1        1
+2        4
+3        9
+.        .
+.        .
+10      100
+               </pre>
+               
+            </p>
+            <p>Q90). WAP to multiply two numbers accept from user by repeated addition e.g.
+                6*7 = 6+6+6+6+6+6+6</p>
+            <p>Q91). WAP to find the sum of following series:-
+                s=1+4-9+16-25+36-.....n terms.</p>
+          
+           
+       
+        
+</div>
+<br>
+
+        
+            
+            </div>
+               
+
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
 
 <!-- 
 Coding Part
