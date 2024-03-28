@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internet of Things</title>
+    <title>Things and Connection</title>
    <!-- cdn links start -->
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
@@ -171,8 +171,92 @@
                          <p><b>There are basically two types of control systems: </b></p>
                          <p>1). Open-loop control system</p>
                          <p>2). Closed-loop control system</p>
-                        
 
+                         <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p > <b>&#10028; Open-loop control system : </b> An open loop control system is a type of control system in which the output has <span style="color: rgb(115, 2, 7);"> no effect or influence </span>on the control action.  <br>  An open-loop controller, also called a <span style="color: rgb(115, 2, 7);">non-feedback controller</span>  because it does not use feedback to determine whether its input has achieved the <span style="color: rgb(115, 2, 7);">desired goal (Output) or not</span> . It means that the system does not observe the output.</p>
+                            <p> <b>Note: </b>Open-loop control system is it doesn’t continuously monitor the system’s behavior.</p>
+                           
+                            <br>
+                             <img src="content/img/python/open-loop-control-system.jpg" class="w3-round w3-center"  alt="image" style="width:100%"> 
+                                
+                              <br>
+                            <ul class="w3-ul">
+                                <li> <b> &#10028; Examples of open-loop control systems in daily life include:</b></li>
+                                <li><b>1). <span style="color: rgb(115, 2, 7);">Electric Hand Drier :–</span> </b> Hot air (output) comes out as long as you keep your hand under the machine, irrespective of how much your hand is dried or not.</li>
+                                <li> <b>2). <span style="color: rgb(115, 2, 7);">Automatic Washing Machine :–</span> </b> This machine runs according to the pre-set time irrespective of washing is completed or not.</li>
+                                <li><b>3). <span style="color: rgb(115, 2, 7);">Light Switch :– </span> </b>  Lamps glow whenever the light switch is on irrespective of light is required or not.</li>
+                            
+                            </ul>
+                            <br>
+                            <ul class="w3-ul">
+                                <li> <b>  &#10028;  The main advantages of the open loop control system are listed below:</b></li>
+                                <li> 1).  Open Loop Control Systems are very simple and easy to design.</li>
+                                <li> 2).  Maintenance of an open loop control system is very simple.</li>
+                                <li> 3). It is cheaper than other types of control systems.</li>
+                                <li> 4). It is very easy to operate.</li>
+                            </ul>
+
+                            <br>
+                            <ul class="w3-ul">
+                                <li> <b> &#10028; The main disadvantages of the open loop control system are listed below: </b></li>
+                                <li> 1). They are inaccurate in nature.</li>
+                                <li> 2).  They are unreliable in nature. </li>
+                                <li>3). If their output is affected by some external disturbances, there is no way to correct them automatically as these are non-feedback systems.</li>
+                                   
+                            
+                            </ul>
+
+                    </div>
+                        
+                      <br>
+                      <br>
+                      <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b> &#10028; Closed-loop control system :</b> In an Closed-loop control system sensors used to provide system performance and then adjust the control input accordingly. This system is also called <span style="color: rgb(115, 2, 7);">feedback control system</span>. This feedback automatically makes suitable changes in the output due to external disturbance.</p>
+                         <br>
+                         <img src="content/img/python/closed-loop-control-system.jpg" class="w3-round w3-center"  alt="image" style="width:100%">  
+                        <br>
+                        <ul class="w3-ul">
+                            <li> <b>  &#10028; Examples of open-loop control systems in daily life include:</b></li>
+                             <li> <span style="color: rgb(115, 2, 7);"> <b>1). Automatic Electric Iron:–</b> </span>Heating elements are controlled by the output temperature of the iron.</li>
+                             <li> <span style="color: rgb(115, 2, 7);"> <b> 2). An Air Conditioner :–</b></span>  An air conditioner functions depending upon the temperature of the room.</li>
+                              <li><span style="color: rgb(115, 2, 7);"> <b>3). Missile Launched and Auto Tracked by Radar:-</b> </span> The direction of the missile is controlled by comparing the target and position of the missile.</li>
+                            </ul>
+                        <br>
+                        <ul class="w3-ul">
+                            <li><b> &#10028;  Advantages of closed-loop control systems include:</b></li>
+                            <li> 1). Any error arising in output and it is corrected due to the presence of a feedback signal. So it is highly accurate.</li>
+                            <li> 2). They can automatically correct the errors by means of the feedback signal. </li>
+                          
+                        </ul>
+                        <br>
+                        <ul class="w3-ul">
+                          <li> <b> &#10028;Disadvantages of a closed-loop control systems include: </b></li>
+                           <li>1). They are very complex and complicated to design.</li>
+                           <li>2). Economically they are very costlier.</li>
+                           <li>3). More time and efforts are needed to design a stable closed loop system.</li>
+                        </ul>
+
+
+                     
+            </div>
+            <br>
+            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                <p><b> &#10028; Difference Between Open Loop and Closed Loop Control System:</b></p>
+                <br>
+                   <table class="w3-table-all">
+                    <tr> <th> Open Loop Control System</th> <th>Closed Loop Control System</th></tr>
+                    <tr> <td> It is economical (cheaper) and inaccuracy.</td> <td>It is expensive and accurate. </td></tr>
+                    <tr> <td>It does not have an feedback path. </td> <td>It has an feedback path. </td></tr> 
+                    <tr> <td> Control action is not dependent on output.</td> <td> Control action is dependent on output.</td></tr> 
+                    <tr> <td> It is designed easily. </td> <td>It is hard to design. </td></tr>
+                   <tr>  <td>It is called Non feedback control system </td> <td>It is called Feedback control system. </td></tr>
+                </table>
+                <br>
+            </div>
+            <br>
 
 
                        </div>
