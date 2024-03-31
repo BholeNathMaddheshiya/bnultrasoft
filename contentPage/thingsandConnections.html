@@ -52,6 +52,9 @@
         
         <div class="w3-bar-block  ">
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingofControlledSystems">Working of Controlled Systems</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#open-loop">Open Loop Controlled Systems</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#closed-loop">Closed Loop Controlled Systems</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#OSI_Model">OSI Model</a>   
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel2">IoT Level 2</a>   
@@ -173,7 +176,7 @@
                          <p>2). Closed-loop control system</p>
 
                          <br>
-                         <div class="w3-container  w3-sand w3-round-xlarge">
+                         <div id="open-loop" class="w3-container  w3-sand w3-round-xlarge">
 
                             <p > <b>&#10028; Open-loop control system : </b> An open loop control system is a type of control system in which the output has <span style="color: rgb(115, 2, 7);"> no effect or influence </span>on the control action.  <br>  An open-loop controller, also called a <span style="color: rgb(115, 2, 7);">non-feedback controller</span>  because it does not use feedback to determine whether its input has achieved the <span style="color: rgb(115, 2, 7);">desired goal (Output) or not</span> . It means that the system does not observe the output.</p>
                             <p> <b>Note: </b>Open-loop control system is it doesn’t continuously monitor the system’s behavior.</p>
@@ -212,14 +215,14 @@
                         
                       <br>
                       <br>
-                      <div class="w3-container  w3-sand w3-round-xlarge">
+                      <div id="closed-loop" class="w3-container  w3-sand w3-round-xlarge">
 
                         <p> <b> &#10028; Closed-loop control system :</b> In an Closed-loop control system sensors used to provide system performance and then adjust the control input accordingly. This system is also called <span style="color: rgb(115, 2, 7);">feedback control system</span>. This feedback automatically makes suitable changes in the output due to external disturbance.</p>
                          <br>
                          <img src="content/img/python/closed-loop-control-system.jpg" class="w3-round w3-center"  alt="image" style="width:100%">  
                         <br>
                         <ul class="w3-ul">
-                            <li> <b>  &#10028; Examples of open-loop control systems in daily life include:</b></li>
+                            <li> <b>  &#10028; Examples of closed-loop control systems in daily life include:</b></li>
                              <li> <span style="color: rgb(115, 2, 7);"> <b>1). Automatic Electric Iron:–</b> </span>Heating elements are controlled by the output temperature of the iron.</li>
                              <li> <span style="color: rgb(115, 2, 7);"> <b> 2). An Air Conditioner :–</b></span>  An air conditioner functions depending upon the temperature of the room.</li>
                               <li><span style="color: rgb(115, 2, 7);"> <b>3). Missile Launched and Auto Tracked by Radar:-</b> </span> The direction of the missile is controlled by comparing the target and position of the missile.</li>
@@ -259,6 +262,73 @@
             <br>
 
 
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="OSI_Model" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Connectivity Models :- TCP/IP versus OSI Model,</u></h2>
+                               <br>
+                               <p> <b>&#10028;</b> Data communication is a process or act in which we can send or receive data. For data communication two models are available.</p>
+
+                                <ul class="w3-ul">
+                                    <li>1). OSI Model </li>
+                                    <li>2).  TCP/IP Model </li>
+                                </ul>
+                                <div class="w3-container  w3-sand w3-round-xlarge">
+                                 <br>
+                                 <h2 class="w3-center"><u>OSI Model</u></h2>
+                                 <ul class="w3-ul">
+                                 <li> &#10028; OSI stands for Open Systems Interconnection.</li>
+                                  <li>&#10028; It has 7 layers, each layer performs its task independently.</li>    
+                                  <li>&#10028;  OSI model was developed by the <span style="color: rgb(115, 2, 7);">International Organization for Standardization (ISO)</span>  in <b>1984</b>.</li>
+                              </ul>
+                                 <br>
+
+                                 <img src="content/img/python/osi.jpg" class="w3-round w3-center"  alt="image" style="width:100%">   
+                                 
+                                 <ul class="w3-ul">
+                                    <li>  <p><h3>&#10028; Application Layer – Layer 7 :-</h3>   These applications produce the data, which has to be transferred over the network. This layer also serves as a window for the application services to access the network and for displaying the received information to the user. <br> <br> <b>Example:</b> <span style="color: rgb(115, 2, 7);">Application – Browsers, Skype Messenger, etc.</span> <br> <b>Functions of the Application Layer :-</b>  This layer produce, access, retrieve, and manage the data by using an application. </p> </li>
+                                    <li> <p><h3>&#10028; Presentation Layer – Layer 6:-</h3>  The presentation layer is also called the Translation layer. The data in this layer is <span style="color: rgb(115, 2, 7);">encrypted, reduces</span>  to transmitted on the network. <br>
+                                        <br><b>  Functions of the Presentation Layer:-</b> <br>
+                                        <b> Translation:</b> For example, ASCII (American Standard Code for Information Interchange) to EBCDIC (Extended binary coded decimal interchange code). <br>
+                                       <b>Encryption / Decryption:</b>  Data encryption translates the data into another form or code. The encrypted data is known as the <span style="color: rgb(115, 2, 7);">ciphertext</span>  and the decrypted data is known as <span style="color: rgb(115, 2, 7);">plain text</span> . A <span style="color: rgb(115, 2, 7);">same key value </span> is used for encrypting as well as decrypting data. <br>
+                                       <b> Compression: </b>  Reduces the number of bits that need to be transmitted on the network. </p></li>
+                                       <li><p><h3>&#10028; Session Layer – Layer 5 :-</h3> This layer is responsible for the establishment of connection, maintenance of sessions (time), and authentication, and also ensures security. </li>
+                                       <li><p><h3>&#10028; Transport Layer – Layer 4 :-</h3> It is responsible for the <span style="color: rgb(115, 2, 7);">end-to-end delivery</span>  of the complete message. The transport layer also provides the acknowledgment of the <span style="color: rgb(115, 2, 7);">successful data transmission and re-transmits the data</span>  if an error is found. </li>
+                                       
+                                        <li><p><h3>&#10028;Network Layer – Layer 3 :-</h3> The network layer works for the transmission of data from one host to the other located in different networks. It also takes care of <span style="color: rgb(115, 2, 7);">packet routing i.e. selection of the shortest path </span> to transmit the packet, from the number of routes available. The <span style="color: rgb(115, 2, 7);">sender & receiver’s IP addresses are placed in the header</span>  by the network layer.</p></li>
+                                         
+                                   
+                                        <li><p><h3>&#10028;Data Link Layer (DLL) – Layer 2 :-</h3> The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of the DLL to transmit it to the Host using its MAC address.<br>
+                                           <br> The Data Link Layer is divided into two sublayers:  <br>
+                                           <br>1) Logical Link Control (LLC)
+                                           <br>2) Media Access Control (MAC)
+                                            
+                                        </p> </li>
+                                        <li><p><h3>&#10028;Physical Layer – Layer 1:-</h3> The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits (0s and 1s) from one node to the next.<br>
+                                         <b>Note : </b> Hub, Repeater, Modem, and Cables are Physical Layer devices.
+                                        </p></li>
+                                    </ul>
+                               
+                               
+                                </div>
+                              
+ 
+                         <br>
+                         
                        </div>
         
                     </div> 
