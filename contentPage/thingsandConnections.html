@@ -328,6 +328,49 @@
                               
  
                          <br>
+
+
+                         
+  <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>What is the Flow of Data in OSI Model?</b></p>
+    <p>&#10028; When we transfer information from one device to another, it travels through 7 layers of OSI model. </p>
+    <p>&#10028; First data travels down through  7 layers from the sender’s end.</p>
+    <p>&#10028; And then climbs back 7 layers on the receiver’s end. </p>
+    <br>
+    <img src="content/img/python/osi_flow.png" class="w3-round w3-center"  alt="image" style="width:100%">  
+     <br>
+     <p><b>Let’s look at it with an Example:</b></p>
+     <ul class="w3-ul">
+       <li> <b> <span style="color: rgb(115, 2, 7);"> William sends an e-mail to his friend Henry. </span> </b></li>
+       <li> <b> &#10028; Step 1:</b> William interacts with e-mail application like Gmail, outlook, etc. Writes his email to send. <b> <span style="color: rgb(115, 2, 7);">(This happens in Layer 7: Application layer)</span> </b> </li>
+       <li><b>  &#10028; Step 2:</b> Mail application prepares for data transmission like encrypting data and formatting it for transmission. <b> <span style="color: rgb(115, 2, 7);"> (This happens in Layer 6: Presentation Layer)</span> </b>
+    </li>
+    <li> <b> &#10028; Step 3:</b> There is a connection established between the sender and receiver on the internet. <b> <span style="color: rgb(115, 2, 7);">(This happens in Layer 5: Session Layer)</span></b> 
+    </li>
+    <li>  <b> &#10028; Step 4:</b> Email data is broken into smaller segments. It adds sequence number and error-checking information to maintain the reliability of the information. <b> <span style="color: rgb(115, 2, 7);">(This happens in Layer 4: Transport Layer)</span> </b> 
+    </li>
+    <li>  <b> &#10028; Step 5:</b> Addressing of packets is done in order to find the best route for transfer. <b> <span style="color: rgb(115, 2, 7);">(This happens in Layer 3: Network Layer)</span></b> 
+    </li>
+    <li> <b>  &#10028; Step 6:</b> Data packets are encapsulated into frames, then MAC address is added for local devices and then it checks for error using error detection. <b> <span style="color: rgb(115, 2, 7);">(This happens in Layer 2: Data Link Layer)</span></b> 
+    </li>
+    <li> <b> &#10028; Step 7:</b> Lastly Frames are transmitted in the form of electrical/ optical signals over a physical network medium like ethernet cable or WiFi.
+    </li>
+    <li>  <span style="color: rgb(115, 2, 7);">After the email reaches the receiver i.e. Henry, the process will reverse and decrypt the e-mail content. At last, the email will be shown on Henry’s email client. </span> 
+    </li>
+    </ul>
+    
+
+      
+      
+      
+      
+     
+      
+      
+      
+ </div>
+ <br>
                          
                        </div>
         
