@@ -51,7 +51,14 @@
         </div>
         
         <div class="w3-bar-block  ">
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonList">Python List</a> 
+            <a onclick="myFunction('Demo1')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom" >Python List <i class="fa fa-caret-down"></i></a>
+            <div id="Demo1" class="w3-hide w3-animate-zoom">
+            <a href="#PythonList" class="w3-button  w3-hover-white w3-block w3-left-align">Create List</a>
+            <a href="#AccessList" class="w3-button  w3-hover-white w3-block w3-left-align">Access List Items</a>
+            <a href="#changelistitem" class="w3-button  w3-hover-white w3-block w3-left-align">Change List Items</a>
+            <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Add List Items</a>
+            </div> 
+            <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonList">Python List</a>  -->
            
             
             
@@ -116,22 +123,7 @@
                         <div class="w3-dropdown-content w3-bar-block w3-card w3-white" id="myDIV" >
                         
                             <a class="w3-bar-item w3-button"  href="#pythonintroduction">Introduction of Python</a>
-                            <a class="w3-bar-item w3-button" href="#technicalStrengthofPython">Technical Strength of Python</a>
-                            <a class="w3-bar-item w3-button" href="#PythonInterpreter">Python Interpreter</a>
-                            <a class="w3-bar-item w3-button" href="#howtorunpython">Using CMD (Command Prompt)</a>
-                            <a class="w3-bar-item w3-button" href="#PythonComments">Python Comments</a>
-                            <a class="w3-bar-item w3-button" href="#PythonVariable">Python Variable</a>
-                            <a class="w3-bar-item w3-button" href="#PythonKeywords">Python Keywords</a>
-                            <a class="w3-bar-item w3-button" href="#PythonPrintFunction">Python Print Function</a>
-                            <a class="w3-bar-item w3-button" href="#PythonInputFunction">Python Input Function</a>
-                            <a class="w3-bar-item w3-button" href="#PythonDataType">Python DataType</a>
-                            <a class="w3-bar-item w3-button" href="#PythonConstants">Python Constants</a>
-                            <a class="w3-bar-item w3-button" href="#PythonLiteral">Python Literal</a>
-                            <a class="w3-bar-item w3-button" href="#PythonString">Python String</a>
-                            <a class="w3-bar-item w3-button" href="#PythonStringConcatenation">Python String Concatenation</a>
-                            <a class="w3-bar-item w3-button" href="#PythonFormatStrings">Python Format Strings</a>
-                            <a class="w3-bar-item w3-button" href="#PythonEscapeCharacter">Python Escape Character</a>
-                           
+                                    
                             
                         </div>
                         </div>  -->
@@ -286,9 +278,199 @@ print(List[2])
                             BN <br>
                             Soft
                         </p>
+
+
                     </div>
                     <br>
+ <div class="w3-container  w3-sand w3-round-xlarge">
+    <p><b>&#10028; Creating a list with multiple distinct or duplicate elements:</b></p>
+    <p>A list may contain duplicate values with their distinct positions and hence, multiple distinct or duplicate values can be passed as a sequence at the time of list creation.</p>
+    
+    <p> <b>Example:</b></p>
+   
+<pre>
+<code class="language-java">
 
+# The use of Numbers
+# (Having duplicate values)
+List = [1, 2, 4, 4, 3, 3, 3, 6, 5]
+print("\nList with the use of Numbers: ")
+print(List)
+
+
+
+# Mixed type of values
+# (Having numbers and strings)
+List = [1, 2, 'Hi', 4, 'Hello', 6, 'Python']
+print("\nList with the use of Mixed Values: ")
+print(List)
+</code>
+</pre> 
+<p><b>Output:</b></p>
+<p>List with the use of Numbers:</p>
+<p>[1, 2, 4, 4, 3, 3, 3, 6, 5]</p> 
+
+
+<p>List with the use of Mixed Values: </p>
+<p>[1, 2, 'Hi', 4, 'Hello', 6, 'Python']</p> 
+
+</div>
+<br>
+
+                         
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="AccessList" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Access List Items</u></h2>
+                       
+                             
+                         <p><b> &#10028; Access Items : </b> List items are indexed and you can access them by referring to the index number:</p> 
+                        
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :</b> Print the second item of the list:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+fruitlist = ["apple", "banana", "cherry"]
+print(fruitlist[1])
+</code>
+                        </pre> 
+                        <p><b>Output:- </b></p>
+                         <p>banana</p>
+                    </div>
+                    <br>
+                    <br>
+                    <p><b> &#10028; Negative Indexing : </b> Negative indexing means start from the end
+
+                        <span style="color: rgb(115, 2, 7);"> -1 refers to the last item</span>   , <span style="color: rgb(115, 2, 7);">-2 refers to the second last item etc</span> .</p> 
+                                    
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example: </b> Print the last item of the list.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1]) 
+        
+                        </code>
+                        </pre> 
+                        <p><b>Output:-</b></p>
+                        <p>cherry</p>
+                    
+                    </div>
+
+                    <br>
+                    <br>
+                    <p> <b> &#10028; Range of Indexes : </b>A range of indexes by specifying where to start and where to end the range.</p>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example:</b>Return the third, fourth, and fifth item:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+fruitlist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(fruitlist[2:5])
+</code>
+                    </pre>
+                    <p><b>Output:</b></p>
+                    <p>['cherry', 'orange', 'kiwi']</p>
+                 
+                    <p><b>Note:</b>  The search will start at index 2 (included) and end at index 5 (not included).</p>
+                </div>  
+                    <br>
+                    <br>
+               
+              <p><b>&#10028; Range of Index without start value: </b> By leaving out the start value, the range will start at the first item: </p>
+              <div class="w3-container  w3-sand w3-round-xlarge">
+
+                <p> <b>Example :</b> This example returns the items from the beginning to, but NOT including, "kiwi":</p>
+               
+            <pre>
+            <code class="language-java">
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])
+</code>
+            </pre>
+ <p><b>Output:</b></p>
+ <p>['apple', 'banana', 'cherry', 'orange']</p>
+</div>
+<br>
+<br>
+<p><b>&#10028; Range of Index without end value: </b> By leaving out the end value, the range will go on to the end of the list.</p>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example:</b>This example returns the items from "cherry" to the end:</p>
+   
+<pre>
+<code class="language-java">
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:])
+</code>
+</pre> 
+<p><b> Output:</b></p>
+<p> ['cherry', 'orange', 'kiwi', 'melon', 'mango']</p>
+</div>
+                       
+                       <br>
+
+        <br>
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="changelistitem" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u> Python - Change List Items</u></h2>
+                       
+                           
+<p><b>&#10028; Change Item Value: </b> To change the value of a specific item, refer to the index number.</p>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example:</b>Change the second item::</p>
+    
+<pre>
+<code class="language-java">
+thislist = ["apple", "banana", "cherry", "orange"]
+thislist[1]="mango"
+print(thislist)
+</code>
+</pre> 
+<p><b> Output:</b></p>
+<p> ['apple', 'mango', 'cherry', 'orange']</p>
+</div>
+                        
+                        <br>
+                       <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                        <p> <b>Labwork:</b></p>
+                        <p>Q98). WAP to create a list of 10 integer number and print these number by using for and while loop both.</p>
+                        <p>Q99). WAP to create a list of 5 integer number and find the greatest number from the list.</p>
+                        <p>Q100). WAP to create a list of 5 integer number and find the smallest number from the list.</p>
+                        </div>
+                         <br>
                          
                        </div>
         
