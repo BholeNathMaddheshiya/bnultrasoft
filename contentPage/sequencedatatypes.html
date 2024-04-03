@@ -56,7 +56,8 @@
             <a href="#PythonList" class="w3-button  w3-hover-white w3-block w3-left-align">Create List</a>
             <a href="#AccessList" class="w3-button  w3-hover-white w3-block w3-left-align">Access List Items</a>
             <a href="#changelistitem" class="w3-button  w3-hover-white w3-block w3-left-align">Change List Items</a>
-            <a href="#" class="w3-button  w3-hover-white w3-block w3-left-align">Add List Items</a>
+            <a href="#addlistItem" class="w3-button  w3-hover-white w3-block w3-left-align">Add List Items</a>
+            <a href="#removeList" class="w3-button  w3-hover-white w3-block w3-left-align">Remove List Items</a>
             </div> 
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonList">Python List</a>  -->
            
@@ -469,7 +470,7 @@ print(thislist)
                         <p>Q98). WAP to create a list of 10 integer number and print these number by using for and while loop both.</p>
                         <p>Q99). WAP to create a list of 5 integer number and find the greatest number from the list.</p>
                         <p>Q100). WAP to create a list of 5 integer number and find the smallest number from the list.</p>
-                        <p>Q101). WAP to create a list of 5 interger number and sum the largest and smallest number from the list.</p>
+                        <p>Q101). WAP to create a list of 5 interger number and sum of the largest and smallest number from the list.</p>
                         </div>
                          <br>
 <p><b>&#10028; Change a Range of Item Values:</b>To change the value of items within a specific range, define a list with the new values, and refer to the range of index numbers where you want to insert the new values.</p>
@@ -560,8 +561,205 @@ print(thislist)
         
         
         
-        </section> 
+        </section>
+        <section id="addlistItem" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Add List Items</u></h2>
+                       
+                               
+                     
+                          <p><b> &#10028; Append Items : </b> To add an item to the end of the list, use the <span style="color: rgb(115, 2, 7);">append() </span> method.</p> 
+                          <div class="w3-container  w3-sand w3-round-xlarge">
 
+                            <p> <b>Example:</b>Using the append() method to append an item at last.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+</code>
+                        </pre> 
+ <p> <b>Output:</b></p>
+ <p>['apple', 'banana', 'cherry', 'orange']</p>
+
+
+                        </div>
+                        <br>
+
+                        <p><b> &#10028; Extend List: </b> To append elements from another list to the current list, use the <span style="color: rgb(115, 2, 7);">extend()</span>  method.</p> 
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                          <p> <b>Example: </b>Add the elements of <span style="color: rgb(115, 2, 7);">anotherfruitlist </span> to <span style="color: rgb(115, 2, 7);">mainfruitlist.</span>  </p>
+                         
+                      <pre>
+                      <code class="language-java">
+mainfruitlist = ["apple", "banana", "cherry"]
+anotherfruitlist=["mango", "pineapple", "papaya"]
+mainfruitlist.extend(anotherfruitlist)
+print(mainfruitlist)
+</code>
+                      </pre> 
+<p> <b>Output:</b></p>
+<p>['apple', 'banana', 'cherry', 'mango', 'pineapple', 'papaya']</p>
+
+<p><b>Note:</b> The elements will be added to the end of the list.</p>
+                      </div>
+
+                      <br>
+
+     <div class="w3-container  w3-sand w3-round-xlarge">
+        <p> <b> &#10028; Note :</b> The extend() method does not have to append lists, you can add any iterable object <span style="color: rgb(115, 2, 7);">(tuples, sets, dictionaries etc.)</span> </p>               
+ 
+    <p> <b>Example:</b> Add elements of a tuple to a list.</p>
+   
+<pre>
+<code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+print(thislist)
+</code>
+</pre>
+<p><b>Output</b></p>
+<p>['apple', 'banana', 'cherry', 'kiwi', 'orange']</p>
+                       </div>
+        <br>
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+         
+        <section id="removeList" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Remove List Items</u></h2>
+                        <p><b>Remove Specified Item:</b> The <span style="color: rgb(115, 2, 7);">remove()</span>  method removes the specified item.</p>
+                            
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :</b> Remove "banana":</p>
+                           
+                        <pre>
+                        <code class="language-java">
+
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+#Remove the first occurance of "banana":
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(thislist)                       
+
+</code>
+                        </pre> 
+<p><b>Output:</b></p>
+<p>['apple', 'cherry']</p>
+<p>['apple', 'cherry', 'banana', 'kiwi'] </p>
+<p> <b>Note:</b> If there are more than one item with the specified value, the remove() method removes the first occurance:
+</p>
+
+                        </div>
+                        <br>
+
+<p> <b>&#10028; Remove Specified Index :</b>  The <span style="color: rgb(115, 2, 7);">pop() method </span>  removes the specified index.</p>                        
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example : </b>Remove the second item</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+#Remove the last item:
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
+
+        </code>
+                        </pre> 
+<p><b>Output:</b></p>
+<p>['apple', 'cherry']</p>
+</div>
+
+                        
+   <br>
+   <p><b>&#10028; </b> The <span style="color: rgb(115, 2, 7);">del</span>  keyword also removes the specified index:</p>                     
+   <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example: </b>Remove the first item:</p>
+   
+<pre>
+<code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+</code>
+</pre> 
+<p><b>Output:</b></p>
+<p>['banana', 'cherry']</p>
+</div>
+<br>
+   <p><b>&#10028; </b> The <span style="color: rgb(115, 2, 7);">del</span>  keyword can also delete the list completely.</p>                     
+   <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example: </b>Delete the entire list:</p>
+   
+<pre>
+<code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+del thislist
+</code>
+</pre> 
+<p><b>Output:</b></p>
+<p>NameError: name 'thislist' is not defined</p>
+</div>
+
+<br>
+   <p><b>&#10028; </b> The <span style="color: rgb(115, 2, 7);">clear()</span> method empties the list.</p>                     
+   <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example: </b>Clear the list content:</p>
+   
+<pre>
+<code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+</code>
+</pre> 
+<p><b>Output:</b></p>
+<p>[]</p>
+<p><b>Note:</b> The list still remains, but it has no content.</p>
+</div>
+
+
+<br>
+
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
 
 
  <!-- Page Content End --> 
