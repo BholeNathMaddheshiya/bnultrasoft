@@ -58,6 +58,7 @@
             <a href="#changelistitem" class="w3-button  w3-hover-white w3-block w3-left-align">Change List Items</a>
             <a href="#addlistItem" class="w3-button  w3-hover-white w3-block w3-left-align">Add List Items</a>
             <a href="#removeList" class="w3-button  w3-hover-white w3-block w3-left-align">Remove List Items</a>
+            <a href="#LoopList" class="w3-button  w3-hover-white w3-block w3-left-align">Loop Lists</a>
             </div> 
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonList">Python List</a>  -->
            
@@ -695,6 +696,7 @@ print(thislist)
                         </pre> 
 <p><b>Output:</b></p>
 <p>['apple', 'cherry']</p>
+<p>['apple', 'banana']</p>
 </div>
 
                         
@@ -750,6 +752,24 @@ print(thislist)
 
 
 <br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Labwork:</b></p>
+    <p>Q106). WAP to create a list of 5 colour name and append <b>Mango</b> at last of the list. </p>
+    <p> Q107). WAP to create 5 integer list (main list)  and extend the main list by adding another list by create  5 float number list.
+    </p>
+    <p>Q108). WAP to create a list of 7 colour names, find <b>blue</b> colour and remove from the list.
+    </p>
+    <p>Q109). WAP to create 10 any integer number list and find it and remove it all <b>even</b> numbers from the list.
+    </p>
+    <p>Q110). WAP to create a list of 5 color names and insert <b>Cyan</b> color at 2 index number and find remove <b>Pink</b> color from the list if found.</p>
+    <p>Q111). WAP to create a list of 10 integer number by loop and ask length of list from the user.</p>
+    <p>Q112). WAP to create a list of 10 integer number and add <b>yourname</b> in the list and find <b>yourname and remove</b> it from the list. </p>
+    <p> Q113). WAP to create 5 color name and remove all items by using <b> <span style="color: rgb(115, 2, 7);">del and clear().</span></b> </p>
+    
+</div>
+    
+<br>
 
                        </div>
         
@@ -760,6 +780,119 @@ print(thislist)
         
         
         </section> 
+
+        <section id="LoopList" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Loop Lists</u></h2>
+                            <p><b> &#10028; Loop Through a List : </b> You can loop through the list items by using a for loop.</p> 
+                       
+                               
+                         <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :</b> Print all items in the list, one by one.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+    print(x)
+</code>
+                        </pre> 
+                        <p><b>Output</b></p>
+                        <p> apple</p>
+                        <p>banana</p>
+                        <p>cherry</p>
+
+                    </div>
+                    <br>
+                    <p><b> &#10028; Loop Through the Index Numbers : </b> You can also loop through the list items by referring to their index number.</p> 
+                    <p><b>Note: </b> Use the <span style="color: rgb(115, 2, 7);">range()</span>  and <span style="color: rgb(115, 2, 7);">len()</span>  functions to create a suitable iterable</p>
+                       
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example :</b> Print all items by referring to their index number.</p>
+                       
+                    <pre>
+                    <code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+    print(thislist[i])
+</code>
+                    </pre> 
+                    <p><b>Output</b></p>
+                    <p> apple</p>
+                    <p>banana</p>
+                    <p>cherry</p>
+<p><b>Note:</b> Here, The iterable created in the example above is <span style="color: rgb(115, 2, 7);">[0, 1, 2]</span> .</p>
+                </div>
+                <br>
+                <p><b> &#10028; Using a While Loop: </b> You can loop through the list items by using a <span style="color: rgb(115, 2, 7);">while</span>  loop.</p>
+                <p> <b>Note: </b> </p>
+                 <p>1). Use the  <span style="color: rgb(115, 2, 7);">len()</span> function to determine the length of the list, then <span style="color: rgb(115, 2, 7);">start at  0 and loop </span>  your way through the list items by referring to their indexes.
+                </p>
+                <p>2).  Remember to  <span style="color: rgb(115, 2, 7);">increase the index by 1</span> after each iteration.</p>
+              <br>
+              <div class="w3-container  w3-sand w3-round-xlarge">
+
+                <p> <b>Example :</b> Print all items, using a while loop to go through all the index numbers.</p>
+               
+            <pre>
+            <code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+    print(thislist[i])
+    i = i + 1
+</code>
+            </pre> 
+            <p><b>Output</b></p>
+            <p>apple</p>
+            <p>banana</p>
+            <p>cherry</p>
+
+        </div>
+        <br>
+        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+            <p> <b>Labwork :</b></p>
+            <p>Q114). WAP which takes list of numbers as input from user and finds <span style="color: rgb(115, 2, 7);">product of all the items </span> in the list.</p>
+            <p>Q115). WAP which take list of integer as input from user and finds <span style="color: rgb(115, 2, 7);">sum of all items</span>  in the list.</p>
+          <p>Q116). WAP to create a list of integer by user input and <span style="color: rgb(115, 2, 7);">search any number and print it</span> , from the list by user input. </p>
+        <p> Q117). WAP to create a list of 15 integer number <span style="color: rgb(115, 2, 7);">sort the list in ascending</span>  order.</p>
+        <p> Q118). WAP to create a list of 15 integer number <span style="color: rgb(115, 2, 7);"> sort the list in descending</span> order.</p>
+        <p> Q119). WAP to create a list A of 10 integer number <span style="color: rgb(115, 2, 7);">copy the list in another list B</span> .</p>
+        <p>Q120). WAP to create a list A of 12 integer number <span style="color: rgb(115, 2, 7);">reverse the list in another list B</span> .</p>
+        <p>Q121). WAP to create a list of 10 integer number <span style="color: rgb(115, 2, 7);">count the total number of duplicate items </span> in list.<br>
+        [Hint: [23,56,78,34,89,23,56,89,56,78]==>Item 56 is 3 , Item 89 is 2 ]
+        </p>
+        <p> Q122). WAP to create a list of 20 integer number and <span style="color: rgb(115, 2, 7);"> count the frequency of each item</span> in the list.
+            <br>
+            [Hint:  <br> 
+            25 occurs 1 times<br>
+            12 occurs 1 times<br>
+            43 occurs 1 times]
+        </p>   
+    </div>
+        <br>
+        <br>
+
+                
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
 
 
  <!-- Page Content End --> 
