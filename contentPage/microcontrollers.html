@@ -51,7 +51,7 @@
         </div>
         
         <div class="w3-bar-block  ">
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IntroductiontoInternetofThings">IoT</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Sensors">Sensors</a>   
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel2">IoT Level 2</a>   
@@ -151,68 +151,55 @@
             <!-- Page content Coding part Start -->
 
 
-
-<!-- 
-         <section id="sec1" class="topPadding">
-            <div class="w3-container w3-panel">
-                <div data-aos="fade-right"  data-aos-duration="1000">
-                    <div class="w3-white  w3-card w3-round-large   ">
-                        <h2 class="w3-panel w3-center">Example1</h2>
-                         <div class=" w3-leftbar w3-border-pink w3-border w3-round-large ">
+            <section id="Sensors" class="topPadding">
+                <div class="w3-container w3-panel">
+                    <div data-aos="fade-right"  data-aos-duration="1000">
+                        <div class="w3-white  w3-card w3-round-large   ">
                            
-<pre class="line-numbers" data-line="15-25">
-    <code class="language-java">
-      package com.example.webviewtest;
-      import androidx.appcompat.app.AppCompatActivity;
-      import android.os.Bundle;
-      import android.view.View;
-      import android.webkit.WebView;
-    
-      public class MainActivity extends AppCompatActivity {
-      private WebView webView;
-      @Override
-      protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-            webView=findViewById(R.id.webviewforhighlight);
-            webView.getSettings().setJavaScriptEnabled(true);
-            webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-            webView.loadUrl("file:///android_asset/prismjs_template.html");
-        }
-     }
-    
-    
-     x = "awesome"
-    
-     def myfunc():
-       x = "fantastic"
-       print("Python is " + x)
-     
-     myfunc()
-     
-     print("Python is " + x)
-    
-    
-    </code>
-    </pre>
-    
-
-                         </div>
-
-                    </div> 
-                </div>
-            </div>
-
-
-
-         </section> -->
-
-
-         
             
-              
-           
-
+                             <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                                <h2 class="w3-panel w3-center"><u>Sensors</u></h2>
+                                <p><b> &#10028; Sensors: </b> Sensors are a kind of electronic components that detect the presence or absence of something. Depending upon the sensitivity of a sensor, it can also detect changes that happen with respect to time.</p> 
+                           
+                                <p> <b> &#10028; Transducer : </b>A transducer is a device that converts one form of energy into another, such as converting mechanical energy into electrical signals. On the other hand, a sensor is a device that detects and responds to a specific input, such as light, temperature, pressure, or motion and converts it into a measurable output.</p>
+                                <p>Thus, we can understand that a Sensor is not a perfect sensor unless it is coupled with a transducer. Sensor detects whatever it has to detect and transducers then convert that recognized energy into a human readable and understandable data that we get as output.</p>
+                                <h3>Some common Sensors are in IoT ecosystem:-</h3>
+                                
+                                <br>
+                                <h4> 1) LDR (Light Dependent Resistor) : </h4>
+                                <p> LDR  are light sensitive devices most often used to indicate the presence or absence of light, or to measure the light intensity. It is also known as <span style="color: rgb(115, 2, 7);">optical sensors</span> .</p>
+                                <img src="content/img/python/ldr.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
+                                <br>
+                                <a href="https://www.youtube.com/shorts/TJsFmUjcuGE">Working of LDR Video</a>
+                                 <br>
+                                 <br>
+                                 <h4> 2) DHT (Digital Temperature and Humidity Sensor) :  </h4>
+                                 <p>The DHT sensor is a low-cost digital sensor for sensing temperature and humidity. This sensor is used in various applications such as measuring humidity and temperature values in heating, ventilation and air conditioning systems. Weather stations also use these sensors to predict weather conditions. The humidity sensor is used as a preventive measure in homes where people are affected by humidity.</p>
+                                 <img src="content/img/python/DHT11-Sensor.jpg" class="w3-round w3-center"  alt="image" style="width:100%"> 
+                             
+                                  <a href="https://www.youtube.com/watch?v=Z1o4icRu3DQ">Woking of DHT Video</a>
+                                  <br>
+                                  <h4> 3) MQ 135 (Methane/CH4 Quality Sensor)</h4>
+                                  <p> MQ 135 is also known as Smoke Sensor and Gas Sensor. It is used specifically for detecting presence of different gases. These sensors play a vital role in factories where chemical formulations are made.
+                                    CO2 sensors, CO sensors, Breathalyzers, Air pollution sensors, hygrometers, smoke sensors etc. are different gas sensors.
+                                    <img src="content/img/python/MQ135.jpg" class="w3-round w3-center"  alt="image" style="width:100%"> 
+                                     </p>
+                                     <a href="https://www.youtube.com/watch?v=nfyxFzRjH2g"> Woking of MQ135</a>
+                               
+                                     <h4> 4) IR sensor  ( Infrared  Sensor)</h4>
+                                     <p> IR sensor is a device that uses infrared technology to detect objects or changes in the environment. IR sensors can detect a wide range of physical properties such as temperature, motion, and proximity(Nearest). Proximity Sensors convert information on the movement or presence of an object into an electrical signal.</p>
+                                     <img src="content/img/python/IRsensor.png" class="w3-round w3-center"  alt="image" style="width:100%">   
+                                   
+                                     <a href="https://www.youtube.com/watch?v=n8tcM47EGzw"> Woking of IR Sensor</a>
+                                 </div>
+            
+                        </div> 
+                    </div>
+                </div>
+            
+            
+            
+            </section> 
    
             
             
