@@ -59,6 +59,10 @@
             <a href="#addlistItem" class="w3-button  w3-hover-white w3-block w3-left-align">Add List Items</a>
             <a href="#removeList" class="w3-button  w3-hover-white w3-block w3-left-align">Remove List Items</a>
             <a href="#LoopList" class="w3-button  w3-hover-white w3-block w3-left-align">Loop Lists</a>
+            <a href="#SortLists" class="w3-button  w3-hover-white w3-block w3-left-align">Sort Lists</a>
+            <a href="#copylist" class="w3-button  w3-hover-white w3-block w3-left-align">Copy Lists</a>
+            <a href="#Joinlist" class="w3-button  w3-hover-white w3-block w3-left-align">Join Lists</a>
+            <a href="#ListMethod" class="w3-button  w3-hover-white w3-block w3-left-align">Lists Methods</a>
             </div> 
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonList">Python List</a>  -->
            
@@ -876,13 +880,380 @@ while i < len(thislist):
             [Hint:  <br> 
             25 occurs 1 times<br>
             12 occurs 1 times<br>
-            43 occurs 1 times]
-        </p>   
+            43 occurs 3 times]
+        </p>  
+        <p>Q123). WAP to create a list of 10 integer number and remove duplicates from a list.</p> 
+        <p>Q124). WAP to create  a list of 10 integer number and Remove Negative Values From a List.</p>
     </div>
         <br>
         <br>
 
                 
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="SortLists" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Sort Lists</u></h2>
+                            <p><b> &#10028; Sort List Alphanumerically : </b> List objects have a sort() method that will sort the list alphanumerically, ascending, by default.</p> 
+                      
+                           
+                         <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example: </b> Sort List Alphanumerically</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+                        </code>
+                        </pre> 
+                        <p><b>Output:</b></p>
+                        <p> ['banana', 'kiwi', 'mango', 'orange', 'pineapple']</p>
+                        </div>
+                        <br>
+
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                           <p> <b>Example: </b> Sort the list numerically:</p>
+                          
+                       <pre>
+                       <code class="language-java">
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+                       </code>
+                       </pre> 
+                       <p><b>Output:</b></p>
+                       <p> [23, 50, 65, 82, 100]</p>
+                       </div>
+                     
+
+                       <br>
+                       <p><b> &#10028; Sort Descending: </b> To sort descending, use the keyword argument <span style="color: rgb(115, 2, 7);"> reverse = True </span>.</p> 
+                     
+                       <div class="w3-container  w3-sand w3-round-xlarge">
+
+                           <p> <b>Example: </b> Sort the list descending</p>
+                          
+                       <pre>
+                       <code class="language-java">
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+                       </code>
+                       </pre> 
+                       <p><b>Output:</b></p>
+                       <p> ['pineapple', 'orange', 'mango', 'kiwi', 'banana']</p>
+                       </div>
+                       <br>
+                       <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example:</b>Sort the list descending order in Numbers:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(reverse = True)
+print(thislist)
+                    </code>
+                    </pre> 
+                    <p><b>Output:</b></p>
+                      <p>[100, 82, 65, 50, 23] </p>  
+                         
+                       </div>
+                  
+                   <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                    <p> <b>Labwork: </b></p>
+                   <p>Q125). WAP to a create a list of 10 integer number and sort in ascending  by using <span style="color: rgb(115, 2, 7);">sort() </span> function.</p>
+                   <p>Q126). WAP to a create a list of 10 integer number and sort in descending by using <span style="color: rgb(115, 2, 7);">sort() </span> function.</p>
+                   <p>Q127). WAP to a create a list of 10 color name and sort in ascending by using <span style="color: rgb(115, 2, 7);">sort() </span> function.</p>
+                   <p>Q128). WAP to a create a list of 10 color name and sort in descending by using <span style="color: rgb(115, 2, 7);">sort() </span> function.</p>
+               
+                </div>
+                <br>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Case Insensitive Sort:</b> By default the 
+                        <span style="color: rgb(115, 2, 7);"> sort()</span>  method is case sensitive, resulting in all capital letters being sorted before lower case letters:</p>
+                        <p> <b>Example:</b></p>
+                   
+                        <pre>
+                        <code class="language-java">
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)
+                        </code>
+                        </pre> 
+                        <p><b>Output:</b></p>
+                        <p>['Kiwi', 'Orange', 'banana', 'cherry'] </p>
+
+                </div>
+                <br>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b> &#10028; So if you want a case-insensitive sort function, use <span style="color: rgb(115, 2, 7);">str.lower as a key </span> function:</b></p>
+                        <p> <b>Example:</b> Perform a case-insensitive sort of the list:</p>
+                   
+                        <pre>
+                        <code class="language-java">
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+                        </code>
+                        </pre> 
+                        <p><b>Output:</b></p>
+                        <p>['banana', 'cherry', 'Kiwi', 'Orange']</p>
+
+                </div>
+                <br>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Reverse Order:</b> The <span style="color: rgb(115, 2, 7);">reverse()</span>  method reverses the current sorting order of the elements.</p>
+                   
+                <pre>
+                <code class="language-java">
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist) 
+</code>
+                </pre> 
+                <p><b>Output:-</b></p>
+                <p> ['cherry', 'Kiwi', 'Orange', 'banana']</p>
+                </div>
+
+                <br>
+                <br>
+                         
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="copylist" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Copy Lists</u></h2>
+                        <p> <b> &#10028; Copy a List :- </b> You cannot copy a list simply by typing <span style="color: rgb(115, 2, 7);">list2 = list1</span>. </p>
+                           
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example of direct copy:- <span style="color: rgb(115, 2, 7);">anotherlist=list1</span> </b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+list1 = ["apple", "cherry", "cherry"]
+anotherlist=list1
+print(anotherlist) 
+
+#If Making change in list1  
+list1 = ["apple", "orange", "cherry"]
+anotherlist=list1
+print(anotherlist)
+                        </code>
+                        </pre> 
+                        <p><b>Output:</b></p>
+                        <p>['apple', 'cherry', 'cherry'] </p>
+                        <p> ['apple', 'orange', 'cherry']</p>
+                    
+                        <p><b>Note: </b>If changes made in <span style="color: rgb(115, 2, 7);">list1</span>  will automatically also be made in <span style="color: rgb(115, 2, 7);">list2</span> , because: <span style="color: rgb(115, 2, 7);">list2</span>  will only be a reference to <span style="color: rgb(115, 2, 7);">list1</span> . </p>
+                        
+
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>&#10028;</b> There are ways to make a copy, one way is to use the built-in List method  <span style="color: rgb(115, 2, 7);">copy()</span>.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+                        </code>
+                        </pre> 
+                        <p><b>Output:</b></p>
+                        <p>['apple', 'banana', 'cherry']</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>&#10028;</b> Another way to make a copy is to use the built-in method  <span style="color: rgb(115, 2, 7);">list() </span>.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+                        </code>
+                        </pre> 
+                        <p><b>Output:</b></p>
+                        <p>['apple', 'banana', 'cherry']</p>
+                        </div>
+                        <br>
+                        
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>
+        
+        <section id="Joinlist" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Join Lists</u></h2>
+                       
+                        
+                         <p><b> &#10028; Join Two Lists : </b> There are several ways to join, or concatenate, two or more lists in Python.
+
+                           <br> One of the easiest ways are by using the <span style="color: rgb(115, 2, 7);">+</span>  operator.</p> 
+                           <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example 1:</b> Join two list, by <span style="color: rgb(115, 2, 7);">+</span>  Operator:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)  
+                        </code>
+                        </pre>
+                        <p><b>Output:-</b></p>
+                        <p>['a', 'b', 'c', 1, 2, 3]</p>
+                        </div>
+                        <br>
+                           <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example 2 :</b> Join two list, by <span style="color: rgb(115, 2, 7);">append()</span>:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+    list1.append(x)
+
+print(list1) 
+                        </code>
+                        </pre>
+                        <p><b>Output:-</b></p>
+                        <p>['a', 'b', 'c', 1, 2, 3]</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example 3 :</b> Join two list, by <span style="color: rgb(115, 2, 7);">extend()</span>:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)
+                        </code>
+                        </pre>
+                        <p><b>Output:-</b></p>
+                        <p>['a', 'b', 'c', 1, 2, 3]</p>
+                        </div>
+                        <br>
+
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                           <p> <b>  &#10028; Python List index() Method : </b> The <span style="color: rgb(115, 2, 7);">index()</span>  method returns the position at the first occurrence of the specified value.</p>
+                            <p> <b>Example :</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+fruits = [4, 55, 64, 32, 16, 32]
+
+x = fruits.index(32)
+print(x)
+</code>
+                        </pre> 
+                        <p><b>Output: </b></p>
+                        <p>3</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                           <p> <b>  &#10028; Python List count() Method :</b> The <span style="color: rgb(115, 2, 7);">count()</span>   method returns the number of elements with the specified value.
+
+                            </p>
+                            <p> <b>Example :</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+points = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+
+x = points.count(9)
+print("9 is ",x,"times")
+</code>
+                        </pre> 
+                        <p><b>Output: </b></p>
+                        <p>9 is  2 times
+                        </p>
+                        </div>
+                        <br>
+
+
+                        
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="ListMethod" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - List Methods</u></h2>
+                            <p><b> &#10028;List Methods: </b> Python has a set of <span style="color: rgb(115, 2, 7);">built-in</span>  methods that you can use on lists.</p> 
+                        
+                                <img src="content/img/python/listmethod.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+                        
+                         <br>
+                        
                        </div>
         
                     </div> 
