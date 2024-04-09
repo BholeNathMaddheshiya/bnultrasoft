@@ -63,6 +63,7 @@
             <a href="#copylist" class="w3-button  w3-hover-white w3-block w3-left-align">Copy Lists</a>
             <a href="#Joinlist" class="w3-button  w3-hover-white w3-block w3-left-align">Join Lists</a>
             <a href="#ListMethod" class="w3-button  w3-hover-white w3-block w3-left-align">Lists Methods</a>
+            <a href="#listslicing" class="w3-button  w3-hover-white w3-block w3-left-align">Lists Slicing</a>
             </div> 
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonList">Python List</a>  -->
            
@@ -1066,19 +1067,18 @@ print(thislist)
                            
                         <pre>
                         <code class="language-java">
-list1 = ["apple", "cherry", "cherry"]
+list1 = ["apple", "cherry", "kiwi"]
 anotherlist=list1
-print(anotherlist) 
+print(anotherlist)
 
-#If Making change in list1  
-list1 = ["apple", "orange", "cherry"]
-anotherlist=list1
+#After changing new in list 1
+list1.append("banana")
 print(anotherlist)
                         </code>
                         </pre> 
                         <p><b>Output:</b></p>
-                        <p>['apple', 'cherry', 'cherry'] </p>
-                        <p> ['apple', 'orange', 'cherry']</p>
+                        <p>['apple', 'cherry', 'kiwi']</p>
+                        <p>['apple', 'cherry', 'kiwi', 'banana']</p>
                     
                         <p><b>Note: </b>If changes made in <span style="color: rgb(115, 2, 7);">list1</span>  will automatically also be made in <span style="color: rgb(115, 2, 7);">list2</span> , because: <span style="color: rgb(115, 2, 7);">list2</span>  will only be a reference to <span style="color: rgb(115, 2, 7);">list1</span> . </p>
                         
@@ -1255,6 +1255,173 @@ print("9 is ",x,"times")
                          <br>
                         
                        </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="listslicing" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                       
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python List Slicing</u></h2>
+                       <p> <b> &#10028; Python List Slicing :-</b> To use the simple slicing operator i.e. colon(:). With this operator, one can specify where to start the slicing, where to end, and specify the step.</p>
+                         <p> <b>Note :-</b> List slicing returns a new list from the existing list.</p> 
+                         <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Python List Slicing Syntax :</b></p>
+                            <p> <b> <span style="color: rgb(115, 2, 7);">Lst[ StartIndex : StopIndex : StepIndex ]</span></b></p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                         <p> <b>&#10028; Positive Indexes :-  </b> In the case of Positive Indexing, the first element of the list has the index number 0, and the last element of the list has the index number N-1, where N is the total number of elements in the list (size of the list).</p>
+                                       
+                         <img src="content/img/python/positiveindex.png" class="w3-round w3-center"  alt="image" style="width:100%">
+                         
+                         <p> <b>Example :-</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+# Initialize list
+Lst = [50, 70, 30, 20, 90, 10, 50]
+
+# Display list
+print(Lst[::])</code>
+                        </pre> 
+                        <p><b>Output :- </b></p>
+ <p> [50, 70, 30, 20, 90, 10, 50] </p>
+                        
+                       </div>
+                       <br>
+                       <div class="w3-container  w3-sand w3-round-xlarge">
+                     <p> <b>&#10028; Negative Indexes :-  </b> Index -1 represents the last element and -N represents the first element of the list, where N is the length of the list.</p>
+                       
+                     <img src="content/img/python/negativeindex.png" class="w3-round w3-center"  alt="image" style="width:100%">      
+                     
+                     <p> <b>Example :-</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+# Initialize list
+Lst = [50, 70, 30, 20, 90, 10, 50]
+
+# Display list
+print(Lst[-7::1])
+</code>
+                    </pre> 
+                    <p><b>Output:-</b></p>
+                    <p>[50, 70, 30, 20, 90, 10, 50] </p>
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                     <p> <b>Slicing in middle Indexes:- </b></p>
+                     <img src="content/img/python/positive&negative.png" class="w3-round w3-center"  alt="image" style="width:100%">   
+                     
+                     <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+# Initialize list
+Lst = [50, 70, 30, 20, 90, 10, 50]
+
+# Display list
+print(Lst[1:5])
+                   </code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p> [70, 30, 20, 90]</p>
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                        <p> <b>Labwork :</b></p>
+                        <p> Q129) What will be the output of given List slicing. <b>  a=['A','C','K','N','O','W','L','E','D','G','E','M','E','N','T'] </b></p> 
+
+                        <ul class="w3-ul">
+                            <li>1) a[3:12] </li>
+                            <li>2) a[11: ] </li>
+                            <li>3) a[ :14] </li>
+                            <li>4) a[ : ] </li>
+                            <li>5) a[ 0 : ] </li>
+                            <li>6) a[4: ] </li>
+                            <li>7) a[1: :2] </li>
+                            <li>8) a[ : :2 ] </li>
+                            <li>9) a[ :6 :3 ] </li>
+                            <li>10) a[ :8 :4 ] </li>
+                            <li>11) a[ 4: :2 ] </li>
+                            <li>12) a[ 2: 7 :2 ] </li>
+                            <li>13) a[ 2: :2 ] </li>
+                            <li>14) a[ 1:2:3 ] </li>
+                            <li>15) a[ 8: :2 ] </li>
+                    
+                        </ul>
+                    </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p> Q130) What will be the list slicing  of given following output when <b>  a=['A','C','K','N','O','W','L','E','D','G','E','M','E','N','T'] </b></p> 
+                            <ul class="w3-ul">
+                                <li> 1) ['K', 'W', 'D', 'M', 'T']</li>
+                                <li> 2) ['W', 'L', 'E', 'D', 'G', 'E', 'M', 'E', 'N', 'T']</li>
+                                <li> 3) ['L', 'D', 'E', 'E', 'T']</li>
+                                <li> 4) ['C', 'N', 'W', 'E'] </li>
+                                <li> 5) ['E', 'G', 'D', 'E', 'L', 'W', 'O', 'N', 'K', 'C', 'A'] </li>
+                                <li> 6) ['E', 'D', 'L', 'O', 'K', 'A']</li>
+                                <li> 7) ['W', 'O', 'N', 'K', 'C', 'A']</li>
+                                <li> 8) ['E', 'M', 'E', 'N', 'T'] </li>
+                                <li> 9) ['C', 'W', 'G', 'N'] </li>
+                                <li> 10) ['N', 'L', 'G', 'E']</li>
+                                <li> 11) ['A', 'K', 'O', 'L', 'D', 'E', 'E', 'T']</li>
+                                <li> 12) ['A', 'C', 'K', 'N', 'O', 'W', 'L', 'E', 'D', 'G', 'E', 'M', 'E', 'N', 'T'] </li>
+                                <li> 13) ['K', 'O', 'L', 'D']</li>
+                                <li> 14) ['D', 'E', 'E', 'T']</li>
+                                <li> 15) ['D', 'M', 'T']</li>
+                        
+                        
+                            </ul>    
+                        
+                        </div>
+                        
+                        <br>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                            <p> Q131) What will be the output of given List slicing. <b>a=['C','O','N','S','T','I','T','U','T','I','O','N','A','L','I','Z','A','T','I','O','N','S',]</b></p>
+                            <ul class="w3-ul">
+                                <li>1) a[-17:-11] </li>
+                                <li>2) a[-10:-4]</li>
+                                <li>3) a[-5: :-1]</li>
+                                <li>4) a[-5: :-2]</li>
+                                <li>5) a[-1:-18:-1]</li>
+                                <li>6) a[-1:-18:]</li>
+                                <li>7) a[-2:-6:-1]</li>
+                                <li>8) a[-7:-17:-1]</li>
+                                <li>9) a[-22]</li>
+                                <li>10) a[-19: :-1]</li>
+                                <li>11) a[-5: :-3]</li>
+                                <li>12) a[-1: :-5]</li>
+                                <li>13) a[-1: -16 :-2]</li>
+                                <li>14) a[-1: -20 :-3]</li>
+                                <li>15) a[ : -11 :-3]</li>
+                                <li>16) a[ :  :-2]</li>
+                                <li>17) a[ : -5 :-2]</li>
+                                <li>18)  a[ : -18 :]</li>
+                                <li>19)  a[ -2:  :-4]</li>
+                                <li>20) a[ : -6 :]</li>
+                            </ul>
+
+                        </div>
+                        <br>
+                       
+
+                    </div>
+              
+                
+
         
                     </div> 
                 </div>
