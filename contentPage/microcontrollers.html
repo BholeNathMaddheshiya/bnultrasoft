@@ -53,6 +53,7 @@
         <div class="w3-bar-block  ">
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Sensors">Sensors</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Actuator">Actuator</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Microcontroller">Microcontroller</a>   
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel2">IoT Level 2</a>   
@@ -330,7 +331,76 @@
                                         <li> Defense systems</li>
     
                                     </ul>
+                                
+                                 
                                  </div>
+                                 <br>
+                                 <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                                <h4 class="w3-center">  Different type of microcontrollers in embedded
+                                    ecosystem:</h4>
+
+                                    <ul class="w3-ul">
+                                        <li>
+                                            <h5> <b> 1).  Microcontroller Types: Based on Architecture :</b></h5>
+                                        
+                                            
+                                             <p> <span style="color: rgb(115, 2, 7);"> &#10028; Harvard Architecture Microcontrollers :</span>    </p>
+                                                       <p> In Harvard architecture microcontrollers, there are two distinct memory spaces: one for program memory (often referred to as Flash memory or ROM) and another for data memory (usually RAM).</p>
+                                                       <p>  The program memory stores the machine code instructions that the microcontroller will execute, while the data memory holds variables and data used by the program.
+                                                    </p>
+                                                        <p> Harvard architecture microcontroller types have separate buses for fetching instructions from program memory and accessing data from data memory. Separate program and data memory spaces can lead to better utilization of available resources.
+                                                        </p>
+                                                       
+                                            <p> <span style="color: rgb(115, 2, 7);"> &#10028; Von-Neumann Architecture Microcontrollers : </span>  </p>
+
+                                            <p>  In Von Neumann’s architecture microcontrollers, there is a single memory space that stores both program instructions and data. This memory is often referred to as RAM (Random Access Memory).
+                                            </p>
+                                            <p> These microcontrollers typically have a single bus that connects the CPU to the memory, which is used for both fetching program instructions and accessing data.
+                                            </p>
+                                <p>Program code (instructions) and data are stored together in the same memory space. This means that the CPU can access program instructions and data sequentially from the same memory.
+                                </p>           
+ <p>In Von Neumann architecture, when the CPU needs to fetch an instruction, it may have to wait if there is a data access operation in progress, potentially leading to slower execution of instructions compared to Harvard architecture. That's the reason microcontrollers that use Von Neumann architecture are less common compared to Harvard architecture-based microcontrollers.
+</p>
+
+
+                                            </li> 
+                                        <li> 
+                                            <h5> <b>2).  Microcontroller Types: Based on Data Bus Width </b></h5>
+                                             <p> <span style="color: rgb(115, 2, 7);">  &#10028; 8-Bit Microcontrollers  </span></p>
+                                              <p>8-bit microcontrollers are microcontroller types with a data bus width of 8 bits. This means that they are capable of processing 8-bit data in a single cycle.</p>
+                                              <p>8-bit microcontroller types typically have limited program memory (Flash or ROM) and data memory (RAM).</p>
+                                              <p> These microcontrollers are widely used in various embedded systems and applications such as toys, small appliances, and remote controls due to their simplicity, cost-effectiveness, and suitability for handling relatively simple tasks. </p>
+                                             <p> <span style="color: rgb(115, 2, 7);">  &#10028; 16-Bit Microcontrollers  </span></p>
+                                             <p> 16-bit microcontroller types are microcontroller with 16-bit data bus width, This means that the CPU can process 16-bit data in a single cycle.</p>
+                                             <p>16-bit microcontrollers typically offer larger program memory (Flash or ROM) and data memory (RAM) compared to 8-bit microcontroller types. This increased memory capacity allows for more complex programs and data storage.</p>
+                                             <p>They are commonly used in applications such as medical devices, automotive systems, and industrial control systems.</p>
+                                             <p> <span style="color: rgb(115, 2, 7);">  &#10028; 32-Bit Microcontrollers  </span></p>
+                                             <p> 32-bit microcontroller types are microcontroller with 32-bit data bus width, which means it processes 32 bits of data at a time. This 32-bit wide data bus allows it to perform arithmetic, logic, and data manipulation operations on 32-bit data types.</p>
+                                             <p> This 32-bit microcontrollers are capable of executing complex algorithms quickly and efficiently. This makes them suitable for applications where real-time data processing such as gaming systems, multimedia devices, and high-end industrial automation.</p>
+                                             
+                                        </li>
+                                        <li>
+                                            <p> <b> 3). Microcontroller Types: Based on the Instruction Set</b></p> 
+                                           
+                                            <p> <span style="color: rgb(115, 2, 7);"> &#10028; CISC Based Microcontroller </span>   </p> 
+                                            <p> CISC (Complex Instruction Set Computer) based microcontroller types set of instructions that are designed to perform a wide range of tasks.</p> 
+                                            <p>These instructions are often complex and can perform multiple operations in a single instruction.</p>
+                                            <p>The main idea is that a single instruction will do all loading, evaluating, and storing operations just like a multiplication command will do stuff like loading data, evaluating, and storing it, hence it’s complex.</p>
+                                            <p>CISC architectures use variable length instructions set. This flexibility in instruction encoding allows for a wide range of instructions with varying complexities.</p>
+                                            <p> <span style="color: rgb(115, 2, 7);" >  &#10028; RISC Based Microcontroller </span> </p> 
+                                            <p> RISC (Reduced Instruction Set Computer) based microcontrollers the instructions are typically designed to perform basic operations, each taking a single clock cycle to execute.</p> 
+                                            <p> The main idea behind this is to simplify hardware by using an instruction set composed of a few basic steps for loading, evaluating, and storing operations just like a load command will load data, a store command will store the data. </p>
+                                             <p>Instructions in RISC architectures are usually of fixed length, which simplifies instruction decoding and execution.</p>
+                                        </li>
+                                        
+                                    </ul> 
+                                     
+                                      
+                                     
+
+                                </div>
+                                
+ 
                                 
 
 
