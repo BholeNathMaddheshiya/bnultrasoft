@@ -65,6 +65,14 @@
             <a href="#ListMethod" class="w3-button  w3-hover-white w3-block w3-left-align">Lists Methods</a>
             <a href="#listslicing" class="w3-button  w3-hover-white w3-block w3-left-align">Lists Slicing</a>
             </div> 
+
+            <a onclick="myFunction('Demo2')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom"> Python Tuples <i class="fa fa-caret-down"></i></a>
+            <div id="Demo2" class="w3-hide w3-animate-zoom">
+            <a href="#createTuple" class="w3-button  w3-hover-white w3-block w3-left-align">Create Tuple</a>
+            <a href="#updateTuple" class="w3-button  w3-hover-white w3-block w3-left-align">Update Tuple</a>
+           
+            </div>
+           
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonList">Python List</a>  -->
            
             
@@ -1422,6 +1430,261 @@ print(Lst[1:5])
               
                 
 
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="createTuple" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python Tuples</u></h2>
+                        <p> <b> &#10028; Python  Tuples : </b>
+                            <br> Tuples are used to store multiple items in a single variable.
+                            <br> Tuples are written with round brackets ().
+                        </p>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example : </b> Create a Tuple</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+                        </code>
+                        </pre>
+                        <p> <b> Output :</b></p>
+                        <p>('apple', 'banana', 'cherry')
+                        </p>
+                        </div>
+                           
+                         <br>
+                      <ul class="w3-ul">
+                        <li> 
+                          <p><b>Tuple Items : </b></p>
+                          <p> <span style="color: rgb(115, 2, 7);">Tuple items are ordered, unchangeable, and allow duplicate values.</span>  </p>
+                         <p>Tuple items are indexed, the first item has index <b>[0]</b>, the second item has index <b>[1]</b> etc. </p>
+                        </li>
+                        <li> 
+
+                            <p> <b>Ordered : </b></p>
+                            <p> When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+                            </p>
+                        </li>
+                        <li> 
+                          <p> <b>Unchangeable: </b></p>
+                          <p> Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+                        </p>
+
+                        </li>
+                        <li>
+                            <p> <b> Allow Duplicates :</b></p>
+                            <p>Since tuples are indexed, they can have items with the same value: </p>
+                        </li>
+                        
+
+
+
+
+
+
+
+
+
+
+
+                      </ul>
+                      <br>
+                      <img src="content/img/python/collection.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
+                      <br>
+                      <br>
+                      <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Create Tuple With One Item :</b> To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.</p>
+                       
+                    <pre>
+                    <code class="language-java">
+# One item tuple, remember the comma
+thistuple = ("apple",)
+print(type(thistuple))   
+
+# NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))</code>
+                    </pre>
+                    <p> <b>Output: </b></p>
+                    <p> < class 'tuple' > </p> 
+                    <p> < class 'str' > </p>
+                 
+
+                    </div>
+                    <br>
+                    <br>
+                      <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Tuple Items - Data Types :</b> Tuple items can be of any data type .</p>
+                       
+                    <pre>
+                    <code class="language-java">
+tuple1 = ("apple", "banana", "cherry")
+tuple2 = (1, 5, 7, 9, 3)
+tuple3 = (True, False, False)
+print(tuple1)
+print(tuple2)
+print(tuple3)
+</code>
+                    </pre>
+                    <p> <b>Output: </b></p>
+                    <p> ("apple", "banana", "cherry") </p> 
+                    <p>  (1, 5, 7, 9, 3) </p>
+                    <p> (True, False, False) </p>
+                 
+
+                    </div>
+                
+                    <br>
+                    <br>
+                      <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>A tuple can contain different data types:</b> </p>
+                       
+                    <pre>
+                    <code class="language-java">
+tuple1 = ("abc", 34, True, 40, "male")
+print(tuple1)
+</code>
+                    </pre>
+                    <p> <b>Output: </b></p>
+                    <p>("abc", 34, True, 40, "male") </p> 
+                   
+                 
+
+                    </div>
+                   
+                    <br>
+                    <br>
+                      <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>The tuple() Constructor:</b> It is also possible to use the <span style="color: rgb(115, 2, 7);">tuple()</span>  constructor to make a tuple. </p>
+                       
+                    <pre>
+                    <code class="language-java">
+thistuple = tuple(("apple", "banana", "cherry"))  
+print(thistuple)
+</code>
+                    </pre>
+                    <p> <b>Output: </b></p>
+                    <p>("apple", "banana", "cherry") </p> 
+                    <p> <b>Note:  </b> Remember the double round-brackets, otherwise throws a <span style="color: rgb(115, 2, 7);">TypeError:</span>  </p>
+                   
+                 
+
+                    </div>
+                    <br>
+                    <br>
+                   
+                      <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Access Tuple Items :</b> You can access tuple items by referring to the index number, inside square brackets [ ] . </p>
+                       
+                    <pre>
+                    <code class="language-java">
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
+</code>
+                    </pre>
+                    <p> <b>Output: </b></p>
+                    <p>banana</p> 
+                    
+                 
+
+                    </div>
+                    <br>
+                    <br>
+
+
+                          
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="updateTuple" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Update Tuples</u></h2>
+                           <p> <b> &#10028; Update Tuples :- </b> Tuples are unchangeable, meaning that you cannot change, add, or remove items once the tuple is created.
+                              <br> So,  Tuples are <span style="color: rgb(115, 2, 7);"> unchangeable, or immutable</span> .
+                         
+                          </p>
+                          
+                         <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Cannot change Tuple Values directly:</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+thistuple = ("apple", "banana", "cherry")
+thistuple[1]="Kiwi"   
+print(thistuple) </code>
+                        </pre> 
+                        <p><b>Output :-</b></p>
+                        <p> <span style="color: rgb(115, 2, 7);"><b> TypeError:</b> 'tuple' object does not support item assignment.</span></p>
+                        </div>
+                        <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Change Tuple Values:</b> You can convert the tuple into a list, change the list, and convert the list back into a tuple.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x) </code>
+                        </pre> 
+                        <p><b>Output :-</b></p>
+                        <p> ('apple', 'kiwi', 'cherry')</p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                            <p> <b>Labwork:- </b></p>
+                            <p>Q132). WAP to create a tuple with different data types.</p>
+                            <p>Q133). WAP to convert a tuple of 5 colors name to a string.</p>
+                            <p>Q134). WAP to get the 4<sup>th</sup> element from the last element of a tuple.</p>
+                            <p>Q135). WAP to convert a list of 10 integer number to a tuple. </p>
+                            <p>Q136). WAP to convert a tuple of 10 integer number to a list. </p>
+                            <p>Q137). WAP to convert a tuple of 10 integer number and change the item which is on <span style="color: rgb(115, 2, 7);">index number is 5,8,3</span> . </p>
+                            <p>Q138). WAP to find the length of a tuple, the tuple should be any color names.</p>
+                        </div>
+                        <br>
+
+
+
+                         
+                       </div>
         
                     </div> 
                 </div>
