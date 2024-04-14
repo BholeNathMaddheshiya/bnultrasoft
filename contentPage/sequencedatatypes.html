@@ -70,6 +70,7 @@
             <div id="Demo2" class="w3-hide w3-animate-zoom">
             <a href="#createTuple" class="w3-button  w3-hover-white w3-block w3-left-align">Create Tuple</a>
             <a href="#updateTuple" class="w3-button  w3-hover-white w3-block w3-left-align">Update Tuple</a>
+            <a href="#UnpackTuples" class="w3-button  w3-hover-white w3-block w3-left-align">Unpack Tuples</a>
            
             </div>
            
@@ -1680,10 +1681,160 @@ print(x) </code>
                             <p>Q138). WAP to find the length of a tuple, the tuple should be any color names.</p>
                         </div>
                         <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Add tuple to a tuple:</b> You are allowed to add tuples to tuples, so if you want to add one item, (or many), create a new tuple with the item(s), and add it to the existing tuple.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thistuple = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple = thistuple + y
+print(thistuple) </code>
+                        </pre> 
+                        <p><b>Output :-</b></p>
+                        <p>('apple', 'banana', 'cherry', 'orange')</p>
+
+                        <p> <b>Note:</b> When creating a tuple with only one item, <span style="color: rgb(115, 2, 7);">remember to include a comma after the item</span> , otherwise it will not be identified as a tuple.</p>
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p><b> &#10028;  Remove Items : </b>You cannot remove items in a tuple because tuples are <span style="color: rgb(115, 2, 7);">unchangeable</span> , so you cannot remove items from it. </p>
+                        <p> <b> Example: </b>     Convert the tuple into a list, <span style="color: rgb(115, 2, 7);"> remove "apple",</span> and convert it back into a tuple:
+                        </p>
+                       
+                     <pre>
+                    <code class="language-java">
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+print(thistuple)                  </code>
+                    </pre> 
+                    <p><b>Output:</b></p>
+                    <p>('banana', 'cherry')</p>
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p><b> &#10028;  Delete Tuple : </b>You can delete the tuple completely. </p>
+                        <p> <b> Example: </b>    The <span style="color: rgb(115, 2, 7);">  del keyword</span> can delete the tuple completely:  </p>
+                       
+                     <pre>
+                    <code class="language-java">
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+print(thistuple) #this will raise an error because the tuple no longer exists                 </code>
+                    </pre> 
+                    <p><b>Output:</b></p>
+                    <p> <span style="color: rgb(115, 2, 7);"> <b>NameError:</b> name 'thistuple' is not defined </span></p>
+                    </div>
+                    <br>
+
 
 
 
                          
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>
+        
+        <section id="UnpackTuples" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Unpack Tuples
+                            </u></h2>
+                       
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                               <p> <b> &#10028; Packing a Tuple :-  </b> When we create a tuple, we normally assign values to it. This is called "packing" a tuple: </p>
+                                <p> <b>Example : </b> Packing a tuple</p>
+                               
+                            <pre>
+                            <code class="language-java">
+fruits = ("apple", "banana", "cherry")
+             </code>
+                            </pre> 
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                               <p> <b> &#10028; Unpacking a Tuple :-  </b> But, in Python, we are also allowed to extract the values back into variables. This is called "unpacking": </p>
+                                <p> <b>Example : </b> Unpacking a tuple:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+fruits = ("apple", "banana", "cherry")
+(a, b, c) = fruits
+print(a)
+print(b)
+print(c)
+             </code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p> apple</p>
+                            <p> banana</p>
+                            <p> cherry</p>
+                       
+                            <p> <b> Note:- </b> The number of variables must match the number of values in the tuple, if not, you must use an <span style="color: rgb(115, 2, 7);">asterisk *</span>  to collect the remaining values as a list.</p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                                <p> <b> &#10028; Using <span style="color: rgb(115, 2, 7);"> Asterisk <b>*</b></span>  </b> If the number of variables is less than the number of values, you can add an * to the variable name and the values will be assigned to the variable as a list. </p>
+                                 <p> <b>Example : </b>Assign the rest of the values as a list called "red":</p>
+                                
+                             <pre>
+                             <code class="language-java">
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+ </code>
+
+                             </pre> 
+                             <p><b>Output:-</b></p>
+                             <p> apple </p>
+                             <p>banana </p>
+                             <p>['cherry', 'strawberry', 'raspberry'] </p>
+
+
+                             </div>
+                             <br>
+                             
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 2 :</b> Python will assign values to the variable until the number of values matches to their respective variables of the values.</p>
+   
+<pre>
+<code class="language-java">
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+
+(green, *tropic, red) = fruits
+
+print(green)
+print(tropic)
+print(red)
+</code>
+</pre> 
+<p><b>Output:-</b></p>
+<p> apple</p>
+<p>['mango', 'papaya', 'pineapple']</p>
+<p>cherry</p>
+</div>
+<br>
+
+                           
                        </div>
         
                     </div> 
