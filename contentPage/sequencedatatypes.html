@@ -71,7 +71,14 @@
             <a href="#createTuple" class="w3-button  w3-hover-white w3-block w3-left-align">Create Tuple</a>
             <a href="#updateTuple" class="w3-button  w3-hover-white w3-block w3-left-align">Update Tuple</a>
             <a href="#UnpackTuples" class="w3-button  w3-hover-white w3-block w3-left-align">Unpack Tuples</a>
+            <a href="#LoopTuple" class="w3-button  w3-hover-white w3-block w3-left-align">Loop Tuple</a>
+            <a href="#TupleMethods" class="w3-button  w3-hover-white w3-block w3-left-align">Tuple Methods</a>
            
+            </div>
+            <a onclick="myFunction('Demo3')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">  Python Sets <i class="fa fa-caret-down"></i></a>
+            <div id="Demo3" class="w3-hide w3-animate-zoom">
+            <a href="#CreateaSet" class="w3-button  w3-hover-white w3-block w3-left-align">Create a Sets</a>
+              
             </div>
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonList">Python List</a>  -->
@@ -1833,6 +1840,46 @@ print(red)
 <p>cherry</p>
 </div>
 <br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 3:</b></p>
+   
+<pre>
+<code class="language-java">
+fruits = ("apple", "mango", "papaya")
+(*a) = fruits  # SyntaxError: cannot use starred expression here
+
+(*a,) = fruits  # If we put comma here then no error found.
+print(a)
+['apple', 'mango', 'papaya'] 
+
+</code>
+</pre> 
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Multiply Tuples or List :</b> If you want to multiply the content of a Tuple or List a given number of times, you can use the <span style="color: rgb(115, 2, 7);">*</span>  operator:</p>
+   
+<pre>
+<code class="language-java">
+fruitslist = ["apple", "banana", "cherry"]
+mylist = fruitslist * 2
+print(mylist)
+
+
+fruitstuple = ["apple", "banana", "cherry"]
+mytuple = fruitstuple * 2
+print(mytuple)
+</code>
+</pre> 
+<p> <b>Output:</b></p>
+<p>['apple', 'banana', 'cherry', 'apple', 'banana', 'cherry'] </p>
+<p>['apple', 'banana', 'cherry', 'apple', 'banana', 'cherry']</p>
+
+</div>
+<br>
+<br>
 
                            
                        </div>
@@ -1844,6 +1891,288 @@ print(red)
         
         
         </section> 
+        
+        <section id="LoopTuple" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Loop Tuples</u></h2>
+                            <p><b> &#10028; Using a for loop: </b> You can loop through the tuple items by using a <span style="color: rgb(115, 2, 7);">for</span>  loop.</p> 
+                      
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> Iterate through the items and print the values.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+    print(x)</code>
+                            </pre> 
+                            <p> <b>Output:</b></p>
+                            <p> apple</p>
+                            <p>banana </p>
+                            <p>cherry </p>
+                            </div>  
+                            
+                            <br>
+                            <p><b> &#10028; Loop Through the Index Numbers:  </b> Use the <span style="color: rgb(115, 2, 7);">range()</span>  and <span style="color: rgb(115, 2, 7);">len()</span>  functions to create a suitable iterable.</p> 
+                      
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> Iterate through the items and print the values.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+    print(thistuple[i])</code>
+                            </pre> 
+                            <p> <b>Output:</b></p>
+                            <p> apple</p>
+                            <p>banana </p>
+                            <p>cherry </p>
+                            </div>  
+                            
+                            <br>
+                            <p><b> &#10028; Using a While Loop :  </b> Use the <span style="color: rgb(115, 2, 7);">len()</span>  function to determine the length of the tuple, then start at <span style="color: rgb(115, 2, 7);">0</span>  and loop your way through the tuple items by referring to their indexes.</p> 
+                      
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> Print all items, using a <span style="color: rgb(115, 2, 7);">while</span>  loop to go through all the index numbers:.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+    print(thistuple[i])
+    i = i + 1</code>
+                            </pre> 
+                            <p> <b>Output:</b></p>
+                            <p> apple</p>
+                            <p>banana </p>
+                            <p>cherry </p>
+                            </div>  
+                            
+                            <br>
+                            
+                            
+
+
+
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="TupleMethods" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Tuple Methods</u></h2>
+                            <p><b> &#10028;  Tuple Methods : </b> Python has two built-in methods that you can use on tuples.</p> 
+                       
+                             <ul class="w3-ul"> 
+                                <li> <b>count() : - </b> Returns the number of times a specified value occurs in a tuple </li>
+                                <li> <b>index() :- </b> Searches the tuple for a specified value and returns the position of where it was found</li>
+
+
+                             </ul>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Python Tuple <span style="color: rgb(115, 2, 7);">count()</span>  Method</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+x = thistuple.count(5)
+print(x)
+            
+                            </code>
+                            </pre> 
+                            <p> <b>Output:-</b></p>
+                            <p> 2 </p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Python Tuple <span style="color: rgb(115, 2, 7);">index()</span>  Method</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+x = thistuple.index(8)
+print(x)
+            
+                            </code>
+                            </pre> 
+                            <p> <b>Output:-</b></p>
+                            <p> 3 </p>
+                            </div>
+                            <br>
+
+
+                         
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="CreateaSet" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python Sets</u></h2>
+
+                            <p><b> &#10028;  </b> Sets are used to store multiple items in a <span style="color: rgb(115, 2, 7);">single</span>  variable.</p> 
+                            <p><b> &#10028;  </b> Set is a collection which is <span style="color: rgb(115, 2, 7);">unordered, unchangeable*, and unindexed, No duplicate members. </span></p> 
+                            <p><b> &#10028;  </b> Sets are written with curly brackets <span style="color: rgb(115, 2, 7);">{ }</span> .</p> 
+                      
+
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Create a Set:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+print(thisset)</code>
+                            </pre>
+                            <p><b>Output:-</b></p>
+                            <p> {'banana', 'apple', 'cherry'}</p>
+                            <p><b> Note:-</b>  Sets are <span style="color: rgb(115, 2, 7);"> unordered</span>, so you cannot be sure in which order the items will appear.</p>
+                            </div>
+                            <br>
+                            <ul class="w3-ul">
+                                <li> 
+                                    <p> <b> &#10028; Set Items  : </b>  </p>
+                                    <p>Set items are unordered, unchangeable, and do not allow duplicate values.</p>
+                                </li>
+                                <li>
+                                    <p> <b> &#10028; Unordered : </b> </p>
+                                    <p> Unordered means that the items in a set do not have a defined order.</p>
+                                   <p>Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+                                </p>
+                                </li>
+                                <li> 
+  <p> <b>&#10028;  Unchangeable : </b> </p>
+  <p> Set items are unchangeable, meaning that we cannot change the items after the set has been created.
+
+</p>
+<p> Once a set is created, you cannot change its items, but you can remove items and add new items.
+</p>
+
+                                </li>
+                                <li>
+                                    <p> <b> &#10028; Duplicates Not Allowed:  </b> </p>
+                                    <p>Sets cannot have two items with the same value. </p>
+                                </li>
+  
+
+
+
+
+
+
+                            </ul>
+                            <br>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Duplicates Not Allowed :</b> Sets cannot have two items with the <span style="color: rgb(115, 2, 7);">same</span>  value.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "banana", "cherry", "apple"}
+print(thisset)</code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p> {'cherry', 'apple', 'banana'}</p>
+                          
+                            <p><b>Note:-</b></p>
+                            <p>&#10028; Duplicate values will be <span style="color: rgb(115, 2, 7);">ignored</span> . </p>
+                            
+                            </div>
+                            <br>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> <span style="color: rgb(115, 2, 7);">True</span>  and  <span style="color: rgb(115, 2, 7);"> 1</span> is considered the same value:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "banana", "cherry", True,1, 2}
+print(thisset)
+                            </code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p>{True, 2, 'banana', 'cherry', 'apple'}</p>
+                            <br>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> <span style="color: rgb(115, 2, 7);">False</span>  and  <span style="color: rgb(115, 2, 7);"> 0</span> is considered the same value:</p>
+                             
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "banana", "cherry", False, True, 0}
+print(thisset)
+                            </code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p>{False, True, 'apple', 'cherry', 'banana'}</p>
+                            <br>
+                            </div>
+                            <br>
+
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Set Items - Data Types:</b> A set with strings, integers and boolean values.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+set1 = {"abc", 34, True, 40, "male"}
+print(set1)        
+                            </code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p>{True, 34, 'abc', 40, 'male'}</p>
+                            </div>
+                        <br>
+
+                       
+                                
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>
         
 
 
