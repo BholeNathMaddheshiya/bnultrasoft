@@ -81,6 +81,7 @@
             <a href="#AccessSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Access Set Items</a>
             <a href="#AddSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Add Set Items</a>
             <a href="#RemoveSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Remove Set Items</a>
+            <a href="#JoinSets" class="w3-button  w3-hover-white w3-block w3-left-align">Join Sets</a>
               
             </div>
            
@@ -2509,7 +2510,136 @@ print(thisset)
         
         
         
+        </section>
+        
+        <section id="JoinSets" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Join Sets</u></h2>
+                       
+                                <img src="content/img/python/joinsets.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+                        
+                         <br>
+                         <br>
+                         <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                            <p> <b> &#10028; Union :</b> The <span style="color: rgb(115, 2, 7);">union()</span>  method returns a new set with all items from both sets.</p>
+                            <p> <b>Example 1:</b> 
+                        <pre>
+                        <code class="language-java">
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = set1.union(set2)
+print(set3)</code>
+                        </pre> 
+                        <p><b>Output:-</b></p>
+                        <p>{'b', 1, 2, 'c', 3, 'a'}</p>
+                        <hr style="background-color: red; height: 1px;">
+
+               
+
+                            <p> <b>Example 2:</b> 
+                                Use  <span style="color: rgb(115, 2, 7);">|</span> to join two sets</p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = set1 | set2
+print(set3)</code>
+                        </pre> 
+                        <p><b>Output:-</b></p>
+                        <p> {1, 'a', 2, 3, 'b', 'c'}
+                        </p>
+                        <p><b>Note: </b>You can use the | operator instead of the union() method, and you will get the same result</p>
+                        <hr style="background-color: red; height: 1px;">
+                          <p> <b>Example 3:</b> <span style="color: rgb(115, 2, 7);">Join Multiple Sets :</span>  Just add more sets in the parentheses, separated by commas.
+                        </p>
+                           
+                    <pre>
+                    <code class="language-java">
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+myset = set1.union(set2, set3, set4)
+print(myset)</code>
+                    </pre> 
+                    <p><b>Output:-</b></p>
+                    <p> {'Elena', 1, 2, 3, 'a', 'bananas', 'b', 'cherry', 'c', 'apple', 'John'}
+                    </p>
+                    <hr style="background-color: red; height: 1px;">
+
+                    <p> <b>  Example 4:</b> When using the | operator, separate the sets with more | operators:</p>
+                   
+                <pre>
+                <code class="language-java">
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+
+myset = set1 | set2 | set3 |set4
+print(myset)</code>
+                </pre> 
+                <p><b>Output :-</b></p>
+                <p> {'c', 'b', 1, 2, 3, 'John', 'a', 'Elena', 'cherry', 'apple', 'bananas'} </p>
+
+ 
+
+
+                    </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Join a Set and a Tuple: </b> The <span style="color: rgb(115, 2, 7);">union()</span>  method allows you to join a set with other data types, like lists or tuples</p>
+                             <p><b>Example 1 :-</b></p>
+                        <pre>
+                        <code class="language-java">
+x = {"a", "b", "c"}
+y = (1, 2, 3)
+
+z = x.union(y) 
+print(z)</code>
+                        </pre> 
+                        <p><b>Output:- </b></p>
+                        <p> {1, 2, 'a', 3, 'b', 'c'}</p>
+                        <p><b>Note: </b>The result will be a set.</p>
+                        <hr style="background-color: red; height: 1px;">
+                        <p><b> Join a Set and a Tuple:</b> By using |</p>
+                        <p><b>Example 2 :-</b></p>
+
+                        <pre>
+                            <code class="language-java">
+x = {"a", "b", "c"}
+y = (1, 2, 3)
+
+z = x|y
+print(z)</code>
+                            </pre>
+                            <p> <b>Output :-</b></p>
+                            <p> <span style="color: rgb(115, 2, 7);"><b>TypeError: </b>  unsupported operand type(s) for |: 'set' and 'tuple'</span> </p>
+
+
+                        </div>
+                        <br>
+                        <br>
+                        
+                           
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
         </section> 
+        
         
         
         
