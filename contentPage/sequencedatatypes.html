@@ -78,6 +78,9 @@
             <a onclick="myFunction('Demo3')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom">  Python Sets <i class="fa fa-caret-down"></i></a>
             <div id="Demo3" class="w3-hide w3-animate-zoom">
             <a href="#CreateaSet" class="w3-button  w3-hover-white w3-block w3-left-align">Create a Sets</a>
+            <a href="#AccessSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Access Set Items</a>
+            <a href="#AddSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Add Set Items</a>
+            <a href="#RemoveSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Remove Set Items</a>
               
             </div>
            
@@ -1868,14 +1871,14 @@ mylist = fruitslist * 2
 print(mylist)
 
 
-fruitstuple = ["apple", "banana", "cherry"]
+fruitstuple = ("apple", "banana", "cherry")
 mytuple = fruitstuple * 2
 print(mytuple)
 </code>
 </pre> 
 <p> <b>Output:</b></p>
 <p>['apple', 'banana', 'cherry', 'apple', 'banana', 'cherry'] </p>
-<p>['apple', 'banana', 'cherry', 'apple', 'banana', 'cherry']</p>
+<p>('apple', 'banana', 'cherry', 'apple', 'banana', 'cherry')</p>
 
 </div>
 <br>
@@ -2160,6 +2163,20 @@ print(set1)
                             <p><b>Output:-</b></p>
                             <p>{True, 34, 'abc', 40, 'male'}</p>
                             </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>The set() Constructor :</b> It is also possible to use the <span style="color: rgb(115, 2, 7);">set()</span>  constructor to make a set..</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = set(["apple", "banana", "cherry"])
+print(type(thisset))        
+                            </code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p>< class 'set' ></p>
+                            </div>
                         <br>
 
                        
@@ -2173,6 +2190,328 @@ print(set1)
         
         
         </section>
+
+        <section id="AccessSetItems" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Access Set Items</u></h2>
+                       
+                            <p><b> &#10028; Access Items : </b> <span style="color: rgb(115, 2, 7);">You cannot access items in a set by referring to an index or a key.</span> </p> 
+                          <p> <b>&#10028; Note:- </b> <br>
+                            &#10028; But you can loop through the set items using a <span style="color: rgb(115, 2, 7);">for</span>  loop <br>
+                            &#10028; If a specified value is present in a set, by using the <span style="color: rgb(115, 2, 7);">in</span>  or <span style="color: rgb(115, 2, 7);">not  in</span>  keyword.
+                        </p>
+                         
+                         <br>
+
+                         
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 1 : </b>Loop through the set, and print the values</p>
+   
+<pre>
+<code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+for x in thisset:
+      print(x)
+</code>
+</pre>
+<p><b>Output :-</b></p>
+<p>apple  </p>
+<p>cherry</p>
+<p>banana </p>
+</div>
+<br>
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 2 : </b>Check if "banana" is present in the set.</p>
+   
+<pre>
+<code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+
+print("banana" in thisset)
+</code>
+</pre>
+<p><b>Output :-</b></p>
+<p>True  </p>
+
+</div>
+<br>
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 3 : </b>Check if "banana" is NOT present in the set.</p>
+   
+<pre>
+<code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+
+print("banana" not in thisset)
+</code>
+</pre>
+<p><b>Output :-</b></p>
+<p>False  </p>
+
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>&#10028; Change Items:</b></p>
+ <p> Once a set is created, you cannot change its items, but you can remove items and add new items.</p>
+</div>
+<br>
+
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+
+        <section id="AddSetItems" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Add Set Items
+                            </u></h2>
+
+                            
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b> We cannot use <span style="color: rgb(115, 2, 7);">append()</span>  to add set items:</p>
+   
+<pre>
+<code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+thisset.append("orange")
+print(thisset)
+</code>
+</pre> 
+<p><b>Output:-</b></p>
+<p> <span style="color: rgb(115, 2, 7);"><b>AttributeError:</b> 'set' object has no attribute 'append' </span> </p>
+</div>
+<br>
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b> &#10028; To Add Items :</b> To add one item to a set use the <span style="color: rgb(115, 2, 7);">add()</span>  method.</p>
+   
+<pre>
+<code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+thisset.add("orange")
+print(thisset)
+</code>
+</pre> 
+<p><b>Output:-</b></p>
+<p> {'cherry', 'orange', 'banana', 'apple'} </p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b> We cannot use <span style="color: rgb(115, 2, 7);">add()</span>  to add list items:</p>
+   
+<pre>
+<code class="language-java">
+thislist = ["apple", "banana", "cherry"]
+thislist.add("orange")
+print(thislist)
+</code>
+</pre> 
+<p><b>Output:-</b></p>
+<p> <span style="color: rgb(115, 2, 7);"><b>AttributeError:</b> 'list' object has no attribute 'add' </span> </p>
+</div>
+
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b> &#10028; Add Sets:</b> To add items from another set into the current set, use the <span style="color: rgb(115, 2, 7);">update()</span>  method.</p>
+     <p> <b> Example :-</b> Add elements from  <span style="color: rgb(115, 2, 7);">tropical </span> into <span style="color: rgb(115, 2, 7);">thisset</span> </p>
+<pre>
+<code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+thisset.update(tropical)
+print(thisset)
+</code>
+</pre> 
+<p><b>Output:-</b></p>
+<p> {'apple', 'papaya', 'mango', 'cherry', 'pineapple', 'banana'} </p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>&#10028; Add Any Iterable:</b> The object in the <span style="color: rgb(115, 2, 7);">update()</span>  method does not have to be a set, it can be any <span style="color: rgb(115, 2, 7);">iterable object (tuples, lists, dictionaries etc.)</span> .</p>
+     <p> <b> Example :-</b> </p>
+<pre>
+<code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+mylist = ["kiwi", "orange"]
+thisset.update(mylist)
+print(thisset)
+</code>
+</pre> 
+<p><b>Output:-</b></p>
+<p> {'banana', 'orange', 'kiwi', 'apple', 'cherry'} </p>
+</div>
+<br>
+
+
+                       
+                             
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="RemoveSetItems" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Remove Set Items</u></h2>
+                                
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Remove Item:</b>  To remove an item in a set, use the <span style="color: rgb(115, 2, 7);">remove()</span> , or the <span style="color: rgb(115, 2, 7);">discard()</span>  method.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+thisset.remove("banana")
+print(thisset)
+</code></pre> 
+<p> <b>Output:-</b></p>
+<p>{'apple', 'cherry'} </p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> Trying  to remove which is not in set, by using <span style="color: rgb(115, 2, 7);">remove()</span>  method.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "cherry"}
+thisset.remove("banana")
+print(thisset)
+                                
+</code></pre> 
+<p> <b>Output:-</b></p>
+<p> <span style="color: rgb(115, 2, 7);"><b>KeyError:</b> 'banana' </span> </p>
+<p> <b>Note:</b>  If the item to remove does not exist, <span style="color: rgb(115, 2, 7);">remove()</span>  will raise <span style="color: rgb(115, 2, 7);">an error</span> .</p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Remove Item:</b>  Remove "banana" by using the <span style="color: rgb(115, 2, 7);">discard()</span>  method.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+thisset.discard("banana")
+print(thisset)
+</code></pre> 
+<p> <b>Output:-</b></p>
+<p>{'cherry', 'apple'} </p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> Trying  to remove which is not in set, by using <span style="color: rgb(115, 2, 7);">discard()</span>  method.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple",  "cherry"}
+thisset.discard("banana")
+print(thisset)
+                                
+</code></pre> 
+<p> <b>Output:-</b></p>
+<p>{'cherry', 'apple'}</p>
+<p> <span style="color: rgb(115, 2, 7);"><b>No any Error:</b> </span> </p>
+
+<p> <b>Note:</b>  If the item to remove does not exist, <span style="color: rgb(115, 2, 7);">discard()</span>  will <span style="color: rgb(115, 2, 7);">NOT raise an error</span>  .</p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example:</b> Remove a random item by using the <span style="color: rgb(115, 2, 7);">pop() </span> method</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+x = thisset.pop()
+print(x)
+print(thisset)</code>
+                            </pre>
+                            <p> <b>Output:-</b></p>
+                            <p>cherry </p> 
+                            <p>{'banana', 'apple'}</p>
+                            <p> <b>Note: </b>  Sets are <span style="color: rgb(115, 2, 7);">unordered</span> , so when using the  <span style="color: rgb(115, 2, 7);">pop() </span> method, you do not know which item that gets removed.</p>
+                          </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> The <span style="color: rgb(115, 2, 7);">clear()</span>  method empties the set:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+thisset.clear()
+print(thisset)</code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p> set() </p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> The <span style="color: rgb(115, 2, 7);">del</span> keyword will delete the set completely.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisset = {"apple", "banana", "cherry"}
+del thisset
+print(thisset)
+                                </code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p> <span style="color: rgb(115, 2, 7);"><b>NameError:</b> name 'thisset' is not defined.</span> </p>
+                            </div>
+                            <br>
+
+
+
+
+
+                         </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
+        
         
 
 
