@@ -81,7 +81,8 @@
             <a href="#AccessSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Access Set Items</a>
             <a href="#AddSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Add Set Items</a>
             <a href="#RemoveSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Remove Set Items</a>
-            <a href="#JoinSets" class="w3-button  w3-hover-white w3-block w3-left-align">Join Sets</a>
+            <a href="#JoinSets" class="w3-button  w3-hover-white w3-block w3-left-align">Join Sets (Union & Update) </a>
+            <a href="#Intersection" class="w3-button  w3-hover-white w3-block w3-left-align"> Join Sets (Intersection)</a>
               
             </div>
            
@@ -2623,14 +2624,181 @@ print(z)</code>
                             </pre>
                             <p> <b>Output :-</b></p>
                             <p> <span style="color: rgb(115, 2, 7);"><b>TypeError: </b>  unsupported operand type(s) for |: 'set' and 'tuple'</span> </p>
-
+                            <p><b>Note:-</b> The  <span style="color: rgb(115, 2, 7);">|</span>  operator only allows you to join sets with sets, and not with other data types like you can with the <span style="color: rgb(115, 2, 7);"> union()</span>  method.</p>
 
                         </div>
                         <br>
-                        <br>
                         
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                            <h4>  &#10028; Update :</h4>
+                            <p> &#10028; The <span style="color: rgb(115, 2, 7);">update()</span>  method inserts all items from one set into another. </p>
+                         
+                           
+
+                            <p> <b>Example 1:</b> The <span style="color: rgb(115, 2, 7);">update()</span>  method inserts the items in set2 into set1:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+set1.update(set2)
+print(set1)</code>
+                        </pre> 
+                        <p><b>Output :-</b></p>
+                        <p> {'c', 1, 2, 3, 'a', 'b'}</p>
+
+
+                        <hr style="background-color: black; height: 1px;">
+                        <p> &#10028; The <span style="color: rgb(115, 2, 7);">update()</span>  changes the original set, and does not return a new set but it return  <span style="color: rgb(115, 2, 7);">None,</span> which means no value at all.</p>
+ 
+
+                    <p> <b>Example 2:</b></p>
+                   
+                <pre>
+                <code class="language-java">
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+x=set1.update(set2)
+print(x)</code>
+                </pre> 
+                <p><b> Output :-</b></p>
+                <p> None</p>
+                <hr style="background-color: black; height: 1px;">
+                <p> <b>Example 3:</b> Both <span style="color: rgb(115, 2, 7);"> union()</span> and  <span style="color: rgb(115, 2, 7);"> update()</span> will exclude any duplicate items (it means no any duplicate items will join).</p>
+                   
+                <pre>
+                <code class="language-java">
+set1 = {"a", "b" , "c",1}
+set2 = {1, 2, 3,"a"}
+set1.update(set2)
+print(set1)
+
+set3 = {"X", "Y" , "Z",10}
+set4 = {10, 20, 30,"X"}
+x=set3.union(set4)
+print(x) </code>
+                </pre> 
+                <p><b>Output :-</b></p>
+                <p>{1, 2, 3, 'b', 'c', 'a'}</p>
+                <p>{10, 'Y', 'Z', 'X', 20, 30}</p>
+                
+              
+                      
+
+
+                        </div>
+                       
+                        <br>
+                        <br>
                            
                        </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="Intersection" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Intersection </u></h2>
+                        <p> <b> &#10028;</b> Keep ONLY the duplicates</p>
+                        <p> <b> &#10028;</b> The <span style="color: rgb(115, 2, 7);">intersection()</span>  method will return a new set, that only contains the items that are present in both sets.</p>
+                              
+                         <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :- </b>Join set1 and set2, but keep only the duplicates:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"Laptop","WhatsApp", "Desktop", "CPU"}
+set2 = {"Google", "Microsoft", "Facebook","WhatsApp","CPU"}
+set3 = set1.intersection(set2)
+print(set3)</code>
+                        </pre>
+                        <p><b>Output :-</b></p>
+                        <p> {'WhatsApp', 'CPU'}</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                            <p> &#10028; You can use the <span style="color: rgb(115, 2, 7);">&</span>  operator instead of the <span style="color: rgb(115, 2, 7);">intersection()</span>  method, and you will get the same result.</p>
+
+                            <p> <b>Example :</b> Use <span style="color: rgb(115, 2, 7);"> & </span>to join two sets</p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"Laptop","WhatsApp", "Desktop", "CPU"}
+set2 = {"Google", "Microsoft", "Facebook","WhatsApp","CPU"}
+set3 = set1 & set2
+print(set3)</code>
+                        </pre> 
+                        <p><b>Output:-</b></p>
+                        <p> {'WhatsApp', 'CPU'}</p>
+                        </div>
+                        <br>
+
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p> <b>Note:- </b> The <span style="color: rgb(115, 2, 7);">&</span>  operator only allows you to join sets with sets, and not with other data types like you can with the <span style="color: rgb(115, 2, 7);">intersecton()</span>  method.</p>
+
+                            <p> <b>Example :-</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"Laptop","WhatsApp", "Desktop", "CPU"}
+set2 = ("Google", "Microsoft","CPU")
+set3 = set1 & set2
+print(set3) </code>
+                        </pre> 
+                        <p><b>Output:-</b></p>
+                        <p> 
+                            <span style="color: rgb(115, 2, 7);"> <b>TypeError:</b> unsupported operand type(s) for &: 'set' and 'tuple' </span></p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p><b>Note:-</b> The <span style="color: rgb(115, 2, 7);"> intersection_update()</span> method will also keep ONLY the duplicates, but it will change the original set instead of returning a new set.</p>
+
+                            <p> <b>Example :-</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"Laptop","WhatsApp", "Desktop", "CPU"}
+set2 = {"Google", "Microsoft", "Facebook","WhatsApp","CPU"}
+set1.intersection_update(set2)
+print(set1)
+                        </code>
+                        </pre> 
+                        <p><b>Output:-</b></p>
+                        <p> {'CPU', 'WhatsApp'}</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                            <p> The values <span style="color: rgb(115, 2, 7);">True and 1</span>  are considered the same value. The same goes for <span style="color: rgb(115, 2, 7);">False and 0</span>. </p>
+
+                            <p> <b>Example :</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"Laptop",True, 0, "Desktop",False,1}
+set2 = {"Google", "Microsoft", 1,"WhatsApp","CPU",0,1}
+set3 = set1.intersection(set2)
+print(set3)</code>
+                        </pre>
+                        <p><b>Output :-</b></p>
+                        <p>{0, True}</p>
+
+
+
+                                                 
+                       </div>
+                       <br>
+                        <br> 
         
                     </div> 
                 </div>
