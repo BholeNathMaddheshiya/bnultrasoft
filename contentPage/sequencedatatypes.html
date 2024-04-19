@@ -83,6 +83,8 @@
             <a href="#RemoveSetItems" class="w3-button  w3-hover-white w3-block w3-left-align">Remove Set Items</a>
             <a href="#JoinSets" class="w3-button  w3-hover-white w3-block w3-left-align">Join Sets (Union & Update) </a>
             <a href="#Intersection" class="w3-button  w3-hover-white w3-block w3-left-align"> Join Sets (Intersection)</a>
+            <a href="#Difference" class="w3-button  w3-hover-white w3-block w3-left-align"> Join Sets (Difference)</a>
+            <a href="#Symmetric" class="w3-button  w3-hover-white w3-block w3-left-align"> Join Sets (Symmetric Differences)</a>
               
             </div>
            
@@ -2799,6 +2801,160 @@ print(set3)</code>
                        </div>
                        <br>
                         <br> 
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="Difference" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Difference</u></h2>
+                            <p><b>&#10028; </b> The <span style="color: rgb(115, 2, 7);">difference()</span>  method will return a new set that will contain only the items from the first set that are not present in the other set.</p>
+                       
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example:</b> Keep all items from set1 that are not in set2:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set3 = set1.difference(set2)
+print(set3)</code>
+                            </pre>
+                            <p><b>Output:-</b></p> 
+                            <p> {'cherry', 'banana'}</p>
+                            </div>  
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                                <p>  &#10028; You can use the <span style="color: rgb(115, 2, 7);">-</span> operator instead of the  <span style="color: rgb(115, 2, 7);"> difference()</span> method, and you will get the same result.</p>
+
+                                <p> <b>Example:</b> Use  <span style="color: rgb(115, 2, 7);">-</span> to join two sets:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "banana"}
+set3 = set1 - set2
+print(set3)            
+                            </code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p> {'cherry', 'apple'}</p>
+                            </div>  
+                         
+                            <br>
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+ <p><b>Note:</b>  The - operator only allows you to join sets with sets, and not with other data types like you can with the <span style="color: rgb(115, 2, 7);">difference()</span>  method.</p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                                <p>  <b>&#10028;</b> The  <span style="color: rgb(115, 2, 7);">difference_update </span>() method will also keep the items from the first set that are not in the other set, but it will change the original set instead of returning a new set.</p>
+
+                                <p> <b>Example:</b> Use the <span style="color: rgb(115, 2, 7);">difference_update()</span> method to keep the items that are not present in both sets:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "cherry"}
+set1.difference_update(set2)
+print(set1)            
+                            </code>
+                            </pre> 
+                            <p><b>Output:-</b></p>
+                            <p> {'apple', 'banana'} </p>
+                            </div>
+                         
+                         <br>
+                         <br>
+                               
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+
+        <section id="Symmetric" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Symmetric Differences</u></h2>
+                       
+                          <p> <b>&#10028; </b> The <span style="color: rgb(115, 2, 7);">symmetric_difference()</span>  method will keep only the elements that are NOT present in both sets.</p>
+                          <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example:</b>Keep the items that are not present in both sets:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set3 = set1.symmetric_difference(set2)
+print(set3)</code>
+                        </pre> 
+                        <p><b>Output:-</b></p>
+                        <p>{'google', 'cherry', 'banana', 'microsoft'}</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p><b>&#10028; </b>You can use the <span style="color: rgb(115, 2, 7);">^</span>  operator instead of the  <span style="color: rgb(115, 2, 7);"> symmetric_difference()</span> method, and you will get the same result. </p>
+
+                            <p> <b>Example:</b>Use <span style="color: rgb(115, 2, 7);">^</span> to join two sets:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set3 = set1 ^ set2
+print(set3)        
+                        </code>
+                        </pre>
+                        <p><b>Output:-</b></p>
+                        <p> {'banana', 'google', 'cherry', 'microsoft'}</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                            <p> <b>Note: </b>    The <span style="color: rgb(115, 2, 7);">^</span>  operator only allows you to join sets with sets, and not with other data types like you can with the <span style="color: rgb(115, 2, 7);">symmetric_difference()</span>  method.
+                            </p>
+                         
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p> <b>&#10028;</b>The <span style="color: rgb(115, 2, 7);">symmetric_difference_update()</span>  method will also keep all but the duplicates, but it will change the original set instead of returning a new set.</p>
+
+                            <p> <b>Example:</b>Use the <span style="color: rgb(115, 2, 7);"> symmetric_difference_update()</span> method to keep the items that are not present in both sets:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+set1.symmetric_difference_update(set2)
+print(set1)</code>
+                        </pre> 
+                        <p><b>Output:-</b></p>
+                        <p>{'google', 'cherry', 'microsoft', 'banana'}</p>
+                        </div>
+                        
+                        
+                          <br>
+                          
+                       </div>
         
                     </div> 
                 </div>
