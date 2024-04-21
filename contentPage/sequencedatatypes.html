@@ -85,6 +85,7 @@
             <a href="#Intersection" class="w3-button  w3-hover-white w3-block w3-left-align"> Join Sets (Intersection)</a>
             <a href="#Difference" class="w3-button  w3-hover-white w3-block w3-left-align"> Join Sets (Difference)</a>
             <a href="#Symmetric" class="w3-button  w3-hover-white w3-block w3-left-align"> Join Sets (Symmetric Differences)</a>
+            <a href="#SetMethods" class="w3-button  w3-hover-white w3-block w3-left-align"> Set Methods</a>
               
             </div>
            
@@ -2963,6 +2964,194 @@ print(set1)</code>
         
         
         </section> 
+        <section id="SetMethods" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Other Operators and Methods for Sets </u></h2>
+                               <br>
+                                            
+                            <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b> &#10028; isdisjoint() Method:</b> The <span style="color: rgb(115, 2, 7);">isdisjoint()</span>  method returns <span style="color: rgb(115, 2, 7);">True</span>  if none of the items are present in both sets, otherwise it returns <span style="color: rgb(115, 2, 7);">False</span> .</p>
+                            <p> <b>Example 1:</b> Return <span style="color: rgb(115, 2, 7);">True </span>if no items in set  <b> x</b> is present in set <b>y </b> :</p>
+                           
+                        <pre>
+                        <code class="language-java">
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "facebook"}
+z = x.isdisjoint(y)
+print(z)</code>
+                        </pre> 
+                        <p> <b>Output :-</b></p>
+                        <p> True</p>
+                        <hr style="background-color: black; height: 1px;">
+                        <p> <b>Example 2:</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+x = {"apple", "banana", "cherry","google"}
+y = {"google", "microsoft", "facebook"}
+z = x.isdisjoint(y)
+print(z)</code>
+                        </pre> 
+                        <p> <b> False</b></p> 
+                    
+                    </div>
+
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <p> <b>  &#10028; issubset() Method :-</b>  The <span style="color: rgb(115, 2, 7);">issubset() </span> method returns <span style="color: rgb(115, 2, 7);">True</span>  if all items in the set exists in the specified set, otherwise it returns <span style="color: rgb(115, 2, 7);">False</span> . <br>
+
+                            As a shortcut, you can use the <span style="color: rgb(115, 2, 7);"><= </span> operator instead, see example below.</p>
+
+                     
+                            
+
+
+    <p> <b>Example :- </b> Return <span style="color: rgb(115, 2, 7);">True</span>  if all items in set <span style="color: rgb(115, 2, 7);">x</span>  are present in set <span style="color: rgb(115, 2, 7);">y</span>. </p>
+   
+<pre>
+<code class="language-java">
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "c", "b", "a"}
+z = x.issubset(y)
+print(z) 
+</code>
+</pre> 
+<p> <b>Output:- </b></p>
+<p>True</p>
+<hr style="background-color: black; height: 1px;">
+
+<p> <b>Example 2:- </b>  </p>
+   
+<pre>
+<code class="language-java">
+x = {"a", "b", "c" ,"f"}
+y = {"e", "d","c","a","b"}
+z = x.issubset(y)
+print(z) 
+</code>
+</pre> 
+<p> <b>Output</b></p>
+<p> False </p>
+<hr style="height: 1px; background-color: brown;">
+
+<p> <b>Example 3:- </b> Use <span style="color: rgb(115, 2, 7);"><=</span>  as a shortcut instead of <span style="color: rgb(115, 2, 7);"> issubset() </span>. </p>
+   
+<pre>
+<code class="language-java">
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "c", "b", "a"}
+z = x <= y
+print(z) 
+</code>
+</pre> 
+<p> <b>Output</b></p>
+<p> True</p>
+<hr style="height: 1px; background-color: brown;">
+
+
+
+    <p> <b>Example 4:</b> Proper Subset</p>
+   
+<pre>
+<code class="language-java">
+x = {"f", "e", "d", "c", "b", "a"}
+y = {"f", "e", "d", "c", "b", "a"}
+z = x < y
+print(z)
+</code>
+</pre> 
+<p><b>Output :-</b></p>
+<p>False</p>
+
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+<p> <b>issuperset():</b> The <span style="color: rgb(115, 2, 7);">issuperset()</span>  method returns <span style="color: rgb(115, 2, 7);">True</span>  if all items in the specified set exists in the original set, otherwise it returns  <span style="color: rgb(115, 2, 7);">False</span>. <br>
+
+    As a shortcut, you can use the <span style="color: rgb(115, 2, 7);">>=</span>  operator instead, see example below.</p>
+    <p> <b>Example :</b> Return <span style="color: rgb(115, 2, 7);">True</span>  if all items set <span style="color: rgb(115, 2, 7);">y</span>  are present in set <span style="color: rgb(115, 2, 7);">x</span></p>
+
+<pre>
+<code class="language-java">
+x = {"f", "e", "d", "c", "b", "a"}
+y = {"a", "b", "c"}
+z = x.issuperset(y)
+print(z)
+</code>
+</pre> 
+<p> <b>Output :-</b></p>
+<p> True</p>
+
+<hr style="background-color: black; height: 1px;">
+
+
+
+<p> <b>Example 2 :</b></p>
+   
+<pre>
+<code class="language-java">
+x = {"f", "e", "d", "c", "b", "a"}
+y = {"a", "b", "c","x"}
+z = x.issuperset(y)
+print(z)
+</code>
+</pre> 
+<p><b>Output:-</b></p>
+<p> False </p>
+<hr style="height: 1px; background-color: brown;">
+
+<p> <b>Example 3:- </b> Use <span style="color: rgb(115, 2, 7);">>=</span>  as a shortcut instead of <span style="color: rgb(115, 2, 7);"> issuperset() </span>. </p>
+   
+<pre>
+<code class="language-java">
+x = {"f", "e", "d", "c", "b", "a"}
+y = {"a", "b", "c"}
+z = x >= y
+print(z)
+</code>
+</pre> 
+<p> <b>Output</b></p>
+<p> True</p>
+<hr style="height: 1px; background-color: brown;">
+
+
+
+    <p> <b>Example 4:</b> Proper Superset</p>
+   
+<pre>
+<code class="language-java">
+x = {"f", "e", "d", "c", "b", "a"}
+y = {"f", "e", "d", "c", "b", "a"}
+z = x > y
+print(z)
+</code>
+</pre> 
+<p><b>Output :-</b></p>
+<p>False</p>
+
+
+</div>
+
+
+
+<br>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
         
         
         
