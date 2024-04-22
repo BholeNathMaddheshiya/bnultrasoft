@@ -88,6 +88,12 @@
             <a href="#SetMethods" class="w3-button  w3-hover-white w3-block w3-left-align"> Set Methods</a>
               
             </div>
+            <a onclick="myFunction('Demo4')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom"> Python Dictionaries <i class="fa fa-caret-down"></i></a>
+            <div id="Demo4" class="w3-hide w3-animate-zoom">
+            <a href="#PythonDictionaries" class="w3-button  w3-hover-white w3-block w3-left-align">Create Dictionaries</a>
+            <a href="#AccessDictionary" class="w3-button  w3-hover-white w3-block w3-left-align">Access Dictionary</a>
+                
+            </div>
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonList">Python List</a>  -->
            
@@ -3152,7 +3158,296 @@ print(z)
         
         </section> 
         
+        <section id="PythonDictionaries" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
         
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python Dictionaries</u></h2>
+                       
+                            
+                         <p><b> &#10028; Dictionary : </b> </p> 
+                         <p>Dictionaries are used to store data values in <span style="color: rgb(115, 2, 7);">key:value pairs</span> .</p>
+                         <p>A dictionary is a collection which is <span style="color: rgb(115, 2, 7);">ordered*, changeable and do not allow duplicates</span> .</p>
+                         <p>Dictionaries are written with <span style="color: rgb(115, 2, 7);">curly brackets { }, and have keys and values</span> . </p>
+
+                         <p> <b>Note:</b> * As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.</p>
+
+                         <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :</b> Create and print a dictionary:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "modelName" : "Vivo T2 5G",
+    "price" : 18500
+    }
+
+print(item)
+        
+                        </code>
+                        </pre> 
+                        <p><b>Output :-</b> </p>
+                        <p> {'itemName': 'Mobile', 'companyName': 'Vivo', 'modelName': 'Vivo T2 5G', 'price': 18500} </p>
+                        </div>
+                        <br>
+
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                            <p><b>  &#10028; Dictionary Items :</b></p>
+                            <p> Dictionary items are ordered, changeable, and do not allow duplicates.</p>
+                            <p> Dictionary items are presented in <span style="color: rgb(115, 2, 7);"> key:value</span> pairs, and can be referred to by using the key name.</p>
+
+                            <p> <b>Example:</b> Print the "companyName" value of the dictionary</p>
+                           
+                        <pre>
+                        <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "modelName" : "Vivo T2 5G",
+    "price" : 18500
+    }
+
+print(item["companyName"], item["price"] )        
+                        </code>
+                        </pre> 
+                        <p><b>Output:- </b></p>
+                        <p> Vivo 18500</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+
+                             <p> <b>&#10028; Duplicates Not Allowed :- </b>Dictionaries cannot have two items with the same key. </p>
+
+                            <p> <b>Example :</b> Duplicate values will overwrite existing values:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "modelName" : "Vivo T2 5G",
+    "price" : 18500,
+    "price" :  22500
+    }
+        
+                        </code>
+                        </pre> 
+                        <p><b>Output:-</b></p>
+                        <p> Vivo 22500</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                            <p> <b>  &#10028; </b>The values in dictionary items can be of any data type.</p>
+
+                            <p> <b>Example :</b> String, int, boolean, and list data types:</p>
+                           
+                        <pre>
+                        <code class="language-java">
+item={
+    "itemName" : "Laptop",
+    "isWaterProof" : True,
+    "price" : 150000,
+    "color" : ["red", "grey", "navyblue"]
+    }
+print( item )        
+                        </code>
+                        </pre> 
+                        <p><b>Output :- </b></p>
+                        <p> {'itemName': 'Laptop', 'isWaterProof': True, 'price': 150000, 'color': ['red', 'grey', 'navyblue']}</p>
+                        </div>
+                        <br>
+
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p> <b> &#10028; The dict() Constructor :</b></p>
+
+                            <p> <b>Example :</b> It is also possible to use the  <span style="color: rgb(115, 2, 7);"> dict()</span> constructor to make a dictionary.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+thisdict = dict(name = "John", age = 36, country = "USA")
+print(thisdict)
+print(type(thisdict))</code>
+                        </pre>
+                        <p><b>Output</b></p>
+                        <p>{'name': 'John', 'age': 36, 'country': 'USA'}</p>
+                        <p> < class 'dict' ></p>
+                        </div>
+                        <br>
+
+
+
+
+
+                        <br>
+                        <br>
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="AccessDictionary" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Access Dictionary Items</u></h2>
+                           <p> <b> &#10028;  Accessing Items:-</b> You can access the items of a dictionary by referring to its <span style="color: rgb(115, 2, 7);">actual/exact</span> key name, inside square brackets.</p>
+                           <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :</b> Get the value of the "price" key</p>
+                           
+                        <pre>
+                        <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "modelName" : "Vivo T2 5G",
+    "price" : 18500   
+    }
+print(item["price"])        
+                        </code>
+                        </pre>
+                        <p><b>Output :- </b></p> 
+                        <p> 18500 </p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                            <p> <b>Example:</b>There is also a method called <span style="color: rgb(115, 2, 7);">get()</span>  that will give you the same result.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "modelName" : "Vivo T2 5G",
+    "price" : 18500   
+    }
+print(item.get("price"))
+               </code>
+                    </pre> 
+                    <p><b>Output :-</b></p>
+                    <p> 18500</p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p> <b> &#10028; Get Keys :- </b> The <span style="color: rgb(115, 2, 7);">keys()</span>  method will return a list of all the keys in the dictionary.</p>
+
+                            <p> <b>Example :</b> Get a list of the keys.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "modelName" : "Vivo T2 5G",
+    "price" : 18500   
+    }
+print(item.keys())
+x=item.keys()
+print(type(x)) </code>
+                        </pre> 
+                        <p> <b>Output :-</b></p>
+                        <p> dict_keys(['itemName', 'companyName', 'modelName', 'price'])</p>
+                        <p>< class 'dict_keys' > </p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                            <p> <b> &#10028; Get Values :- </b> The <span style="color: rgb(115, 2, 7);">values()</span>  method will return a list of all the values in the dictionary.</p>
+                           
+
+
+                            <p> <b>Example :</b> Get a list of the values</p>
+                           
+                        <pre>
+                        <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "modelName" : "Vivo T2 5G",
+    "price" : 18500   
+    }
+print(item.values())
+x=item.values()
+print(type(x))        
+                        </code>
+                        </pre>
+                        <p><b>Output :-</b></p>
+                        <p> dict_values(['Mobile', 'Vivo', 'Vivo T2 5G', 18500])</p>
+                        <p> < class 'dict_values' > </p>
+                        </div>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p> <b> &#10028; Get Items :-</b>The <span style="color: rgb(115, 2, 7);">items()</span>  method will return each item in a dictionary, as tuples in a list</p>
+
+                            <p> <b>Example:</b> Get a list of the key:value pairs.</p>
+                           
+                        <pre>
+                        <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "price" : 18500   
+    }
+print(item.items())
+x=item.items()
+print(type(x))        
+                        </code>
+                        </pre> 
+                        <p> <b> Output:-</b></p>
+                        <p> dict_items( [ ('itemName', 'Mobile'), ('companyName', 'Vivo'), ('price', 18500) ] )</p>
+                        <p> < class 'dict_items' ></p>   
+                    </div>
+
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p><b> &#10028; Check if Key Exists :-</b> To determine if a specified key is present in a dictionary use the <span style="color: rgb(115, 2, 7);">in</span>  keyword.</p>
+
+                        <p> <b>Example :</b> Check if "model" is present in the dictionary</p>
+                       
+                    <pre>
+                    <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "price" : 18500   
+    }
+if "price" in item:
+    print("Yes, 'price' is one of the keys in the item dictionary")    
+                    </code>
+                    </pre> 
+                    <p><b>Output:-</b></p>
+                    <p> Yes, 'price' is one of the keys in the item dictionary</p>
+                    </div>
+
+
+                         <br>
+                         <br>
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
+         
         
         
         
