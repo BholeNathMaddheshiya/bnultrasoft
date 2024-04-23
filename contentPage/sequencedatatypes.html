@@ -91,7 +91,10 @@
             <a onclick="myFunction('Demo4')" class="w3-button  w3-hover-white w3-left-align w3-block w3-animate-zoom"> Python Dictionaries <i class="fa fa-caret-down"></i></a>
             <div id="Demo4" class="w3-hide w3-animate-zoom">
             <a href="#PythonDictionaries" class="w3-button  w3-hover-white w3-block w3-left-align">Create Dictionaries</a>
-            <a href="#AccessDictionary" class="w3-button  w3-hover-white w3-block w3-left-align">Access Dictionary</a>
+            <a href="#AccessDictionary" class="w3-button  w3-hover-white w3-block w3-left-align">Access Items</a>
+            <a href="#ChangeItems" class="w3-button  w3-hover-white w3-block w3-left-align">Change Items</a>
+            <a href="#AddItems" class="w3-button  w3-hover-white w3-block w3-left-align">Add Items</a>
+            <a href="#RemoveItems" class="w3-button  w3-hover-white w3-block w3-left-align">Remove Items</a>
                 
             </div>
            
@@ -3236,11 +3239,11 @@ item={
     "price" : 18500,
     "price" :  22500
     }
-        
+print(item["price"])       
                         </code>
                         </pre> 
                         <p><b>Output:-</b></p>
-                        <p> Vivo 22500</p>
+                        <p>  22500</p>
                         </div>
                         <br>
                         <div class="w3-container  w3-pale-yellow w3-round-xlarge">
@@ -3446,8 +3449,319 @@ if "price" in item:
         
         
         </section> 
+
+        <section id="ChangeItems" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
         
-         
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Change Dictionary Items</u></h2>
+                       
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                                <p> <b>Change Values :</b> You can change the value of a specific item by referring to its key name:</p>
+
+                                <p> <b>Example :-</b></p>
+                               
+                            <pre>
+                            <code class="language-java"> 
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "price" : 18500   
+    }
+print("Before Updated!")
+print(item["price"])
+
+item["price"]=22500 #Price Updated
+
+print("After Updated!")
+print(item["price"])     
+                            </code>
+                            </pre> 
+                            <p><b>Output</b></p>
+                            <p> Before Updated!</p>
+                            <p>18500 </p>
+                            <p> After Updated!</p>
+                            <p>22500</p>
+                            
+
+
+
+                            </div>
+                            <br>
+
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                                <p> <b> &#10028; </b> The <span style="color: rgb(115, 2, 7);">update()</span>  method will update the dictionary with the items from the given argument must be a <span style="color: rgb(115, 2, 7);"><b> dictionary </b></span> with <span style="color: rgb(115, 2, 7);">key:value</span>  pairs.</p>
+
+                                <p> <b>Example :-</b></p>
+                               
+                            <pre>
+                            <code class="language-java"> 
+item={
+    "itemName" : "Mobile",
+    "companyName" : "Vivo",
+    "price" : 18500   
+    }
+print("Before Updated!")
+print(item["price"])
+
+item.update({"price" : 22500}) #Price Updated
+
+print("After Updated!")
+print(item["price"])         
+                            </code>
+                            </pre> 
+                            <p><b>Output</b></p>
+                            <p> Before Updated!</p>
+                            <p>18500 </p>
+                            <p> After Updated!</p>
+                            <p>22500</p>
+                            </div>
+                            <br>
+
+                         
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
+        
+        <section id="AddItems" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Add Dictionary Items</u></h2>
+                            <p> <b>Adding Items :-</b>
+                                Adding an item to the dictionary is done by using a <span style="color: rgb(115, 2, 7);">new index key and assigning a value</span>  to it.</p>
+                       
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+item={
+    "itemName" : "Mobile"  
+    }
+print("Before Added!")
+print(item)
+
+item["color"]="Grey" #New item adding
+
+print("After Added!")
+print(item)            
+                            </code>
+                            </pre> 
+                            <p><b>Output :-</b></p> 
+                            <p>Before Added! </p>
+                            <p>{'itemName': 'Mobile'}</p>
+                            <p>After Added!</p>
+                            <p> {'itemName': 'Mobile', 'color': 'Grey'}</p>
+                      
+                       </div>
+                       <br>
+                       <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <p> <b>&#10028; By Using update() :</b> If the item does not exist, the item will be added. </p>
+
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+item={
+    "itemName" : "Mobile"  
+    }
+print("Before Added!")
+print(item)
+
+item.update({"color":"Grey"}) #New item adding by using update()
+
+print("After Added!")
+print(item)    
+                    </code>
+                    </pre> 
+                    <p><b>Output :-</b></p> 
+                    <p>Before Added! </p>
+                    <p>{'itemName': 'Mobile'}</p>
+                    <p>After Added!</p>
+                    <p> {'itemName': 'Mobile', 'color': 'Grey'}</p>
+                    </div>
+                    <br>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>  
+        <section id="RemoveItems" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Remove Dictionary Items</u></h2>
+                            <p> <b>  &#10028; </b> The <span style="color: rgb(115, 2, 7);">pop()</span>  method removes the item with the specified key name:</p>
+                       
+                            
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "color" : "red"
+    }
+print("Before Remove!")
+print(item)
+
+item.pop("color") #Remove item by using pop()
+
+print("After Remove!")
+print(item)</code>
+                            </pre> 
+                            <p><b>Output :-</b></p>
+                            <p>   Before Remove!</p>
+                            <p> {'itemName': 'Mobile', 'color': 'red'}</p>
+                            <p>After Remove!</p>
+                            <p>{'itemName': 'Mobile'}</p>                         
+
+
+
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                                <p> <b>&#10028;</b> The <span style="color: rgb(115, 2, 7);">popitem()</span>  method removes the last inserted item (in versions before 3.7, a random item is removed instead)</p>
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "color" : "red"
+    }
+print("Before Remove!")
+print(item)
+
+item.popitem() #Remove last item by using popitem()
+
+print("After Remove!")
+print(item)            
+                            </code>
+                            </pre> 
+                            <p><b>Output :- </b></p>
+                            <p>Before Remove!</p>
+                            <p>{'itemName': 'Mobile', 'color': 'red'} </p>
+                            <p>After Remove! </p>
+                            <p>{'itemName': 'Mobile'}</p>
+                            
+
+
+
+                            </div>
+                            <br>
+
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                                <p> <b>&#10028; </b> The <span style="color: rgb(115, 2, 7);">del</span>  keyword removes the item with the specified key name:</p>
+
+                                <p> <b>Example:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "color" : "red"
+    }
+print("Before Remove!")
+print(item)
+
+del item["color"] 
+
+print("After Remove!")
+print(item)        
+                            </code>
+                            </pre>
+                            <p>Before Remove!</p>
+                            <p>{'itemName': 'Mobile', 'color': 'red'} </p>
+                            <p>After Remove! </p>
+                            <p>{'itemName': 'Mobile'}</p> 
+                            </div>
+                            <br>
+
+                            
+  <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Example:</b> The <span style="color: rgb(115, 2, 7);"> del</span> keyword can also delete the dictionary completely:</p>
+   
+<pre>
+<code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "color" : "red"
+    }
+print("Before Remove!")
+print(item)
+
+del item 
+
+print("After Remove!") 
+print(item)  #this will cause an error because "item" no longer exists
+</code>
+</pre> 
+
+                       </div>
+                       <br>
+                       
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b>The <span style="color: rgb(115, 2, 7);">clear()</span>  method empties the dictionary:</p>
+   
+<pre>
+<code class="language-java">
+item={
+    "itemName" : "Mobile",
+    "color" : "red"
+    }
+print("Before Clear!")
+print(item)
+
+item.clear()
+
+print("After Clear!") 
+print(item)
+</code>
+</pre> 
+<p><b>Output :-</b></p>
+<p>Before Clear! </p>
+<p>{'itemName': 'Mobile', 'color': 'red'} </p>
+<p> After Clear!</p>
+<p>{}</p>
+
+</div>
+<br>
+
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>       
         
         
         
