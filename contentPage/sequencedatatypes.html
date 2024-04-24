@@ -95,6 +95,9 @@
             <a href="#ChangeItems" class="w3-button  w3-hover-white w3-block w3-left-align">Change Items</a>
             <a href="#AddItems" class="w3-button  w3-hover-white w3-block w3-left-align">Add Items</a>
             <a href="#RemoveItems" class="w3-button  w3-hover-white w3-block w3-left-align">Remove Items</a>
+            <a href="#LoopDictionaries" class="w3-button  w3-hover-white w3-block w3-left-align">Loop Dictionaries</a>
+            <a href="#CopyDictionaries" class="w3-button  w3-hover-white w3-block w3-left-align">Copy Dictionaries</a>
+            <a href="#NestedDictionaries" class="w3-button  w3-hover-white w3-block w3-left-align">Nested Dictionaries</a>
                 
             </div>
            
@@ -3763,7 +3766,279 @@ print(item)
         
         </section>       
         
+        <section id="LoopDictionaries" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
         
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Loop Dictionaries</u></h2>
+                            <p><b> &#10028; </b>You can loop through a dictionary by using a <span style="color: rgb(115, 2, 7);">for</span>  loop. </p>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example : </b> Print all <span style="color: rgb(115, 2, 7);"> key</span> names in the dictionary, one by one:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisdict ={"A":10,"B":20,"C":30,"D":45}
+for i in thisdict:
+    print(i,end=" ")           
+                            </code>
+                            </pre> 
+                            <p><b>Output :-</b></p>
+                            <p>A B C D  </p>
+                            </div>
+                            <br>
+
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                                
+                                
+                                <p> <b>Example :</b> Print all <span style="color: rgb(115, 2, 7);">values</span>  in the dictionary, one by one:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisdict ={"A":10,"B":20,"C":30,"D":45}
+for i in thisdict:
+    print(thisdict[i],end=" ")            
+                            </code>
+                            </pre>
+                            <p><b> Output :</b></p>
+                            <p> 10 20 30 45 </p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :-</b> You can use the <span style="color: rgb(115, 2, 7);">keys()</span>  method to return the keys of a dictionary:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisdict ={"A":10,"B":20,"C":30,"D":45}
+for i in thisdict.keys():
+    print(i,end=" ")
+            
+                            </code>
+                            </pre>
+                            <p> <b> Output :- </b></p>
+                            <p>A B C D </p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                                <p> <b>Example :-</b> You can also use the <span style="color: rgb(115, 2, 7);">values()</span>  method to return values of a dictionary:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisdict ={"A":10,"B":20,"C":30,"D":45}
+for i in thisdict.values():
+    print(i,end=" ")
+            
+                            </code>
+                            </pre> 
+                            <p><b>Output :-</b></p>
+                            <p> 10 20 30 45</p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p> <b> Note 1:  </b>Python allows you to assign values to multiple variables in one line.</p>
+                                <p> <b>Example:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+x, y, z = 29, 98, 87
+print(x,y,z)</code>
+                            </pre>
+                            <p><b>Output :- </b></p>
+                            <p> 29 98 87</p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+ <p><b> Note 2: </b> you can assign the same value to multiple variables in one line.</p>
+                                <p> <b>Example:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+x = y = z = 10
+print(x,y,z)    
+                            </code>
+                            </pre> 
+                            <p><b>Output :-</b></p>
+                            <p> 10 10 10</p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                               <p> <b> &#10028; </b>Loop through both keys and values, by using the <span style="color: rgb(115, 2, 7);">items()</span>  method:</p>
+                                <p> <b>Example:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisdict ={"A":10,"B":20,"C":30,"D":45}
+for x, y in thisdict.items():
+    print(x, y)
+            
+                            </code>
+                            </pre> 
+                            <p> <b> Output :-</b></p>
+                            <p>A 10</p>
+                            <p>B 20</p>
+                            <p>C 30</p>
+                            <p>D 45</p>
+                            </div>
+                            <br>
+                        
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
+        <section id="CopyDictionaries" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Copy Dictionaries</u></h2>
+                            <p><b> &#10028; Note : </b> You cannot copy a dictionary simply by typing dict2 = dict1, because: dict2 will only be a reference to dict1, and changes made in dict1 will automatically also be made in dict2. </p>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b> Make a copy of a dictionary with the <span style="color: rgb(115, 2, 7);">copy()</span> method.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisdict ={"A":10,"B":20,"C":30,"D":45}
+mydict = thisdict.copy()
+print(mydict)</code>
+                            </pre>
+                            <p> <b>Output :- </b></p> 
+                            <p> {'A': 10, 'B': 20, 'C': 30, 'D': 45}</p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                                <p> <b>Example :</b> Make a copy of a dictionary with the  <span style="color: rgb(115, 2, 7);">dict()</span> function.</p>
+                               
+                            <pre>
+                            <code class="language-java">
+thisdict ={"A":10,"B":20,"C":30,"D":45}
+mydict = dict(thisdict)
+print(mydict)            
+                            </code>
+                            </pre> 
+                            <p><b>Output :- </b></p>
+                            <p> {'A': 10, 'B': 20, 'C': 30, 'D': 45}</p>
+                            </div>
+                            <br>
+                               
+
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>
+
+        <section id="NestedDictionaries" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Python - Nested Dictionaries</u></h2>
+                            <p><b> &#10028;   </b> A dictionary can contain dictionaries, this is called nested dictionaries. </p>
+                          
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+myfamily = {
+
+    "child1" : {
+        "name" : "A",
+        "age" : 4
+    },
+    
+    "child2" : {
+        "name" : "B",
+        "age" : 7
+    },
+    
+    "child3" : {
+        "name" : "C",
+        "age" : 11
+    }
+
+    }
+    
+print(myfamily)
+            
+                            </code>
+                            </pre>
+                            <p> <b>Output :- </b></p>
+                            <p>{'child1': {'name': 'A', 'age': 4}, 'child2': {'name': 'B', 'age': 7}, 'child3': {'name': 'C', 'age': 11}}</p>
+                            </div>
+                            <br>
+                           
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                                <p> <b>  &#10028; Access Items in Nested Dictionaries :-</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+print(myfamily["child2"]["name"])            
+                            </code>
+                            </pre> 
+                            <p><b> Output :-</b></p>
+                            <p>B</p>
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example:</b> You can loop through a dictionary by using the  <span style="color: rgb(115, 2, 7);">items()</span> method like this:</p>
+                               
+                            <pre>
+                            <code class="language-java">
+for x, obj in myfamily.items():
+print(x)
+
+for y in obj:
+    print(y + ':', obj[y])            
+                            </code>
+
+                            </pre>
+                            <p> child1</p>
+                           <p> name: A</p>
+ <p> age: 4</p>
+<p>child2</p>
+<p>name: B</p>
+<p>age: 7</p>
+
+                           
+                            </div>
+                            <br>
+
+
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>
         
 
 
