@@ -51,23 +51,8 @@
         </div>
         
         <div class="w3-bar-block  ">
-            <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#pythonintroduction">Introduction of Python</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#technicalStrengthofPython">Technical Strength of Python</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonInterpreter">Python Interpreter</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#howtorunpython">Using CMD (Command Prompt)</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonComments">Python Comments</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonVariable">Python Variable</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonKeywords">Python Keywords</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonPrintFunction">Python Print Function</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonInputFunction">Python Input Function</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonDataType">Python DataType</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonConstants">Python Constants</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonLiteral">Python Literal</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonString">Python String</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonStringConcatenation">Python String Concatenation</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonFormatStrings">Python Format Strings</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonEscapeCharacter">Python Escape Character</a>
-            -->
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonFunctions">Python Functions</a> 
+           
             
             
             <!-- <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="#sec2">About</a>
@@ -177,19 +162,191 @@
  <!-- Page content Coding part Start -->
 
 
- <section id="P" class="topPadding">
+ <section id="PythonFunctions" class="topPadding">
     <div class="w3-container w3-panel">
         <div data-aos="fade-right"  data-aos-duration="1000">
             <div class="w3-white  w3-card w3-round-large   ">
                
 
                  <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
-                    <h2 class="w3-panel w3-center"><u>Introduction </u></h2>
+                    <h2 class="w3-panel w3-center"><u>Python Functions </u></h2>
                
                    
-                 <br>
-                 <p><b> &#10028;  </b> </p> 
-                
+              
+                 <p><b> &#10028;  </b> Python Functions is a block of statements that return the specific task, a block of code which only runs when it is called. </p> 
+                <br>
+                 <p><b> &#10028; Some Benefits of Using Functions :</b> </p>
+                  <ul class="w3-ul">
+                    <li> 1) Increase Code Readability  </li>
+                    <li>2) Increase Code Reusability </li>
+                  </ul>
+                  <br>
+                   <p><b> &#10028; The syntax to declare a function is:</b></p>
+                  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220721172423/51.png" class="w3-round w3-center"  alt="image" style="width:100%">  
+                   <br>
+                   <p> <b> &#10028; Types of Functions in Python</b></p>
+                   <p>1) <b>Built-in library function:</b> These are Standard functions in Python that are available to use. </p>
+                   <p>2) <b>User-defined function: </b>  We can create our own functions based on our requirements. </p>
+                      <br>
+                      <p class="w3-center"> <b> &#10028; Some built-in library function: </b></p>
+                      <div class="w3-container  w3-sand w3-round-xlarge">
+                        
+                         <p> <b> &#x21db; <span style="color: rgb(115, 2, 7);"> eval()</span> : </b>The eval() function evaluates the specified expression, if the expression is a legal Python statement, it will be executed. </p>
+                       
+                         <img src="content/img/python/eval.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
+                         <p> <b>Example :   </b> </p>
+                       
+                    <pre>
+                    <code class="language-java">
+expression = 'x*(x+1)*(x+2)'
+print(expression)
+
+x = 3
+
+result = eval(expression)
+print(result)    
+                    </code>
+                    </pre> 
+                    <p> <b>Output :- </b></p>
+                     <p>x*(x+1)*(x+2)</p>
+                      <p> 60</p>
+
+                    
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <p>&#x21db;  The  <span style="color: rgb(115, 2, 7);"><b>count()</b></span> method returns the number of elements with the specified value.</p>
+                        <img src="content/img/python/count.png" class="w3-round w3-center"  alt="image" style="width:100%">  
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+s="Assign"
+print(s.count("s"))    
+                    </code>
+                    </pre> 
+                    <p><b> Output :</b></p>
+                    <p> 2</p>
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p>&#x21db;   The <span style="color: rgb(115, 2, 7);"> <b>find()</b></span>  method finds the first occurrence of the specified value. <br>
+
+                            &#x21db;   The  <span style="color: rgb(115, 2, 7);"> <b> find()</b></span> method returns -1 if the value is not found.  <br>
+                            &#x21db; The   <span style="color: rgb(115, 2, 7);">find()</span> method is almost the same as the <span style="color: rgb(115, 2, 7);">index()</span>  method, the only difference is that the <span style="color: rgb(115, 2, 7);"> index()</span> method raises an exception if the value is not found.
+                        </p>
+                        <img src="content/img/python/find.png" class="w3-round w3-center"  alt="image" style="width:100%">  
+                         <br>
+
+                         <p> <b>Example 1:</b> Where in the text is the first occurrence of the letter "e"?:</p>
+                       
+                         <pre>
+                         <code class="language-java">
+txt = "Hello, welcome to my world."
+
+x = txt.find("e")
+
+print(x)  
+                         </code>
+                         </pre> 
+                         <p><b> Output :</b></p>
+                         <p> 1</p>
+                        
+                         <hr style="height: 1px; background-color: brown;">
+                        <p> <b>Example 2:</b> Where in the text is the first occurrence of the letter "e" when you only search between position 5 and 10?:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "Hello, welcome to my world."
+
+x = txt.find("e", 5, 10)
+
+print(x)   
+                    </code>
+                    </pre> 
+                    <p><b> Output :</b></p>
+                    <p> 8</p>
+                    <hr style="height: 1px; background-color: brown;">
+                    <p> <b>Example 3:</b> If the value is not found, the <span style="color: rgb(115, 2, 7);">find()</span>  method returns <span style="color: rgb(115, 2, 7);"> -1</span>, but the <span style="color: rgb(115, 2, 7);">index()</span>  method will raise an exception:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "Hello, welcome to my world."
+
+print(txt.find("q"))
+print(txt.index("q"))   
+                    </code>
+                    </pre> 
+                    <p><b> Output :</b></p>
+                    <p> -1</p>
+                    <p> ValueError: substring not found</p>
+                    <br>
+                </div>
+
+                <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <p>  &#x21db; The <span style="color: rgb(115, 2, 7);"> capitalize()</span> method returns a string where the first character is upper case, and the rest is lower case.</p>
+
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "python is FUN!"
+
+x = txt.capitalize()
+
+print (x)    
+                    </code>
+                    </pre> 
+                    <p><b>Output :- </b></p>
+                    <p>Python is fun! </p>
+                    </div>
+                    <br>
+
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p>   &#x21db; The <span style="color: rgb(115, 2, 7);">title()</span>  method returns a string where the first character in every word is upper case. Like a header, or a title.</p>
+                        <p> <b> Note :- </b>If the word contains a number or a symbol, the first letter after that will be converted to upper case.</p>
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "Welcome to my 2nd world"
+
+x = txt.title()
+
+print(x)</code>
+                    </pre> 
+                    <p><b>Output :- </b></p>
+                    <p>Welcome To My 2Nd World </p>
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                      <p> <b> &#10028;</b> Note that the first letter after a non-alphabet letter is converted into a upper case letter.</p>
+                        <p> <b>Example:</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "hello b2b2b2 and 3g3g3g"
+
+x = txt.title()
+
+print(x)</code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p> Hello B2B2B2 And 3G3G3G</p>
+                    </div>
+
+
+
+
+
+
+                   
+
+
+
+
+                  <br>
                </div>
 
             </div> 
