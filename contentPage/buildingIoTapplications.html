@@ -53,6 +53,8 @@
         <div class="w3-bar-block  ">
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ArduinoIDE"> Introduction to ArduinoIDE</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IDEMenus">  Arduino IDE Menus</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#serialmonitor">  Role of serial monitor</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CLanguage">  C Language</a>   
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel2">IoT Level 2</a>   
@@ -213,7 +215,114 @@
         
         
         </section> 
- 
+        <section id="serialmonitor" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Role of Serial Monitor</u></h2>
+                         <ul class="w3-ul">
+                            <li> &#x21db;  The Serial Monitor is a tool in the Arduino IDE software that allows you to send and receive messages from your computer to an Arduino board. </li>
+                            <li>  &#x21db;  It is an essential tool when creating projects with Arduino, and can be used as a debugging tool, testing out concepts or to communicate by receiving and sending Serial Data.
+                            </li>
+                         </ul>
+                                
+                         <br>
+
+                         <h4>  Its Role :- </h4>
+   <p> <span style="color: rgb(115, 2, 7);">  <b> Arduino → PC:</b> </span> It receives data from Arduino and displays it on your computer screen. This is useful for debugging and monitoring. </p>
+   <p> <span style="color: rgb(115, 2, 7);">  <b>PC → Arduino: </b> </span>  You can send data (commands) from your computer to the Arduino board. </p>                       
+
+                         
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="CLanguage" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>‘C’ Language</u></h2>
+                         <ul class="w3-ul">
+                            <li> &#10028;  C language was developed by Dennis MacAlistair Ritchie <b> (in short  Dennis Ritchie)</b> the Bell Telephone Laboratories in <b>1972.</b> </li>
+                              <li> &#10028; C compiler is a software that translates human-readable C language code into machine code or an intermediate code that can be executed by a computer’s central processing unit (CPU).</li>
+                              <li>&#10028; C is strongly associated with UNIX, as it was developed to write the UNIX operating system.</li>
+                               <li> &#10028; If you know C, you will have no problem learning other popular programming languages such as Java, Python, C++, C#, etc, as the syntax is similar.</li>
+                              <li> &#10028;  A compiler, like <span style="color: rgb(115, 2, 7);">GCC ( GNU Compiler Collection )</span> , to translate the C code into a language that the computer will understand.</li>
+                               <li>&#10028; C extension name is <b> <span style="color: rgb(115, 2, 7);">.c </span></b>  and  C++ extension name is <b> <span style="color: rgb(115, 2, 7);"> .cpp</span></b> </li>
+                            </ul>
+                         <br>
+                         <ul class="w3-ul">
+                            <li> <b>  Where C Language is used  ?</b></li>
+                           
+                           <li> &#x21db; Developing operating systems, such as Unix, Linux, and Windows. </li>
+                           <li> &#x21db; Developing embedded systems, such as microcontrollers, microprocessors, and other electronic devices.
+                        </li>
+                           <li> &#x21db; Developing system software, such as device drivers, compilers, and assemblers.</li>
+                           <li> &#x21db; Developing desktop applications, such as browsers and their extensions.</li>
+                           <li> &#x21db; Developing databases and other applications that require speed and efficiency.</li>
+                         
+
+
+
+
+                         </ul>
+                         <br>
+                         <h2 class="w3-panel w3-center"><u>Difference between C and C++ </u></h2>
+                          <table class="w3-table-all">
+                            <tr> <th> C Language  </th> <th> C++ Language </th></tr>
+                            <tr> <td> C Language is created by Dennis Ritchie. </td> <td> C++ was developed by Bjarne Stroustrup in 1979. </td></tr>
+                            <tr> <td> C is (mostly) a subset of C++.</td> <td> C++ is (mostly) a superset of C.</td> </tr>
+                            <tr> <td> C supports procedural programming.  </td> <td> C++ supports both procedural and object oriented programming paradigms. </td> </tr>
+                             <tr> <td>Standard IO header is <span style="color: rgb(115, 2, 7);">stdio.h</span>  </td>  <td> Standard IO header is  <span style="color: rgb(115, 2, 7);">iostream.h </span></td></tr> 
+                        </table>
+                        <br>
+                        
+  <div class="w3-container  w3-sand w3-round-xlarge">
+    <p>  &#10028;  Write the following C code and save the file as <span style="color: rgb(115, 2, 7);">myfirstprogram.c</span> </p>
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+#include <stdio.h>
+
+int main() {
+    printf("Hello World!");
+    return 0;
+} 
+
+</code>
+</pre> 
+<p> <b> Output </b></p>
+<p>Hello World! </p>
+</div>
+<br>
+
+
+
+                             
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+       
        
  
  <script>
