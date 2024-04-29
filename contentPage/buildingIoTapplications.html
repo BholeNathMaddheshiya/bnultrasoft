@@ -55,6 +55,8 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IDEMenus">  Arduino IDE Menus</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#serialmonitor">  Role of serial monitor</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CLanguage">  C Language</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Ccomments">  C comments</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CVariables">  C Variables</a>   
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel2">IoT Level 2</a>   
@@ -283,8 +285,7 @@
                           <table class="w3-table-all">
                             <tr> <th> C Language  </th> <th> C++ Language </th></tr>
                             <tr> <td> C Language is created by Dennis Ritchie. </td> <td> C++ was developed by Bjarne Stroustrup in 1979. </td></tr>
-                            <tr> <td> C is (mostly) a subset of C++.</td> <td> C++ is (mostly) a superset of C.</td> </tr>
-                            <tr> <td> C supports procedural programming.  </td> <td> C++ supports both procedural and object oriented programming paradigms. </td> </tr>
+                             <tr> <td> C supports procedural programming.  </td> <td> C++ supports both procedural and object oriented programming paradigms. </td> </tr>
                              <tr> <td>Standard IO header is <span style="color: rgb(115, 2, 7);">stdio.h</span>  </td>  <td> Standard IO header is  <span style="color: rgb(115, 2, 7);">iostream.h </span></td></tr> 
                         </table>
                         <br>
@@ -296,7 +297,7 @@
    
 <pre>
 <code class="language-java">
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 
 int main() {
     printf("Hello World!");
@@ -307,12 +308,177 @@ int main() {
 </pre> 
 <p> <b> Output </b></p>
 <p>Hello World! </p>
+ <br>
+<ul class="w3-ul">
+  <li><b> How "Hello, World!" program works? </b></li>
+  <li>1)   The <span style="color: rgb(115, 2, 7);">#include</span>  is a preprocessor command that tells the compiler to include the contents of stdio.h (standard input and output) file in the program.
+</li>
+  <li>2) The <span style="color: rgb(115, 2, 7);">stdio.h</span>  file contains functions such as <span style="color: rgb(115, 2, 7);">scanf() and printf()</span>  to take input and display output respectively.
+</li>
+  <li>3)  If you use the <span style="color: rgb(115, 2, 7);">printf()</span>  function without writing #include &lt;stdio.h&gt;, the program will not compile.
+</li>
+  <li>4) The execution of a C program starts from the <span style="color: rgb(115, 2, 7);"> main()</span> function.
+</li>
+  <li>5) <span style="color: rgb(115, 2, 7);">printf()</span>  is a library function to send formatted output to the screen. In this program, <span style="color: rgb(115, 2, 7);">printf()</span>  displays Hello, World! text on the screen.
+</li>
+  <li>6) The <span style="color: rgb(115, 2, 7);">return 0;</span>  statement is the <span style="color: rgb(115, 2, 7);"> <b> "Exit status"</b></span>  of the program. In simple terms, the program ends with this statement.
+</li>
+</ul>
+
+
+
 </div>
 <br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+    <p> <b> Note 1:</b>  Every C statement ends with a semicolon ;</p>
+    <p> <b> Note 2 : </b> The body of int main() could also been written as in { }</p>
+    <p> <b>Note 3</b> To output values or print text in C, you can use the printf() function:</p>
+   <p> <b> Note 4: </b>If you forget the double quotes in printf() , an error occurs.</p>
+   <p> <b>Remember: </b>  The compiler ignores white spaces. However, multiple lines makes the code more readable. </p>
+   
+   
+   
+    
+     </div>
+
+     <br>
+     <div class="w3-container  w3-sand w3-round-xlarge">
+        <p> &#10028; To insert a new line, you can use the <span style="color: rgb(115, 2, 7);"> \n</span> character:</p>
+
+        <p> <b>Example :</b></p>
+       
+    <pre>
+    <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello World!\nI am learning C.\nAnd it is awesome!");
+    return 0;
+  }
+
+    </code>
+    </pre> 
+    <p> <b> Output :-</b></p>
+    <p> Hello World!</p>
+    <p>I am learning C. </p>
+    <p> And it is awesome!</p>
+    </div>
+    <br>
+    <img src="content/img/python/escapse.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
+    <br>
+    <br>
+    <br>
+    
 
 
 
                              
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="Ccomments" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>C comments</u></h2>
+                       
+                           <p> <b>Single-line Comments</b></p>
+                           <p> Single-line comments start with two forward slashes (//).</p>
+                           <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    // This is a comment
+    printf("Hello World!"); // This is a comment
+    return 0;
+}  </code>
+                        </pre>
+        
+        </div>
+
+        <br>
+        <br>
+
+        <p> <b>C Multi-line Comments </b></p>
+        <p> Multi-line comments start with /* and ends with */. </p>
+                           <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+
+/* The code below will print the words Hello World!
+to the screen, and it is amazing */
+
+printf("Hello World!");
+    return 0;
+}  </code>
+                        </pre>
+        
+        </div>
+                 <br>
+                 <br>          
+
+
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="CVariables" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>C Variables</u></h2>
+                            <p>&#10028; Variables are containers for storing data values, like numbers and characters.
+                            </p>
+                            <p>&#10028;In C, there are different types of variables (defined with different keywords), for example:
+                            </p>
+
+                            <ul class="w3-ul">
+                                <li> <span style="color: rgb(115, 2, 7);">int -</span> stores integers (whole numbers), without decimals, such as 123 or -123 </li> 
+                                <li> <span style="color: rgb(115, 2, 7);">float -</span> stores floating point numbers, with decimals, such as 19.99 or -19.99 </li> 
+                                <li> <span style="color: rgb(115, 2, 7);">char -</span> stores single characters, such as 'a' or 'B'. Characters are surrounded by single quotes </li> 
+
+                            </ul>
+
+                           
+
+
+
+
+                       
+                                <img src="content/img/python/cdatatype.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+                        
+                         <br>
+                         
                        </div>
         
                     </div> 
