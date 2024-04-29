@@ -52,6 +52,7 @@
         
         <div class="w3-bar-block  ">
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonFunctions">Python Functions</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#join">Join Method</a> 
            
             
             
@@ -470,6 +471,263 @@ print(x)</code>
                     <p> <b>Output :- </b></p>
                     <p> I like apples apples bananas bananas</p>
                     </div>
+                    <br>
+
+
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p>  &#10028;  The <span style="color: rgb(115, 2, 7);">rfind()</span>  method finds the last occurrence of the specified value.
+                        </p>
+                        <p>  &#10028;  The <span style="color: rgb(115, 2, 7);">rfind()</span>  method returns -1 if the value is not found. </p>
+                       
+
+
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "Hello, welcome to my world."
+
+x = txt.rfind("e", 5, 10)
+
+print(x)
+    
+                    </code>
+                    </pre>
+                    <p> <b> Output :- </b></p>
+                    <p> 8</p>
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                       
+
+
+
+                        <p> &#10028;   The  <span style="color: rgb(115, 2, 7);">strip()</span>  method removes any leading, and trailing whitespaces.
+                        </p>
+                        <p> &#10028;  Leading means at the beginning of the string, trailing means at the end.</p>
+                        <p> &#10028;  You can specify which character(s) to remove, if not, any whitespaces will be removed. </p>
+           
+                        <img src="content/img/python/strip.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
+                        <p> <b>Example 1:</b> Remove spaces at the beginning and at the end of the string:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "     banana     "
+
+x = txt.strip()
+
+print("of all fruits", x, "is my favorite")    
+                    </code>
+                    </pre>
+                    <p> <b>Output :- </b></p>
+                    <p> of all fruits banana is my favorite</p>
+                    <br>
+
+                    <hr style="height: 1px; background-color: brown;">
+                  
+
+                        <p> <b>Example 2:</b> Remove the leading and trailing characters:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = ",,,,,rrttgg.....banana....rrr"
+
+x = txt.strip(",.grt")
+
+print(x)</code>
+                    </pre>
+                    <p> <b>Output :- </b></p>
+                    <p> banana</p>
+
+                    </div>
+ <br> 
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p>   &#10028; The <span style="color: rgb(115, 2, 7);">lstrip()</span>  method removes any leading characters (space is the default leading character to remove).</p>
+
+                        <p> <b>Example 1 :</b> Remove spaces to the left of the string:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "     banana     "
+
+x = txt.lstrip()
+
+print("of all fruits", x, "is my favorite")    
+                    </code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p> <pre>of all fruits banana      is my favorite</pre></p>
+
+                    <hr style="height: 1px; background-color: brown;">
+                 
+
+                        <p> <b>Example 2 :</b> Remove the leading characters:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = ",,,,,ssaaww.....banana"
+
+x = txt.lstrip(",.asw")
+
+print(x)</code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p> banana</p>
+
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <p>  &#10028; The <span style="color: rgb(115, 2, 7);">rstrip()</span>  method removes any trailing characters (characters at the end a string), space is the default trailing character to remove.</p>
+
+                        <p> <b>Example 1:</b> Remove any white spaces at the end of the string:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "     banana     "
+
+x = txt.rstrip()
+
+print("of all fruits", x, "is my favorite")    
+                    </code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p> <pre> of all fruits      banana is my favorite</pre></p>
+                    <hr style="height: 1px; background-color: brown;">
+
+                    <p> <b>Example 2:</b> Remove the trailing characters if they are commas, periods, s, q, or w:</p>
+                   
+                    <pre>
+                    <code class="language-java">
+txt = "banana,,,,,ssqqqww....."
+
+x = txt.rstrip(",.qsw")
+
+print(x)</code>
+                    </pre> 
+                    <p> <b>Output :- </b></p>
+                    <p> banana</p>
+    
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p> &#10028;    The <span style="color: rgb(115, 2, 7);">split()</span>  method splits a string into a list.</p>
+                        <p> &#10028; You can specify the separator, default separator is any whitespace.
+                        </p>
+                      
+
+                        
+                        <p> <b>Example 1 :</b> Split a string into a list where each word is a list item:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "welcome to the jungle"
+
+x = txt.split()
+
+print(x)</code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p> ['welcome', 'to', 'the', 'jungle']</p>
+
+
+                    <hr style="height: 1px; background-color: brown;"> 
+
+                    <p> <b>Example 2:</b> Split the string, using comma, followed by a space, as a separator:</p>
+                   
+                    <pre>
+                    <code class="language-java">
+txt = "hello, my name is Peter, I am 26 years old"
+
+x = txt.split(", ")
+
+print(x) </code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p> ['hello', 'my name is Peter', 'I am 26 years old']</p>
+                    <hr style="height: 1px; background-color: brown;"> 
+
+   <p> <b>Example 3:</b> Use a hash character as a separator:</p>
+                   
+                <pre>
+                <code class="language-java">
+txt = "apple#banana#cherry#orange"
+
+x = txt.split("#")
+
+print(x)</code>
+
+                </pre> 
+                <p> <b> Output :- </b></p>
+                <p> ['apple', 'banana', 'cherry', 'orange']</p>
+                <hr style="height: 1px; background-color: brown;"> 
+                <p> <b>Example 4:</b> Split the string into a list with max 2 items:</p>
+                   
+                <pre>
+                <code class="language-java">
+txt = "apple#banana#cherry#orange"
+
+# setting the maxsplit parameter to 1, will return a list with 2 elements as a same!
+x = txt.split("#", 1)
+
+print(x)</code>
+                </pre> 
+                <p> <b>Output :- </b></p>
+                <p>['apple', 'banana#cherry#orange']</p>
+                    </div>
+                    <br>
+
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <p> &#10028;  The <span style="color: rgb(115, 2, 7);">partition()</span>  method searches for a specified string, and splits the <span style="color: rgb(115, 2, 7);">string into a tuple</span>  containing three elements.</p>
+                         <ul class="w3-ul"> 
+                           <li> &#x21db; The first element contains the part before the specified string. <span style="color: rgb(115, 2, 7);">(everything before the "match")</span> 
+                        </li>
+                        <li> &#x21db; The second element contains the specified string. <span style="color: rgb(115, 2, 7);">(the "match")</span>  </li>
+                        <li>&#x21db; The third element contains the part after the string. <span style="color: rgb(115, 2, 7);">(everything after the "match")</span> </li>
+                         </ul>
+                        
+
+
+
+                        <p> <b>Example 1:</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "I could to eat bananas all day"
+
+x = txt.partition("eat")
+
+print(x)    
+                    </code>
+                    </pre> 
+                    <p> <b>Output :- </b></p>
+                    <p> ('I could to ', 'eat', ' bananas all day')</p>
+                    
+                    <p> <b>Note:</b> This method searches for the first occurrence of the specified string.</p>
+                    <hr style="height: 1px; background-color: brown;">
+                   
+                   
+                    <p> <b>Example 2:</b></p>
+                   
+                    <pre>
+                    <code class="language-java">
+txt = "I could to eat bananas all day"
+
+x = txt.partition("apple")
+
+print(x) </code>
+                    </pre> 
+                    <p><b>Output:-</b></p>
+                    <p> ('I could to eat bananas all day', '', '') </p>
+                    <ul class="w3-ul">
+                        <li> &#10028; If the specified  <span style="color: rgb(115, 2, 7);"> value is not found</span> , the partition() method returns a tuple containing:</li>
+                        <li> &#x21db; 1 - the whole string  </li>
+                        <li> &#x21db; 2 - an empty string </li>
+                        <li> &#x21db; 3 - an empty string</li>
+                   </ul>
+
+                </div>
+
+                
 
 
 
@@ -491,6 +749,166 @@ print(x)</code>
 
 
 </section> 
+
+
+
+<section id="join" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p> &#10028; The <span style="color: rgb(115, 2, 7);"> join()</span> method takes all items in an iterable and joins them into one string.</p>
+
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+myList = ["A", "B", "C"]
+
+x = "@".join(myList)
+
+print(x)
+
+
+myTuple = ("A", "B", "C")
+
+x = "#".join(myTuple)
+
+print(x)
+
+
+
+myDict = {"name": "John", "country": "USA"}
+mySeparator = "-"
+
+x = mySeparator.join(myDict)
+
+print(x)
+    
+                    </code>
+                    </pre> 
+                    <p><b> Output :- </b></p>
+                    <p> A@B@C </p> 
+                    <p>A#B#C </p> 
+                    <p>name-country </p>
+
+                    <p> <b> Note 1: </b>A string must be specified as the separator.</p>
+    <p> <b> Note 2: </b>When using a dictionary as an iterable, the returned values are the keys, not the values.</p>
+
+                    
+                   
+                   
+                    </div>
+
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <p>  &#10028; The <span style="color: rgb(115, 2, 7);">isspace()</span>  method returns True if all the characters in a string are whitespaces, otherwise False.</p>
+
+                        <p> <b>Example:</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "   "
+txt1 = "   s   "
+
+x = txt.isspace()
+y = txt1.isspace()
+
+print(x)
+print(y) 
+    
+                    </code>
+                    </pre>
+                    <p> <b> Output :- </b></p>
+                    <p> True</p>
+                    <p> False</p>
+                  
+               </div>
+
+               <br>
+               <div class="w3-container  w3-sand w3-round-xlarge">
+                <p> &#10028; The  <span style="color: rgb(115, 2, 7);">isalpha() </span> method returns True if all the characters are alphabet letters (a-z).
+                </p>
+               <p> &#10028; Example of characters that are not alphabet letters: <span style="color: rgb(115, 2, 7);">(space)!#%&? etc</span> .</p>
+
+
+                <p> <b>Example :</b></p>
+               
+            <pre>
+            <code class="language-java">
+txt = "BNUltrasoftXyZ"
+txt1 = "BNUltrasoft10"
+x = txt.isalpha()
+y = txt1.isalpha()
+
+print(x)
+print(y)
+            </code>
+            </pre> 
+            <p><b>Output :-</b></p>
+            <p>True</p>
+            <p>False</p>
+            </div>
+
+            <br>
+            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                <p> &#10028;  The <span style="color: rgb(115, 2, 7);">isdigit()</span>  method returns True if all the characters are digits, otherwise False. </p>
+              
+
+                <p> <b>Example :</b></p>
+               
+            <pre>
+            <code class="language-java">
+txt = "847389"
+txt1 = "348B0"
+x = txt.isdigit()
+y = txt1.isdigit()
+
+print(x)
+print(y)
+            </code>
+            </pre> 
+            <p><b>Output :-</b></p>
+            <p>True</p>
+            <p>False</p>
+            </div>
+            <br>
+            <div class="w3-container  w3-sand w3-round-xlarge">
+                <p> &#10028;   The <span style="color: rgb(115, 2, 7);">isalnum() </span>  method returns True if all the characters are alphanumeric, meaning alphabet letter (a-z) and numbers (0-9).
+                </p>
+                <p> &#10028;   Example of characters that are not alphanumeric:<span style="color: rgb(115, 2, 7);">(space)!#%&? etc</span> .
+                </p>
+              
+                <p> <b>Example :</b></p>
+               
+            <pre>
+            <code class="language-java">
+txt = "BNUltrasoft10"
+txt1 = "BNUltrasoft 10"
+
+x= txt.isalnum()
+y = txt1.isalnum()
+
+print(x)
+print(y)</code>
+            </pre> 
+            <p><b>Output :-</b></p>
+            <p>True</p>
+            <p>False</p>
+            </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
 
 
 
