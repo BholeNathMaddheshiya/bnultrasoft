@@ -57,6 +57,7 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CLanguage">  C Language</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Ccomments">  C comments</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CVariables">  C Variables</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CFormatSpecifiers">  C Format Specifiers</a>   
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel2">IoT Level 2</a>   
@@ -478,7 +479,55 @@ printf("Hello World!");
                                 <img src="content/img/python/cdatatype.png" class="w3-round w3-center"  alt="image" style="width:100%">         
                         
                          <br>
+                         <hr style="height: 1px; background-color: brown;">
+                         <br>
+
+                         <ul class="w3-ul">
+                            <li> <b> &#10028; The general rules for naming variables are:</b></li>
+                             <li>  &#x21db; Names can contain letters, digits and underscores. </li>
+                             <li>  &#x21db; Names must begin with a letter or an underscore (_). </li>
+                             <li> &#x21db; Names are case-sensitive (myVar and myvar are different variables). </li>
+                             <li> &#x21db; Names cannot contain whitespaces or special characters like !, #, %, etc. </li>
+                             <li> &#x21db; Reserved words (such as int) cannot be used as names. </li>
+
+
+
+
+
+ 
+
+                         </ul>
+                         <br>
+                         <br>
+                         <img src="content/img/python/cvariable.png" class="w3-round w3-center"  alt="image" style="width:100%">  
                          
+                            <br>
+                            <br>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                                <p> &#x21db; This is not possible in C to print any variable.</p>
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+int myNum = 15;
+printf(myNum);  // Nothing happens            
+                            </code>
+                            </pre> 
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <img src="content/img/python/basicdatatypes.png" class="w3-round w3-center"  alt="image" style="width:100%">  
+                            <br>
+                            <br> 
+                            <img src="content/img/python/multiplevariable.png" class="w3-round w3-center"  alt="image" style="width:100%">  
+                          
+                            <br>
+                            <br>
+
+
                        </div>
         
                     </div> 
@@ -488,6 +537,113 @@ printf("Hello World!");
         
         
         </section> 
+
+        <section id="CFormatSpecifiers" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>C Format Specifiers</u></h2>
+
+                            <p> &#10028;               Format specifiers are used together with the <span style="color: rgb(115, 2, 7);">printf()</span>  function to tell the compiler what type of data the variable is storing. </p>
+                            <p> &#10028; It is basically a  <span style="color: rgb(115, 2, 7);"> placeholder</span> for the variable value. </p>
+                            <p> &#10028; A format specifier starts with a percentage sign <span style="color: rgb(115, 2, 7);">%</span> , followed by a character. </p>
+
+                  <br>
+                  <br>
+
+
+                       
+                                <img src="content/img/python/formatspecifiers.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+                        
+                         <br>
+                         <br>
+                         <br>
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+                            <pre>
+                                <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+  
+    // Create variables
+    int myNum = 15;              // Integer (whole number)
+    float myFloatNum = 5.99;     // Floating point number
+    char myLetter = 'D';         // Character
+    char myname[] = "John";
+  
+    
+    // Print variables
+    printf("Integer Number is = %d \n", myNum);
+    printf("Float Number is = %f \n", myFloatNum);
+    printf("Character is = %c \n", myLetter);
+    printf("My name is = %s \n", myname);
+    return 0;
+
+}  </code>
+                                </pre>
+                
+        
+                        </code>
+                        </pre> 
+                        <p> <b>Output :- </b></p>
+                        <p> Integer Number is = 15  </p>
+                         <p>Float Number is = 5.990000  </p>
+                        <p>Character is = D </p>
+                       <p> My name is = John </p>
+
+                     
+
+                        </div>
+                        <br>
+                        <br>
+                        <div class="w3-container  w3-sand w3-round-xlarge">
+                            <p> <b>   &#10028; Note: </b> In Python, multiple <span style="color: rgb(115, 2, 7);">print()</span>  function  is given then output will be in multiple lines because of <span style="color: rgb(115, 2, 7);">end="\n"</span>  by default. <br>
+                              But, in C language in <span style="color: rgb(115, 2, 7);"> printf() </span>  function there is no <span style="color: rgb(115, 2, 7);">\n</span>  by default.
+                            </p>
+
+                            <p> <b>Example:</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+
+ printf("Hello World!");
+ printf("Hi World!");
+ printf("Hello World!");
+ printf("Hi World");
+ 
+ return 0;
+} 
+        
+                        </code>
+                        </pre> 
+                        <p> <b> Output :- </b></p>
+                        <p> Hello World!Hi World!Hello World!HI World</p>
+                        </div>
+                        <br>
+                        <br>
+                       
+                        
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
        
        
  
