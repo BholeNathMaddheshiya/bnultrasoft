@@ -52,7 +52,13 @@
         
         <div class="w3-bar-block  ">
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonFunctions">Python Functions</a> 
-           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#join">Join Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#join">join() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#isspace()">isspace() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#isalpha()">isalpha() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#isdigit()">isdigit() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#isalnum()">isalnum() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#startswith()">startswith() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#endswith()">endswith() Method</a> 
            
             
             
@@ -805,7 +811,7 @@ print(x)
                     </div>
 
                     <br>
-                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                    <div id="isspace()" class="w3-container  w3-pale-yellow w3-round-xlarge">
                         <p>  &#10028; The <span style="color: rgb(115, 2, 7);">isspace()</span>  method returns True if all the characters in a string are whitespaces, otherwise False.</p>
 
                         <p> <b>Example:</b></p>
@@ -830,7 +836,7 @@ print(y)
                </div>
 
                <br>
-               <div class="w3-container  w3-sand w3-round-xlarge">
+               <div id="isalpha()" class="w3-container  w3-sand w3-round-xlarge">
                 <p> &#10028; The  <span style="color: rgb(115, 2, 7);">isalpha() </span> method returns True if all the characters are alphabet letters (a-z).
                 </p>
                <p> &#10028; Example of characters that are not alphabet letters: <span style="color: rgb(115, 2, 7);">(space)!#%&? etc</span> .</p>
@@ -855,7 +861,7 @@ print(y)
             </div>
 
             <br>
-            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+            <div id="isdigit()" class="w3-container  w3-pale-yellow w3-round-xlarge">
                 <p> &#10028;  The <span style="color: rgb(115, 2, 7);">isdigit()</span>  method returns True if all the characters are digits, otherwise False. </p>
               
 
@@ -877,7 +883,7 @@ print(y)
             <p>False</p>
             </div>
             <br>
-            <div class="w3-container  w3-sand w3-round-xlarge">
+            <div id="isalnum()" class="w3-container  w3-sand w3-round-xlarge">
                 <p> &#10028;   The <span style="color: rgb(115, 2, 7);">isalnum() </span>  method returns True if all the characters are alphanumeric, meaning alphabet letter (a-z) and numbers (0-9).
                 </p>
                 <p> &#10028;   Example of characters that are not alphanumeric:<span style="color: rgb(115, 2, 7);">(space)!#%&? etc</span> .
@@ -901,13 +907,110 @@ print(y)</code>
             <p>False</p>
             </div>
 
-            </div> 
-        </div>
-    </div>
+            <br>
+            <div id="startswith()" class="w3-container  w3-pale-yellow w3-round-xlarge">
 
+                <p>  &#10028; The  <span style="color: rgb(115, 2, 7);">startswith()</span> method returns True if the string starts with the specified value, otherwise False.</p>
+
+                <p> <b>Example :</b></p>
+               
+            <pre>
+            <code class="language-java">
+txt = "Hello, welcome to my world."
+
+x = txt.startswith("Hello")
+
+print(x)
+            </code>
+            </pre> 
+            <p><b>Output :- </b></p>
+            <p> True</p>
+
+            <hr style="height: 1px; background-color: brown;">
+            <br>
+            <img src="content/img/python/startwith.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
+    <br>
+    <hr style="height: 1px; background-color: brown;">
+    <p> <b>Example 2:</b></p>
+                   
+    <pre>
+    <code class="language-java">
+txt = "Hello, welcome to my world."
+
+x = txt.startswith("wel", 7, 20)
+
+print(x)
+    </code>
+    </pre> 
+    <p><b> Output :- </b></p>
+    <p> True</p>
+
+            </div>
+            
+                           
+     <br>
+
+
+     <div id="endswith()" class="w3-container  w3-sand w3-round-xlarge">
+        <p> &#10028; The <span style="color: rgb(115, 2, 7);">endswith()</span>  method returns True if the string ends with the specified value, otherwise False.</p>
+
+        <p> <b>Example:</b></p>
+       
+    <pre>
+    <code class="language-java">
+txt = "Hello, welcome to my world."
+
+x = txt.endswith(".")
+y = txt.endswith("my world.")
+
+print(x)
+print(y)
+    </code>
+    </pre> 
+    <p> <b> Output :-</b></p>
+    <p>True</p>
+    <p>True</p>
+   
+    <hr style="height: 1px; background-color: brown;">
+    <img src="content/img/python/endswith.png" class="w3-round w3-center"  alt="image" style="width:100%">
+   <br>
+    <p> <b>Example 2:</b> Check if position 5 to 11 ends with the phrase "my world.":</p>
+                   
+    <pre>
+    <code class="language-java">
+txt = "Hello, welcome to my world."
+
+x = txt.endswith("my world.", 5, 11)
+
+print(x)</code>
+    </pre> 
+    <p><b>Output :-</b></p>
+    <p> False</p>
+    </div>
+    <br>
+
+   
+
+           
+       
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+   
+</div>
 
 
 </section> 
+
+
+
+
 
 
 
