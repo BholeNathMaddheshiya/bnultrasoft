@@ -59,8 +59,17 @@
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#isalnum()">isalnum() Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#startswith()">startswith() Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#endswith()">endswith() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#encode()">encode() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#max()">max() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#min()">min() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#pow()">pow() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#round()">round() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#int()">int() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#random()">random() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ceil()">ceil() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#floor()">floor() Method</a> 
            
-            
+           
             
             <!-- <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="#sec2">About</a>
             <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="#sec3">Contact</a>
@@ -1009,6 +1018,388 @@ print(x)</code>
 </section> 
 
 
+<section id="encode()" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python Strings encode() method</u></h2>
+               
+
+                    <p> <b> &#10028; </b> Python String <span style="color: rgb(115, 2, 7);">encode()</span>  converts a string value into a collection of bytes, using an encoding scheme specified by the user.</p>
+                   
+                    <p> <b>  &#10028; Note :- </b> Python uses <span style="color: rgb(115, 2, 7);"> <b>utf-8 </b></span>as  its encoding by default.</p>
+                     <br>
+                     <br>
+                     <img src="content/img/python/encode.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
+
+                     <br>
+                     <br>
+
+                     <h2 class="w3-panel w3-center"><u>Python Strings decode() method</u></h2>
+                     <p> <b> &#10028; </b>This works opposite to the encode. It accepts the encoding of the encoding string to decode it and returns the original string.</p>
+               
+                      <br>
+                      <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example of encode and decode :</b> ascii to ascii</p>
+                       
+                    <pre>
+                    <code class="language-java">
+# defining a new string
+example = "BNUltrasoft"
+
+# Encoding the input string and storing it in a new variable
+encodedString = example.encode(encoding='utf8')
+
+# Displaying the encoded string
+print ("Input string in the encoded format: ")
+print (encodedString)
+
+# Displaying the decoded string
+print ("Input string in the decoded format: ")
+decodedString = encodedString.decode('utf8', 'strict')
+print (decodedString)    
+                    </code>
+                    </pre> 
+                    <p><b>Output :-</b></p>
+                    <p>  Input string in the encoded format: </p>
+                   <p>b'BNUltrasoft'</p>
+<p>Input string in the decoded format:</p>
+ <p>BNUltrasoft</p>
+
+                    </div>
+                      <br>
+
+                     <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example of real encode :- </b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+txt = "My name is Ståle"
+
+print(txt.encode(encoding="ascii",errors="backslashreplace"))
+print(txt.encode(encoding="ascii",errors="ignore"))
+print(txt.encode(encoding="ascii",errors="namereplace"))
+print(txt.encode(encoding="ascii",errors="replace"))
+print(txt.encode(encoding="ascii",errors="xmlcharrefreplace"))
+print(txt.encode(encoding="ascii",errors="strict"))    
+                    </code>
+                    </pre> 
+                    <p> <b> Output :-</b></p>
+                    <p>b'My name is St\\xe5le'  </p>                 
+                    <p>b'My name is Stle'  </p>                 
+                    <p>b'My name is St\\N{LATIN SMALL LETTER A WITH RING ABOVE}le' </p>                 
+                    <p>b'My name is St?le' </p>                 
+                    <p>b'My name is St &# 229; le'  </p>                 
+                   
+
+
+
+
+
+                    
+                    
+                    </div>
+                    <br>
+                    <br>
+
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+
+<section id="P" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center" id="max()"><u>Python max() Function
+
+                    </u></h2>
+               
+                    <p><b> &#10028; </b>The  <span style="color: rgb(115, 2, 7);">max()</span> function returns the item with the highest value, or the item with the highest value in an iterable.
+                    </p>
+                 <p> <b>  &#10028;  </b> If the values are strings, an alphabetically comparison is done. </p>   
+                     <br>
+                     <p> <b>Syntax :</b></p>
+                     <p> max(n1, n2, n3, ...) Or  max(iterable)</p>
+                      <br>
+                      <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example :- </b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+x = max("B", "J",  "K", "G")
+a = max(1, 5, 13, 9)
+
+print(x)
+print(a)    
+                    </code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p>K </p>
+                    <p> 13</p>
+                    </div>
+
+                    <br>
+                    <br>
+                    <h2 class="w3-panel w3-center" id="min()"><u>Python min() Function
+
+                    </u></h2>
+                     
+
+                <p> <b>&#10028;  </b>  The <span style="color: rgb(115, 2, 7);">min()</span>  function returns the item with the lowest value, or the item with the lowest value in an iterable.
+                </p>
+                <p> <b>&#10028;  </b> If the values are strings, an alphabetically comparison is done.</p>
+   <br>
+   <p> <b>Syntax :</b></p>
+   <p> min(n1, n2, n3, ...) Or  min(iterable)</p>
+   <br>
+   <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example:</b></p>
+    
+<pre>
+<code class="language-java">
+x = min("B", "J",  "K", "G")
+a = min(1, 5, 13, 9)
+
+print(x)
+print(a)
+</code>
+</pre> 
+<p> <b>Output :-</b></p>
+<p> B</p>
+<p> 1</p>
+</div>
+<br>
+<br>
+<h2 class="w3-panel w3-center" id="pow()"><u>Python pow() Function
+
+</u></h2>
+<p> &#10028;The  <span style="color: rgb(115, 2, 7);">pow()</span> function returns the value of x to the power of y (x <sup>y</sup>). </p>
+<p> &#10028; If a third parameter is present, it returns x to the power of y, modulus z.</p>
+
+<img src="content/img/python/pow.png" class="w3-round w3-center"  alt="image" style="width:100%">             
+ 
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b> Example :- </b> Return the value of 2 to the power of 3 (same as 2 * 2 * 2):</p>
+   
+<pre>
+<code class="language-java">
+x = pow(2, 3)
+print(x)
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p> 8</p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 2:</b> Return the value of 2 to the power of 3, modulus 5 (same as (2 * 2 * 2) % 5):</p>
+   
+<pre>
+<code class="language-java">
+x = pow(2, 3, 5)
+print(x)
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p> 3</p>
+</div>
+<br>
+<br>
+
+<h2 class="w3-panel w3-center" id="round()"><u>Python round() Function</u></h2>
+  <p> <b> &#10028; </b> The <span style="color: rgb(115, 2, 7);">round()</span>  function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals.</p>            
+   <p> <b> &#10028; </b> The <span style="color: rgb(115, 2, 7);">default number of decimals is 0</span> , meaning that the function will return the nearest integer.
+
+   </p>  
+   <br>            
+   <br>
+   <img src="content/img/python/round.png" class="w3-round w3-center"  alt="image" style="width:100%">             
+ <br>
+ <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+x = round(5.76543)
+y = round(5.76543,2)
+print(x)
+print(y)
+</code>
+</pre>
+<p> <b>Output :- </b></p>
+
+
+<p>6</p>
+<p>5.77</p>
+</div>
+<br>
+<h2 class="w3-panel w3-center" id="int()"><u>Python int() Function</u></h2>
+<p> <b> &#10028; </b> The  <span style="color: rgb(115, 2, 7);">int()</span> function converts the specified value into an integer number.</p>
+ <br>
+<img src="content/img/python/int.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
+ <br>
+ <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+x = int(12.5)
+y = int("13")
+print(x)
+print(y)
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p>12</p>
+<p>13</p>
+</div>         
+<br>
+<br>
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="random()" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python  random() Method</u></h2>
+                  <p> <b>  &#10028;</b> The <span style="color: rgb(115, 2, 7);">random()</span>  method returns a random floating number between 0 and 1.</p>
+                 <p> <b>Syntax : </b></p>
+                  <p> random.random()</p>
+                  <br>
+                  <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Example :</b></p>
+                   
+                <pre>
+                <code class="language-java">
+import random
+
+print(random.random())
+                </code>
+                </pre> 
+                <p> <b> Output :- </b></p>
+                <p> 0.502832480499048</p>
+                </div>
+                <br>
+                <h2 class="w3-panel w3-center" id="ceil()"><u>Python math.ceil() Method
+
+                </u></h2>
+                <p> <b>&#10028; </b>The <span style="color: rgb(115, 2, 7);">math.ceil()</span>  method rounds a number UP to the nearest integer, if necessary, and returns the result.</p>
+
+
+                <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Example :- </b></p>
+                   
+                <pre>
+                <code class="language-java">
+# Import math library
+import math
+
+# Round a number upward to its nearest integer
+print(math.ceil(1.4))
+print(math.ceil(5.3))
+print(math.ceil(-5.3))
+print(math.ceil(22.6))
+print(math.ceil(10.0))
+</code>
+                </pre> 
+                <p> <b> Output :- </b></p>
+                
+
+
+
+
+                <p>2</p>
+                <p>6</p>
+                <p>-5</p>
+                <p>23</p>
+                <p>10</p>
+                </div>
+                <br>
+                <h2 class="w3-panel w3-center" id="floor()"><u>Python math.floor() Method
+
+                </u></h2>
+                <p> <b>&#10028; </b>The <span style="color: rgb(115, 2, 7);">math.floor()</span> method rounds a number DOWN to the nearest integer, if necessary, and returns the result.</p>
+
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example:</b></p>
+   
+<pre>
+<code class="language-java">
+# Import math library
+import math
+
+# Round numbers down to the nearest integer
+print(math.floor(0.6))
+print(math.floor(1.4))
+print(math.floor(5.3))
+print(math.floor(-5.3))
+print(math.floor(22.6))
+print(math.floor(10.0))
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p>0</p>
+<p>1</p>
+<p>5</p>
+<p>-6</p>
+<p>22</p>
+<p>10</p>
+</div>
+
+
+
+
+
+                <br>
+                <br>
+
+                  
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
 
 
 
