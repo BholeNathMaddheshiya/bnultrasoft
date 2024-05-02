@@ -68,6 +68,7 @@
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#random()">random() Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ceil()">ceil() Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#floor()">floor() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#sqrt()">sqrt() Method</a> 
            
            
             
@@ -1402,7 +1403,68 @@ print(math.floor(10.0))
 </section> 
 
 
+<section id="sqrt()" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
 
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python math.sqrt() Method</u></h2>
+               
+                    <p><b> &#10028; <span style="color: rgb(115, 2, 7);"> math.sqrt() :-</span> </b> The <span style="color: rgb(115, 2, 7);">math.sqrt()  </span>  method returns the square root of a number. </p>
+                     <p> <b> &#x21db; Note :</b>  The number must be greater than or equal to 0.</p>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+import math
+
+print (math.sqrt(9))
+print (math.sqrt(25))    
+                    </code>
+                    </pre> 
+                    <p><b> Output :- </b></p>
+                    <p>3.0</p>
+                    <p>5.0</p>
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example 2:</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+import math
+
+print (math.sqrt(-5)) #ValueError: math domain error
+print (math.sqrt("A")) #TypeError: must be real number, not str
+print (math.sqrt(A))  #NameError: name 'A' is not defined    
+                    </code>
+                    </pre>
+                    <p><b>Note :- </b></p>
+                    <p>  &#x21db; If the number is less than 0, it returns a <span style="color: rgb(115, 2, 7);">ValueError</span> </p>
+                    <p> &#x21db; If the value is not a number, it returns a <span style="color: rgb(115, 2, 7);">TypeError</span> </p>
+                    <p>  &#x21db; If the value is not defined, it returns a <span style="color: rgb(115, 2, 7);">NameError</span> </p>
+                    </div>
+                    <br>
+                    <br>
+
+                     
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
 
 
 
