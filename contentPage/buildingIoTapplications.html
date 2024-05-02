@@ -58,6 +58,7 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Ccomments">  C comments</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CVariables">  C Variables</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CFormatSpecifiers">  C Format Specifiers</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#sizeof">  C  Memory Size by sizeof </a>   
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel2">IoT Level 2</a>   
@@ -577,7 +578,7 @@ int main() {
     int myNum = 15;              // Integer (whole number)
     float myFloatNum = 5.99;     // Floating point number
     char myLetter = 'D';         // Character
-    char myname[] = "John";
+    char myname[] = "John";      // String
   
     
     // Print variables
@@ -628,13 +629,102 @@ int main() {
                         </code>
                         </pre> 
                         <p> <b> Output :- </b></p>
-                        <p> Hello World!Hi World!Hello World!HI World</p>
+                        <p> Hello World!Hi World!Hello World!Hi World</p>
                         </div>
                         <br>
                         <br>
                        
                         
                        </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="sizeof" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>C The sizeof Operator</u></h2>
+
+                            <p> <b>&#10028; </b>The memory size refers to how much space a type occupies in the computer's memory.</p>
+                            <p> <b>&#10028;   </b>To actually get the size (in bytes) of a data type or variable, use the <span style="color: rgb(115, 2, 7);">sizeof()</span> :</p>
+                            
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+
+
+    int myInt;
+    float myFloat;
+    double myDouble;
+    char myChar;
+    
+    printf("%lu\n", sizeof(myInt));
+    printf("%lu\n", sizeof(myFloat));
+    printf("%lu\n", sizeof(myDouble));
+    printf("%lu\n", sizeof(myChar));
+
+
+
+return 0;
+}</code>
+                            </pre>
+                            <p> <b> Output :- </b></p>
+                            <p>4 </p>
+                            <p>4 </p>
+                            <p>8 </p>
+                            <p>1 </p>
+                            </div>
+
+
+                            <p> <b> Note : </b>Note that we use the <span style="color: rgb(115, 2, 7);">%lu</span>  format specifer to print the result</p>
+                       
+                            <br>
+                            <br>
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                                <p> <b>Labwork :</b></p>
+                                <p>   Q1) WAP to print your name by store your name in a variable.</p>
+                               <p>  Q2) WAP to calculate the area of a rectangle and print the area.
+                                <br>
+                                 [ <b> Hint : </b>  Area of rectangle is = area ]</p>
+                               <p>  Q3) WAP to print student name, age, fees, id, grade by taking all these in variables.
+
+                            </p>
+                            <p> Q4) WAP to find area of a square .</p>
+                            <p> Q5) WAP to find diameter, circumference and area of circle. 
+
+                                <br> 
+                                [ <b> Hint :</b> diameter = 2 * r,  circumference = 2* 3.14 * r ]
+                            </p>
+                            <p> Q6)  WAP to calculate Simple Interest, print the simple Interest by store P, T, R in variable.</p>
+
+                            <p> Q7) WAP to store two integers in two variables and print their sum. </p>
+                            <p> Q8) WAP to print 5 fruits name by store in variables.</p>
+                            
+                              
+                            </div>
+
+                            <br>
+                            <br>
+
+                       
+                       
+                       
+                        </div>
         
                     </div> 
                 </div>
