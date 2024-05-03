@@ -69,6 +69,7 @@
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ceil()">ceil() Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#floor()">floor() Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#sqrt()">sqrt() Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#DateTimeFunctions">DateTime Method</a> 
            
            
             
@@ -1465,6 +1466,171 @@ print (math.sqrt(A))  #NameError: name 'A' is not defined
 
 
 </section> 
+<section id="DateTimeFunctions" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Date & Time Functions</u></h2>
+
+                    <p> <b> &#x21db; </b>A date in Python is not a data type of its own, but we can import a module named <span style="color: rgb(115, 2, 7);"> <b>datetime </b></span>  to work with dates as date objects.</p>
+
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example 1:</b> Get Current Date and Time</p>
+                       
+                    <pre>
+                    <code class="language-java">
+import datetime
+
+# get the current date and time
+now = datetime.datetime.now()
+
+print(now)</code>
+                    </pre> 
+                    <p><b>Output :- </b></p>
+                    <p> 2024-05-03 18:58:50.888514 </p>
+                    </div>
+                       <br>
+                       <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example 2:</b> Get Current Date</p>
+                       
+                    <pre>
+                    <code class="language-java">
+import datetime
+
+# get current date
+current_date = datetime.date.today()
+
+print(current_date)</code>
+                    </pre>  
+                    <p><b>Output :-</b></p>
+                    <p> 2024-05-03</p>
+                    <hr style="height: 1px; background-color: brown;">
+                
+                   <p> <b>Example 3: </b>Another way to Get Current Date <span style="color: rgb(115, 2, 7);">(by Import Only date Class)</span> </p>
+                       
+                   <pre>
+                   <code class="language-java">
+from datetime import date
+
+d = date.today()
+print(d)</code>
+                   </pre>  
+                   <p><b>Output :-</b></p>
+                   <p> 2024-05-03</p>
+
+
+
+
+
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example :</b> Print today's year, month and day.</p>
+                       
+                    <pre>
+                    <code class="language-java">
+from datetime import date
+
+# date object of today's date
+today = date.today() 
+
+print("Current year:", today.year)
+print("Current month:", today.month)
+print("Current day:", today.day)</code>
+                    </pre> 
+                    <p><b>Output :- </b></p>
+                    <p>Current year: 2024 </p>
+                    <p> Current month: 5</p>
+                    <p> Current day: 3</p>
+                    
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+         <p><b>Creating Date Objects : </b> To create a date, we can use the <span style="color: rgb(115, 2, 7);">datetime() </span> (class constructor)  of the datetime module.</p>
+                        <p> <b>Example:</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+import datetime
+
+x = datetime.datetime(2024, 4, 30)
+
+print(x)    
+                    </code>
+                    </pre> 
+                    <p><b>Output :- </b></p>
+                    <p>2024-04-30 00:00:00</p>
+                    </div>
+                    <br>
+                    <h2 class="w3-panel w3-center"><u> The strftime() Method</u></h2>
+                    <p> <b>  &#10028; </b>The <span style="color: rgb(115, 2, 7);"> datetime</span> object has a method for formatting date objects into readable strings.</p>
+                   
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+
+                        <p> <b>Example:</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+import datetime
+
+x = datetime.datetime(2024, 8, 1)
+
+print(x.strftime("%B"))    
+                    </code>
+                    </pre>
+                    <p><b> Output :-</b></p>
+                    <p>August</p>
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <p> <b> &#x21db;</b> A reference of all the legal format codes:</p>
+                        <table class="w3-table-all">
+                            <tr> <th>Directive </th> <th> Description</th> <th>Example </th></tr>
+                            <tr> <td>%a </td> <td>Weekday, short version </td> <td>Wed </td></tr>
+                            <tr>  <td>%A </td> <td>	Weekday, full version </td> <td>Wednesday </td></tr>
+                            <tr>  <td>%w </td> <td>Weekday as a number 0-6, 0 is Sunday </td> <td> 3</td></tr>
+                            <tr>  <td>%d </td> <td>Day of month 01-31 </td> <td>31 </td></tr>
+                            <tr>  <td>%b </td> <td>Month name, short version </td> <td>Dec </td></tr>
+                            <tr>  <td> %B</td> <td>Month name, full version </td> <td>December </td></tr>
+                            <tr>  <td>%m </td> <td>Month as a number 01-12 </td> <td>12 </td></tr>
+                            <tr>  <td> %y</td> <td> Year, short version, without century</td> <td> 18</td></tr>
+                            <tr>  <td> %Y</td> <td>Year, full version </td> <td> 2018</td></tr>
+                            <tr>  <td>%H </td> <td>Hour 00-23 </td> <td>17 </td></tr>
+                            <tr>  <td> %I</td> <td>Hour 00-12 </td> <td>05 </td></tr>
+                            <tr>  <td>%p</td> <td>AM/PM </td> <td> PM</td></tr>
+                            <tr>  <td> %M</td> <td> Minute 00-59</td> <td>41 </td></tr>
+                            <tr>  <td>%S </td> <td>Second 00-59 </td> <td>08 </td></tr>
+                        </table>
+                        <br>
+
+
+                    </div>
+                    <br>
+                   
+
+
+               
+                    <br>
+                    <br>
+                    <br>
+                    
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
 
 
 
