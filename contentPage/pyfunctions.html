@@ -70,6 +70,7 @@
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#floor()">floor() Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#sqrt()">sqrt() Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#DateTimeFunctions">DateTime Method</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Function">Function</a> 
            
            
             
@@ -1646,22 +1647,174 @@ print(date_object)</code>
 
 </section> 
 
-<section id="P" class="topPadding">
+<section id="Function" class="topPadding">
     <div class="w3-container w3-panel">
         <div data-aos="fade-right"  data-aos-duration="1000">
             <div class="w3-white  w3-card w3-round-large   ">
               
 
                  <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
-                    <h2 class="w3-panel w3-center"><u>Introduction to Python Interpreter
-                        and program execution</u></h2>
+                    <h2 class="w3-panel w3-center"><u>Function</u></h2>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p><b>Creating a Function :</b></p>
+
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+def my_function():
+    print("Hello from a function")    
+                    </code>
+                    </pre> 
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                        <p><b>Calling a Function:</b> To call a function, use the function name followed by parenthesis:</p>
+
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+def my_function():
+    print("Hello from a function")
+my_function() 
+                    </code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p> Hello from a function</p>
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+                        <p> <b>  Arguments :  </b> Information can be passed into functions as arguments.</p>
+                       
+
+
+                        <p> <b>Example :- </b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+def my_function(x):
+    print("I Like to eat",x)
+
+my_function("Mango")
+my_function("Food")
+my_function("Banana")</code>
+                    </pre> 
+                    <p> <b> Output :- </b></p>
+                    <p> I Like to eat Mango</p>
+                    <p>I Like to eat Food</p>
+                     <p>I Like to eat Banana</p>
+                     <br>
+                     <p> <b>&#10028;  Parameters or Arguments?</b></p>
+    <p>   A parameter is the variable listed inside the parentheses in the function definition.
+    </p>
+   <p>An argument is the value that is sent to the function when it is called. </p>
+
+                    </div>
+                    <br>
+                    
+  <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>&#10028;</b> Number of Arguments </p>
+    
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+def my_function(x,y):
+    print("I Like to eat",x,y)
+
+my_function("Mango","Banana")
+</code>
+</pre> 
+<p><b>Output :- </b></p>
+<p>I Like to eat Mango Banana</p>
+
+</div>
+<br>
+
+
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+    <p> <b>&#10028; Number of Arguments</b>  </p>
+    <p> <b>Note:- </b>By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.</p>
+
+   
+    
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+def my_function(x,y,z):
+    print("I Like to eat",x,y)
+
+my_function("Mango","Banana")
+</code>
+</pre> 
+<p><b>Output :- </b></p>
+<p> <span style="color: rgb(115, 2, 7);">TypeError:</span> my_function() missing 1 required.</p>
+
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <p> <b> Arbitrary Arguments, *args</b></p>
+    <p> If you do not know how many arguments that will be passed into your function, add a <span style="color: rgb(115, 2, 7);"> *</span> before the parameter name in the function definition.</p>
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+def my_function(*x):
+    print("I like: ",x[2])
+
+my_function("Mango","Banana","Apple")
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p> I like:  Apple</p>
+</div>
+<br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+    <p> <b> &#10028; Keyword Arguments </b></p>
+    <p> &#x21db; You can also send arguments with the  <span style="color: rgb(115, 2, 7);">key = value</span> syntax. </p>
+    <p>&#x21db; This way the order of the arguments does not matter. </p>
+
+
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+def my_function(x,y,z):
+    print("I like: ",z)
+
+my_function(x="Mango",z="Banana",y="Apple")
+</code>
+</pre>
+<p> <b> Output :- </b></p>
+<p> I like:  Banana</p>
+</div>
+
+                  <br>
+                  <br>
+
+                  <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Labwork :</b></p>
+                    <p> Q139) WAP to create a function for add two numbers by passing Arguments.</p>
+                    <p> Q140) WAP to create a function for <span style="color: rgb(115, 2, 7);">add , sub, mul, div, mod</span>  two numbers by passing Arguments.</p>
+                  <p> Q141) WAP to create a function for reverse a string by passing Arguments as user input.</p>
+                  <p> Q142) WAP to create a function for that takes a number as a parameter and checks whether the number is prime or not.</p>
+                  <p> Q143) WAP to create a function to find the maximum of three numbers must be user input.</p>
+                </div>
+                <br>
+             
+                <br>
                
-                        <img src="content/img/python/InternalWorkingofPython.png" class="w3-round w3-center"  alt="image" style="width:100%">         
-                
-                 <br>
-                 <p><b> &#10028; Python interpreter : </b> Python converts source code into series of bytecode in compilation stage.</p> 
-                
-               </div>
+                   
+                </div>
 
             </div> 
         </div>
