@@ -64,7 +64,12 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ConstantsandLiterals"> Constants and Literals</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ArithmeticOperators"> Arithmetic Operators</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#AssignmentOperators"> Assignment Operators</a>   
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#RelationalOperators"> Relational Operators</a>   
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#RelationalOperators"> Relational Operators</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ConditionalStatement"> Conditional Statement</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#SwitchStatement"> Switch Statement</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WhileLoop">WhileLoop</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Do/WhileLoop">The Do/While Loop</a> 
+
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel2">IoT Level 2</a>   
@@ -1038,9 +1043,507 @@ int main() {
                                 <p> Q15) WAP  to  a given integer (in hours) and convert it into  minutes and seconds.</p>
                      
                                 </div>
-                           
+                                <br>
+                                <br>
+
+                                <p> <b>  &#10028; </b>In C programming language, the term "garbage value" refers to a value stored in a variable without being initialized or assigned a proper value. This can occur when a variable is declared but not initialized before it is used or when a variable is assigned the value of another variable that has not been initialized.</p>
+                                 <br>
+                                 <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                    <p> <b>Example :</b></p>
+                                   
+                                <pre>
+                                <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    float a;
+    int b;
+ 
+    int x=1;
+    printf("%f\n",a);
+    printf("%d",x+b);  
+    return 0;
+ 
+}                
+                                </code>
+                                </pre>
+                                <p><b> Output :- </b></p>
+                                <p>0.000000</p>
+                                <p>124</p>
+
+                                </div>
+                                <br>
+                                <br>
                            
                             </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="ConditionalStatement" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Conditional Statement</u></h2>
+                            <p><b> &#10028; </b>  The conditional statements (also known as decision control structures) such as if, if else, switch, etc. are used for decision-making purposes in C programs.  
+                            </p>
+                            <br>
+                            <p> <b>  &#10028; </b> Types of Conditional Statements in C :</p>
+                                           
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230424101456/Conditional-Statements-in-c.webp" class="w3-round w3-center"  alt="image" style="width:100%"> 
+                              <br>
+                              <br>
+                              <div class="w3-container  w3-sand w3-round-xlarge">
+                                <p> <b> &#10028;The if Statement : </b>
+                                    Use the if statement to specify a block of code to be executed if a condition is true.</p>
+
+
+                                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                        <p> <b>Syntax :</b></p>
+                                       
+                                    <pre>
+                                    <code class="language-java">
+if (condition) {
+    // block of code to be executed if the condition is true
+    }                    
+                                    </code>
+                                    </pre>
+                                    </div>
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    if (20 > 18) {
+      printf("20 is greater than 18");
+    }  
+    return 0;
+}  </code>
+                            </pre> 
+                            <p> <b>Output :- </b></p>
+                            <p>20 is greater than 18 </p>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                                
+
+                                <p> <b> &#10028;The else Statement: </b>
+                                    Use the else statement to specify a block of code to be executed if the condition is false. </p>
+                               
+
+                                        <p> <b>Syntax:</b></p>
+                                       
+                                    <pre>
+                                    <code class="language-java">
+if (condition) {
+// block of code to be executed if the condition is true
+} else {
+// block of code to be executed if the condition is false
+}                    
+                                    </code>
+                                    </pre> 
+                                 
+                                    <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int time = 20;
+    if (time < 18) {
+      printf("Good day.");
+    } else {
+      printf("Good evening.");
+    }
+    return 0;
+}  </code>
+                            </pre> 
+                            <p> <b>Output :- </b></p>
+                            <p>Good evening. </p>
+                            </div>
+
+                            <br>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                
+
+                                <p> <b> &#10028;The else if Statement: </b>
+                                    Use the else if statement to specify a new condition if the first condition is false. </p>
+                               
+
+                                        <p> <b>Syntax:</b></p>
+                                       
+                                    <pre>
+                                    <code class="language-java">
+if (condition1) {
+    // block of code to be executed if condition1 is true
+} else if (condition2) {
+    // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+    // block of code to be executed if the condition1 is false and condition2 is false
+}                    
+                                    </code>
+                                    </pre> 
+                                 
+                                    <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int time = 22;
+    if (time < 10) {
+      printf("Good morning.");
+    } else if (time < 20) {
+      printf("Good day.");
+    } else {
+      printf("Good evening.");
+    }
+    return 0;
+}  </code>
+                            </pre> 
+                            <p> <b>Output :- </b></p>
+                            <p>Good evening. </p>
+                            </div>
+
+
+
+
+                            <br>
+                            <br>
+                            
+  <div class="w3-container  w3-sand w3-round-xlarge">
+   <p> Nested if-else in C </p>
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() 
+{ 
+    int i = 10; 
+  
+    if (i == 10) { 
+        // First if statement 
+        if (i < 15) 
+            printf("i is smaller than 15\n"); 
+  
+        // Nested - if statement 
+        // Will only be executed if statement above 
+        // is true 
+        if (i < 12) 
+            printf("i is smaller than 12 too\n"); 
+        else
+            printf("i is greater than 15"); 
+    } 
+  
+    return 0;
+}
+
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p>i is smaller than 15</p>
+<p>i is smaller than 12 too</p>
+
+
+</div>
+<br>
+<br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Labwork 3:</b></p>
+    <p> Q16) WAP to check you are eligible for vote or not (age should be input bu user).</p>
+    <p>Q17) WAP to check even or odd (by user input)</p>
+   <p>Q18) WAP to input a number to check the number is prime or not. </p>
+  <p>Q19) Write a C program to find maximum between two numbers. </p>
+ <p>Q20) Write a C program to find maximum between three numbers. </p>
+<p>Q21) Write a C program to check whether a number is negative, positive or zero.</p>
+<p>Q22) Write a C program to check whether a number is divisible by 5 and 11 or not.</p>
+<p>Q23) Write a C program to input angles of a triangle and check whether triangle is valid or not.</p>
+<p>Q24)
+    Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following: <br>
+
+    Percentage >= 90% : Grade A <br>
+    Percentage >= 80% : Grade B <br>
+    Percentage >= 70% : Grade C <br>
+    Percentage >= 60% : Grade D <br>
+    Percentage >= 40% : Grade E <br>
+    Percentage < 40% : Grade F
+
+
+</p>
+
+
+<p> Q25)
+    Write a C program to input basic salary of an employee and calculate its Gross salary according to following: <br>
+    Basic Salary <= 10000 : HRA = 20%, DA = 80% <br>
+    Basic Salary <= 20000 : HRA = 25%, DA = 90% <br>
+    Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+</p>
+
+
+
+
+</div>
+<br>
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <p> <b> &#10028; Short Hand If...Else (Ternary Operator): </b>There is also a short-hand if else, which is known as the ternary operator because it consists of three operands. </p>
+    <p><b>Syntax:</b></p>
+    <p>variable = (condition) ? expressionTrue : expressionFalse;</p>
+
+    <p> <b>Example :-</b></p>
+   
+<pre>
+<code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int time = 20;
+    (time < 18) ? printf("Good day.") : printf("Good evening.");
+    return 0;
+} 
+</code>
+</pre> 
+<p><b>Output :- </b></p>
+<p>Good evening.</p>
+</div>
+
+
+<br>
+<br>
+<br>
+
+                            
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="SwitchStatement" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Switch Statement in C</u></h2>
+                            <p><b> &#10028; </b> In C, the switch case statement is used for executing one condition from multiple conditions. It is similar to an <span style="color: rgb(115, 2, 7);">if-else-if ladder</span> .  </p> 
+                             
+                            
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Syntax :</b></p>
+   
+<pre>
+<code class="language-java">
+switch (expression) {
+    case x:
+        // code block
+        break;
+    case y:
+        // code block
+        break;
+    default:
+        // code block
+    }
+</code>
+</pre> 
+</div>
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int day = 4;
+    
+    switch (day) {
+    case 6:
+      printf("Today is Saturday");
+      break;
+    case 7:
+      printf("Today is Sunday");
+      break;
+    default:
+      printf("Looking forward to the Weekend");
+    }
+    
+    return 0;
+} 
+
+</code>
+</pre>
+<p><b> Output :- </b></p>
+<p> Looking forward to the Weekend</p>
+</div> 
+
+
+
+
+<br>
+<br>
+<br>
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="WhileLoop" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>C While Loop</u></h2>
+                            <p><b> &#10028;  While Loop :- </b>The while loop loops through a block of code as long as a specified condition is <span style="color: rgb(115, 2, 7);">true</span> : </p>
+
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Syntax:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+while (condition) {
+    // code block to be executed
+    }</code>
+                            </pre> 
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                                <p> <b>Example</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 0;
+    
+    while (i < 5) {
+        printf("%d\n", i);
+        i++;
+    }
+    
+    return 0;
+} </code>
+                            </pre> 
+                            <p><b> Output :- </b></p>
+                            <p>0</p>
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            </div>
+
+                            <br>
+                            <br>
+
+
+                             
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="Do/WhileLoop" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>The Do/While Loop</u></h2>
+                            <p> <b> &#10028; </b> This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+                       
+                                 
+
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b> Syntax:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+do {
+    // code block to be executed
+    }
+while (condition);            
+                            </code>
+                            </pre> 
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+#include &lt;stdio.h&gt;
+int main() {
+    int i = 0;
+    
+    do {
+      printf("%d\n", i);
+      i++;
+    }
+    while (i < 5);
+    
+    return 0;
+}</code>
+                            </pre> 
+                            <p> <b> Output :-  </b></p>
+                                <p>0</p>
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                                <p>4</p>
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+                       </div>
         
                     </div> 
                 </div>
