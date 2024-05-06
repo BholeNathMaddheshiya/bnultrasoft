@@ -1809,12 +1809,117 @@ my_function(x="Mango",z="Banana",y="Apple")
                   <p> Q142) WAP to create a function for that takes a number as a parameter and checks whether the number is prime or not.</p>
                   <p> Q143) WAP to create a function to find the maximum of three numbers must be user input.</p>
                 </div>
+                <br>             
                 <br>
-             
-                <br>
-               
+
+
+
+                <div class="w3-container  w3-sand w3-round-xlarge">
+                    <p> <b>Arbitrary Keyword Arguments, **kwargs </b></p>
+
+                    <p> <b>Example:</b></p>
                    
+                <pre>
+                <code class="language-java">
+def my_function(**fruits):
+    print("I like to eat " + fruits["y"])
+
+my_function(x = "Apple", y = "Pineapple")</code>
+                </pre>
+                <p><b> Output:-</b></p> 
+                <p> I like to eat Pineapple.</p>
                 </div>
+                <br>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+                    <p> <b> &#10028; Default Parameter Value : </b>If we call the function without argument, it uses the default value:</p>
+
+                    <p> <b>Example:</b></p>
+                   
+                <pre>
+                <code class="language-java">
+def my_function(country = "Norway"):
+    print("I am from " + country)
+
+my_function("Sweden")
+my_function("India")
+my_function() # target default parameter
+my_function("Brazil")
+                </code>
+                </pre> 
+                <p><b>Output :-</b></p>
+                <p>I am from Sweden</p>
+                <p>I am from India</p>
+                <p>I am from Norway</p>
+                <p>I am from Brazil</p>
+                </div>
+                <br>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Passing a List as an Argument:</b> You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.</p>
+                   
+                <pre>
+                <code class="language-java">
+def my_function(food):
+    for x in food:
+         print(x)
+
+fruits = ["apple", "banana", "cherry"]
+
+my_function(fruits)
+                </code>
+                </pre> 
+                <p><b>Output</b></p>
+                <p> apple</p>
+               <p>banana</p>
+  <p>cherry</p>
+
+
+                </div>
+
+                <br>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+                    <p><b>Return Values :</b>
+                        To let a function return a value, use the return statement:</p>
+
+                    <p> <b>Create a constant.py:</b></p>
+                   
+                <pre>
+                <code class="language-java">
+def my_function(x):
+    return 5 * x
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+                </code>
+                </pre> 
+                <p><b>Output :-</b></p>
+                <p>15</p>
+                <p>25</p>
+                <p>45</p>
+                </div>
+                <br>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Labwork :-</b></p>
+                    <p> Q144) WAP to create a function to sum all the numbers in a list.</p>
+                    <p>Q145) WAP to create a  function to multiply all the numbers in a list.</p>
+                   <p> Q146) WAP to create a function to calculate the factorial of a number. The function accepts the number as an argument.</p>
+                   <p> Q147) WAP to create a function to print the even numbers from a given list.</p>
+                   <p> Q148) WAP to create a function to print the largest item from a given list. </p>
+                   <p> Q149) WAP to create a function that inputs a number and prints the multiplication table of that number.</p>
+                  <p> Q150) WAP a function to calculate power of a number raised to other : Eg a <sup>b</sup></p> a and b must be by the user.
+                 </div>
+
+
+
+
+
+
+
+
+                <br>             
+                <br></div>
 
             </div> 
         </div>
