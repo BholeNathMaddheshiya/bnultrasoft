@@ -69,6 +69,9 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#SwitchStatement"> Switch Statement</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WhileLoop">WhileLoop</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Do/WhileLoop">The Do/While Loop</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CForLoop">C For Loop</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#InfiniteLoopinC">Infinite Loop in C</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Arrays">Arrays in C</a> 
 
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
@@ -1539,6 +1542,21 @@ int main() {
                                 <p>3</p>
                                 <p>4</p>
                             </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Labwork :</b></p>
+                                <p>Q26) Wap in C Lang to print your name 10 times by using Do/While loop. </p>
+   <p>Q27) WAP in C Lang to print the sum of all natural number by user input
+    by using while loop.</p>
+    <p>Q28) WAP in C Lang to print the all even number upto n term, n should taken by user by using while Loop. </p>                            
+
+ <p> Q29) WAP in C Lang to print the all odd number upto n term, n should taken by user by using Do/while Loop.</p>
+
+
+
+
+                                </div>
 
                             <br>
                             <br>
@@ -1552,6 +1570,269 @@ int main() {
         
         
         </section> 
+
+        <section id="CForLoop" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>C For Loop</u></h2>
+                            <p><b> &#10028;  C For Loop  </b> : A for loop in C is a control structure that is used to run a block of instructions multiple times until a certain condition fails.</p>
+                              <p> <b> Syntax : </b></p>
+                               <p> for (expression 1; expression 2; expression 3) { <br>
+                                // code block to be executed <br>
+                              }</p> 
+
+                              <br>
+                              <br>
+                              <p>   <b>Expression 1</b> is executed (one time) before the execution of the code block. </p>
+                             <p> <b>Expression 2 </b>  defines the condition for executing the code block.</p>
+                            <p> <b>Expression 3 </b> is executed (every time) after the code block has been executed.</p>
+                             <br>
+                             <br>
+                             <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i;
+    
+    for (i = 0; i < 5; i++) {
+        printf("%d\n", i);
+    }
+    
+    return 0;
+} </code>
+                            </pre>
+            
+            </div> 
+            <br>
+            <br>
+            <h2 class="w3-panel w3-center"><u>C Nested Loops</u></h2>
+            <p><b>  &#10028; Nested Loops : </b> It is also possible to place a loop inside another loop. This is called a nested loop.</p>
+         <p> <b> &#x21db; </b>The <span style="color: rgb(115, 2, 7);">"inner loop"</span>  will be executed one time for each iteration of the <span style="color: rgb(115, 2, 7);">"outer loop"</span>.</p>
+
+
+         <div class="w3-container  w3-sand w3-round-xlarge">
+
+            <p> <b>Example :</b></p>
+           
+        <pre>
+        <code class="language-java">
+#include &lt;stdio.h&gt;
+int main() {
+int i, j;
+
+// Outer loop
+for (i = 1; i <= 2; ++i) {
+  printf("Outer: %d\n", i);  // Executes 2 times
+
+  // Inner loop
+  for (j = 1; j <= 3; ++j) {
+    printf(" Inner: %d\n", j);  // Executes 6 times (2 * 3)
+  }
+
+ }
+
+}
+</code>
+        </pre>
+    <p> <b> Output :-</b></p>
+    <p> Outer: 1</p>
+     <p>  Inner: 1</p>
+    <p>Inner: 2</p>
+     <p>Inner: 3</p>
+    <p> Outer: 2</p>
+    <p>  Inner: 1</p>
+     <p>Inner: 2</p>
+    <p>Inner: 3</p>
+    
+        </div>
+
+
+
+                            <br>
+
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+        <section id="InfiniteLoopinC" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Infinite Loop in C</u></h2>
+                       
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                             
+
+                                <p> <b>Syntax :</b> for loop Infinite</p>
+                               
+                            <pre>
+                            <code class="language-java">
+for(; ;)  
+{  
+    // body of the for loop.  
+}  
+                            </code>
+                            </pre>
+            
+            </div> 
+
+            <br>
+            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                <p> <b>Example :</b> for loop Infinite</p>
+               
+            <pre>
+            <code class="language-java">
+#include &lt;stdio.h&gt;
+int main() {
+    for(;;)  
+    {  
+      printf("Hello World");  
+    }  
+ return 0;
+}</code>
+            </pre> 
+            </div>
+            <br>
+            <br>
+
+         
+            
+        
+            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                <p> <b>Syntax :</b> while loop Infinite</p>
+               
+            <pre>
+            <code class="language-java">
+#include &lt;stdio.h&gt;
+int main() {
+    while(1)  
+    {  
+       // body of the loop..  
+    }   
+ return 0;
+}</code>
+            </pre> 
+            </div>
+            <br>
+            <br>
+
+            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+               
+
+                <p> <b>Example :</b></p>
+               
+            <pre>
+            <code class="language-java">
+#include &lt;stdio.h&gt;
+int main()  
+{  
+  int i=0;  
+  while(1)  
+  {  
+      i++;   
+      printf("i is :%d",i);  
+  }  
+return 0;  
+} </code>
+            </pre>
+            </div>
+        
+
+
+            <br>
+            <br>
+
+            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                <p> <b>Syntax :</b>Do/While loop Infinite</p>
+               
+            <pre>
+            <code class="language-java">
+#include &lt;stdio.h&gt;
+int main() {
+    do  
+    {  
+        // body of the loop..  
+    }while(1);  
+ return 0;
+}</code>
+            </pre> 
+            </div>
+            <br>
+            <br>
+
+            <div class="w3-container  w3-sand w3-round-xlarge">
+               
+
+                <p> <b>Example :</b> Do/While loop Infinite</p>
+               
+            <pre>
+            <code class="language-java">
+#include &lt;stdio.h&gt;
+int main()  
+{  
+    do  
+    {  
+        printf("Hello\n");   
+    }while(1);   
+  return 0;  
+} </code>
+            </pre>
+            </div>
+            <br>
+
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        <section id="Arrays" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Arrays in C</u></h2>
+                            <p><b> &#10028; Arrays : </b>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value. </p>
+                              <p> <b> &#x21db; </b> To create an array, define the data type <span style="color: rgb(115, 2, 7);">(like int)</span>  and specify the name of the array followed by <span style="color: rgb(115, 2, 7);">square brackets [].</span> </p> 
+                              <p> <b> &#x21db; </b>To insert values to it, use a comma-separated list, inside <span style="color: rgb(115, 2, 7);">curly braces</span>.</p> 
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
+
+        
        
        
  
