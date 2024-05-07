@@ -71,6 +71,7 @@
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#sqrt()">sqrt() Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#DateTimeFunctions">DateTime Method</a> 
            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Function">Function</a> 
+           <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonRecursion">Python Recursion</a> 
            
            
             
@@ -1920,6 +1921,111 @@ print(my_function(9))
 
                 <br>             
                 <br></div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="PythonRecursion" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python Recursion</u></h2>
+                    <p><b> &#10028; </b> Python also accepts function recursion, which means a defined function can call itself. </p> 
+                    <br>
+                    <p> <b> Syntax :</b></p>
+                  
+                    <img src="https://www.programiz.com/sites/tutorial2program/files/python-recursion-function.png" class="w3-round w3-center"  alt="image" style="width:100%">   
+                    <br>
+                    <br>
+
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example :</b> To print "Hello, World!" 10 times:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+def recursive_hello_world(n):
+    if n > 0:
+         print("Hello, World!")
+         recursive_hello_world(n - 1)
+
+recursive_hello_world(10)</code>
+                    </pre> 
+                    </div>
+                    <br>
+                    <br>
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                        <p> <b>Labwork: </b></p>
+                        <p> Q151) WAP to print "Your name" 20 times by using recursion.</p>
+                        <p> Q152) WAP to print factorial of a number by using recursion, the number should be accept by user. </p>
+                        <p> Q153) WAP to print the Fibonacci sequence using recursion.</p>
+                    </div>
+
+                    <br>
+                    <br>
+                    <h2 class="w3-panel w3-center"><u> Global and Local Variables in Python</u></h2>
+                    <br>
+                    <p> <b>  &#10028; Local Variables: </b>Local variables in Python are those which are initialized inside a function and belong only to that particular function. <span style="color: rgb(115, 2, 7);">It cannot be accessed anywhere outside the function.</span> </p>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example:</b>Creating and accessing local variables:</p>
+                       
+                    <pre>
+                    <code class="language-java">
+def f():
+    
+    # local variable
+    s = "Python"
+    print(s)
+
+f()
+print(s) #Trying to access the local variable.
+</code>
+                    </pre> 
+                    <p><b>Output :-</b></p>
+                    <p>Python </p>
+                    <p> NameError: name 's' is not defined</p>
+                    </div>
+                    <br>
+                    <br>
+                    <p> <b>  &#10028; </b>  Python Global variables are those which are not defined inside any function and have a global scope.</p>
+
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example:</b> Creating and accessing global variables: </p>
+                       
+                    <pre>
+                    <code class="language-java">
+# This function uses global variable s
+def f():
+    print("Inside Function:", s)
+
+# Global scope
+s = "I love Python"
+f()
+print("Outside Function:", s)</code>
+                    </pre>
+                    <p> <b> Output :-</b></p>
+                    <p>Inside Function: I love Python </p>
+                    <p>Outside Function: I love Python</p>
+
+                    </div>
+
+
+
+              <br>
+              <br>
+              <br>
+                </div>
 
             </div> 
         </div>

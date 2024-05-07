@@ -1821,7 +1821,84 @@ int main()
                             <p><b> &#10028; Arrays : </b>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value. </p>
                               <p> <b> &#x21db; </b> To create an array, define the data type <span style="color: rgb(115, 2, 7);">(like int)</span>  and specify the name of the array followed by <span style="color: rgb(115, 2, 7);">square brackets [].</span> </p> 
                               <p> <b> &#x21db; </b>To insert values to it, use a comma-separated list, inside <span style="color: rgb(115, 2, 7);">curly braces</span>.</p> 
-                       </div>
+                             <br>
+                             <br>
+                             <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Creating and Accessing array:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+#include &lt;stdio.h&gt;
+    int main()  
+    {  
+        int myNumbers[] = {25, 50, 75, 100}; // Creating array
+        printf("%d", myNumbers[3]);    // Accessing array
+        return 0;  
+    } </code>
+                            </pre> 
+                            <p> <b>Output:</b></p>
+                            <p>100</p>
+                            </div>
+                            <br>
+                            
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Changing Array Element:</b></p>
+   
+<pre>
+<code class="language-java">
+    #include &lt;stdio.h&gt;
+    int main()  
+    {  
+        int myNumbers[] = {25, 50, 75, 100}; // Creating array
+        printf("Before :%d", myNumbers[0]);
+
+        myNumbers[0] = 33; // Changing
+        printf("After :%d", myNumbers[0]); 
+        return 0;  
+    }
+</code>
+</pre>
+<p><b>Output :</b></p>
+<p>Before : 25</p> 
+<p>After : 33</p> 
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Loop Through an Array</b></p>
+   
+<pre>
+<code class="language-java">
+#include &lt;stdio.h&gt;
+int main()  
+{  
+    int myNumbers[] = {25, 50, 75, 100};
+            int i;
+
+            for (i = 0; i < 4; i++) {
+            printf("%d\n", myNumbers[i]);
+            } 
+            
+        return 0; 
+}
+</code>
+</pre> 
+<p> <b> Output :</b></p>
+<p>25 </p>
+<p>50</p>
+<p>75</p>
+<p>100</p>
+
+</div>
+<br>
+<br>
+                       
+                       
+                       
+                       
+                            </div>
         
                     </div> 
                 </div>
