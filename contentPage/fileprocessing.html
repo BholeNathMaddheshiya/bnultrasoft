@@ -54,6 +54,11 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#FileHandling">File Handling</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonFileOpen">Python File Open</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CloseFile">Python File Close</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonFileWrite">Python File Write</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#writelines">Python  writelines Method</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#tell()Method">Python tell() Method</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Fileseek()Method">Python seek() Method</a> 
+
                
             
             <!-- <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="#sec2">About</a>
@@ -354,6 +359,25 @@ for i in f:
                             <p> Hello, guys how are you?  Line 2</p>
                             <p> Hello, guys how are you?  Line 3</p>
                             </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+                             <p> <b>  &#10028; </b>The <span style="color: rgb(115, 2, 7);">readlines()</span>  method returns a list containing each line in the file as a list item.</p>
+                             <p> <b>Syntax : </b>file.readlines(hint) </p>
+                             <p> <b> Note:- </b>Hint is Optional. If the number of bytes returned exceed the hint number, no more lines will be returned. <br>  <span style="color: rgb(115, 2, 7);"> Default value is  -1, which means all lines will be returned.</span></p>
+                             <p> <b>Example :-</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+f = open("file.txt")
+f1 = open("file.txt")
+
+print(f.readlines())
+
+#Do not return the next line if the total number of returned bytes are more than 33
+print(f1.readlines(33))            
+                            </code>
+                            </pre> 
+                            </div>
 
 
 
@@ -411,6 +435,211 @@ f.close()</code>
         
         
         </section> 
+
+        
+<section id="PythonFileWrite" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python File Write</u></h2>
+               <p> <b> Write to an Existing File :</b></p>
+                 <p>  To write to an existing file, you must add a parameter to the open() function:
+                </p> 
+                <p> <span style="color: rgb(115, 2, 7);"><b>"a"</b> - Append - </span> will append to the end of the file. </p>  
+                <p><span style="color: rgb(115, 2, 7);"> <b>"w" </b> - Write -</span>  will overwrite any existing content. </p>  
+                    
+                    
+                  <br>  
+
+                  <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Example :</b> Append content to the existing file. <span style="color: rgb(115, 2, 7);">(By using : 'a')</span> </p>
+                   
+                <pre>
+                <code class="language-java">
+f = open("file.txt","a")
+f.write("Now the file has more content!")
+f.close()
+
+f=open("file.txt")
+print(f.read())</code>
+</pre> 
+                <p> <b> Output :-</b></p>
+<p> This is old text. Now the file has more content!</p>
+                </div>
+                <br>
+                  <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b>Example:</b> Overwrite the content (Delete the all old content and add new content) <span style="color: rgb(115, 2, 7);">(By using : 'w')</span></p>
+                   
+                <pre>
+                <code class="language-java">
+f = open("file.txt","w")
+f.write("Woops! I have deleted the content!")
+f.close()
+
+f=open("file.txt")
+print(f.read())</code>
+                </pre> 
+                <p><b> Output :-</b></p>
+                <p> Woops! I have deleted the content!</p>
+                </div>
+                <br>
+                    
+
+ 
+                  
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="writelines" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python File writelines() Method</u></h2>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example :</b> Open the file with "a" for appending, then add a list of texts to append to the file: </p>
+                        <p> <b>&#10028; Note:</b> If not in list then you will get error:  <span style="color: rgb(115, 2, 7);"><b> TypeError: </b></span> </p>
+                       
+                    <pre>
+                    <code class="language-java">
+f = open("file.txt","a")
+f.writelines(["This text is added!", "by writeline method."])
+
+f = open("file.txt","r")
+print(f.read())    
+                    </code>
+                    </pre> 
+                    </div>
+                    <br>
+                    <div class="w3-container  w3-sand w3-round-xlarge">
+   <p> <b> &#10028; </b> "w": The file will be emptied before the texts will be inserted at the current file stream position.</p>
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+f = open("file.txt","w")
+f.writelines(["This text is added!", "by writeline method."])
+
+f = open("file.txt","r")
+print(f.read())</code>
+                    </pre> 
+                    </div>
+                     <br>
+                     <br>
+                    
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+
+<section id="tell()Method" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python File tell() Method</u></h2>
+                    
+                     <p> <b>&#10028; </b> The <span style="color: rgb(115, 2, 7);">tell() method</span>  returns the current file position in a file stream.</p>
+
+                     <br>
+                     <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example:</b> Return the current file position after reading the first line.</p>
+                       
+                    <pre>
+                    <code class="language-java">
+f = open("file.txt")
+print(f.readline())
+print(f.tell())    
+                    </code>
+                    </pre>
+                    <p> <b>Output :- </b></p>
+                    <p> Thisisline1</p>
+                    <p>13</p>
+                    </div>
+                    <br>
+ 
+                        
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+<section id="Fileseek()Method" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python File seek() Method</u></h2>
+                    <p> <b> &#10028; </b>The <span style="color: rgb(115, 2, 7);">seek() method</span>  sets the current file position in a file stream.</p>
+                    <p> <b>  &#10028;</b> The <span style="color: rgb(115, 2, 7);">seek() method</span>  also returns the new postion.</p>
+
+                     <br>
+                     <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b>Example :</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+f = open("file.txt")
+f.seek(4)
+print(f.readline())
+print(f.seek(4)) # Return the new position:
+                    </code>
+                    </pre>
+                    <p> <b> Output :-</b> </p>
+                    <p>isline1 </p>
+                    <p>4  </p>
+
+
+                   
+                    </div>
+               
+                   
+                    <br>
+                    <br>
+
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+
         
 
 
