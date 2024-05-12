@@ -58,6 +58,7 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#writelines">Python  writelines Method</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#tell()Method">Python tell() Method</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Fileseek()Method">Python seek() Method</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CommandLineArguments">Command Line Arguments</a> 
 
                
             
@@ -639,6 +640,107 @@ print(f.seek(4)) # Return the new position:
 
 </section> 
 
+<section id="CommandLineArguments" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Python Command Line Arguments</u></h2>
+                    <p><b> &#10028; Python Command Line Arguments : </b> Python Command Line Arguments provides a convenient way to accept some information at the command line while running the program. </p>
+                    <p> <b> &#x21db; </b>To run a Python program, we execute the following command in the command prompt terminal of the operating system. For example, in windows, the following command is entered in Windows command prompt terminal.</p>
+                    <p> <b> Note 1:</b> Command Line Arguments return in the form of <span style="color: rgb(115, 2, 7);"> List.</span></p> 
+                    <p> <b> Note 2: </b> The list elements are in <span style="color: rgb(115, 2, 7);"> string</span>.</p>
+                    <br>
+                     <div class="w3-container  w3-sand w3-round-xlarge">
+
+                        <p> <b> Q154)</b> WAP to display number the list of  command line arguments or length of command line arguments .</p>
+
+                        <p> <b>Solution:</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+from sys import argv
+
+print("The no. of command line argument :", len(argv))
+print("The list of command line arguments :", argv)</code>
+                    </pre> 
+                    <p> <b>Output : </b></p>
+                    <img src="content/img/python/commandline.png" class="w3-round w3-center"  alt="image" style="width:100%">   
+                    </div>
+
+                    <br>
+                   
+                    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                        <p> <b> Q155)</b> WAP to print all command line arguments only which is entered by user.</p>
+
+                        <p> <b>Solution:</b></p>
+                       
+                    <pre>
+                    <code class="language-java">
+from sys import argv
+
+print("The list of command line arguments :", argv[1:])</code>
+                    </pre> 
+                    <p> <b>Output : </b></p>
+                    <p> python Q155.py 12 34 56 67 </p>
+                    <p>The list of command line arguments : ['12', '34', '56', '67']  </p>
+                      
+                </div>
+                <br>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+
+                    <p> <b> Q156)</b> WAP to print sum of all   command line arguments only which is entered by user.</p>
+
+                    <p> <b>Solution:</b></p>
+                   
+                <pre>
+                <code class="language-java">
+from sys import argv
+s=0
+args = argv[1:]
+for i in args:
+    s=s+int(i)
+print("The sum of all arguments :", s)</code>
+                </pre> 
+                <p> <b>Output : </b></p>
+                <p> python Q156.py 12 34 56 67 </p>
+                <p>The sum of all arguments : 169 </p>
+                  
+            </div>
+            <br>
+            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                <p> <b>Labwork :</b></p>
+                <p> <b>Q157) </b> WAP to print 5 colors name by command line argument. </p>
+                <p> <b> Hint :</b></p>
+                <p>  python Q157.py Blue Black Red Yellow Green</p>
+                <p>Your color names are : </p>
+                <p>  Your entered color 1 is Blue </p>
+                <p> Your entered color 2 is Black</p>
+                <p>Your entered color 3 is Red </p>
+                <p>       Your entered color 4 is Yellow</p>
+            <p>Your entered color 5 is Green </p>
+                
+            </div>
+
+
+
+                <br>
+                <br>
+
+
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
 
         
 
