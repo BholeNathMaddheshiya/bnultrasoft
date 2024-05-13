@@ -74,6 +74,7 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Arrays">Arrays in C</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ClanguageKeywords">C language Keywords</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#InterfacingwithArduinoIDE">Interfacing with Arduino IDE</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#BlinkingLED">Blinking LED</a> 
 
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
@@ -1995,18 +1996,7 @@ int main()
                              <p> <b>&#10028; AREF Pin:</b>   This is an analog reference pin of the Arduino board. It is used to provide a reference voltage from an external power supply.
                              </p>
                              
-                             
-                             
-                            
-                            
-                            
-                            
-                            
-                           
-
-
-                            
-                            
+                               
                             
                             <br>
                        </div>
@@ -2018,6 +2008,169 @@ int main()
         
         
         </section>
+
+        <section id="BlinkingLED" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Interfacing Light Emitting Diode(LED)- Blinking LED:</u></h2>
+                       
+                         
+                         <p><b>&#x21db;  </b>This use case will be used for familiarizing the GPIO <span style="color: rgb(115, 2, 7);">(General Purpose Input / Output)</span>  peripheral of atmega micro
+                            controller. The LED will be used as a device and GPIO will work as output mode. </p> 
+
+                            
+                            
+                            
+                            
+                            <ul class="w3-ul"> 
+                                <li> <b>  &#10028; int : </b>  </li>
+                                <li> &#x21db; Integers are your primary data-type for number storage.</li>
+                                <li> &#x21db; On the Arduino Uno (and other ATmega based boards) an int stores a <span style="color: rgb(115, 2, 7);"> 16-bit (2-byte)</span> value. </li>
+                                <li> &#x21db; This yields a range of <span style="color: rgb(115, 2, 7);">-32,768 to 32,767 (minimum value of -2^15 and a maximum value of (2^15) - 1)</span> . </li>
+                             </ul>
+
+
+  <br>
+  <ul class="w3-ul">
+    <li> <b>  &#10028; Digital I/O </b> </li>
+    <li> <span style="color: rgb(115, 2, 7);"> <b> pinMode() </b></span> </li>
+    <li> <span style="color: rgb(115, 2, 7);"> <b>   digitalWrite() </b> </span></li>
+    <li>  <span style="color: rgb(115, 2, 7);"> <b> digitalRead()</b> </span> </li>
+  </ul>
+          <br>
+     
+  <div class="w3-container w3-pale-yellow w3-round-xlarge">
+    <p> &#10028; <span style="color: rgb(115, 2, 7);"> <b> pinMode() </b></span> It is used to configures the specified pin to behave either as an input or an output.</p>
+    <p> <b>  Syntax : </b></p>
+    <p>pinMode(pin, mode); </p>
+    
+    <p> <b> Parameters : </b></p>
+    <p><span style="color: rgb(115, 2, 7);">pin:</span> the Arduino pin number to set the mode of. </p>
+    <p><span style="color: rgb(115, 2, 7);">mode:</span>  INPUT, OUTPUT, or INPUT_PULLUP  </p>
+    <p> <b> Returns :</b>Nothing</p>
+    
+
+
+  </div>
+ <br>
+ <br>
+  <div class="w3-container w3-sand w3-round-xlarge">
+    <p> &#10028; <span style="color: rgb(115, 2, 7);"> <b> digitalWrite() </b></span> Write a HIGH or a LOW value to a digital pin.</p>
+    <p> <b>  Syntax : </b></p>
+    <p>digitalWrite(pin, value); </p>
+    
+    <p> <b> Parameters : </b></p>
+    <p><span style="color: rgb(115, 2, 7);">pin:</span> the Arduino pin number. </p>
+    <p><span style="color: rgb(115, 2, 7);">value:</span>  HIGH or LOW  </p>
+    <p> <b> Returns :</b>Nothing</p>
+  <p> <b>Note: </b>: Its voltage will be set to the corresponding value:  <span style="color: rgb(115, 2, 7);">5V (or 3.3V on 3.3V boards) for HIGH, 0V (ground) for LOW</span> .</p>
+  </div>
+  <br>
+  <div class="w3-container w3-pale-yellow w3-round-xlarge">
+    <p> &#10028; <span style="color: rgb(115, 2, 7);"> <b> digitalRead()</b></span> Reads the value from a specified digital pin, either HIGH or LOW.</p>
+    <p> <b>  Syntax : </b></p>
+    <p>digitalRead(pin); </p>
+    
+    <p> <b> Parameters : </b></p>
+    <p><span style="color: rgb(115, 2, 7);">pin:</span> the Arduino pin number you want to read. </p>
+   
+    <p> <b> Returns :</b>HIGH or LOW</p>
+   </div>
+   <br>
+  <div class="w3-container w3-sand w3-round-xlarge">
+    <p> &#10028; <span style="color: rgb(115, 2, 7);"> <b> delay()</b></span> Pauses the program for the amount of time (in milliseconds) specified as parameter. (There are 1000 milliseconds in a second.).</p>
+    <p> <b>  Syntax : </b></p>
+    <p>delay(ms); </p>
+    
+    <p> <b> Parameters : </b></p>
+    <p><span style="color: rgb(115, 2, 7);">ms:</span> the number of milliseconds to pause. </p>
+   
+    <p> <b> Returns :</b>Nothing</p>
+   </div>
+ <br>
+ <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b> Default led (which is present on Arduino Board)</p>
+    <p> &#x21db; The  Default led is present in  pin number 13 which is represent by <span style="color: rgb(115, 2, 7);">LED_BUILTIN</span></p>
+   
+<pre>
+<code class="language-java">
+
+void setup() {
+    // put your setup code here, to run once:
+    pinMode(LED_BUILTIN, OUTPUT);
+    }
+    
+    void loop() {
+    // put your main code here, to run repeatedly:
+    digitalWrite(LED_BUILTIN,HIGH);
+    delay(1000);
+    digitalWrite(LED_BUILTIN,LOW);
+    delay(1000);
+    
+    }
+</code>
+</pre> 
+<p> <b> Note: </b>This program is for blinking Default led (builtin Led) which is delay by 1 second.</p>
+<hr style="background-color: black; height: 1px;">
+<pre>
+    <code class="language-java">
+    
+int ledPin=13; // Declaring pin 
+void setup() {
+    // put your setup code here, to run once:
+    pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+    // put your main code here, to run repeatedly:
+    digitalWrite(ledPin,HIGH);
+    delay(200);
+    digitalWrite(ledPin,LOW);
+    delay(200);
+
+}
+    </code>
+    </pre> 
+<p> <b> Note: </b>This program is for blinking Default led (builtin Led or pin 13) which is delay by 200 milliseconds.</p>
+
+</div>
+<br>
+<br>
+
+ <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Labwork:</b></p>
+    <p> <b> Q1) </b>WAP to Blink default Light Emitting Diode(LED) on Arduino board with the
+        delay of 2 sec. </p>
+    <p> <b> Q2) </b>WAP to Blink default Light Emitting Diode(LED) on Arduino board with the
+        delay of 500 ms. </p>
+    <p> <b> Q3) </b>WAP to Blink LED which is pin number 13 on Arduino board with the Blink On 
+        delay of 1 sec and Blink Off delay of 200 ms. </p>
+
+</div>
+ 
+
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                        <p> <a href="https://www.arduino.cc/reference/en/" target="_blank"> Arduino programming language reference</a></p>    
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
         
 
         
