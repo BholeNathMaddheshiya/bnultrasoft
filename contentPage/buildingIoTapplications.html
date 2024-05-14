@@ -2142,7 +2142,7 @@ void loop() {
 <br>
 <br>
 
- <div class="w3-container  w3-sand w3-round-xlarge">
+ <div class="w3-container  w3-pale-yellow w3-round-xlarge">
 
     <p> <b>Labwork:</b></p>
     <p> <b> Q1) </b>WAP to Blink default Light Emitting Diode(LED) on Arduino board with the
@@ -2152,12 +2152,163 @@ void loop() {
     <p> <b> Q3) </b>WAP to Blink LED which is pin number 13 on Arduino board with the Blink On 
         delay of 1 sec and Blink Off delay of 200 ms. </p>
 
+
+       
+
+</div>
+
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+  
+
+    <p> <b>Example :</b> To blink External 1 led on pin number 11 with delay of 1 second.</p>
+     <ul class="w3-ul">
+        <li> <b> Component Required</b></li>
+         <li>&#10028;  1 × Breadboard</li>
+        <li> &#10028; 1 × Arduino Uno R3 </li> 
+        <li>&#10028; 1 × LED </li> 
+        <li>&#10028; 1 × 330Ω Resistor </li> 
+        <li>&#10028; 2 × Jumper Wires </li> 
+     </ul>
+
+    <br>
+    <p> <b>Example :- </b>
+    <a href="https://www.tinkercad.com/things/lcMGDCnEHus-fantabulous-jofo-krunk"> See Live Demo.</a> </p>
+   
+   
+<pre>
+<code class="language-java">
+int ledPin=11;
+void setup()
+{
+    pinMode(ledPin, OUTPUT);
+}
+
+void loop()
+{
+    digitalWrite(ledPin, HIGH);
+    delay(1000); // Wait for 1000 millisecond(s)
+    digitalWrite(ledPin, LOW);
+    delay(1000); // Wait for 1000 millisecond(s)
+}
+</code>
+</pre> 
+</div>
+
+<h3 class="w3-panel w3-center"> Example : To blink External 1 led on pin number 11 with delay of 1 second : <br><u> See Circuit Design </u></h3>
+
+<img src="https://csg.tinkercad.com/things/lcMGDCnEHus/t725.png?rev=1715689988727000000&s=&v=1&type=circuits" class="w3-round w3-center"  alt="image" style="width:100%">  
+
+
+<br>
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <p> <b>Example :</b> To blink External 3 leds on pin number 10, 11, 12 alternatively with delay of 1 second.</p>
+    <ul class="w3-ul">
+        <li> <b> Component Required</b></li>
+         <li> &#10028; 1 × Breadboard</li>
+        <li> &#10028; 1 × Arduino Uno R3 </li> 
+        <li>&#10028; 3 × LED </li> 
+        <li>&#10028; 3 × 330Ω Resistor </li> 
+        <li> &#10028; Jumper Wires </li> 
+     </ul>
+
+
+
+    <p> <b>Example:</b>  <a href="https://www.tinkercad.com/things/4O2iu3HFZQQ-3-leds-blink-on-pin-10-11-12-"> See Live Demo.</a></p>
+   
+<pre>
+<code class="language-java">
+    int ledPin10=10;
+    int ledPin11=11;
+    int ledPin12=12;
+    void setup()
+    {
+      pinMode(ledPin10, OUTPUT);
+      pinMode(ledPin11, OUTPUT);
+      pinMode(ledPin12, OUTPUT);
+    }
+    
+    void loop()
+    {
+      digitalWrite(ledPin10, HIGH);
+      delay(1000); 
+      digitalWrite(ledPin10, LOW);
+      delay(1000);
+      
+      digitalWrite(ledPin11, HIGH);
+      delay(1000); 
+      digitalWrite(ledPin11, LOW);
+      delay(1000);
+      
+      digitalWrite(ledPin12, HIGH);
+      delay(1000); 
+      digitalWrite(ledPin12, LOW);
+      delay(1000);
+      
+      
+    }
+
+</code>
+</pre>
+
+</div>
+<h3 class="w3-panel w3-center"> Example : To blink External 3 leds on pin number 10, 11, 12 alternatively with delay of 1 second:  <br> <u>See Circuit Design </u></h3>
+
+<img src="https://csg.tinkercad.com/things/4O2iu3HFZQQ/t725.png?rev=1715691906175000000&s=&v=1&type=circuits" class="w3-round w3-center"  alt="image" style="width:100%">  
+
+
+<br>
+<br>
+
+
+
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Labwork:</b></p>
+    <p> <b> Q4) </b> WAP to interface LED on pin no. 10 and blink  at the
+        delay of 5 ms.</p>
+    <p> <b> Q5) </b> WAP to interface two LEDs on pin no. 10,11 and blink alternatively at the
+        delay of 1 sec.</p>
+    <p> <b> Q6) </b> WAP to interface LEDs on pin no. 10,11,12,13 and blink alternatively at the
+        delay of 1 sec.</p>
+ 
+    <p> <b>  Q7) </b>WAP to run pattern(s) on LEDs connect at pins 10, 11, 12, 13 pattern example are:</p>
+
+<pre>
+    <code class="language-java">
+            
+a) on, off, on, off      b) on, off, off, off     
+   on, off, on, off         off, on, off, Off        
+   on, off, on, off         off, off, on, off        
+   on, off, on, off         off, off, off, on
+   
+   on/off -> 200ms          on/off -> 500ms 
+-----------------------------------------------------------
+
+c) on, on, off, off       d) on, on, off, off  
+   off, on, on, off          on, off, off, on
+   off, off, on, on          off, off, on, on
+                             on,  on,  on, off
+
+on->200ms / off->100ms       on->300ms / off->100ms  
+-----------------------------------------------------------
+
+e) on (200ms), on (200ms), Off (100ms), off (100ms)
+   on (100ms), on (100ms), Off (200ms), off (200ms) 
+   on (50ms), on (50ms), Off (100ms), off (100ms)
+   on (100ms), on (100ms), Off (50ms), off (50ms)
+
+    </code>
+    </pre> 
+
+
+
 </div>
  
 
-                 <br>
-                 <br>
-                 <br>
+               
                  <br>
                  <br>
                         <p> <a href="https://www.arduino.cc/reference/en/" target="_blank"> Arduino programming language reference</a></p>    
