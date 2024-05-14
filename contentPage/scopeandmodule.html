@@ -51,23 +51,8 @@
         </div>
         
         <div class="w3-bar-block  ">
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#pythonintroduction">Introduction of Python</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#technicalStrengthofPython">Technical Strength of Python</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonInterpreter">Python Interpreter</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#howtorunpython">Using CMD (Command Prompt)</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonComments">Python Comments</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonVariable">Python Variable</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonKeywords">Python Keywords</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonPrintFunction">Python Print Function</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonInputFunction">Python Input Function</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonDataType">Python DataType</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonConstants">Python Constants</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonLiteral">Python Literal</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonString">Python String</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonStringConcatenation">Python String Concatenation</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonFormatStrings">Python Format Strings</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonEscapeCharacter">Python Escape Character</a>
-           
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Scopeofobjects">Scope of objects and Names</a> 
+            
             
             
             <!-- <a class="w3-bar-item w3-button  w3-hover-white w3-animate-zoom" href="#sec2">About</a>
@@ -164,96 +149,130 @@
                       </div>
 
                       
-                    <!-- ------------Right hidden items----------- -->
+                 
    
 
         </div>
-        <!-- Page content header  End-->
 
-        <!-- Page content Body Start -->
-
-            
-
- <!-- Page content Coding part Start -->
-
-
-
-
-
-<!-- 
-Coding Part
-
-<section id="sec1" class="topPadding">
+        <section id="Scopeofobjects" class="topPadding">
             <div class="w3-container w3-panel">
                 <div data-aos="fade-right"  data-aos-duration="1000">
                     <div class="w3-white  w3-card w3-round-large   ">
-                        <h2 class="w3-panel w3-center">Example1</h2>
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Scope of objects and Names</u></h2>
+                       
 
-                         <div class=" w3-leftbar w3-border-pink w3-border w3-round-large ">
+                            <p> <b> &#10028; Namespaces :  </b> A namespace is a system that has a unique name for each and every object in Python. An object might be a variable or a method.</p>
+                              
+                            <p> <b> &#x21db; </b> So, the division of the word itself gives a little more information. Its Name <span style="color: rgb(115, 2, 7);">(which means name, a unique identifier)</span>  + <span style="color: rgb(115, 2, 7);">Space(which talks something related to scope)</span> .</p>
+                              <br>
+                              <h2 class="w3-panel w3-center"><u>Scope of Object and Names </u></h2>
+    <ul class="w3-ul">
+        <li>       &#x21db; The scope refers to the region in the program code where variables and names are accessible.
+        </li>
+        <li>  &#x21db; It also determines the visibility and lifetime of a variable in the program code.
+        </li>
+        <li> &#x21db;    Assigning a value, defining a function or class (using def or class) or importing module operation creates a name and its place in the code defines its scope.
+        </li>
+        <li>&#x21db;   The names or objects which are accessible are called in-scope. </li>
+        <li> &#x21db;    The names or objects which are not accessible are called out-of-scope.</li>
+        <li>   &#x21db;   The Python scope concept follows the LEGB (Local, Enclosing, Global and built-in) rule.
+        </li>
+        <li> &#x21db;  The scope concept helps to avoid the name collision and use of global names across the
+            programs. 
+            </li>
+        
+        
+        
+        
+         
+
+
+    </ul>
+
+    <p> Others names or objects come in existence as given:-</p>
+
+    <table class="w3-table-all">
+        <tr> <th>Operation </th> <th> Statement</th></tr>
+        <tr> <td> Assignment </td> <td> X=value </td></tr>
+        <tr> <td>Import Operation  </td> <td>import module </td> </tr>
+        <tr> <td>Function definitions  </td> <td>def fun( ) </td></tr>
+        <tr> <td>Arguments in the function </td> <td> def fun( x1, x2 , x3 )</td></tr>
+        <tr> <td> Class definition </td> <td>class abc : 
+        </td></tr>
+
+    </table>
+<br>
+<p> <b> Note:- </b>  On similar lines, the Python interpreter understands what exact method or variable one is trying to point to in the code, depending upon the namespace. Here, a name might be of any Python method or variable and space depends upon the location from where is trying to access a variable or a method.</p>
+<br>
+
+<p> In a Python program, there are four types of namespaces: </p>
+ <p> &#x21db; Built-In.</p>   
+ <p> &#x21db; Global. </p>
+ <p> &#x21db;  Enclosing.</p>
+ <p> &#x21db;  Local. </p>
+ <br>
+
+ <br> 
+    
+                
+ <img src="https://sp-uploads.s3.amazonaws.com/uploads/services/7613525/20230508071642_6458a1dab387e_legb_rule_in_pythonpage1.jpg" class="w3-round w3-center"  alt="image" style="width:100%">  
+   
+                            
+                            
+                            <h2 class="w3-panel w3-center"><u>Here’s a quick overview of what these terms mean: </u></h2>
+                            <p> <b> &#10028;  Local (or function) scope  </b> is the code block or body of any Python function or lambda expression. This Python scope contains the names that you define inside the function. These names will only be visible from the code of the function.</p>
+                            <p> <b> &#10028;  Enclosing (or nonlocal) scope  </b>is a special scope that only exists for nested functions. The names in the enclosing scope are visible from the code of the inner and enclosing functions.</p>
+                            <p> <b> &#10028;  Global (or module) scope </b> is the top-most scope in a Python program, script, or module. This Python scope contains all of the names that you define at the top level of a program or a module. Names in this Python scope are visible from everywhere in your code.</p>
+                            <p> <b> &#10028;  Built-in scope </b> is a special Python scope that's created or loaded whenever you run a script or open an interactive session. This scope contains names such as keywords, functions, exceptions, and other attributes that are built into Python. Names in this Python scope are also available from everywhere in your code. It’s automatically loaded by Python when you run a program or script.</p>
+                          <br>
+                          <br>
+                          <br>
+                          <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Example :</b></p>
                            
-<pre class="line-numbers" data-line="15-25">
-    <code class="language-java">
-      package com.example.webviewtest;
-      import androidx.appcompat.app.AppCompatActivity;
-      import android.os.Bundle;
-      import android.view.View;
-      import android.webkit.WebView;
-    
-      public class MainActivity extends AppCompatActivity {
-      private WebView webView;
-      @Override
-      protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-            webView=findViewById(R.id.webviewforhighlight);
-            webView.getSettings().setJavaScriptEnabled(true);
-            webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-            webView.loadUrl("file:///android_asset/prismjs_template.html");
-        }
-     }
-    
-    
-     x = "awesome"
-    
-     def myfunc():
-       x = "fantastic"
-       print("Python is " + x)
-     
-     myfunc()
-     
-     print("Python is " + x)
-    
-    
-    </code>
-    </pre>
-    
+                        <pre>
+                        <code class="language-java">
+var1 = 5   #var1 is in the global namespace
+def ABC( ):
+    var2 = 6    # var2 is in the local namespace
+    def XYZ( ):
+        var3 = 7  # var3 is in the nested local namespace</code>
+                        </pre> 
+                        </div>
+                        <br>
+                        <p> <b> Output :- </b></p>
+                        <p>  &#x21db; In this example, the var1 is declared in the global namespace because it is not enclosed
+                            inside any function. So it is accessible everywhere in the script. </p>
+                         <p>  &#x21db;   var2 is inside the ABC( ). So, it can be accessed only inside the ABC( ) and outside the
+                            function, it no longer exists.</p> 
 
-                         </div>
-
+                         <p>  &#x21db;  var3 also has a local scope, the function is nested and we can use var3 only inside XYZ( )
+                        </p>   
+                           
+                            
+                            
+                       </div>
+        
                     </div> 
                 </div>
             </div>
-
-
-
-</section> 
- -->
-
-         
-            
+        
+        
+        
+        </section> 
+        
+      
               
            
 
    
             
             
-            <!-- Page content Coding part Start -->
-
-
-        <!-- Page content Body Start -->
-
-
- <!-- Page Content End --> 
+           
  
  <script>
  
