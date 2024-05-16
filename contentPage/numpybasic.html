@@ -51,22 +51,7 @@
         </div>
         
         <div class="w3-bar-block  ">
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#pythonintroduction">Introduction of Python</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#technicalStrengthofPython">Technical Strength of Python</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonInterpreter">Python Interpreter</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#howtorunpython">Using CMD (Command Prompt)</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonComments">Python Comments</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonVariable">Python Variable</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonKeywords">Python Keywords</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonPrintFunction">Python Print Function</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonInputFunction">Python Input Function</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonDataType">Python DataType</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonConstants">Python Constants</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonLiteral">Python Literal</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonString">Python String</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonStringConcatenation">Python String Concatenation</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonFormatStrings">Python Format Strings</a>
-            <a class="w3-bar-item w3-button w3-hover-white  w3-animate-zoom w3-animate-fading" href="#PythonEscapeCharacter">Python Escape Character</a>
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#NumpyIntroduction">Introduction of Numpy</a> 
            
             
             
@@ -168,92 +153,95 @@
    
 
         </div>
-        <!-- Page content header  End-->
-
-        <!-- Page content Body Start -->
-
-            
-
- <!-- Page content Coding part Start -->
 
 
 
+        
+<section id="NumpyIntroduction" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
 
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Introduction to NumPy</u></h2>
+               
+                    
+                      <p> <b>What is NumPy? </b></p>
+    
+                     <ul class="w3-ul">
+                        <li>  &#10028; NumPy is a Python library used for working with arrays. </li>
+                        <li>  &#10028; NumPy was created in <span style="color: rgb(115, 2, 7);"> <b>  2005 by Travis Oliphant</b></span>. It is an open source project and you can use it freely.
+                        </li>
+                        <li>  &#10028; NumPy stands for Numerical Python. </li>
+                       
+                        <li>  &#10028;  The array object in NumPy is called <span style="color: rgb(115, 2, 7);">ndarray</span> , it provides a lot of supporting functions that make working with ndarray very easy.
+                        </li>
+                        <li>  &#10028; Arrays are very frequently used in  <span style="color: rgb(115, 2, 7);">data science</span>, where speed and resources are very important.
+                        </li>
 
-<!-- 
-Coding Part
+                        
 
-<section id="sec1" class="topPadding">
-            <div class="w3-container w3-panel">
-                <div data-aos="fade-right"  data-aos-duration="1000">
-                    <div class="w3-white  w3-card w3-round-large   ">
-                        <h2 class="w3-panel w3-center">Example1</h2>
+                     </ul>
+                     <br>
 
-                         <div class=" w3-leftbar w3-border-pink w3-border w3-round-large ">
-                           
-<pre class="line-numbers" data-line="15-25">
+                     <p> <b> Which Language is NumPy written in? </b></p>
+   <p> &#x21db; NumPy is a Python library and is written partially in Python, but most of the parts that require fast computation are written in <span style="color: rgb(115, 2, 7);">C or C++.</span> 
+                      
+   </p>
+                    
+
+<br>
+
+<p> <b> Installation of NumPy</b></p>
+<p>  &#x21db; If you have Python and PIP already installed on a system, then installation of NumPy is very easy.
+</p>
+ <p>  &#x21db;  Install it using this command: </p>
+ <pre>
     <code class="language-java">
-      package com.example.webviewtest;
-      import androidx.appcompat.app.AppCompatActivity;
-      import android.os.Bundle;
-      import android.view.View;
-      import android.webkit.WebView;
-    
-      public class MainActivity extends AppCompatActivity {
-      private WebView webView;
-      @Override
-      protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-            webView=findViewById(R.id.webviewforhighlight);
-            webView.getSettings().setJavaScriptEnabled(true);
-            webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-            webView.loadUrl("file:///android_asset/prismjs_template.html");
-        }
-     }
-    
-    
-     x = "awesome"
-    
-     def myfunc():
-       x = "fantastic"
-       print("Python is " + x)
-     
-     myfunc()
-     
-     print("Python is " + x)
-    
-    
-    </code>
-    </pre>
-    
+C:\Users\Your Name>pip install numpy</code>
+    </pre> 
 
-                         </div>
+<br>
+<br>
+<p> <b>  What is PIP?</b> </p>
+ <p> &#x21db; PIP is a package manager for Python packages, or modules if you like. </p>
+<p> <b> Note:</b>  If you have Python version 3.4 or later, PIP is included by default.</p>
+<br>
+<br>
+<p> <b>What is a Package? </b></p>
+<p>&#x21db; A package contains all the files you need for a module. </p>
+<p>&#x21db; Modules are Python code libraries you can include in your project. </p>
 
-                    </div> 
-                </div>
-            </div>
+
+
+
+<br>
+<br>
+
+<p> <b> How to  Import NumPy ?</b></p>
+<p> &#x21db; Once NumPy is installed, import it in your applications by adding the import keyword: </p>
+
+<pre>
+    <code class="language-java">
+import numpy</code>
+    </pre> 
+<br>
+<br>
+
+
+
+
+               </div>
+
+            </div> 
+        </div>
+    </div>
 
 
 
 </section> 
- -->
-
-         
-            
-              
-           
-
-   
-            
-            
-            <!-- Page content Coding part Start -->
-
-
-        <!-- Page content Body Start -->
-
-
- <!-- Page Content End --> 
+    
  
  <script>
  

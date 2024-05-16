@@ -52,6 +52,7 @@
         
         <div class="w3-bar-block  ">
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Scopeofobjects">Scope of objects and Names</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ModuleBasics">ModuleBasics</a> 
             
             
             
@@ -255,6 +256,223 @@ def ABC( ):
                            
                             
                             
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+
+
+        <section id="ModuleBasics" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Module Basics</u></h2>
+                            <p> <b> &#10028;  What is a Module?</b></p>
+ <p> &#x21db;
+    A Python module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include runnable code. </p>
+                            
+<p> <b> &#10028; Create a Module : </b> </p>
+<p>  &#x21db;
+    To create a module just save the code you want in a file with the file extension <span style="color: rgb(115, 2, 7);"> <b>.py: </b></span>  </p>
+ <br>
+ <br>
+ <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b> &#10028; Example:</b>  Save this code in a file named  <span style="color: rgb(115, 2, 7);">mymodule.py</span> </p>
+   
+<pre>
+<code class="language-java">
+def greeting(name):
+    print("Hello, " + name)
+</code>
+</pre> 
+</div>
+
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b> &#10028; Use a Module:</b> Now we can use the module we just created, by using the <span style="color: rgb(115, 2, 7);">import</span>  statement:</p>
+
+    <p> <b> Example : </b> Import the module named mymodule, and call the greeting function:</p>
+   
+<pre>
+<code class="language-java">
+import mymodule
+mymodule.greeting("Python")
+</code>
+</pre> 
+
+<p> <b>Note : </b> When using a function from a module, use the syntax: <span style="color: rgb(115, 2, 7);"> module_name.function_name</span>.</p>
+</div>
+<br>
+<hr style="height: 1px; background-color: brown;">
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <p> <b>  &#10028;  Variables in Module </b></p>
+  <p>The module can contain <span style="color: rgb(115, 2, 7);">functions</span> , as already described, but also variables of all types <span style="color: rgb(115, 2, 7);">(arrays, dictionaries, objects etc)</span> :
+</p>
+
+    <p> <b>Example :</b> Save this code in the file <span style="color: rgb(115, 2, 7);">mymodule.py</span>  </p>
+   
+<pre>
+<code class="language-java">
+person1 = {
+        "name": "John",
+        "age": 32,
+        "country": "Norway"
+      }
+</code>
+</pre> 
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+    
+
+
+    <p> <b>Example:</b> Import the module named mymodule, and access the <span style="color: rgb(115, 2, 7);">person1</span>  dictionary.</p>
+   
+<pre>
+<code class="language-java">
+import mymodule
+
+a = mymodule.person1["name"]
+print(a)
+
+</code>
+</pre> 
+</div>
+<br>
+<hr style="height: 1px; background-color: brown;">
+<br>
+<br>
+<br>
+<h2 class="w3-panel w3-center"><u>Module Files as Namespaces</u></h2>
+
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <p> <b>  &#10028; Re-naming a Module : </b>You can create an alias when you import a module, by using the <span style="color: rgb(115, 2, 7);">as</span>  keyword:</p>
+
+    <p> <b>Example:</b> Create an alias for mymodule called <span style="color: rgb(115, 2, 7);">mx</span> </p>
+   
+<pre>
+<code class="language-java">
+import mymodule as mx
+
+a = mx.person1["age"]
+print(a)
+</code>
+</pre> 
+</div>
+
+<br>
+<hr style="height: 1px; background-color: brown;">
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+   
+    <p> <b>  &#10028;  Using the dir() Function : </b>  There is a built-in function to list all the function names (or variable names) in a module.
+    </p>
+
+    <p> <b>  &#10028; Example :</b> List all the defined names belonging to the <span style="color: rgb(115, 2, 7);">math</span>  module.</p>
+   
+<pre>
+<code class="language-java">
+import math
+
+x = dir(math)
+print(x)
+</code>
+</pre> 
+</div>
+<br>
+<hr style="height: 1px; background-color: brown;">
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <p> <b>Import From Module : </b> You can choose to import only parts from a module, by using the <span style="color: rgb(115, 2, 7);">from</span>  keyword.</p>
+    
+   
+   
+
+    <p> <b> Example:</b>  The module named <span style="color: rgb(115, 2, 7);">mymodule</span>  has one <span style="color: rgb(115, 2, 7);">function</span>  and one <span style="color: rgb(115, 2, 7);">dictionary</span> :</p>
+   
+<pre>
+<code class="language-java">
+def greeting(name):
+    print("Hello, " + name)
+  
+  person1 = {
+    "name": "John",
+    "age": 36,
+    "country": "Norway"
+  }
+
+</code>
+</pre> 
+</div>
+
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+    
+
+
+    <p> <b>Example:</b> Import only the person1 dictionary from the module:</p>
+   
+<pre>
+<code class="language-java">
+from mymodule import person1
+print (person1["age"])
+</code>
+</pre> 
+
+<p> <b>Note: </b> When importing using the <span style="color: rgb(115, 2, 7);">from</span>  keyword, do not use the module name when referring to elements in the module. <br> Example: <span style="color: rgb(115, 2, 7);">person1["age"]</span> , not <span style="color: rgb(115, 2, 7);"> <s>mymodule.person1["age"]</s></span> otherwise you will get Error:-  <span style="color: rgb(115, 2, 7);"> <b>NameError:</b></span>  </p>
+</div>
+
+<br>
+<br>
+<br>
+<h2 class="w3-panel w3-center"><u>Reloading Modules</u></h2>
+ <p> <b> &#x21db;</b> If you’ve altered the module source file using an outside editor and want to test the updated version without leaving the Python interpreter, this is helpful.</p>                      
+  <br>
+  <p> <b> &#x21db;
+     For above 2. x and <=Python3.3 </b></p>
+  <p>import imp </p>
+  <p> imp.reload(module)</p>
+  <p> <b> &#x21db;
+    Reloading modules for >=Python3.4 and above </b></p>
+ <p>import importlib</p>
+ <p>importlib.reload(module) </p>
+
+ <br>
+ <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+>>>import mymodule  
+>>>import importlib
+>>>importlib.reload(mymodule)
+>>>print (mymodule.person2["age"])
+</code>
+</pre> 
+</div>
+
+
+
+ 
+ 
+ <br>             
+                <br>             
                        </div>
         
                     </div> 
