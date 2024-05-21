@@ -73,6 +73,7 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#InfiniteLoopinC">Infinite Loop in C</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#Arrays">Arrays in C</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ClanguageKeywords">C language Keywords</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#CFunctions">C Functions</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#InterfacingwithArduinoIDE">Interfacing with Arduino IDE</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#BlinkingLED">Blinking LED</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#LEDwithButton">LED with Button</a> 
@@ -1934,6 +1935,176 @@ int main()
         
         
         </section> 
+
+        <section id="CFunctions" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>C Functions</u></h2>
+                       
+                          <p> <b>&#10028;  </b>   A function is a block of code which only runs when it is called.
+                          </p>
+                          <p> <b>&#10028;  </b>  You can pass data, known as parameters, into a function.
+                          </p>
+                          <p> <b>&#10028;  </b>  Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.
+                          </p>
+                         <br>
+                         <br>
+                         <h2 class="w3-panel w3-center"><u>Create a Function</u></h2>
+                         <p> <b>&#10028;  </b> To create (often referred to as declare) your own function, specify the name of the function, followed by parentheses () and curly brackets {}:
+                         </p>  
+                           
+                         <div class="w3-container  w3-sand w3-round-xlarge">
+
+                            <p> <b>Syntax :-</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+void myFunction() {
+    // code to be executed
+    }        
+                        </code>
+                        </pre> 
+ <p><b> Example Explained </b></p>
+ <p> <b> &#x21db; </b> myFunction() is the name of the function.</p>                       
+ <p> <b> &#x21db; </b> void means that the function does not have a return value. </p>                       
+ <p> <b> &#x21db; </b> Inside the function (the body), add code that defines what the function should do.</p>                       
+
+
+
+                        </div>
+
+                        <br>
+                        <h2 class="w3-panel w3-center"><u>Call a Function</u></h2>
+                        <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                            <p> <b>Inside main, call myFunction():</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+// Create a function
+void myFunction() {
+    printf("I just got executed!");
+}
+
+int main() {
+    myFunction(); // call the function
+    return 0;
+}
+
+// Outputs "I just got executed!"</code>
+                        </pre> 
+                        </div>
+                        <br>
+                        <h2 class="w3-panel w3-center"><u>C Parameters and Arguments</u></h2>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Syntax:</b></p>
+    
+<pre>
+<code class="language-java">
+returnType functionName(parameter1, parameter2, parameter3) {
+    // code to be executed
+    }
+</code>
+</pre> 
+</div>
+
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example:</b></p>
+   
+<pre>
+<code class="language-java">
+#include <stdio.h>
+void add(int x,int y) 
+{
+    int z=x+y;
+    printf("The sum of two number is =%d",z);
+}
+
+
+int main()  
+{  
+    add(4,8);  // passing arguments       
+    return 0; 
+} 
+</code>
+</pre>
+<p> <b>Output :-</b></p>
+<p> The sum of two number is =12</p>
+</div>
+
+<br>
+<h2 class="w3-panel w3-center"><u>Function return</u></h2>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example:</b></p>
+   
+<pre>
+<code class="language-java">
+#include <stdio.h>
+int add(int x,int y) 
+{
+    int z=x+y;
+    return z;
+}
+
+
+int main()  
+{  
+    int z;
+    z= add(4,20);  // passing arguments  
+    printf("The sum of two number is =%d",z);     
+    return 0; 
+} 
+
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p> The sum of two number is =24</p>
+</div>
+
+
+<br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Labwork :</b></p>
+   
+<p> <b> Q35) </b>  WAP to print simple interest where p,r,t, should be taken by user,
+    and create a function for multiplication (P*T*R) and return it. After return the multiplied value print SI( SI= P*T*R/100)
+    </p>
+   
+    <p> <b> Q36)</b>  WAP to make as a calculator such as add(), Mul(), Sub() by using return value in function. To perform calculation by two interger which is enter by user.
+    </p>
+    <p> <b>Q37) </b>  WAP in C to check if a given number is even or odd using the function and return also, the number should be enter by number.
+    </p>
+    <p> <b> Q38) </b> WAP in C to find the greatest number among two by using function and return also, the number should be enter by user.
+    </p>
+   <p> <b> Q39) </b>  WAP in C to print the series of number upto Nth, the N number is enter by user, by using Function.
+   </p> 
+    
+   
+<br>
+</div>
+<br>
+<br>
+
+
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section> 
+        
+
         
 
         <section id="InterfacingwithArduinoIDE" class="topPadding">
