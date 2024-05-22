@@ -352,8 +352,273 @@ print(np.__version__)
                    
 
                 </ul>
-                   
-                  
+
+
+                <br>
+                <br>
+                <h2 class="w3-panel w3-center"><u> The following table shows different scalar data types defined in NumPy.
+                </u></h2>
+
+                <table class="w3-table-all"> 
+
+               <tr> <th>Sr.No. </th>  <th>Data Types </th> <th>Description </th> </tr>
+
+               <tr>  <td>1 </td> <td>bool_ </td> <td>  Boolean (True or False) stored as a byte </td></tr>
+               <tr> <td> 2</td> <td>int_ </td> <td> Default integer type (same as C long; normally either int64 or int32) </td></tr>
+               <tr> <td> 3</td> <td>intc </td> <td> Identical to C int (normally int32 or int64)</td></tr>
+               <tr> <td>4 </td> <td>intp </td> <td>Integer used for indexing (same as C ssize_t; normally either int32 or int64) </td></tr>
+               <tr> <td> 5</td> <td> int8</td> <td> Byte (-128 to 127) </td></tr>
+               <tr> <td>6</td> <td> int16</td> <td>Integer (-32768 to 32767) </td></tr>
+               <tr> <td>7</td> <td>int32 </td> <td>Integer (-2147483648 to 2147483647) </td></tr>
+               <tr> <td>8 </td> <td> int64</td> <td> Integer (-9223372036854775808 to 9223372036854775807)</td></tr>
+               <tr> <td>9 </td> <td>uint8 </td> <td> Unsigned integer (0 to 255)</td></tr>
+               <tr> <td>10 </td> <td> uint16</td> <td>Unsigned integer (0 to 65535) </td></tr>
+               <tr> <td> 11</td> <td> uint32</td> <td>Unsigned integer (0 to 4294967295) </td></tr>
+               <tr> <td>12 </td> <td> uint64</td> <td>Unsigned integer (0 to 18446744073709551615) </td></tr>
+               <tr> <td>13 </td> <td>float_ </td> <td>Shorthand for float64 </td></tr>
+               <tr> <td> 14</td> <td>float16 </td> <td>Half precision float: sign bit, 5 bits exponent, 10 bits mantissa </td></tr>
+               <tr> <td>15</td> <td>float32 </td> <td>Single precision float: sign bit, 8 bits exponent, 23 bits mantissa</td></tr>
+               <tr> <td>16 </td> <td>float64 </td> <td>Double precision float: sign bit, 11 bits exponent, 52 bits mantissa </td></tr>
+               <tr> <td>17 </td> <td> complex_</td> <td> Shorthand for complex128</td></tr>
+               <tr> <td> 18</td> <td> complex64</td> <td> Complex number, represented by two 32-bit floats (real and imaginary components)</td></tr>
+               <tr> <td>19 </td> <td> complex128</td> <td>Complex number, represented by two 64-bit floats (real and imaginary components) </td></tr>
+                </table>
+                	
+  <br>
+  <h2 class="w3-panel w3-center"><u> Checking the Data Type of an Array.
+</u></h2>
+<p> &#x21db; The NumPy array object has a property called <span style="color: rgb(115, 2, 7);">dtype</span>  that returns the data type of the array:</p>
+<br>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 1:</b> Get the data type of an array object.</p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array([1,2,3,4,5])
+print(a.dtype)
+
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p> int32</p>
+</div>
+<br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Example 2:</b> </p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array([1.3,2.7,3.5,4.2,5.6])
+print(a.dtype)
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p>float64</p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 3:</b></p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array(["A","B","C"])
+print(a.dtype)
+
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p> < U1 </p>
+</div>
+<br>
+
+
+
+
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Example 4:</b></p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=a=np.array([-2147483648,-2147483647])
+print(a.dtype)
+
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p>int32</p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 5:</b></p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array([-2147483649,-2147483650])
+print(a.dtype)
+
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p>int64</p>
+</div>
+
+<br>
+
+<h2 class="w3-panel w3-center"><u>Creating Arrays With a Defined Data Type</u></h2>
+
+<p> <b>&#x21db; </b><span style="color: rgb(115, 2, 7);">dtype</span>  that allows us to define the expected data type of the array elements: By using <span style="color: rgb(115, 2, 7);"> dtype=np.int8</span> </p>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 1:</b>  Converting int32 to int8</p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array([1,2,3,4], dtype=np.int8)
+print(a.dtype)
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p>int8</p>
+</div>
+<br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Example 2:</b> Converting int32 to uint8</p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array([1,2,3,4], dtype=np.uint8)
+print(a.dtype)
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p>uint8</p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 3:</b> Converting int32 to float64 ( float_)</p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array([1,2,3,4], dtype=np.float_)
+print(a.dtype)
+print(a)
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p>float64</p>
+<p> [1. 2. 3. 4.]</p>
+</div>
+
+<br>
+
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Example 4:</b> Converting int32 to  String  </p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array([1,2,3,4], dtype="S") 
+print(a.dtype)
+print(a)
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p>|S1</p>
+<p> [b'1' b'2' b'3' b'4']</p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 5:</b> Converting int32 to Unicode String  </p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array([1,2,3,4], dtype="U")
+print(a.dtype)
+print(a)
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p>< U1</p>
+<p> ['1' '2' '3' '4']</p>
+</div>
+
+<br>
+<h2 class="w3-panel w3-center"><u>Use Datatype as function</u></h2>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Example :</b> </p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+a=np.array([1,2,3,4])
+f=np.float64(a)
+print("Data Type :", a.dtype)
+print("Data Type :", f.dtype)
+</code>
+</pre> 
+<p> <b> Output :-</b></p>
+<p>Data Type : int32 </p>
+<p>Data Type : float64</p>
+</div>
+
+
+
+         
+         
+ 
+  <br>
+
+  <h2 class="w3-panel w3-center"><u>Converting Data Type by astype() function</u></h2>
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+
+arr = np.array([1.1, 2.1, 3.1])
+
+newarr = arr.astype('i')
+
+print(newarr)
+print(newarr.dtype)
+
+</code>
+</pre> 
+
+<p> <b> Output :- </b></p>
+<p>[1 2 3] </p>
+<p>int32 </p>
+
+</div>
+
+<br>
+<br>
+<br>
+
+
                </div>
 
             </div> 
