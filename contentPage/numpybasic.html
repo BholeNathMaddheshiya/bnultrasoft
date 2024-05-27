@@ -720,6 +720,7 @@ print(a)</code>
  a = np.array(4)
  print(a)
  print(a.ndim)
+
 </code>
                      </pre> 
                      <p> <b> Output :- </b></p>
@@ -883,18 +884,96 @@ print(b)
                        </p>
                     <p>  Q162) WAP to create 2 dimensional numpy array of any number of integers, find the <span style="color: rgb(115, 2, 7);">total number of elements</span>  are present.
                     </p>
+    <br>
+  
 
-                   
-                     
-                    
-                     
-                  
+<br>           
                 </div>
+                <br>
+                <br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <h2 class="w3-panel w3-center"><u> Higher Dimensional Arrays</u></h2>
+    <p> &#x21db;  An array can have any number of dimensions.</p>
+  <p>  &#x21db;  When the array is created, you can define the number of dimensions by using the <span style="color: rgb(115, 2, 7);">ndmin</span>  argument.
+  </p>
+
+    <p> <b>Example:</b> Create an array with 5 dimensions and verify that it has 5 dimensions:</p>
+    
+<pre>
+<code class="language-java">
+import numpy as np
+
+arr = np.array([1, 2, 3, 4], ndmin=5)
+
+print(arr)
+print('number of dimensions :', arr.ndim)
+</code>
+</pre> 
+<p> <b> Ouput :</b></p>
+<p>[[[[[1 2 3 4]]]]] </p>
+<p>number of dimensions : 5</p>
+<br>
+<hr style="height: 1px; background-color: brown;">
+<br>
+<h2 class="w3-panel w3-center"><u> arange() in Numpy</u></h2>
+ <p> <b>  Syntax:- </b>arange(stop) | arange(start, stop) | arange(start, stop, step)  </p>
+
+ <p> &#x21db; Return evenly spaced values within a given interval.</p>
+<p> <b>Example :</b></p>
+                   
+<pre>
+<code class="language-java">
+import numpy as np
+a = np.arange(8)
+print(a)
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p> [0 1 2 3 4 5 6 7]</p>
+</div>
 
                 <br>
                 <br>
+                <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+                    <p> <b>Labwork:</b></p>
+                   <p>Q163) WAP to create 2d array of which shape is (2,3) and convert its shape into (3,2) and (1,6). </p>
+                   <p> Q164) WAP to create 3d array by which following shape is given below :-</p>
+                     <ul class="w3-ul">
+                      <li> a)  (2, 2, 2)</li>
+                      <li>b) (3, 2, 2) </li>
+                      <li>c) (2, 3, 2) </li>
+                      <li>d) (2, 3, 1) </li>
+                      <li>e) (1, 6, 1) </li>
+                     </ul>
+                </div>
+<br>
+<br>
+</div>
+
+            </div> 
+        </div>
+    </div>
 
 
+
+</section> 
+
+<section id="P" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Introduction to Python Interpreter
+                        and program execution</u></h2>
+               
+                        <img src="content/img/python/InternalWorkingofPython.png" class="w3-round w3-center"  alt="image" style="width:100%">         
+                
+                 <br>
+                 <p><b> &#10028; Python interpreter : </b> Python converts source code into series of bytecode in compilation stage.</p> 
+                
                </div>
 
             </div> 
