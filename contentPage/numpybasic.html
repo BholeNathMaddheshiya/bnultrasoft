@@ -56,6 +56,8 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#DataTypes">Data Types in NumPy</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#NumpyArrayDimensional">Numpy Array Dimensional</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ArrayAttributes"> NumPy Array Attributes</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ArrayCreationRoutines"> Array Creation Routines</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ArrayFromExistingData"> Array From Existing Data</a> 
            
             
             
@@ -948,6 +950,49 @@ print(a)
                      </ul>
                 </div>
 <br>
+<h2 class="w3-panel w3-center"><u>flags Attribute in Numpy</u></h2>
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <p>  &#10028; The ndarray object has the following attributes. Its current values are returned by this function.
+  </p>
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+x = np.array([1,2,3,4,5])
+print(x.flags)
+</code>
+</pre>
+<p> <b> Output :- </b></p>
+<p>C_CONTIGUOUS : True </p>
+<p> F_CONTIGUOUS : True </p>
+<p> OWNDATA : True </p>
+<p> WRITEABLE : True </p>
+<p>  ALIGNED : True </p>
+<p> WRITEBACKIFCOPY : False </p> 
+</div>
+<hr style="height: 1px; background-color: brown;">
+<div class="w3-container  w3-sand w3-round-xlarge">
+   <ul class="w3-ul">
+ 
+
+
+
+
+   <li>  <b>C_CONTIGUOUS (C) : </b>The data is in a single, C-style contiguous segment.</li>
+   <li>  <b> F_CONTIGUOUS (F) :</b>	The data is in a single, Fortran-style contiguous segment.</li>
+   <li><b>OWNDATA (O) :</b> The array owns the memory it uses or borrows it from another object.</li>
+   <li><b> WRITEABLE (W) :</b> The data area can be written to. Setting this to False locks the data, making it read-only.
+   </li>
+   <li><b>ALIGNED (A): </b>The data and all elements are aligned appropriately for the hardware.
+   </li>
+   <li> <b> WRITEBACKIFCOPY (X) :</b> This array is a copy of some other array. The C-API function PyArray_ResolveWritebackIfCopy must be called before deallocating to the base array will be updated with the contents of this array.
+   </li>
+   </ul> 
+
+</div>
+
 <br>
 </div>
 
@@ -959,21 +1004,214 @@ print(a)
 
 </section> 
 
-<section id="P" class="topPadding">
+<section id="ArrayCreationRoutines" class="topPadding">
     <div class="w3-container w3-panel">
         <div data-aos="fade-right"  data-aos-duration="1000">
             <div class="w3-white  w3-card w3-round-large   ">
               
 
                  <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
-                    <h2 class="w3-panel w3-center"><u>Introduction to Python Interpreter
-                        and program execution</u></h2>
-               
-                        <img src="content/img/python/InternalWorkingofPython.png" class="w3-round w3-center"  alt="image" style="width:100%">         
-                
+                    <h2 class="w3-panel w3-center"><u>NumPy - Array Creation Routines</u></h2>
+                 <p> &#10028; A new ndarray object can be constructed by any of the following array creation routines or using a low-level ndarray constructor.</p>
+                  <br>      
+                  <br>
+                  <h2 class="w3-panel w3-center"><u>numpy.empty()</u></h2>      
+
+                  <div class="w3-container  w3-sand w3-round-xlarge">
+                          <p> &#x21db; It creates an uninitialized array of specified shape and dtype.</p>
+                   
+ <p> <b> Syntax : </b>numpy.empty(shape, dtype = float, order = 'C')</p> 
+ <ul class="w3-ul">
+ <li><b>shape : int or tuple of int</b> <br>
+    Shape of the empty array. <span style="color: rgb(115, 2, 7);">e.g., (2, 3) or 2.</span> </li>
+ <li><b>dtype : data-type, optional</b> <br>
+    Desired output data-type for the array. <span style="color: rgb(115, 2, 7);"> e.g, numpy.int8. Default is numpy.float64.</span></li>
+ <li> <b> order : {'C', 'F'}, optional, default: 'C'</b> <br>
+    
+Whether to store multi-dimensional data in row-major (C-style) or column-major (Fortran-style) order in memory.
+ </li>
+ </ul>
+ 
+ 
+                         <p> <b>Example:</b></p>
+                   
+                <pre>
+                <code class="language-java">
+import numpy as np
+x = np.empty((2,3), dtype = np.int8)
+print(x)</code>
+                </pre> 
+                <p> <b>Output :- </b></p>
+                <p>[[ 32  32  32]</p>
+                <p> [ 32 104 116]]</p>
+                <br>
+                <p> <b> Note −</b> The elements in an array show random values as they are not initialized.</p>
+                </div>
+                <br>      
+                <br>
+                <h2 class="w3-panel w3-center"><u>numpy.zeros()</u></h2>
+                <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+ <p> &#10028; Return a new array of given shape and type, filled with zeros.</p>
+ <p><b>Syntax : </b>numpy.zeros(shape, dtype = float, order = 'C')</p>
+ <ul class="w3-ul">
+    <li><b>shape : int or tuple of int</b> <br>
+       Shape of the empty array. <span style="color: rgb(115, 2, 7);">e.g., (2, 3) or 2.</span> </li>
+    <li><b>dtype : data-type, optional</b> <br>
+       Desired output data-type for the array. <span style="color: rgb(115, 2, 7);"> e.g, numpy.int8. Default is numpy.float64.</span></li>
+    <li> <b> order : {'C', 'F'}, optional, default: 'C'</b> <br>
+       
+   Whether to store multi-dimensional data in row-major (C-style) or column-major (Fortran-style) order in memory.
+    </li>
+    </ul>
+
+
+                    <p> <b>Example :</b></p>
+                   
+                <pre>
+                <code class="language-java">
+import numpy as np
+x = np.zeros(5)
+print(x)</code>
+                </pre>
+                <p> <b>Output :- </b></p>
+                [ 0.  0.  0.  0.  0.]
+                </div>
+                <br>      
+                <br>
+                <h2 class="w3-panel w3-center"><u>numpy.ones()</u></h2>
+                <div class="w3-container  w3-sand w3-round-xlarge">
+ <p> &#10028; Returns a new array of specified size and type, filled with ones.</p>
+ <p><b>Syntax : </b>numpy.ones(shape, dtype = None, order = 'C')</p>
+ <ul class="w3-ul">
+    <li><b>shape : int or tuple of int</b> <br>
+       Shape of the empty array. <span style="color: rgb(115, 2, 7);">e.g., (2, 3) or 2.</span> </li>
+    <li><b>dtype : data-type, optional</b> <br>
+       Desired output data-type for the array. <span style="color: rgb(115, 2, 7);"> e.g, numpy.int8. Default is numpy.float64.</span></li>
+    <li> <b> order : {'C', 'F'}, optional, default: 'C'</b> <br>
+       
+   Whether to store multi-dimensional data in row-major (C-style) or column-major (Fortran-style) order in memory.
+    </li>
+    </ul>
+
+
+                    <p> <b>Example :</b></p>
+                   
+                <pre>
+                <code class="language-java">
+import numpy as np
+x = np.ones(5)
+print(x)</code>
+                </pre>
+                <p> <b>Output :- </b></p>
+                [1. 1. 1. 1. 1.]
+                </div>
+
+
+
+
+
+
+                <br>      
+                <br>
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+
+
+<section id="ArrayFromExistingData" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>NumPy - Array From Existing Data</u></h2>
+                    <p>&#x21db; To create an array from existing data.</p>
+                    <h2 class="w3-panel w3-center"><u>numpy.asarray()</u></h2>
+               <p> <b> &#10028; numpy.asarray() :</b> This function is used when we want to convert input to an array. Input can be lists, lists of tuples, tuples, tuples of tuples, tuples of lists and arrays.</p>
+                 <p>  <b> Syntax :</b> numpy.asarray(a, dtype = None, order = None)</p> 
+                    
+<ul class="w3-ul">
+
+    <li> <b> a : </b> Input data in any form such as list, list of tuples, tuples, tuple of tuples or tuple of lists
+    </li>
+    <li> <b> dtype :  </b>By default, the data type of input data is applied to the resultant ndarray
+    </li>
+    <li>	<b>order :</b> C (row major) or F (column major). C is default. </li>
+</ul>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 1 :</b> convert list to ndarray </p>
+   
+<pre>
+<code class="language-java">
+x = [1,2,3]
+a = np.asarray(x)
+print(a) 
+</code>
+</pre>
+<p> <b> Output :</b></p>
+<p>[1 2 3]</p>
+</div>
+
+<br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Example 2:</b> ndarray from tuple  </p>
+   
+<pre>
+<code class="language-java">
+x = (1,2,3)
+a = np.asarray(x)
+print(a)
+</code>
+</pre>
+<p> <b> Output :</b></p>
+<p>[1 2 3]</p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 3:</b> ndarray from list of tuples   </p>
+   
+<pre>
+<code class="language-java">
+x = [(1,2,3),(4,5,3)]
+a = np.asarray(x)
+print(a) 
+</code>
+</pre>
+<p> <b> Output :</b></p>
+<p>[[1 2 3]</p>
+<p>[4 5 3]]</p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+ <p> <b>Labwork :</b></p>
+<p> <b>165) </b> WAP to create Array Creation Routines by using empty() function whose shape is (2,3,2) with datatype is uint32.</p>
+<p> <b>166) </b> WAP to create Array Creation Routines by using zeros() function whose shape is (1,3,2) with datatype is uint8.</p>
+<p> <b>167) </b> WAP to create Array Creation Routines by using ones() function whose shape is (3,3,2) with datatype is uint16.</p>
+<p> <b>168) </b> WAP to create Array From Existing Data by using asarray() function by passing 5 integers list.</p>
+<p> <b>169) </b> WAP to create Array From Existing Data by using asarray() function by passing 5 color name  list.</p>
+<p> <b>170) </b> WAP to create Array From Existing Data by using asarray() function by passing 10 integers  tuple.</p>
+<p> <b>171) </b> WAP to create Array From Existing Data by using asarray() function by passing  list of  tuple (5-5 integer).</p>
+
+</div>
+
+
+
+
+                 
                  <br>
-                 <p><b> &#10028; Python interpreter : </b> Python converts source code into series of bytecode in compilation stage.</p> 
-                
+                 <br>
+
                </div>
 
             </div> 
