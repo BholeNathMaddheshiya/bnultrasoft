@@ -58,6 +58,7 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ArrayAttributes"> NumPy Array Attributes</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ArrayCreationRoutines"> Array Creation Routines</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#ArrayFromExistingData"> Array From Existing Data</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#FromNumericalRanges"> Array From Numerical Ranges</a> 
            
             
             
@@ -1205,6 +1206,166 @@ print(a)
 
 </div>
 
+<br>
+<br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+ <p> <b> &#10028; </b> What is the b in Python encode?</p>
+ <p> &#x21db; In Python, the <span style="color: rgb(115, 2, 7);">'b' character </span> before a string is used to specify the string as a <span style="color: rgb(115, 2, 7);">"byte string"</span> .</p>
+ <p><b> &#10028; </b> Difference between Strings and Byte Strings. </p>
+ <p> &#x21db;  Strings are normal characters that are in  human-readable format whereas Byte strings are strings that are in  bytes.  
+</p>
+
+<span style="color: rgb(115, 2, 7);"></span>
+ <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+normalText="Python"
+print("Original Human Readable Text:", normalText)
+print("Type of Original Human Readable Text:", type(normalText),"\n\n")
+
+
+
+byte_string1 = b"Python"  #Direct given byte string.
+print("Original Byte String 1:", byte_string1)
+print("Type of Original Byte String 1", type(byte_string1),"\n\n")
+
+
+
+byte_string2 = normalText.encode()
+
+print("Original Byte String 2:", byte_string2)
+print("Type of Original Byte String 2", type(byte_string2))
+
+</code>
+</pre> 
+<p><b> Output :- </b></p>
+<p>Original Human Readable Text: Python </p>
+<p> Type of Original Human Readable Text: < class 'str' > </p>
+<p>Original Byte String 1: b'Python' </p>
+<p> Type of Original Byte String 1 < class 'bytes' > </p>
+<p> Original Byte String 2: b'Python'</p>
+<p>Type of Original Byte String 2 < class 'bytes' > </p>
+
+<br>
+<p> <b> Note :</b> Generally, strings are converted to bytes first just like any other object because a computer can store data only in <span style="color: rgb(115, 2, 7);">bytes</span> . When working with byte strings in python, they are not converted into bytes as they are <span style="color: rgb(115, 2, 7);">already in bytes</span> .</p>
+</div>
+<br>
+<br>
+<h2 class="w3-panel w3-center"><u>numpy.frombuffer</u></h2>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+    <p>  &#10028; This function interprets a buffer as one-dimensional array. Any object that exposes the buffer interface is used as parameter to return an ndarray.</p>
+ <p> &#10028; <b>Syntax :- </b> numpy.frombuffer(buffer, dtype = float, count = -1, offset = 0)</p>
+
+ <ul class="w3-ul">
+
+    <li> <b> buffer </b> Any object that exposes buffer interface.</li>
+
+    <li> <b>dtype </b> Data type of returned ndarray. Defaults to float</li>
+    <li> <b> count</b> The number of items to read, default -1 means all data</li>
+    <li> <b> offset</b> The starting position to read from. Default is 0</li>
+ </ul>
+ 
+
+ 
+ <p> <b>Example 1 :</b></p>
+   
+<pre>
+<code class="language-java">
+s = b'Python'
+a=np.frombuffer(s, dtype = 'S1')
+print(a)
+
+a=np.frombuffer(s, dtype = 'S2')
+print(a)
+</code>
+</pre> 
+<p><b> Output :</b></p>
+<p> [b'P' b'y' b't' b'h' b'o' b'n']</p>
+<p>[b'Py' b'th' b'on'] </p>
+
+<hr style="height: 1px; background-color: brown;">
+
+
+<p> <b>Example 2 :</b></p>
+   
+<pre>
+<code class="language-java">
+s = b'Python Programming'
+a=np.frombuffer(s, dtype = 'S1', offset=10 ,count=4)
+print(a)
+
+</code>
+</pre> 
+<p><b> Output :</b></p>
+<p> [b'g' b'r' b'a' b'm']</p>
+
+<hr style="height: 1px; background-color: brown;">
+
+
+<p> <b>Example 3 :</b></p>
+   
+<pre>
+<code class="language-java">
+n=b'\x01\x02'
+a=np.frombuffer(n, dtype=np.uint8)
+print(a)
+</code>
+</pre> 
+<p><b> Output :</b></p>
+<p>[1 2]</p>
+<br>
+<br>
+
+</div>
+
+<h2 class="w3-panel w3-center"><u>numpy.fromiter</u></h2>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+  <p>  &#10028; This function builds an ndarray object from any iterable object. A new one-dimensional array is returned by this function.
+</p>
+    
+<p> <b> Syntax :- </b>  numpy.fromiter(iterable, dtype, count = -1)</p>
+
+<ul class="w3-ul">
+<li> <b> iterable : </b>   Any iterable object. </span> </li>
+ <li>  <b>    dtype :</b> Data type of resultant array</li>   
+
+  <li> <b> count :</b> The number of items to be read from iterator. Default is -1 which means all data to be read
+  </li>
+   
+</ul>
+
+
+   
+    <p> <b>Example 1:</b></p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+l=[1,2,3,4,5,6]
+x= np.fromiter(l, dtype = float)
+print(x)
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p> [1. 2. 3. 4. 5. 6.]</p>
+
+<hr style="height: 1px; background-color: brown;">
+    <p> <b>Example 2:</b></p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+l=[1,2,3,4,5,6]
+it=iter(l)
+x= np.fromiter(it, dtype = np.uint8)
+print(x)
+</code>
+</pre> 
+<p> <b> Output :- </b></p>
+<p>[1 2 3 4 5 6]</p>
+</div>
 
 
 
@@ -1212,6 +1373,152 @@ print(a)
                  <br>
                  <br>
 
+               </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+
+</section> 
+<section id="FromNumericalRanges" class="topPadding">
+    <div class="w3-container w3-panel">
+        <div data-aos="fade-right"  data-aos-duration="1000">
+            <div class="w3-white  w3-card w3-round-large   ">
+              
+
+                 <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                    <h2 class="w3-panel w3-center"><u>Array From Numerical Ranges</u></h2>
+                <p>To create an array from numerical ranges.</p>
+                  
+                <h2 class="w3-panel w3-center"><u>numpy.arange</u></h2>
+<p>&#10028; This function returns an ndarray object containing evenly spaced values within a given range.</p>
+<p> <b> Syntax :</b> numpy.arange(start, stop, step, dtype)</p>
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :</b></p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+x=np.arange(5)
+print(x)
+
+x=np.arange(5, dtype=np.float_)
+print(x)
+
+x=np.arange(10,30,3)
+print(x)
+
+</code>
+</pre>
+<p> <b> Output :- </b></p>
+<p>[0 1 2 3 4] </p>
+<p> [0. 1. 2. 3. 4.]</p>
+<p> [10 13 16 19 22 25 28]</p>
+
+</div>
+<br>
+<h2 class="w3-panel w3-center"><u>numpy.linspace</u></h2>
+<p> &#10028; This function is similar to arange() function. In this function, instead of step size, the number of evenly spaced values between the interval is specified.</p>
+ <ul class="w3-ul">
+
+    <li>  <b>start :  </b> The starting value of the sequence.</li>
+    <li> <b>stop : </b>  The end value of the sequence, included in the sequence if endpoint set to true.</li>
+
+    <li> <b> num  :</b> (optional)The number of evenly spaced samples to be generated. Default is 50.</li>
+    <li> <b> endpoint : </b> (optional) True by default, hence the stop value is included in the sequence. If false, it is not included
+    </li>	
+    
+    <li> <b>  retstep : </b>(optional) If true, returns samples and step between the consecutive numbers</li>
+    
+    <li> <b>dtype : </b>(optional) Data type of output ndarray</li>
+   
+
+ </ul>
+ <br>
+ <br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 1:</b></p>
+   
+<pre>
+<code class="language-java">
+import numpy as np
+x=np.linspace(1,2,5)
+print(x)
+</code>
+</pre>
+<p> <b> Output :-</b></p>
+<p>[1.   1.25 1.5  1.75 2.  ]</p>
+</div>
+<br>
+<div class="w3-container  w3-pale-yellow w3-round-xlarge">
+
+    <p> <b>Example 2:</b></p>
+   
+<pre>
+<code class="language-java">
+# endpoint set to false 
+import numpy as np
+x = np.linspace(10,20, 5, endpoint = False)
+print(x)
+</code>
+</pre>
+<p> <b> Output :</b></p>
+<p>[10. 12. 14. 16. 18.]</p>
+</div>
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example 3:</b></p>
+   
+<pre>
+<code class="language-java">
+# find retstep value
+import numpy as np
+x = np.linspace(1,2,5, retstep = True)
+print(x)
+# retstep here is 0.25
+</code>
+</pre>
+<p><b> Output :-</b></p>
+<p>(array([1.  , 1.25, 1.5 , 1.75, 2.  ]), 0.25)</p>
+</div>
+
+<br>
+<div class="w3-container  w3-sand w3-round-xlarge">
+<p> <b> Labwork :</b></p>    
+<p> <b> 172) </b> WAP to create Array From Existing Data by using frombuffer() function to print your name by 2-2 characters. </p>
+<p> <b> 173) </b> WAP to create Array From Existing Data by using frombuffer() function to print from "Programming Knowledge", Output must be "ming Know". </p>
+<p> <b> 174) </b> WAP to create Array From Existing Data by using frombuffer() function to print, Output must be [9 8]. </p>
+<p> <b> 175) </b> WAP to create Array From Numerical Ranges by using arange() function to print the following output.</p>
+ <ul class="w3-ul">
+  <li> a) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] </li>
+  <li> b) [2., 3., 4., 5., 6., 7.] </li>
+  <li> c) [ 8., 11., 14., 17.]</li>
+  <li> d) [28, 32, 36, 40, 44, 48]</li>
+  <li> e) [3., 6., 9.]</li>
+ </ul>  
+<p> <b> 176) </b> WAP to create Array From Numerical Ranges by using linspace() function to print the following output.</p>
+<ul class="w3-ul">
+   <li> a) [2.  , 2.75, 3.5 , 4.25, 5.  ] </li> 
+   <li> b) [2. , 2.5, 3. , 3.5, 4. ] </li> 
+   <li> c) [10., 12., 14., 16., 18., 20., 22., 24., 26., 28.]</li> 
+   <li> d)  ([1. , 1.5, 2. , 2.5, 3. ]), 0.5)</li> 
+   <li> e) [4. , 4.5, 5. ]</li> 
+
+</ul>
+<br>
+</div>
+
+
+
+<br>
+<br>
+<br>
                </div>
 
             </div> 
