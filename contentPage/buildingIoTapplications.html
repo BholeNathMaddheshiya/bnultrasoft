@@ -2855,9 +2855,47 @@ delay(200); // time in milliseconds to wait for the next reading
                          <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
                             <h2 class="w3-panel w3-center"><u>Working with Sensors-LDR</u></h2>
                        
+                            <img src="content/img/python/ldrwithled.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
 
+                            <div class="w3-container  w3-sand w3-round-xlarge">
 
-                           <p> Working With Sensors-LDR </p>     
+                                <p> <b>Example:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">         
+int value;
+void setup()
+{
+    pinMode(13, OUTPUT);
+    pinMode(A0, INPUT);
+    
+}
+
+void loop()
+{
+    value=analogRead(A0);
+    
+    if(value<=300){
+    digitalWrite(13,HIGH);
+    }
+    else{
+    digitalWrite(13,LOW);
+    }  
+}
+</code>
+                            </pre> 
+                            
+                            </div>
+
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Labwork :</b></p>
+
+                                <p> <b> Q20) </b> WAP in Arduino IDE, if the LDR value is less than 250 then Glow the Led bulb.</p>
+                           </div>
+
+                            <br>
+                            <br>
                        </div>
         
                     </div> 
@@ -2876,9 +2914,42 @@ delay(200); // time in milliseconds to wait for the next reading
                          <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
                             <h2 class="w3-panel w3-center"><u>Working with Sensors-MQ135</u></h2>
                        
+                            <img src="content/img/python/MQ135Tinker.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
 
 
-                           <p> Working With Sensors-MQ135 </p>     
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+int val;
+void setup()
+{
+    pinMode(A0, INPUT);
+    Serial.begin(9600);
+}
+
+void loop()
+{
+    val=analogRead(A0);
+    Serial.print("Print Air Quality:");
+    Serial.println(val);
+    
+}   
+</code>
+     </pre> 
+                            </div>
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Labwork :</b></p>
+
+                                <p> <b> Q21) </b> WAP Fire Alert System, if the MQ135 value is greater than 500 then Glow the Red Led bulb.</p>
+                           </div>
+<br>
+<br>
+                            
                        </div>
         
                     </div> 
