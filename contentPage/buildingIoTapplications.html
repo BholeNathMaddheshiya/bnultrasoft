@@ -77,6 +77,13 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#InterfacingwithArduinoIDE">Interfacing with Arduino IDE</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#BlinkingLED">Blinking LED</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#LEDwithButton">LED with Button</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingwithSensors-DHT">Working with Sensors-DHT</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingwithSensors-LDR">Working with Sensors-LDR</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingwithSensors-MQ135">Working with Sensors-MQ135</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingwithSensors-IR">Working with Sensors-IR</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#DisplaythedataonLCD">Display the data on LCD</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#InterfacingHC-05">Interfacing HC-05</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#RelayModule">Relay Module</a> 
 
            
             <!-- <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#IoTLevel1">IoT Level 1</a>   
@@ -2644,7 +2651,59 @@ e) on (200ms), on (200ms), Off (100ms), off (100ms)
    <p> <b> Q14) </b> WAP to glow/OFF led with push button, the led <span style="color: rgb(115, 2, 7);"></span> Glow only push button A and led Off only push button B.</p>
 
    <p> <b> Q15) </b> WAP to blink led 10, 11, 12, 13 and reverse blink ( led 13, 12, 11, 10) with one button.</p>
+   <p> <b>Ans-15: Solution Code </b></p>
+   <pre>
+   <code class="language-java">
+    int t=0;	
+    void setup()
+    {
+      for(int x=2;x<=12;x++){ 
+        pinMode(x, OUTPUT);
+      }
+       pinMode(2, OUTPUT);
+       pinMode(3, OUTPUT);
+       pinMode(4, OUTPUT);
+       pinMode(5, OUTPUT);
+       pinMode(6, OUTPUT);
+       pinMode(7, OUTPUT);
+       pinMode(8, OUTPUT);
+       pinMode(9, OUTPUT);
+       pinMode(10, OUTPUT);
+       pinMode(11, OUTPUT);
+       pinMode(12, OUTPUT);
+       pinMode(13, INPUT_PULLUP);   
+    }
+    void loop()
+    {
+      if (digitalRead(13)== HIGH){
+      t++;
+       delay(100);
+      }
+      if(t==1){pattern1();}
+      if(t==2){pattern2();}
+      if(t==3){pattern3();}
+    }
+    void pattern1(){
+      for(int x=2;x<=12;x++){
+      digitalWrite(x,HIGH);
+        delay(100);
+        digitalWrite(x,LOW);
+        delay(100);
+      }
+    }
+    void pattern2(){
+      for(int x=12;x>=2;x--){
+      digitalWrite(x,HIGH);
+        delay(100);
+        digitalWrite(x,LOW);
+      }
+    }
+    void pattern3(){
+        t=1; 
+    }
 
+   </code>
+   </pre>
   
 </div>
 
@@ -2683,7 +2742,257 @@ e) on (200ms), on (200ms), Off (100ms), off (100ms)
         
         </section> 
         
+        <section id="WorkingwithSensors-DHT" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
         
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Working with Sensors-DHT (Temperature Sensors)</u></h2>
+                           <p> <b> &#10028; analogRead() :  </b> Reads the value from the specified analog pin.</p>
+  
+   <p>&#x21db; <b>Syntax: </b> analogRead(pin)</p>
+                           
+ <p> &#x21db; <b>Parameters: </b> pin: the name of the analog input pin to read from.</p>
+
+<p> &#x21db; <b>Returns: </b>The analog reading on the pin.</p>
+
+<p> <b> Note :</b> <br>
+    
+    &#x21db;  Reading data from the sensor. This voltage is stored as a 10bit number ((0-1023)). <br>
+    &#x21db;   voltageOut = sensorRead * (aref_voltage / 1024.0);<br>
+    &#x21db;  Temperature (°C) = (voltageOut - 0.5) * 100;
+
+   
+    
+</p>
+<br>
+
+<p><b>analogReference(type)</b></p>
+<p> <b> Syntax : </b> analogReference(type)</p>
+<p> <b>Parameters </b> type (EXTERNAL)</p>
+<p> <B> Note :-</B> EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference.</p>
+
+<br>
+<br>
+<img src="content/img/python/tmp.png" class="w3-round w3-center"  alt="image" style="width:100%">   
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example :-</b></p>
+   
+<pre>
+<code class="language-java">
+// The TMP36's Vout pin is connected to A0 of Arduino 
+#define analogPin A0 
+
+// Connect ARef to 3.3V 
+#define aref_voltage 3.3 
+
+void setup() { 
+// Begin serial communication at 9600 baud rate 
+Serial.begin(9600); 
+
+// Set the aref to something other than 5v 
+analogReference(EXTERNAL); 
+} 
+
+void loop() { 
+// The voltage output reading from the TMP36 sensor 
+int sensorRead = analogRead(analogPin); 
+
+// Convert that sensor reading into voltage 
+float voltageOut = sensorRead * (aref_voltage / 1024.0); 
+
+// The voltage is then converted to temperature in Celsius 
+float tempInC = (voltageOut - 0.5) * 100; 
+
+// Print the temperature in Celsius in serial monitor 
+Serial.print("Temperature: "); 
+Serial.print(tempInC); 
+Serial.print("\xB0"); // prints the degree symbol 
+Serial.print("C"); 
+Serial.print("\n"); 
+
+delay(200); // time in milliseconds to wait for the next reading 
+}
+</code>
+</pre> 
+</div>
+
+
+
+<div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Labwork :-</b></p>
+   <p> <b> Q18)</b> WAP in Arduino IDE, if the temperature is greater then 40 °C alert with Red Led Glow otherwise Red Led OFF.</p>
+   <p> <b> Q19)</b> WAP in Arduino IDE, working with TMP36 and Three Led Bulb. 
+    <br> &#x21db; If the temperature is greater then <span style="color: rgb(115, 2, 7);">40 °C alert with Red Led Glow,</span>  
+    <br>&#x21db; Temperature is greater then <span style="color: rgb(115, 2, 7);">20 °C and less then 40 °C  alert with Yellow Led Glow </span> 
+    <br> &#x21db; And Temperature is less then <span style="color: rgb(115, 2, 7);">20 °C alert with Green Led Glow.</span>  </p>
+
+</div>
+
+                      
+
+                            <br>
+                            <br>
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>      
+        <section id="WorkingwithSensors-LDR" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Working with Sensors-LDR</u></h2>
+                       
+
+
+                           <p> Working With Sensors-LDR </p>     
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>      
+        <section id="WorkingwithSensors-MQ135" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Working with Sensors-MQ135</u></h2>
+                       
+
+
+                           <p> Working With Sensors-MQ135 </p>     
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>      
+        <section id="WorkingwithSensors-IR" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Working with Sensors-IR</u></h2>
+                       
+
+
+                           <p> Working With Sensors-IR </p>     
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>      
+        <section id="DisplaythedataonLCD" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Display the data on LCD</u></h2>
+                       
+
+
+                           <p> Display the data on LCD </p>     
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>      
+        <section id="DisplaythedataonLCD" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Interfacing Keypad</u></h2>
+                       
+
+
+                           <p> Interfacing Keypad </p>     
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>      
+        <section id="InterfacingHC-05" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Interfacing HC-05 (Bluetooth module)</u></h2>
+                       
+
+
+                           <p> Interfacing HC-05 (Bluetooth module) </p>     
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>      
+        <section id="RelayModule" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Control/handle 220V AC supply-Interfacing Relay Module</u></h2>
+                       
+
+
+                           <p> Control/handle 220V AC supply-Interfacing Relay Module. </p>     
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>      
 
         
        
