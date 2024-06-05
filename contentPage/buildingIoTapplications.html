@@ -2892,7 +2892,8 @@ void loop()
                                 <p> <b>Labwork :</b></p>
 
                                 <p> <b> Q20) </b> WAP in Arduino IDE, if the LDR value is less than 250 then Glow the Led bulb.</p>
-                           </div>
+                                <p> <b> Note : </b> Generally Register we use 1 Kilo Ohm in LDR. </p>
+                            </div>
 
                             <br>
                             <br>
@@ -2946,7 +2947,8 @@ void loop()
                                 <p> <b>Labwork :</b></p>
 
                                 <p> <b> Q21) </b> WAP Fire Alert System, if the MQ135 value is greater than 500 then Glow the Red Led bulb.</p>
-                           </div>
+                               <p> <b> Note : </b> Generally Register we use 10 Kilo Ohm in Smoke Sensor. </p>
+                            </div>
 <br>
 <br>
                             
@@ -2959,49 +2961,10 @@ void loop()
         
         
         </section>      
-        <section id="WorkingwithSensors-IR" class="topPadding">
-            <div class="w3-container w3-panel">
-                <div data-aos="fade-right"  data-aos-duration="1000">
-                    <div class="w3-white  w3-card w3-round-large   ">
-                      
-        
-                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
-                            <h2 class="w3-panel w3-center"><u>Working with Sensors-IR</u></h2>
-                       
+          
+      
 
-
-                           <p> Working With Sensors-IR </p>     
-                       </div>
-        
-                    </div> 
-                </div>
-            </div>
-        
-        
-        
-        </section>      
-        <section id="DisplaythedataonLCD" class="topPadding">
-            <div class="w3-container w3-panel">
-                <div data-aos="fade-right"  data-aos-duration="1000">
-                    <div class="w3-white  w3-card w3-round-large   ">
-                      
-        
-                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
-                            <h2 class="w3-panel w3-center"><u>Display the data on LCD</u></h2>
-                       
-
-
-                           <p> Display the data on LCD </p>     
-                       </div>
-        
-                    </div> 
-                </div>
-            </div>
-        
-        
-        
-        </section>      
-        <section id="DisplaythedataonLCD" class="topPadding">
+        <section id="InterfacingKeypad" class="topPadding">
             <div class="w3-container w3-panel">
                 <div data-aos="fade-right"  data-aos-duration="1000">
                     <div class="w3-white  w3-card w3-round-large   ">
@@ -3010,9 +2973,51 @@ void loop()
                          <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
                             <h2 class="w3-panel w3-center"><u>Interfacing Keypad</u></h2>
                        
+                            <img src="content/img/python/KeyPadWorking.png" class="w3-round w3-center"  alt="image" style="width:100%">  
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
 
+                                <p> <b>Example :-</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+#include &lt;Keypad.h&gt;
 
-                           <p> Interfacing Keypad </p>     
+    byte row = 4;
+    byte col = 4;
+    
+    char keys[4][4] = {
+    { '1', '2', '3', 'A' },
+    { '4', '5', '6', 'B' },
+    { '7', '8', '9', 'C' },
+    { '*', '0', '#', 'D' }
+    };
+    
+    byte rowpin[4] = { 9, 8, 7, 6 };
+    byte colpin[4] = { 5, 4, 3, 2 };
+    Keypad mykeypad = Keypad(makeKeymap(keys), rowpin, colpin, row, col);
+    
+    
+    void setup() {
+    Serial.begin(9600);
+    }
+    
+    
+    void loop() {
+    char presskey = mykeypad.getKey();
+        
+    if (presskey) {
+    Serial.println(presskey);
+    }
+        
+    }
+            
+                            </code>
+                            </pre> 
+                            </div>
+ <br>
+ <br>
+                          
                        </div>
         
                     </div> 
@@ -3021,7 +3026,130 @@ void loop()
         
         
         
-        </section>      
+        </section>
+        <section id="Interfacingwithbuzzer" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Interfacing with buzzer</u></h2>
+                       
+                            <img src="content/img/python/BuzzerWorking.png" class="w3-round w3-center"  alt="image" style="width:100%">  
+                            <br>
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :-</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+void setup()
+{
+    pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+    digitalWrite(13, HIGH);
+    delay(1000);
+    digitalWrite(13, LOW);
+    delay(1000);
+}      
+                            </code>
+                            </pre> 
+                            </div>
+ <br>
+ <br>
+                          
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>
+        
+
+        <section id="DisplaythedataonLCD" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Display the data on LCD with Potentiometer</u></h2>
+                       
+ <p>We connect the following pins on LCD:</p>
+<ul class="w3-ul">
+<li>* LCD GND pin to GND </li>
+<li>* LCD VCC pin to 5V  <span style="color: rgb(115, 2, 7);"> (for Power)</span> </li>
+<li>* LCD VO pin  to wiper <span style="color: rgb(115, 2, 7);">(Potentiometer)</span> </li>
+<li>* LCD RS pin to digital pin 2  <span style="color: rgb(115, 2, 7);">(any digital pin)</span> </li>
+<li>* LCD R/W pin to GND</li>
+<li>* LCD Enable pin to digital pin 3 <span style="color: rgb(115, 2, 7);">(any digital pin)</span> </li>
+<li>* LCD D4 pin to digital pin 4  <span style="color: rgb(115, 2, 7);">(any digital pin)</span> </li>
+<li>* LCD D5 pin to digital pin 5  <span style="color: rgb(115, 2, 7);">(any digital pin) </span></li>
+<li>* LCD D6 pin to digital pin 6  <span style="color: rgb(115, 2, 7);">(any digital pin)</span></li>
+<li>* LCD D7 pin to digital pin 7  <span style="color: rgb(115, 2, 7);">(any digital pin)</span></li>
+<li>* LCD Anode with register (220 ohm) to 5V </li>
+<li>* LCD Cathode to GND </li>
+
+</ul>
+
+<br>
+
+               
+<img src="content/img/python/LCD_Interface.png" class="w3-round w3-center"  alt="image" style="width:100%">  
+<br>
+
+
+                          
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example:</b></p>
+   
+<pre>
+<code class="language-java">
+#include &lt; LiquidCrystal.h &gt;
+
+        const int rs = 2, en = 3, d4 = 4, d5 = 5, d6 = 6, d7 = 7;
+        LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+        
+        void setup() {
+         
+          lcd.begin(16, 2);
+          lcd.print("Hello, World!");
+        }
+        
+        void loop() {
+          // set the cursor to column 0, line 1
+          // (note: line 1 is the second row, since counting begins with 0):
+          lcd.setCursor(0, 1);
+          // print the number of seconds since reset:
+          lcd.print(millis() / 1000);
+        }
+
+</code>
+</pre> 
+</div>
+<br>   
+<br>   
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>  
+
+        
+
+
         <section id="InterfacingHC-05" class="topPadding">
             <div class="w3-container w3-panel">
                 <div data-aos="fade-right"  data-aos-duration="1000">
@@ -3042,7 +3170,33 @@ void loop()
         
         
         
-        </section>      
+        </section> 
+        
+        
+        <section id="WorkingwithSensors-IR" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
+        
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Working with Sensors-IR</u></h2>
+                       
+
+
+                           <p> Working With Sensors-IR </p>     
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>  
+
+
+
         <section id="RelayModule" class="topPadding">
             <div class="w3-container w3-panel">
                 <div data-aos="fade-right"  data-aos-duration="1000">
