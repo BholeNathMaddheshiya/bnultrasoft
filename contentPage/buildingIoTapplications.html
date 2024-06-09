@@ -80,8 +80,10 @@
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingwithSensors-DHT">Working with Sensors-DHT</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingwithSensors-LDR">Working with Sensors-LDR</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingwithSensors-MQ135">Working with Sensors-MQ135</a> 
-            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingwithSensors-IR">Working with Sensors-IR</a> 
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#InterfacingKeypad">Working with Keypad</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#DisplaythedataonLCD">Display the data on LCD</a> 
+            
+            <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#WorkingwithSensors-IR">Working with Sensors-IR</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#InterfacingHC-05">Interfacing HC-05</a> 
             <a class="w3-bar-item w3-button  w3-hover-white  w3-animate-zoom w3-animate-fading" href="#RelayModule">Relay Module</a> 
 
@@ -3147,7 +3149,73 @@ void loop()
         
         </section>  
 
+        <section id="WorkingwithSensors-IR" class="topPadding">
+            <div class="w3-container w3-panel">
+                <div data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="w3-white  w3-card w3-round-large   ">
+                      
         
+                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            <h2 class="w3-panel w3-center"><u>Working with Sensors-IR</u></h2>
+                       
+                            <br>
+                            <br>
+                            <video width="100%" controls>
+                                <source src="ir_sensor.mp4" type="video/mp4">
+                            </video>
+
+                            <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Example :</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+int irSensor = 12;
+int buzzer = 7;
+void setup()
+{
+    Serial.begin(9600);
+    pinMode(irSensor, INPUT);
+    pinMode(buzzer, OUTPUT);
+}
+void loop()
+{
+    int value = digitalRead(irSensor);
+    Serial.println("");
+    Serial.print("Sensor Value = ");
+    Serial.print(value);
+    
+    if(value == 0)
+    {
+        digitalWrite(buzzer, HIGH);
+    }
+    else
+    {
+        digitalWrite(buzzer, LOW);
+    }
+    delay(50);
+}
+            
+                            </code>
+                            </pre> 
+                            </div>
+
+
+                          <br>   
+                          <br>   
+                       </div>
+        
+                    </div> 
+                </div>
+            </div>
+        
+        
+        
+        </section>    
+
+
+        
+
 
 
         <section id="InterfacingHC-05" class="topPadding">
@@ -3157,11 +3225,36 @@ void loop()
                       
         
                          <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
+                            
+                            <br>
+                            <br>
+                            <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+                             
+
+
+                                <p> <b>Serial Communication:</b> Serial Communication is the process of sending data from one device to another device sequentially.  <br>
+                                    In Serial communication the data bits are send serially from one device to another device providing faster means of communication.
+                                </p>
+                    
+                            </div>
+                            
                             <h2 class="w3-panel w3-center"><u>Interfacing HC-05 (Bluetooth module)</u></h2>
                        
+                            <br>
+                            <br>
+                            <video width="100%" controls>
+                                <source src="HC-05.mp4" type="video/mp4">
+                            </video>
+
+  <br>
+  <p><b> Example :-</b></p>
+  <img src="content/img/python/HC-05.png" class="w3-round w3-center"  alt="image" style="width:100%"> 
 
 
-                           <p> Interfacing HC-05 (Bluetooth module) </p>     
+
+                            <br>   
+                            <br>   
+                               
                        </div>
         
                     </div> 
@@ -3173,27 +3266,7 @@ void loop()
         </section> 
         
         
-        <section id="WorkingwithSensors-IR" class="topPadding">
-            <div class="w3-container w3-panel">
-                <div data-aos="fade-right"  data-aos-duration="1000">
-                    <div class="w3-white  w3-card w3-round-large   ">
-                      
-        
-                         <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
-                            <h2 class="w3-panel w3-center"><u>Working with Sensors-IR</u></h2>
-                       
-
-
-                           <p> Working With Sensors-IR </p>     
-                       </div>
-        
-                    </div> 
-                </div>
-            </div>
-        
-        
-        
-        </section>  
+     
 
 
 
