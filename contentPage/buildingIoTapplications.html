@@ -3278,11 +3278,45 @@ void loop()
         
                          <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
                             <h2 class="w3-panel w3-center"><u>Control/handle 220V AC supply-Interfacing Relay Module</u></h2>
+                       <br>
+                       <br>
+                       <h1 class="w3-center"> Circuit Diagram</h1>
+                       <img src="content/img/python/relay_circuit.jpg" class="w3-round w3-center"  alt="image" style="width:100%"> 
+
+                       <br>
+                        <br>
+                           <a href="https://youtu.be/aSmrLFoumu0?si=0-qi3yONqNO9avpK"> Video Reference </a>
                        
+                         <br>
+                         <br>
+                           <div class="w3-container  w3-sand w3-round-xlarge">
 
+                            <p> <b>Example Code:</b></p>
+                           
+                        <pre>
+                        <code class="language-java">
+int relay=2;
 
-                           <p> Control/handle 220V AC supply-Interfacing Relay Module. </p>     
-                       </div>
+void setup() 
+{
+    pinMode(2,OUTPUT);
+}
+
+void loop() 
+{
+    digitalWrite(relay,LOW); // For LED Bulb ON
+    delay(2000);
+    digitalWrite(relay,HIGH); // For LED Bulb OFF
+    delay(2000);
+}
+</code>
+                        </pre> 
+                        </div>
+
+                         <br>
+                         <br>
+                       
+                        </div>
         
                     </div> 
                 </div>
