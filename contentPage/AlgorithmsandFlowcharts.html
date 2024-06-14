@@ -844,7 +844,34 @@ for i in range(0,3):
                             <br>
                             <br>
                             <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221207110618/tma.jpg" class="w3-round w3-center"  alt="image" style="width:100%">                   
-                      
+                             <br>
+                             <div class="w3-container  w3-sand w3-round-xlarge">
+
+                                <p> <b>Upper Triangular Matrix:</b></p>
+                               
+                            <pre>
+                            <code class="language-java">
+a=[[1,2,3,4],[3,4,5,6],[5,6,7,8],[4,7,8,9]]
+for i in range(4):
+    for j in range(4):
+        if j < i:
+            print(0,end=" ")
+        else:
+            print(a[i][j],end=" ")
+    print()
+            
+                            </code>
+                            </pre> 
+                            <p> <b> Output :</b></p>
+                            <p> 1 2 3 4  </p>
+                            <p> 0 4 5 6 </p>
+                            <p>0 0 7 8  </p>
+                            <p> 0 0 0 9</p>
+                           
+
+
+
+                            </div>
                       
                           <br>
                           <br>
@@ -868,10 +895,35 @@ for i in range(0,3):
                       
         
                          <div class="w3-leftbar w3-border-pink w3-border w3-round-large w3-panel ">
-                            <h2 class="w3-panel w3-center"><u>evaluate 'sin x' as sum of a series</u></h2>
+                            <h2 class="w3-panel w3-center"><u>Evaluate 'sin x' as sum of a series</u></h2>
                        
-                            <img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-9dcf9a50f63a992f4a2c0b745c04cc89_l3.svg" class="w3-round w3-center"  alt="image" style="width:100%">       
-                      
+                            <img src="content/img/python/sineformula.png" class="w3-round w3-center"  alt="image" style="width:100%">       
+                          <p> <b> &#x21db; </b>The value of sin 90 degrees is 1. </p> 
+                          <p> <b> &#x21db; </b> Sin 90 degrees in radians is written as  (90° x π/180°).</p>
+                          <br>
+                          <br>
+                          
+  <div class="w3-container  w3-sand w3-round-xlarge">
+
+    <p> <b>Example:</b></p>
+   
+<pre>
+<code class="language-java">
+import math
+
+x=int(input("Enter the value of x in degrees:"))
+n=int(input("Enter the number of terms:"))
+
+sine = 0
+for i in range(n):
+    sign = (-1)**i
+    r=math.radians(x) 
+    sine = sine + ((math.pow(r,2.0*i+1))/math.factorial(2*i+1))*sign
+print(round(sine,2))
+
+</code>
+</pre> 
+</div>
                       
                           <br>
                           <br>
