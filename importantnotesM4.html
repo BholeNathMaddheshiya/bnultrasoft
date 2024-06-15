@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/importantnotes.css">
+  
+ 
+
+ 
+
+
+
+</head>
+
+<body>
+   
+
+    
+
+
+
+  <section class="home-section">
+    <div  class="w3-container">  
+        <div class="w3-panel  w3-card-4 ">
+    <br>
+    <br>
+       <h2 class="w3-center"> Most Important Practicle based Questions</h2>
+       <br>
+
+
+       <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q1)</b> Write a program in 'C' to print total numbers of odd integers and their sum in an array that contains 15 element.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+# include < stdio.h >
+    int main(){
+        int n=15,a[n],s=0,t=0;
+        for(int i=0;i < n;i++){
+        printf("Enter the element of index %d: ",i);
+        scanf("%d",&a[i]);
+        if(a[i]%2!=0){
+            s=s+a[i];
+            t=t+1;
+        }
+        }
+        printf("Sum of all odd integer in array is: %d",s);
+        printf("\nTotal number of odd integer is: %d",t);
+      return 0;
+    }
+    
+        </code>
+        </pre> 
+      
+
+        
+
+       </div>
+       <br>
+       <div class="w3-container  w3-sand w3-round-xlarge">
+        <br>
+        <p> <b> Q2)</b> Write a program to interface LED with Arduino and write a program to turn ON LED  for 2 seconds after every 3 seconds.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+void setup(){
+    pinMode(13, OUTPUT);
+    }
+    void loop(){
+    digitalWrite(13, HIGH);
+    delay(2000);
+    digitalWrite(13, LOW);
+      delay(3000);
+    }
+    
+        </code>
+        </pre> 
+      
+
+        
+
+       </div>
+
+       <br>
+
+
+       <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q3)</b> Write a program in 'C' to take an integer value and return the number with its digits reversed.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+#include < stdio.h >
+    int main(){
+        int num, n, rev;
+        printf("Enter any number: ");
+        scanf("%d",&num);
+        while(num>0){
+        n=num%10;
+        rev=rev*10+n;
+        num=num/10;
+        }
+        printf("Reverse number is: %d",rev);
+      return 0;
+    }
+    
+        </code>
+        </pre> 
+    </div>
+    <br>
+    <div class="w3-container  w3-sand w3-round-xlarge">
+        <br>
+        <p> <b> Q4)</b> Write a program in 'C' to reverse the digits of given number. For example the number 9876 should be returned as 6789.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+#include < stdio.h >
+    int main(){
+        int num=9876, n, rev;
+        while(num>0){
+        n=num%10;
+        rev=rev*10+n;
+        num=num/10;
+        }
+        printf("Reverse number is: %d",rev);
+      return 0;
+    }
+    </code>
+        </pre>
+    </div>
+    <br>
+    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q5)</b> Write a program in 'C' to convert decimal number into binary number.
+            Example--Number 70 in decimal expression as 1000110 in binary.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+#include < stdio.h >
+    int main(){
+        int num,n, b=0,t=1;
+        printf("Enter any number: ");
+        scanf("%d",&num);
+        while(num>0){
+        n=num%2;
+        b=n*t+b;
+        t=t*10;
+        num=num/2;
+        }
+        printf("Binary number is: %d",b);
+      return 0;
+    }
+    
+        </code>
+        </pre>
+    </div>
+    <br>
+
+<!--     
+    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q1)</b> Write a program in 'C' to print total numbers of odd integers and their sum in an array that contains 15 element.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+# include < stdio.h >
+    int main(){
+        int n=15,a[n],s=0,t=0;
+        for(int i=0;i < n;i++){
+        printf("Enter the element of index %d: ",i);
+        scanf("%d",&a[i]);
+        if(a[i]%2!=0){
+            s=s+a[i];
+            t=t+1;
+        }
+        }
+        printf("Sum of all odd integer in array is: %d",s);
+        printf("\nTotal number of odd integer is: %d",t);
+      return 0;
+    }
+    
+        </code>
+        </pre>
+    </div>
+    <br>
+    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q1)</b> Write a program in 'C' to print total numbers of odd integers and their sum in an array that contains 15 element.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+# include < stdio.h >
+    int main(){
+        int n=15,a[n],s=0,t=0;
+        for(int i=0;i < n;i++){
+        printf("Enter the element of index %d: ",i);
+        scanf("%d",&a[i]);
+        if(a[i]%2!=0){
+            s=s+a[i];
+            t=t+1;
+        }
+        }
+        printf("Sum of all odd integer in array is: %d",s);
+        printf("\nTotal number of odd integer is: %d",t);
+      return 0;
+    }
+    
+        </code>
+        </pre>
+    </div>
+    <br>
+    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q1)</b> Write a program in 'C' to print total numbers of odd integers and their sum in an array that contains 15 element.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+# include < stdio.h >
+    int main(){
+        int n=15,a[n],s=0,t=0;
+        for(int i=0;i < n;i++){
+        printf("Enter the element of index %d: ",i);
+        scanf("%d",&a[i]);
+        if(a[i]%2!=0){
+            s=s+a[i];
+            t=t+1;
+        }
+        }
+        printf("Sum of all odd integer in array is: %d",s);
+        printf("\nTotal number of odd integer is: %d",t);
+      return 0;
+    }
+    
+        </code>
+        </pre>
+    </div>
+    <br>
+    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q1)</b> Write a program in 'C' to print total numbers of odd integers and their sum in an array that contains 15 element.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+# include < stdio.h >
+    int main(){
+        int n=15,a[n],s=0,t=0;
+        for(int i=0;i < n;i++){
+        printf("Enter the element of index %d: ",i);
+        scanf("%d",&a[i]);
+        if(a[i]%2!=0){
+            s=s+a[i];
+            t=t+1;
+        }
+        }
+        printf("Sum of all odd integer in array is: %d",s);
+        printf("\nTotal number of odd integer is: %d",t);
+      return 0;
+    }
+    
+        </code>
+        </pre>
+    </div>
+    <br>
+    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q1)</b> Write a program in 'C' to print total numbers of odd integers and their sum in an array that contains 15 element.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+# include < stdio.h >
+    int main(){
+        int n=15,a[n],s=0,t=0;
+        for(int i=0;i < n;i++){
+        printf("Enter the element of index %d: ",i);
+        scanf("%d",&a[i]);
+        if(a[i]%2!=0){
+            s=s+a[i];
+            t=t+1;
+        }
+        }
+        printf("Sum of all odd integer in array is: %d",s);
+        printf("\nTotal number of odd integer is: %d",t);
+      return 0;
+    }
+    
+        </code>
+        </pre>
+    </div>
+    <br>
+    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q1)</b> Write a program in 'C' to print total numbers of odd integers and their sum in an array that contains 15 element.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+# include < stdio.h >
+    int main(){
+        int n=15,a[n],s=0,t=0;
+        for(int i=0;i < n;i++){
+        printf("Enter the element of index %d: ",i);
+        scanf("%d",&a[i]);
+        if(a[i]%2!=0){
+            s=s+a[i];
+            t=t+1;
+        }
+        }
+        printf("Sum of all odd integer in array is: %d",s);
+        printf("\nTotal number of odd integer is: %d",t);
+      return 0;
+    }
+    
+        </code>
+        </pre>
+    </div>
+    <br>
+    <div class="w3-container  w3-pale-yellow w3-round-xlarge">
+        <br>
+        <p> <b> Q1)</b> Write a program in 'C' to print total numbers of odd integers and their sum in an array that contains 15 element.
+        </p> 
+        <br>
+            <p> <b>Answer:</b></p>
+           
+        <pre>
+        <code class="language-java">
+# include < stdio.h >
+    int main(){
+        int n=15,a[n],s=0,t=0;
+        for(int i=0;i < n;i++){
+        printf("Enter the element of index %d: ",i);
+        scanf("%d",&a[i]);
+        if(a[i]%2!=0){
+            s=s+a[i];
+            t=t+1;
+        }
+        }
+        printf("Sum of all odd integer in array is: %d",s);
+        printf("\nTotal number of odd integer is: %d",t);
+      return 0;
+    }
+    
+        </code>
+        </pre>
+    </div>
+    <br>
+
+    -->
+
+       <br>
+      <br>
+  </div></div>
+  
+  </section>
+
+
+     
+
+</body>
+
+</html>
